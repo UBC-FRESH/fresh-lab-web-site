@@ -37,10 +37,11 @@ traffic to it without using UBC CMS as the content source.
 - [x] P1.1 Create the GitHub repository and push the bootstrap site. Child issue: #11.
 - [x] P1.2 Enable GitHub Pages with Actions deployment. Child issue: #12.
 - [x] P1.3 Verify published URLs, assets, navigation, and mobile layout. Child issue: #13.
-- [ ] P1.4 Add temporary UBC CMS redirects for public paths. Child issue: #14.
+- [x] P1.4 Add temporary UBC CMS redirects for public paths. Child issue: #14.
 - [ ] P1.5 Switch stable redirects to permanent status after review. Child issue: #15.
 
-Status: active. UBC CMS is only a redirect/control-plane dependency for the
+Status: active. P1.4 is complete using the canonical five-rule temporary CMS
+redirect set. UBC CMS is only a redirect/control-plane dependency for the
 `fresh.forestry.ubc.ca` URL; public site content is maintained in GitHub.
 
 ## Phase 2: Content Cleanup And Source Model

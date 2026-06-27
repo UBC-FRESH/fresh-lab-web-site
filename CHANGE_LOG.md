@@ -69,3 +69,6 @@ This is the append-only project narrative for `fresh-lab-web-site`.
   Manager form: publish each rule, leave regular expressions disabled, use the
   default `302 Found` during review, force HTTPS, and enter full GitHub Pages
   target URLs.
+- Corrected the P1.4 redirect checklist and verifier to use the same canonical
+  five-rule cutover set as the runbook, leaving legacy subpage compatibility
+  out of scope for the temporary CMS redirect launch.

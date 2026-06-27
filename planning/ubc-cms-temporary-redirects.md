@@ -56,35 +56,11 @@ CMS admin paths and makes the rule set easier to audit.
 /publications/                                                      -> https://ubc-fresh.github.io/fresh-lab-web-site/publications/
 /join-fresh/                                                        -> https://ubc-fresh.github.io/fresh-lab-web-site/join-fresh/
 /projects/                                                          -> https://ubc-fresh.github.io/fresh-lab-web-site/projects/
-/projects/can-commercial-thinning-help-mitigate-the-midterm-timber-supply-shortage/ -> https://ubc-fresh.github.io/fresh-lab-web-site/projects/can-commercial-thinning-help-mitigate-the-midterm-timber-supply-shortage/
 ```
 
-## People Path Rules
-
-The old site used people URLs under `/people-at-fresh/`. Use these explicit
-rules if those paths exist in CMS redirects or menus:
-
-```text
-/people-at-fresh/                         -> https://ubc-fresh.github.io/fresh-lab-web-site/people/
-/people-at-fresh/current-faculty/         -> https://ubc-fresh.github.io/fresh-lab-web-site/current-faculty/
-/people-at-fresh/graduate-students/       -> https://ubc-fresh.github.io/fresh-lab-web-site/graduate-students/
-/people-at-fresh/postdocs-and-researchers/ -> https://ubc-fresh.github.io/fresh-lab-web-site/postdocs-and-researchers/
-/people-at-fresh/visiting-scholars/       -> https://ubc-fresh.github.io/fresh-lab-web-site/visiting-scholars/
-/people-at-fresh/former-freshies/         -> https://ubc-fresh.github.io/fresh-lab-web-site/former-freshies/
-```
-
-Also add direct current static paths if the CMS currently exposes them:
-
-```text
-/current-faculty/              -> https://ubc-fresh.github.io/fresh-lab-web-site/current-faculty/
-/graduate-students/            -> https://ubc-fresh.github.io/fresh-lab-web-site/graduate-students/
-/postdocs-and-researchers/     -> https://ubc-fresh.github.io/fresh-lab-web-site/postdocs-and-researchers/
-/visiting-scholars/            -> https://ubc-fresh.github.io/fresh-lab-web-site/visiting-scholars/
-/former-freshies/              -> https://ubc-fresh.github.io/fresh-lab-web-site/former-freshies/
-```
-
-Do not add a compatibility rule for `/graduate-students-2/`. The maintained
-site intentionally uses `/graduate-students/`.
+Do not add compatibility rules for legacy subpages during P1.4. The five rules
+above are the canonical temporary cutover set. Additional legacy-path handling
+can be considered later only if analytics or user reports justify it.
 
 ## Do Not Redirect
 
@@ -117,8 +93,8 @@ Baseline check on 2026-06-27, before entering the new redirect rules, showed
 that the existing CMS redirect configuration is legacy state:
 
 - `/` returned the current CMS page rather than redirecting.
-- `/contact/`, `/publications/`, `/projects/`, the commercial-thinning project
-  path, and `/people-at-fresh/` returned `307` redirects to `/`.
+- `/contact/`, `/publications/`, and `/projects/` returned `307` redirects to
+  `/`.
 - `/join-fresh/`, `/current-faculty/`, `/visiting-scholars/`, and
   `/former-freshies/` returned CMS pages rather than redirecting.
 - `/graduate-students/` and `/postdocs-and-researchers/` dropped the HTTP
