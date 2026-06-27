@@ -2,7 +2,10 @@
 
 Date: 2026-06-27
 
-Roadmap task: P1.4 / issue #14
+Status: active. Roadmap task: P1.4 / issue #14.
+
+Purpose: point the CMS-managed `fresh.forestry.ubc.ca` public URL at the
+GitHub Pages site while keeping public content maintained in GitHub.
 
 ## Target Site
 
@@ -33,8 +36,6 @@ blocking CMS admin paths.
 /publications/                                                      -> https://ubc-fresh.github.io/fresh-lab-web-site/publications/
 /join-fresh/                                                        -> https://ubc-fresh.github.io/fresh-lab-web-site/join-fresh/
 /projects/                                                          -> https://ubc-fresh.github.io/fresh-lab-web-site/projects/
-/projects/biosafe/                                                  -> https://ubc-fresh.github.io/fresh-lab-web-site/projects/biosafe/
-/projects/partial-cutting/                                          -> https://ubc-fresh.github.io/fresh-lab-web-site/projects/partial-cutting/
 /projects/can-commercial-thinning-help-mitigate-the-midterm-timber-supply-shortage/ -> https://ubc-fresh.github.io/fresh-lab-web-site/projects/can-commercial-thinning-help-mitigate-the-midterm-timber-supply-shortage/
 ```
 
@@ -46,7 +47,7 @@ rules if those paths exist in CMS redirects or menus:
 ```text
 /people-at-fresh/                         -> https://ubc-fresh.github.io/fresh-lab-web-site/people/
 /people-at-fresh/current-faculty/         -> https://ubc-fresh.github.io/fresh-lab-web-site/current-faculty/
-/people-at-fresh/graduate-students-2/     -> https://ubc-fresh.github.io/fresh-lab-web-site/graduate-students-2/
+/people-at-fresh/graduate-students/       -> https://ubc-fresh.github.io/fresh-lab-web-site/graduate-students/
 /people-at-fresh/postdocs-and-researchers/ -> https://ubc-fresh.github.io/fresh-lab-web-site/postdocs-and-researchers/
 /people-at-fresh/visiting-scholars/       -> https://ubc-fresh.github.io/fresh-lab-web-site/visiting-scholars/
 /people-at-fresh/former-freshies/         -> https://ubc-fresh.github.io/fresh-lab-web-site/former-freshies/
@@ -56,7 +57,7 @@ Also add direct current static paths if the CMS currently exposes them:
 
 ```text
 /current-faculty/              -> https://ubc-fresh.github.io/fresh-lab-web-site/current-faculty/
-/graduate-students-2/          -> https://ubc-fresh.github.io/fresh-lab-web-site/graduate-students-2/
+/graduate-students/            -> https://ubc-fresh.github.io/fresh-lab-web-site/graduate-students/
 /postdocs-and-researchers/     -> https://ubc-fresh.github.io/fresh-lab-web-site/postdocs-and-researchers/
 /visiting-scholars/            -> https://ubc-fresh.github.io/fresh-lab-web-site/visiting-scholars/
 /former-freshies/              -> https://ubc-fresh.github.io/fresh-lab-web-site/former-freshies/
@@ -86,4 +87,3 @@ python scripts/check_ubc_redirects.py
 
 Expected result: each checked public UBC URL returns a redirect status and lands
 on the matching GitHub Pages URL.
-

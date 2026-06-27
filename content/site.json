@@ -62,7 +62,7 @@
     },
     {
       "title": "Graduate Students",
-      "href": "/graduate-students-2/",
+      "href": "/graduate-students/",
       "summary": "Current MSc, MASc, and PhD students."
     },
     {
@@ -100,7 +100,7 @@
     },
     {
       "title": "Graduate Students",
-      "path": "/graduate-students-2/",
+      "path": "/graduate-students/",
       "summary": "The maintained student roster is being rebuilt from current lab records.",
       "entries": []
     },

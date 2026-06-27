@@ -24,13 +24,16 @@ CHECKS = [
     RedirectCheck("publications/", "publications/"),
     RedirectCheck("join-fresh/", "join-fresh/"),
     RedirectCheck("projects/", "projects/"),
-    RedirectCheck("projects/biosafe/", "projects/biosafe/"),
-    RedirectCheck("projects/partial-cutting/", "projects/partial-cutting/"),
     RedirectCheck(
         "projects/can-commercial-thinning-help-mitigate-the-midterm-timber-supply-shortage/",
         "projects/can-commercial-thinning-help-mitigate-the-midterm-timber-supply-shortage/",
     ),
     RedirectCheck("people-at-fresh/", "people/"),
+    RedirectCheck("current-faculty/", "current-faculty/"),
+    RedirectCheck("graduate-students/", "graduate-students/"),
+    RedirectCheck("postdocs-and-researchers/", "postdocs-and-researchers/"),
+    RedirectCheck("visiting-scholars/", "visiting-scholars/"),
+    RedirectCheck("former-freshies/", "former-freshies/"),
 ]
 
 
@@ -79,4 +82,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

@@ -32,7 +32,7 @@ GitHub parent issue: #2
 Active branch: `feature/p1-public-launch-redirect-cutover`
 
 Goal: publish the static site under GitHub Pages and redirect UBC CMS public
-traffic to it without breaking CMS administrative access.
+traffic to it without using UBC CMS as the content source.
 
 - [x] P1.1 Create the GitHub repository and push the bootstrap site. Child issue: #11.
 - [x] P1.2 Enable GitHub Pages with Actions deployment. Child issue: #12.
@@ -40,7 +40,8 @@ traffic to it without breaking CMS administrative access.
 - [ ] P1.4 Add temporary UBC CMS redirects for public paths. Child issue: #14.
 - [ ] P1.5 Switch stable redirects to permanent status after review. Child issue: #15.
 
-Status: active.
+Status: active. UBC CMS is only a redirect/control-plane dependency for the
+`fresh.forestry.ubc.ca` URL; public site content is maintained in GitHub.
 
 ## Phase 2: Content Cleanup And Source Model
 
@@ -80,8 +81,8 @@ Status: planned.
 
 GitHub parent issue: #5
 
-Goal: decide whether to keep redirect-based hosting or request true custom
-domain/DNS support for `fresh.forestry.ubc.ca`.
+Goal: decide whether to keep the GitHub Pages project URL or request true
+custom domain/DNS support for `fresh.forestry.ubc.ca`.
 
 - [ ] P4.1 Record current UBC CMS redirect behavior after launch. Child issue: #26.
 - [ ] P4.2 Ask Faculty/UBC IT about DNS and TLS options for GitHub Pages or another host. Child issue: #27.
@@ -90,3 +91,21 @@ domain/DNS support for `fresh.forestry.ubc.ca`.
 - [ ] P4.5 Update deployment runbook and redirect policy. Child issue: #30.
 
 Status: planned.
+
+## Phase 5: Lab Knowledge Base Maintainer Documentation
+
+GitHub parent issue: #31
+
+Goal: extend the `UBC-FRESH/lab-knowledge` GitHub wiki with maintainer-facing
+instructions for updating, previewing, testing, publishing, and recovering the
+FRESH lab website from the server-hosted VS Code/dev-container workflow.
+
+- [x] P5.1 Create website maintainer workflow wiki entry. Child issue: #32.
+- [ ] P5.2 Document content editing patterns for `content/site.json`. Child issue: #33.
+- [ ] P5.3 Document preview, verification, and GitHub Pages publishing. Child issue: #34.
+- [ ] P5.4 Document recovery, rollback, and privacy rules. Child issue: #35.
+- [ ] P5.5 Cross-link repo docs, roadmap, and lab KB wiki. Child issue: #36.
+
+Status: active. P5.1 is complete: the wiki page exists at
+`https://github.com/UBC-FRESH/lab-knowledge/wiki/FRESH-Lab-Website-Maintainer-Workflow`
+and is linked from the lab KB home page.

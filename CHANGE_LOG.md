@@ -53,3 +53,11 @@ This is the append-only project narrative for `fresh-lab-web-site`.
 - Added a VS Code dev-container workflow, repo tasks, content documentation,
   and maintainer runbook so day-to-day updates can happen from a persistent
   browser-based development environment such as `fresh01`.
+- Confirmed that UBC CMS redirects remain part of the launch plan for pointing
+  `fresh.forestry.ubc.ca` at the GitHub Pages site, while WordPress/CMS remains
+  out of the content authoring path.
+- Renamed the maintained graduate-students route from the inherited WordPress
+  slug `/graduate-students-2/` to `/graduate-students/` without preserving a
+  compatibility page for the old slug.
+- Added a planned roadmap phase for publishing maintainer-facing FRESH website
+  instructions into the `UBC-FRESH/lab-knowledge` GitHub wiki.

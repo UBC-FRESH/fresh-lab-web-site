@@ -18,7 +18,7 @@ CORE_PATHS = [
     "join-fresh/",
     "contact/",
     "current-faculty/",
-    "graduate-students-2/",
+    "graduate-students/",
     "postdocs-and-researchers/",
     "former-freshies/",
     "visiting-scholars/",

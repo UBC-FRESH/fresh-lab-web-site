@@ -37,7 +37,7 @@ def test_build_generates_expected_public_pages() -> None:
         "contact/index.html",
         "join-fresh/index.html",
         "current-faculty/index.html",
-        "graduate-students-2/index.html",
+        "graduate-students/index.html",
         "postdocs-and-researchers/index.html",
         "former-freshies/index.html",
         "visiting-scholars/index.html",
@@ -56,6 +56,7 @@ def test_build_excludes_internal_page() -> None:
     assert not (DIST / "internal" / "index.html").exists()
     assert not (DIST / "projects" / "biosafe" / "index.html").exists()
     assert not (DIST / "projects" / "partial-cutting" / "index.html").exists()
+    assert not (DIST / "graduate-students-2" / "index.html").exists()
     all_html = "\n".join(path.read_text(encoding="utf-8") for path in DIST.rglob("*.html"))
     assert "Letter template WORD file" not in all_html
 

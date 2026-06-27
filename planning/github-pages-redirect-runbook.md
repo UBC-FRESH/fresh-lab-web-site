@@ -2,6 +2,10 @@
 
 Date: 2026-06-27
 
+Status: active. UBC CMS redirects are used only to point the
+`fresh.forestry.ubc.ca` public URL at the GitHub Pages site. Website content is
+maintained in GitHub, not in UBC CMS.
+
 ## GitHub Repository Choice
 
 Two hosting shapes are supported:

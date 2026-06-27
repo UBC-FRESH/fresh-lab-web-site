@@ -50,6 +50,13 @@ Open the repo in a browser-based VS Code session, reopen it in the dev
 container, edit `content/site.json`, preview through forwarded port `8011`,
 then commit and push. See `planning/dev-container-maintainer-workflow.md`.
 
+The lab-facing maintainer workflow is also documented in the FRESH Lab
+Knowledge Base wiki:
+
+```text
+https://github.com/UBC-FRESH/lab-knowledge/wiki/FRESH-Lab-Website-Maintainer-Workflow
+```
+
 ## Publish
 
 GitHub Pages is configured by `.github/workflows/pages.yml`. Push the repository to GitHub, enable Pages using GitHub Actions, and the site will publish from the generated `dist/` artifact.
