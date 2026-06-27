@@ -165,7 +165,7 @@ def test_home_hero_uses_local_non_people_asset() -> None:
     assert 'type="image/webp"' in hero
     assert "/assets/images/hero-digital-forest-960.webp 960w" in hero
     assert 'src="/assets/images/hero-digital-forest-1600.jpeg"' in hero
-    assert "hybrid photograph and digital wireframe model" in hero
+    assert "digital twin annotation overlay" in hero
     assert "IMG_3025-edited-scaled.jpeg" not in hero
 
 
