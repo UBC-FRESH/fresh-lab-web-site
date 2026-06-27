@@ -346,6 +346,30 @@ def render_join() -> str:
     return page_template("Join FRESH", body, "/join-fresh/", "Current openings and opportunities at the FRESH lab.")
 
 
+def render_contact() -> str:
+    body = f"""<main>
+  <section class="page-hero">
+    <div class="page-title">
+      <p class="eyebrow">Contact</p>
+      <h1>Contact FRESH</h1>
+      <p>FRESH is the Forest Resources and Ecosystem Services Hub at the University of British Columbia.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="section-inner content">
+      <p>FRESH is led by Dr. Gregory Paradis in the UBC Faculty of Forestry.</p>
+      <p>For current lab information, visit the people page or the FRESH Lab GitHub organization.</p>
+      <ul>
+        <li><a href="{site_url('/current-faculty/')}">Current Faculty</a></li>
+        <li><a href="https://github.com/UBC-FRESH">UBC-FRESH GitHub</a></li>
+        <li><a href="https://forestry.ubc.ca/">UBC Faculty of Forestry</a></li>
+      </ul>
+    </div>
+  </section>
+</main>"""
+    return page_template("Contact", body, "/contact/", "Contact information for the FRESH lab.")
+
+
 def related_nav(current_path: str) -> str:
     links = []
     for label, href in NAV:
@@ -398,6 +422,8 @@ def main() -> None:
             write(DIST / page.out_path, render_projects_index())
         elif page.slug == "join-fresh":
             write(DIST / page.out_path, render_join())
+        elif page.slug == "contact":
+            write(DIST / page.out_path, render_contact())
         else:
             write(DIST / page.out_path, render_page(page))
 

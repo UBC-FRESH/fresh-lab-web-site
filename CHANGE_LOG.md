@@ -43,3 +43,6 @@ This is the append-only project narrative for `fresh-lab-web-site`.
 - Cleared legacy Join FRESH opportunity postings from the generated public site
   and narrowed the current projects index to the confirmed commercial thinning
   project while the maintained content model is still being rebuilt.
+- Replaced the inherited Contact page attribution to the previous PI and
+  removed the obsolete Sustainable Forest Management Tutorials link from the
+  generated public site.

@@ -106,6 +106,18 @@ def test_projects_index_lists_only_confirmed_current_project() -> None:
     assert "Partial cutting" not in projects
 
 
+def test_contact_page_excludes_legacy_pi_and_tutorial_link() -> None:
+    run_build()
+
+    contact = read_dist("contact/index.html")
+    assert "FRESH is led by Dr. Gregory Paradis" in contact
+    assert "UBC-FRESH GitHub" in contact
+    assert "Dr Verena C Griess" not in contact
+    assert "verena.griess@ubc.ca" not in contact
+    assert "Sustainable Forest Management Tutorials" not in contact
+    assert "sfmtutorials.forestry.ubc.ca" not in contact
+
+
 def test_generated_local_references_resolve() -> None:
     run_build()
 
@@ -141,6 +153,7 @@ def test_project_site_base_path_is_applied_to_generated_internal_links() -> None
             'href="/fresh-lab-web-site/projects/can-commercial-thinning-help-mitigate-the-midterm-timber-supply-shortage/"'
             in projects
         )
+        assert 'href="/fresh-lab-web-site/current-faculty/"' in read_dist("contact/index.html")
         assert 'src="/fresh-lab-web-site/assets/images/hero-forest-operations.jpeg"' in home
         assert 'src="https://fresh.sites.olt.ubc.ca/files/' in home
     finally:
