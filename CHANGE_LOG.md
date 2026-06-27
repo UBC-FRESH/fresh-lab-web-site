@@ -81,3 +81,10 @@ This is the append-only project narrative for `fresh-lab-web-site`.
 - Completed Phase 2 by confirming home, projects, Join, and Contact as
   maintained source content and adding generator validation for required fields,
   route links, URLs, email addresses, and duplicate people names.
+- Completed Phase 3 asset independence and visual polish by promoting a
+  PI-provided hero photo into tracked source assets, generating responsive
+  JPEG/WebP variants, rendering the home hero with an accessible `<picture>`
+  element, and recording asset inventory and visual QA notes.
+- Standardized the local repository workflow on a repo-root `.venv` virtual
+  environment, with development dependencies installed from `pyproject.toml`
+  and local commands documented through `.venv/bin/python`.

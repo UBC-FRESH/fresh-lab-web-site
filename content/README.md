@@ -19,6 +19,7 @@ Use `content/site.json` for:
 
 - home-page copy;
 - research-focus text;
+- home hero image metadata and alt text;
 - Join and Contact page copy.
 
 Use `content/people.json` for:
@@ -39,8 +40,8 @@ Use `content/publications.json` for:
 After editing:
 
 ```bash
-python scripts/build.py
-python -m pytest
+.venv/bin/python scripts/build.py
+.venv/bin/python -m pytest
 ```
 
 The build fails fast when required fields are empty, internal links point to
@@ -50,7 +51,16 @@ are duplicated, or people-section links do not have matching people pages.
 Preview with:
 
 ```bash
-python -m http.server 8011 --directory dist
+.venv/bin/python -m http.server 8011 --directory dist
+```
+
+When replacing the hero image, copy the approved source image to
+`src/assets/images/hero-forest-operations-original.jpeg`, then regenerate
+responsive variants:
+
+```bash
+.venv/bin/python scripts/prepare_assets.py
+.venv/bin/python scripts/build.py
 ```
 
 ## Migration Archive
@@ -67,4 +77,4 @@ not copy it into `content/site.json` without current editorial review.
 ## Generated Output
 
 Do not edit `dist/`. It is ignored generated output and will be overwritten by
-`python scripts/build.py`.
+`.venv/bin/python scripts/build.py`.

@@ -81,9 +81,9 @@ def validate_content(data: dict) -> None:
     if missing_pages:
         raise SystemExit(f"People section(s) without matching page: {', '.join(missing_pages)}")
 
-    require_text(data["site"], ("title", "tagline", "description", "hero_image"), "site")
+    require_text(data["site"], ("title", "tagline", "description"), "site")
     require_text(data["home"], ("eyebrow", "title", "summary"), "home")
-    validate_link(data["site"]["hero_image"], route_set, "site.hero_image", allow_asset=True)
+    validate_image(data["site"].get("hero_image"), "site.hero_image")
 
     for index, action in enumerate(data["home"]["actions"]):
         require_text(action, ("label", "href", "style"), f"home.actions[{index}]")
@@ -171,9 +171,28 @@ def validate_link(href: str, route_set: set[str], context: str, *, allow_asset: 
             raise SystemExit(f"Invalid URL in {context}: {href}")
         return
     if allow_asset and href.startswith("/assets/"):
+        asset_path = SRC / href.lstrip("/")
+        if not asset_path.exists():
+            raise SystemExit(f"Missing asset file in {context}: {href}")
         return
     if href not in route_set:
         raise SystemExit(f"Unknown internal link in {context}: {href}")
+
+
+def validate_image(image: object, context: str) -> None:
+    if not isinstance(image, dict):
+        raise SystemExit(f"Invalid image record: {context}")
+    require_text(image, ("alt", "src"), context)
+    validate_link(image["src"], set(), f"{context}.src", allow_asset=True)
+    sources = image.get("sources")
+    if not isinstance(sources, list) or not sources:
+        raise SystemExit(f"Missing image sources: {context}.sources")
+    for index, source in enumerate(sources):
+        source_context = f"{context}.sources[{index}]"
+        require_text(source, ("type", "srcset", "sizes"), source_context)
+        for candidate in source["srcset"].split(","):
+            src = candidate.strip().split(" ", 1)[0]
+            validate_link(src, set(), f"{source_context}.srcset", allow_asset=True)
 
 
 def validate_links(links: list[dict], route_set: set[str], context: str) -> None:
@@ -261,6 +280,28 @@ def paragraphs(lines: list[str]) -> str:
     return "\n".join(f"<p>{html.escape(line)}</p>" for line in lines)
 
 
+def image_html(image: dict, class_name: str = "") -> str:
+    def source_set(value: str) -> str:
+        candidates = []
+        for candidate in value.split(","):
+            parts = candidate.strip().split(" ", 1)
+            src = site_url(parts[0])
+            descriptor = f" {parts[1]}" if len(parts) > 1 else ""
+            candidates.append(f"{src}{descriptor}")
+        return ", ".join(candidates)
+
+    sources = "\n".join(
+        f'      <source type="{html.escape(source["type"], quote=True)}" '
+        f'srcset="{html.escape(source_set(source["srcset"]), quote=True)}" sizes="{html.escape(source["sizes"], quote=True)}">'
+        for source in image["sources"]
+    )
+    class_attr = f' class="{html.escape(class_name, quote=True)}"' if class_name else ""
+    return f"""<picture{class_attr}>
+{sources}
+      <img src="{site_url(image['src'])}" alt="{html.escape(image['alt'], quote=True)}">
+    </picture>"""
+
+
 def page_hero(eyebrow: str, title: str, summary: str) -> str:
     return f"""<section class="page-hero">
     <div class="page-title">
@@ -281,7 +322,7 @@ def render_home(data: dict) -> str:
     focus = "".join(f'<div class="focus-item">{html.escape(item)}</div>' for item in home["focus"])
     body = f"""<main>
   <section class="hero">
-    <img src="{site_url(site['hero_image'])}" alt="Forest operations site with logs and forest equipment">
+    {image_html(site['hero_image'], 'hero-media')}
     <div class="hero-content">
       <p class="eyebrow">{html.escape(home['eyebrow'])}</p>
       <h1>{html.escape(home['title'])}</h1>

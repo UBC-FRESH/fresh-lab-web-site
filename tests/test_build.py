@@ -51,7 +51,11 @@ def test_build_generates_expected_public_pages() -> None:
         "visiting-scholars/index.html",
         ".nojekyll",
         "styles.css",
-        "assets/images/hero-forest-operations.jpeg",
+        "assets/images/hero-forest-operations-original.jpeg",
+        "assets/images/hero-forest-operations-960.jpeg",
+        "assets/images/hero-forest-operations-1600.jpeg",
+        "assets/images/hero-forest-operations-960.webp",
+        "assets/images/hero-forest-operations-1600.webp",
     ]
 
     for relative_path in expected:
@@ -157,7 +161,11 @@ def test_home_hero_uses_local_non_people_asset() -> None:
 
     home = read_dist("index.html")
     hero = home.split('<section class="hero">', 1)[1].split("</section>", 1)[0]
-    assert 'src="/assets/images/hero-forest-operations.jpeg"' in hero
+    assert '<picture class="hero-media">' in hero
+    assert 'type="image/webp"' in hero
+    assert "/assets/images/hero-forest-operations-960.webp 960w" in hero
+    assert 'src="/assets/images/hero-forest-operations-1600.jpeg"' in hero
+    assert "Forest operations site with stacked logs" in hero
     assert "IMG_3025-edited-scaled.jpeg" not in hero
 
 
@@ -229,7 +237,8 @@ def test_project_site_base_path_is_applied_to_generated_internal_links() -> None
             in projects
         )
         assert 'href="/fresh-lab-web-site/current-faculty/"' in read_dist("contact/index.html")
-        assert 'src="/fresh-lab-web-site/assets/images/hero-forest-operations.jpeg"' in home
+        assert 'src="/fresh-lab-web-site/assets/images/hero-forest-operations-1600.jpeg"' in home
+        assert "/fresh-lab-web-site/assets/images/hero-forest-operations-960.webp 960w" in home
     finally:
         run_build()
 

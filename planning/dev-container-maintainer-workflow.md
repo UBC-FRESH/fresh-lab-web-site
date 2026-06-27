@@ -23,6 +23,9 @@ The active public site content lives in:
 
 ```text
 content/site.json
+content/people.json
+content/projects.json
+content/publications.json
 ```
 
 The WordPress export-derived archive lives in:
@@ -46,7 +49,8 @@ The container provides:
 
 - Python 3.12;
 - GitHub CLI;
-- repo development dependencies from `pyproject.toml`;
+- a repo-local `.venv` virtual environment;
+- repo development dependencies from `pyproject.toml` installed into `.venv`;
 - automatic build after container creation;
 - forwarded port `8011` for local preview.
 
@@ -86,15 +90,15 @@ server or dev-container environment.
 6. Run:
 
 ```bash
-python -m ruff check .
-python -m pytest
-python scripts/build.py
+.venv/bin/python -m ruff check .
+.venv/bin/python -m pytest
+.venv/bin/python scripts/build.py
 ```
 
 7. Preview the site:
 
 ```bash
-python -m http.server 8011 --directory dist
+.venv/bin/python -m http.server 8011 --directory dist
 ```
 
 8. Commit source changes only. Do not commit `dist/`.
@@ -102,7 +106,7 @@ python -m http.server 8011 --directory dist
 10. Verify the public site:
 
 ```bash
-python scripts/check_published_site.py
+.venv/bin/python scripts/check_published_site.py
 ```
 
 ## Agent Workflow

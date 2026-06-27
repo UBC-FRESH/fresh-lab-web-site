@@ -10,30 +10,31 @@ output.
 ## Development Environment
 
 Use the repo dev container when working from a persistent VS Code server
-environment such as `fresh01`. The container installs the development tools,
-builds the site once after creation, and forwards port `8011` for preview.
+environment such as `fresh01`. The container creates `.venv` in the repo root,
+installs the development tools there, builds the site once after creation, and
+forwards port `8011` for preview.
 
-For a non-container local setup, use a repo-local virtual environment:
+For any non-container local setup, use the repo-local virtual environment. Do
+not install ad hoc project dependencies globally:
 
 ```bash
 python -m venv .venv
-. .venv/bin/activate
-python -m pip install --upgrade pip
-python -m pip install -e '.[dev]'
+.venv/bin/python -m pip install --upgrade pip
+.venv/bin/python -m pip install -e '.[dev]'
 ```
 
 Run checks from the repo root:
 
 ```bash
-python -m pytest
-python -m ruff check .
-python scripts/build.py
+.venv/bin/python -m pytest
+.venv/bin/python -m ruff check .
+.venv/bin/python scripts/build.py
 ```
 
 Preview the generated site:
 
 ```bash
-python -m http.server 8011 --directory dist
+.venv/bin/python -m http.server 8011 --directory dist
 ```
 
 Then open:

@@ -32,19 +32,24 @@ This repository is an early static-site migration scaffold. It contains:
 - `content/migration/wordpress-pages.json`: sanitized public content extracted
   from the initial WordPress export, retained as migration reference material
   only.
+- `src/assets/images/`: tracked public image assets and generated responsive
+  variants used by the static site.
 - `tmp/fresh.WordPress.2026-06-27.xml`: ignored local WordPress export used to
   regenerate sanitized content when needed.
 - `scripts/build.py`: static site generator that reads maintained source
-  content from `content/site.json`.
+  content from the active JSON files under `content/`.
+- `scripts/prepare_assets.py`: local image-asset preparation script for
+  regenerating responsive JPEG/WebP variants.
 - `src/styles.css`: site styles.
 - `tests/`: build and link-integrity tests.
 - `.github/workflows/`: GitHub Pages and verification workflows.
 - `dist/`: ignored generated output.
 
 Do not treat the WordPress migration archive as the live content source. The
-current build reads the maintained JSON files under `content/`. The maintained
-content is intentionally sparse while people, publications, projects, and media
-are rebuilt from current lab records.
+current build reads the maintained JSON files under `content/` and tracked
+assets under `src/assets/`. The maintained content is intentionally sparse while
+people, publications, projects, and additional media are rebuilt from current
+lab records.
 
 ## Content And Data Hygiene
 
@@ -71,6 +76,10 @@ Rules:
 
 - Read `AGENTS.md`, `ROADMAP.md`, and `CHANGE_LOG.md` before project-shaping
   changes.
+- Use a repo-local `.venv` virtual environment for local Python work. Install
+  repo dependencies into `.venv` with `.venv/bin/python -m pip install -e '.[dev]'`
+  and run local Python commands through `.venv/bin/python` unless the command is
+  executing inside CI.
 - Preserve the distinction between source content, migration exports, generated
   output, and deployment notes.
 - Prefer reproducible generation, tests, and reviewable source files over manual
@@ -142,15 +151,15 @@ or inline pseudo-checklists.
 Default local checks:
 
 ```bash
-python -m pytest
-python -m ruff check .
-python scripts/build.py
+.venv/bin/python -m pytest
+.venv/bin/python -m ruff check .
+.venv/bin/python scripts/build.py
 ```
 
 The generated site is written to `dist/`. Preview it locally with:
 
 ```bash
-python -m http.server 8011 --directory dist
+.venv/bin/python -m http.server 8011 --directory dist
 ```
 
 Default CI must not require access to UBC CMS admin, CWL, private exports, or

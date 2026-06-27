@@ -17,14 +17,28 @@ export remains local-only at `tmp/fresh.WordPress.2026-06-27.xml` by default.
 
 ## Build
 
+Create or refresh the repo-local Python environment first:
+
 ```bash
-python scripts/build.py
+python -m venv .venv
+.venv/bin/python -m pip install --upgrade pip
+.venv/bin/python -m pip install -e '.[dev]'
+```
+
+```bash
+.venv/bin/python scripts/build.py
+```
+
+Regenerate responsive image assets after replacing a source image:
+
+```bash
+.venv/bin/python scripts/prepare_assets.py
 ```
 
 Regenerate the sanitized content source from a local WordPress export:
 
 ```bash
-python scripts/extract_wordpress_public_content.py
+.venv/bin/python scripts/extract_wordpress_public_content.py
 ```
 
 This updates `content/migration/wordpress-pages.json`; it does not update the
@@ -35,7 +49,7 @@ Generated files are written to `dist/`.
 ## Preview Locally
 
 ```bash
-python -m http.server 8011 --directory dist
+.venv/bin/python -m http.server 8011 --directory dist
 ```
 
 Then open `http://localhost:8011`.

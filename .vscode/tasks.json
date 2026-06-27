@@ -4,28 +4,34 @@
     {
       "label": "FRESH: Build Site",
       "type": "shell",
-      "command": "python scripts/build.py",
+      "command": ".venv/bin/python scripts/build.py",
       "group": "build",
       "problemMatcher": []
     },
     {
       "label": "FRESH: Run Tests",
       "type": "shell",
-      "command": "python -m pytest",
+      "command": ".venv/bin/python -m pytest",
       "group": "test",
       "problemMatcher": []
     },
     {
       "label": "FRESH: Lint",
       "type": "shell",
-      "command": "python -m ruff check .",
+      "command": ".venv/bin/python -m ruff check .",
       "problemMatcher": []
     },
     {
       "label": "FRESH: Preview Site",
       "type": "shell",
-      "command": "python -m http.server 8011 --directory dist",
+      "command": ".venv/bin/python -m http.server 8011 --directory dist",
       "isBackground": true,
+      "problemMatcher": []
+    },
+    {
+      "label": "FRESH: Prepare Assets",
+      "type": "shell",
+      "command": ".venv/bin/python scripts/prepare_assets.py",
       "problemMatcher": []
     },
     {

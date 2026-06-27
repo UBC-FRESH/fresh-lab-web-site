@@ -13,7 +13,7 @@
         "tamasfe.even-better-toml"
       ],
       "settings": {
-        "python.defaultInterpreterPath": "/usr/local/bin/python",
+        "python.defaultInterpreterPath": "${containerWorkspaceFolder}/.venv/bin/python",
         "python.terminal.activateEnvironment": false,
         "ruff.nativeServer": "on"
       }
@@ -28,6 +28,6 @@
       "onAutoForward": "notify"
     }
   },
-  "postCreateCommand": "python -m pip install --upgrade pip && python -m pip install -e '.[dev]' && python scripts/build.py",
+  "postCreateCommand": "python -m venv .venv && .venv/bin/python -m pip install --upgrade pip && .venv/bin/python -m pip install -e '.[dev]' && .venv/bin/python scripts/build.py",
   "remoteUser": "vscode"
 }
