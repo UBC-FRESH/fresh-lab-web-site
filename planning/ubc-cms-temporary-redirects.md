@@ -15,15 +15,32 @@ https://ubc-fresh.github.io/fresh-lab-web-site/
 
 ## Rule Type
 
-Use temporary redirects first:
+Use temporary redirects first. The CMS form defaults to `302 Found`, which is
+acceptable for this review period:
 
 ```text
-HTTP status: 307
-Force https: enabled if available
+Status: Publish
+Enable Regular Expressions: unchecked
+HTTP Status Code: 302 Found
+Redirect Protocol: Force https
+Notes: FRESH static site GitHub Pages launch, P1.4 temporary redirect.
 ```
 
 Keep these temporary until the public site has been reviewed after redirect
 cutover. P1.5 will switch stable public redirects to permanent status.
+
+## CMS Form Fields
+
+For each rule:
+
+- `Redirect From`: enter the source path exactly as listed below.
+- `Enable Regular Expressions`: leave unchecked.
+- `Redirect To`: enter the full GitHub Pages URL exactly as listed below.
+- `HTTP Status Code`: leave as `302 Found` for P1.4.
+- `Redirect Protocol`: select `Force https`.
+- `Notes`: use a short note such as `FRESH static site GitHub Pages launch, P1.4 temporary redirect.`
+- `Status`: publish the rule; do not leave it as draft.
+- `Order`: leave `0` unless the CMS requires ordering to resolve conflicts.
 
 ## Recommended Explicit Rules
 

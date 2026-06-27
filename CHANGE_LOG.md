@@ -65,3 +65,7 @@ This is the append-only project narrative for `fresh-lab-web-site`.
   baseline, defining a clean-slate Safe Redirect Manager target configuration,
   and hardening `scripts/check_ubc_redirects.py` against dropped CMS
   connections during pre-cutover checks.
+- Updated the P1.4 CMS redirect runbook to match the actual Safe Redirect
+  Manager form: publish each rule, leave regular expressions disabled, use the
+  default `302 Found` during review, force HTTPS, and enter full GitHub Pages
+  target URLs.

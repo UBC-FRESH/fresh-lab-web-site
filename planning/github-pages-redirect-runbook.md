@@ -40,7 +40,8 @@ In GitHub:
 
 Use a clean-slate Safe Redirect Manager configuration. Remove legacy redirect
 rules that point public paths back to `/`, then add temporary redirects first
-(`307`). Switch to permanent redirects only after review.
+using the CMS default `302 Found`. Switch to permanent redirects only after
+review.
 
 The full temporary redirect checklist is in:
 
@@ -62,8 +63,6 @@ Recommended initial redirects:
 /publications/         -> https://ubc-fresh.github.io/fresh-lab-web-site/publications/
 /join-fresh/           -> https://ubc-fresh.github.io/fresh-lab-web-site/join-fresh/
 /projects/             -> https://ubc-fresh.github.io/fresh-lab-web-site/projects/
-\/projects\/?.*        -> https://ubc-fresh.github.io/fresh-lab-web-site/projects/
-\/people-at-fresh\/?.* -> https://ubc-fresh.github.io/fresh-lab-web-site/people/
 ```
 
 Do not redirect:
