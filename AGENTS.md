@@ -22,6 +22,9 @@ This repository is an early static-site migration scaffold. It contains:
 - `CHANGE_LOG.md`: append-only project narrative.
 - `CONTRIBUTING.md`: contributor and maintainer workflow.
 - `planning/`: focused planning notes and migration records.
+- `.devcontainer/`: VS Code dev-container setup for server-hosted maintenance.
+- `.vscode/`: recommended extensions and tasks for build, preview, lint, and
+  tests.
 - `content/site.json`: maintained source content for the generated public site.
 - `content/migration/wordpress-pages.json`: sanitized public content extracted
   from the initial WordPress export, retained as migration reference material
@@ -69,6 +72,9 @@ Rules:
   output, and deployment notes.
 - Prefer reproducible generation, tests, and reviewable source files over manual
   CMS edits or checked-in generated pages.
+- Treat browser-based VS Code plus the repo dev container as the intended
+  maintainer environment when working from `fresh01` or another persistent
+  server.
 - Keep the public site safe by default: skip internal/private material and make
   sensitive assumptions explicit.
 - Keep design changes scoped and intentional. The current visual direction is a
@@ -145,8 +151,7 @@ python -m http.server 8011 --directory dist
 ```
 
 Default CI must not require access to UBC CMS admin, CWL, private exports, or
-network downloads beyond package installation. Tests should tolerate the legacy
-media URLs being external.
+network downloads beyond package installation.
 
 ## Git Hygiene
 

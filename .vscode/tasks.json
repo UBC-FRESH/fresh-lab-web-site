@@ -1,0 +1,42 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "FRESH: Build Site",
+      "type": "shell",
+      "command": "python scripts/build.py",
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "FRESH: Run Tests",
+      "type": "shell",
+      "command": "python -m pytest",
+      "group": "test",
+      "problemMatcher": []
+    },
+    {
+      "label": "FRESH: Lint",
+      "type": "shell",
+      "command": "python -m ruff check .",
+      "problemMatcher": []
+    },
+    {
+      "label": "FRESH: Preview Site",
+      "type": "shell",
+      "command": "python -m http.server 8011 --directory dist",
+      "isBackground": true,
+      "problemMatcher": []
+    },
+    {
+      "label": "FRESH: Verify All",
+      "dependsOrder": "sequence",
+      "dependsOn": [
+        "FRESH: Lint",
+        "FRESH: Run Tests",
+        "FRESH: Build Site"
+      ],
+      "problemMatcher": []
+    }
+  ]
+}

@@ -57,7 +57,9 @@ source files for people, publications, projects, and high-value pages.
 
 Status: active. P2.1 is complete: the active site now builds from
 `content/site.json`, with the WordPress export retained only as migration
-reference material under `content/migration/`.
+reference material under `content/migration/`. The repo also includes a VS Code
+dev-container workflow for maintaining the site from a persistent server-hosted
+browser IDE.
 
 ## Phase 3: Asset Independence And Visual Polish
 

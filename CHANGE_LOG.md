@@ -50,3 +50,6 @@ This is the append-only project narrative for `fresh-lab-web-site`.
   model in `content/site.json`, moved the sanitized WordPress export to
   `content/migration/wordpress-pages.json`, and rebuilt the generator so the
   public site no longer depends on legacy WordPress block markup.
+- Added a VS Code dev-container workflow, repo tasks, content documentation,
+  and maintainer runbook so day-to-day updates can happen from a persistent
+  browser-based development environment such as `fresh01`.

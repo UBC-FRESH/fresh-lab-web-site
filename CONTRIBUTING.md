@@ -9,7 +9,11 @@ output.
 
 ## Development Environment
 
-Use a repo-local virtual environment when installing development tools:
+Use the repo dev container when working from a persistent VS Code server
+environment such as `fresh01`. The container installs the development tools,
+builds the site once after creation, and forwards port `8011` for preview.
+
+For a non-container local setup, use a repo-local virtual environment:
 
 ```bash
 python -m venv .venv
@@ -42,6 +46,9 @@ http://localhost:8011
 
 - Read `AGENTS.md`, `ROADMAP.md`, and `CHANGE_LOG.md` before project-shaping
   changes.
+- Use `content/site.json` as the active public content source.
+- Treat `content/migration/wordpress-pages.json` as historical migration
+  reference only.
 - Keep the active roadmap phase, GitHub issues, branch, changelog, and planning
   notes synchronized.
 - Prefer source-content changes and generator improvements over hand-editing
@@ -55,8 +62,9 @@ http://localhost:8011
 
 - Do not publish WordPress private or draft pages.
 - Do not publish the `Internal` page without a deliberate sanitization task.
-- Treat `content/wordpress-pages.json` as migrated source material, not as final
-  editorial copy.
+- Edit `content/site.json` for public site content.
+- Treat `content/migration/wordpress-pages.json` as migrated source material,
+  not as final editorial copy.
 - Keep raw WordPress exports under ignored `tmp/` unless the maintainer
   explicitly approves tracking a sanitized artifact.
 - Record provenance when moving content out of WordPress block markup and into

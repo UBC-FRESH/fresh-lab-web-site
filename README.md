@@ -32,10 +32,23 @@ Generated files are written to `dist/`.
 ## Preview Locally
 
 ```bash
-python -m http.server 8000 --directory dist
+python -m http.server 8011 --directory dist
 ```
 
-Then open `http://localhost:8000`.
+Then open `http://localhost:8011`.
+
+## Dev Container
+
+This repo includes a VS Code dev-container configuration for server-hosted
+maintenance:
+
+```text
+.devcontainer/devcontainer.json
+```
+
+Open the repo in a browser-based VS Code session, reopen it in the dev
+container, edit `content/site.json`, preview through forwarded port `8011`,
+then commit and push. See `planning/dev-container-maintainer-workflow.md`.
 
 ## Publish
 
