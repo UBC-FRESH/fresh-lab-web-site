@@ -28,3 +28,7 @@ This is the append-only project narrative for `fresh-lab-web-site`.
   #6-#30, and synchronized `ROADMAP.md` with issue numbers.
 - Enabled GitHub Pages with Actions deployment for the repository and fixed the
   build guard so CI builds from the tracked sanitized content source.
+- Verified the published GitHub Pages site, added
+  `scripts/check_published_site.py`, captured desktop/mobile home-page
+  screenshots under ignored `tmp/visual-checks/`, and recorded P1.3 findings in
+  `planning/phase-1-public-launch-verification.md`.

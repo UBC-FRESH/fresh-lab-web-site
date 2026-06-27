@@ -36,7 +36,7 @@ traffic to it without breaking CMS administrative access.
 
 - [x] P1.1 Create the GitHub repository and push the bootstrap site. Child issue: #11.
 - [x] P1.2 Enable GitHub Pages with Actions deployment. Child issue: #12.
-- [ ] P1.3 Verify published URLs, assets, navigation, and mobile layout. Child issue: #13.
+- [x] P1.3 Verify published URLs, assets, navigation, and mobile layout. Child issue: #13.
 - [ ] P1.4 Add temporary UBC CMS redirects for public paths. Child issue: #14.
 - [ ] P1.5 Switch stable redirects to permanent status after review. Child issue: #15.
 
