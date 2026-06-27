@@ -26,3 +26,5 @@ This is the append-only project narrative for `fresh-lab-web-site`.
 - Created the public GitHub repository `UBC-FRESH/fresh-lab-web-site`, pushed
   the bootstrap commit, created roadmap phase issues #1-#5 and child task issues
   #6-#30, and synchronized `ROADMAP.md` with issue numbers.
+- Enabled GitHub Pages with Actions deployment for the repository and fixed the
+  build guard so CI builds from the tracked sanitized content source.

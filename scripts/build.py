@@ -325,8 +325,8 @@ def render_page(page: Page) -> str:
 
 
 def main() -> None:
-    if not EXPORT.exists():
-        raise SystemExit(f"Missing WordPress export: {EXPORT}")
+    if not CONTENT.exists() and not EXPORT.exists():
+        raise SystemExit(f"Missing content source: {CONTENT} or {EXPORT}")
     if DIST.exists():
         shutil.rmtree(DIST)
     DIST.mkdir()
