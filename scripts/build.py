@@ -24,7 +24,7 @@ NS = {
 
 SITE_TITLE = "FRESH Lab"
 SITE_TAGLINE = "Forest Resources and Ecosystem Services Hub"
-HERO_IMAGE = "https://fresh.sites.olt.ubc.ca/files/2026/05/IMG_3025-edited-scaled.jpeg"
+HERO_IMAGE_PATH = "/assets/images/hero-forest-operations.jpeg"
 BASE_PATH = "/" + os.environ.get("SITE_BASE_PATH", "").strip("/")
 if BASE_PATH == "/":
     BASE_PATH = ""
@@ -225,7 +225,7 @@ def render_home(home: Page, pages_by_slug: dict[str, Page]) -> str:
     ]
     body = f"""<main>
   <section class="hero">
-    <img src="{HERO_IMAGE}" alt="FRESH field and forest research scene">
+    <img src="{site_url(HERO_IMAGE_PATH)}" alt="Forest operations site with logs and forest equipment">
     <div class="hero-content">
       <p class="eyebrow">UBC Forest Resources and Ecosystem Services Hub</p>
       <h1>Forest planning for complex landscapes.</h1>
@@ -331,6 +331,9 @@ def main() -> None:
         shutil.rmtree(DIST)
     DIST.mkdir()
     shutil.copyfile(SRC / "styles.css", DIST / "styles.css")
+    assets = SRC / "assets"
+    if assets.exists():
+        shutil.copytree(assets, DIST / "assets")
 
     pages = load_pages()
     pages_by_slug = {page.slug: page for page in pages}

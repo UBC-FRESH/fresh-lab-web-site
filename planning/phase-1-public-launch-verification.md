@@ -48,6 +48,16 @@ Observed:
   research-focus cards without obvious overlap.
 - No visual launch blocker was found in the first viewport.
 
+Post-check adjustment:
+
+- Replaced the initial home hero photo with a controlled local asset at
+  `src/assets/images/hero-forest-operations.jpeg`, using a forest operations
+  photo taken by the lab PI. The original imported group photo made a former
+  student appear visually central in the first viewport.
+- Rechecked local desktop and mobile screenshots after the change at
+  `tmp/visual-checks/new-hero-desktop.png` and
+  `tmp/visual-checks/new-hero-mobile.png`.
+
 ## Known Follow-Up
 
 - Imported WordPress content still needs editorial cleanup, especially contact

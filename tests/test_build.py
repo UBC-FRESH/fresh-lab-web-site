@@ -44,6 +44,7 @@ def test_build_generates_expected_public_pages() -> None:
         "visiting-scholars/index.html",
         ".nojekyll",
         "styles.css",
+        "assets/images/hero-forest-operations.jpeg",
     ]
 
     for relative_path in expected:
@@ -74,6 +75,15 @@ def test_fresh_expansion_uses_ecosystem_services() -> None:
     all_html = "\n".join(path.read_text(encoding="utf-8") for path in DIST.rglob("*.html"))
     assert "Forest Resources and Ecosystem Services Hub" in all_html
     assert "Forest Resources and Environmental Services Hub" not in all_html
+
+
+def test_home_hero_uses_local_non_people_asset() -> None:
+    run_build()
+
+    home = read_dist("index.html")
+    hero = home.split('<section class="hero">', 1)[1].split("</section>", 1)[0]
+    assert 'src="/assets/images/hero-forest-operations.jpeg"' in hero
+    assert "IMG_3025-edited-scaled.jpeg" not in hero
 
 
 def test_generated_local_references_resolve() -> None:
@@ -108,6 +118,7 @@ def test_project_site_base_path_is_applied_to_generated_internal_links() -> None
         assert 'href="/fresh-lab-web-site/"' in home
         assert 'href="/fresh-lab-web-site/projects/"' in home
         assert 'href="/fresh-lab-web-site/projects/biosafe/"' in projects
+        assert 'src="/fresh-lab-web-site/assets/images/hero-forest-operations.jpeg"' in home
         assert 'src="https://fresh.sites.olt.ubc.ca/files/' in home
     finally:
         run_build()

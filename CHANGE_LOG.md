@@ -37,3 +37,6 @@ This is the append-only project narrative for `fresh-lab-web-site`.
 - Corrected the FRESH expansion from "Forest Resources and Environmental
   Services Hub" to "Forest Resources and Ecosystem Services Hub" across the
   generator and migrated content, with a regression test to prevent reversion.
+- Replaced the home hero image with a tracked forest operations photo taken by
+  the lab PI, avoiding the old group photo where a former student appeared as
+  the visual focal point.
