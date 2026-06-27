@@ -1,0 +1,6 @@
+blank_issues_enabled: false
+contact_links:
+  - name: FRESH lab website roadmap
+    url: https://github.com/UBC-FRESH/fresh-lab-web-site/blob/main/ROADMAP.md
+    about: Check the roadmap before opening a new site task.
+
