@@ -38,8 +38,9 @@ In GitHub:
 
 ## UBC CMS Redirects
 
-Use temporary redirects first (`307`), then switch to permanent redirects after
-review.
+Use a clean-slate Safe Redirect Manager configuration. Remove legacy redirect
+rules that point public paths back to `/`, then add temporary redirects first
+(`307`). Switch to permanent redirects only after review.
 
 The full temporary redirect checklist is in:
 

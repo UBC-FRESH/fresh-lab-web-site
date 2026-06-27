@@ -61,3 +61,7 @@ This is the append-only project narrative for `fresh-lab-web-site`.
   compatibility page for the old slug.
 - Added a planned roadmap phase for publishing maintainer-facing FRESH website
   instructions into the `UBC-FRESH/lab-knowledge` GitHub wiki.
+- Began P1.4 redirect cutover work by recording the current CMS redirect
+  baseline, defining a clean-slate Safe Redirect Manager target configuration,
+  and hardening `scripts/check_ubc_redirects.py` against dropped CMS
+  connections during pre-cutover checks.

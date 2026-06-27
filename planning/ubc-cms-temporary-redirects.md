@@ -27,8 +27,11 @@ cutover. P1.5 will switch stable public redirects to permanent status.
 
 ## Recommended Explicit Rules
 
-Prefer explicit rules over a broad catch-all at first. This reduces the risk of
-blocking CMS admin paths.
+Clean-slate approach: remove the legacy redirect rules first, then add only the
+rules below. Do not try to preserve or reason around old redirect-to-root rules.
+
+Prefer explicit rules over a broad catch-all. This reduces the risk of blocking
+CMS admin paths and makes the rule set easier to audit.
 
 ```text
 /                                                                   -> https://ubc-fresh.github.io/fresh-lab-web-site/
@@ -63,6 +66,9 @@ Also add direct current static paths if the CMS currently exposes them:
 /former-freshies/              -> https://ubc-fresh.github.io/fresh-lab-web-site/former-freshies/
 ```
 
+Do not add a compatibility rule for `/graduate-students-2/`. The maintained
+site intentionally uses `/graduate-students/`.
+
 ## Do Not Redirect
 
 Do not add catch-all rules that can affect:
@@ -87,3 +93,19 @@ python scripts/check_ubc_redirects.py
 
 Expected result: each checked public UBC URL returns a redirect status and lands
 on the matching GitHub Pages URL.
+
+## Baseline Before P1.4
+
+Baseline check on 2026-06-27, before entering the new redirect rules, showed
+that the existing CMS redirect configuration is legacy state:
+
+- `/` returned the current CMS page rather than redirecting.
+- `/contact/`, `/publications/`, `/projects/`, the commercial-thinning project
+  path, and `/people-at-fresh/` returned `307` redirects to `/`.
+- `/join-fresh/`, `/current-faculty/`, `/visiting-scholars/`, and
+  `/former-freshies/` returned CMS pages rather than redirecting.
+- `/graduate-students/` and `/postdocs-and-researchers/` dropped the HTTP
+  connection during the check.
+
+Treat that baseline as evidence for a reset. P1.4 should install the clean
+target configuration above rather than preserving legacy redirect behavior.

@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import sys
+from http.client import RemoteDisconnected
 from dataclasses import dataclass
 from urllib.error import HTTPError, URLError
 from urllib.parse import urljoin
@@ -49,7 +50,7 @@ def status_and_location(url: str, timeout: float = 15.0) -> tuple[int, str]:
         opener.open(request, timeout=timeout)
     except HTTPError as exc:
         return exc.code, exc.headers.get("Location", "")
-    except URLError as exc:
+    except (RemoteDisconnected, URLError) as exc:
         raise RuntimeError(f"{url} failed: {exc}") from exc
     return 200, ""
 
