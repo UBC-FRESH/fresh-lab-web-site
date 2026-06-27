@@ -7,13 +7,13 @@ from PIL import Image, ImageOps
 
 ROOT = Path(__file__).resolve().parents[1]
 IMAGE_DIR = ROOT / "src" / "assets" / "images"
-HERO_SOURCE = IMAGE_DIR / "hero-forest-operations-original.jpeg"
+HERO_SOURCE = IMAGE_DIR / "hero-digital-forest-original.png"
 
 HERO_VARIANTS = [
-    ("hero-forest-operations-960.jpeg", 960, "JPEG", {"quality": 82, "progressive": True, "optimize": True}),
-    ("hero-forest-operations-1600.jpeg", 1600, "JPEG", {"quality": 84, "progressive": True, "optimize": True}),
-    ("hero-forest-operations-960.webp", 960, "WEBP", {"quality": 78, "method": 6}),
-    ("hero-forest-operations-1600.webp", 1600, "WEBP", {"quality": 80, "method": 6}),
+    ("hero-digital-forest-960.jpeg", 960, "JPEG", {"quality": 82, "progressive": True, "optimize": True}),
+    ("hero-digital-forest-1600.jpeg", 1600, "JPEG", {"quality": 84, "progressive": True, "optimize": True}),
+    ("hero-digital-forest-960.webp", 960, "WEBP", {"quality": 78, "method": 6}),
+    ("hero-digital-forest-1600.webp", 1600, "WEBP", {"quality": 80, "method": 6}),
 ]
 
 

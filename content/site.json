@@ -4,17 +4,17 @@
     "tagline": "Forest Resources and Ecosystem Services Hub",
     "description": "FRESH is the Forest Resources and Ecosystem Services Hub at the University of British Columbia.",
     "hero_image": {
-      "alt": "Forest operations site with stacked logs, harvesting equipment, and a conifer stand in the background.",
-      "src": "/assets/images/hero-forest-operations-1600.jpeg",
+      "alt": "Forest operations site shown as a hybrid photograph and digital wireframe model.",
+      "src": "/assets/images/hero-digital-forest-1600.jpeg",
       "sources": [
         {
           "type": "image/webp",
-          "srcset": "/assets/images/hero-forest-operations-960.webp 960w, /assets/images/hero-forest-operations-1600.webp 1600w",
+          "srcset": "/assets/images/hero-digital-forest-960.webp 960w, /assets/images/hero-digital-forest-1600.webp 1600w",
           "sizes": "100vw"
         },
         {
           "type": "image/jpeg",
-          "srcset": "/assets/images/hero-forest-operations-960.jpeg 960w, /assets/images/hero-forest-operations-1600.jpeg 1600w",
+          "srcset": "/assets/images/hero-digital-forest-960.jpeg 960w, /assets/images/hero-digital-forest-1600.jpeg 1600w",
           "sizes": "100vw"
         }
       ]
