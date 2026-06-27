@@ -32,3 +32,8 @@ This is the append-only project narrative for `fresh-lab-web-site`.
   `scripts/check_published_site.py`, captured desktop/mobile home-page
   screenshots under ignored `tmp/visual-checks/`, and recorded P1.3 findings in
   `planning/phase-1-public-launch-verification.md`.
+- Prepared the P1.4 UBC CMS temporary redirect checklist and added
+  `scripts/check_ubc_redirects.py` for post-change verification.
+- Corrected the FRESH expansion from "Forest Resources and Environmental
+  Services Hub" to "Forest Resources and Ecosystem Services Hub" across the
+  generator and migrated content, with a regression test to prevent reversion.

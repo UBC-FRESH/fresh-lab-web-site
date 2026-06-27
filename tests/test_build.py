@@ -68,6 +68,14 @@ def test_imported_media_urls_remain_absolute() -> None:
     assert 'href="/files/' not in home
 
 
+def test_fresh_expansion_uses_ecosystem_services() -> None:
+    run_build()
+
+    all_html = "\n".join(path.read_text(encoding="utf-8") for path in DIST.rglob("*.html"))
+    assert "Forest Resources and Ecosystem Services Hub" in all_html
+    assert "Forest Resources and Environmental Services Hub" not in all_html
+
+
 def test_generated_local_references_resolve() -> None:
     run_build()
 

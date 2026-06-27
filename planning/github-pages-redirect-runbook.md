@@ -37,6 +37,12 @@ In GitHub:
 Use temporary redirects first (`307`), then switch to permanent redirects after
 review.
 
+The full temporary redirect checklist is in:
+
+```text
+planning/ubc-cms-temporary-redirects.md
+```
+
 Assuming:
 
 ```text
@@ -63,3 +69,8 @@ Do not redirect:
 /wp-json/
 ```
 
+After adding redirects, verify them with:
+
+```bash
+python scripts/check_ubc_redirects.py
+```

@@ -23,7 +23,7 @@ NS = {
 }
 
 SITE_TITLE = "FRESH Lab"
-SITE_TAGLINE = "Forest Resources and Environmental Services Hub"
+SITE_TAGLINE = "Forest Resources and Ecosystem Services Hub"
 HERO_IMAGE = "https://fresh.sites.olt.ubc.ca/files/2026/05/IMG_3025-edited-scaled.jpeg"
 BASE_PATH = "/" + os.environ.get("SITE_BASE_PATH", "").strip("/")
 if BASE_PATH == "/":
@@ -227,7 +227,7 @@ def render_home(home: Page, pages_by_slug: dict[str, Page]) -> str:
   <section class="hero">
     <img src="{HERO_IMAGE}" alt="FRESH field and forest research scene">
     <div class="hero-content">
-      <p class="eyebrow">UBC Forest Resources and Environmental Services Hub</p>
+      <p class="eyebrow">UBC Forest Resources and Ecosystem Services Hub</p>
       <h1>Forest planning for complex landscapes.</h1>
       <p class="hero-copy">FRESH works on modelling forests and natural resources, linking ecosystem services, operations research, carbon, wildfire, landscape planning, and decision support.</p>
       <div class="hero-actions">
