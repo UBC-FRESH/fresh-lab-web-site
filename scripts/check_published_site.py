@@ -13,9 +13,7 @@ CORE_PATHS = [
     "",
     "people/",
     "projects/",
-    "projects/biosafe/",
     "projects/can-commercial-thinning-help-mitigate-the-midterm-timber-supply-shortage/",
-    "projects/partial-cutting/",
     "publications/",
     "join-fresh/",
     "contact/",
@@ -60,7 +58,6 @@ def main() -> int:
     base_url = args.base_url.rstrip("/") + "/"
     failures: list[str] = []
     seen: set[str] = set()
-    media_samples: list[str] = []
 
     for path in CORE_PATHS:
         url = urljoin(base_url, path)
@@ -85,8 +82,6 @@ def main() -> int:
                     continue
                 if is_internal(resolved, base_url):
                     seen.add(resolved)
-                elif "fresh.sites.olt.ubc.ca/files/" in resolved and len(media_samples) < 8:
-                    media_samples.append(resolved)
 
     for url in sorted(seen):
         try:
@@ -98,16 +93,6 @@ def main() -> int:
         if status != 200:
             failures.append(f"{url} internal link returned {status}")
 
-    for url in media_samples:
-        try:
-            status, content_type = fetch_status(url, args.timeout)
-        except Exception as exc:  # noqa: BLE001
-            failures.append(f"{url} media sample fetch failed: {exc}")
-            continue
-        print(f"{status} {content_type:16} {url}")
-        if status != 200 or content_type == "text/html":
-            failures.append(f"{url} media sample returned {status} {content_type}")
-
     if failures:
         print("\nFailures:", file=sys.stderr)
         for failure in failures:
@@ -118,4 +103,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

@@ -49,13 +49,15 @@ GitHub parent issue: #3
 Goal: move beyond raw WordPress block markup by establishing clean editable
 source files for people, publications, projects, and high-value pages.
 
-- [ ] P2.1 Define content source structure. Child issue: #16.
+- [x] P2.1 Define content source structure. Child issue: #16.
 - [ ] P2.2 Convert people pages into structured data. Child issue: #17.
 - [ ] P2.3 Convert publications into structured publication records. Child issue: #18.
 - [ ] P2.4 Rewrite home, projects, join, and contact pages as maintained source. Child issue: #19.
 - [ ] P2.5 Add content validation for emails, links, duplicate people, and empty fields. Child issue: #20.
 
-Status: planned.
+Status: active. P2.1 is complete: the active site now builds from
+`content/site.json`, with the WordPress export retained only as migration
+reference material under `content/migration/`.
 
 ## Phase 3: Asset Independence And Visual Polish
 

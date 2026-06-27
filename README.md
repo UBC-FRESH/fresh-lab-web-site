@@ -2,15 +2,15 @@
 
 Static website for the UBC FRESH lab.
 
-The current build imports public content from the sanitized content source in:
+The current build uses maintained source content in:
 
 ```text
-content/wordpress-pages.json
+content/site.json
 ```
 
-That file was extracted from the local WordPress export at
-`tmp/fresh.WordPress.2026-06-27.xml`. It intentionally skips private, draft, and
-`Internal` WordPress pages. The raw export remains local-only by default.
+The old WordPress export is migration reference material only. The tracked
+sanitized archive lives at `content/migration/wordpress-pages.json`; the raw
+export remains local-only at `tmp/fresh.WordPress.2026-06-27.xml` by default.
 
 ## Build
 
@@ -23,6 +23,9 @@ Regenerate the sanitized content source from a local WordPress export:
 ```bash
 python scripts/extract_wordpress_public_content.py
 ```
+
+This updates `content/migration/wordpress-pages.json`; it does not update the
+live site content source.
 
 Generated files are written to `dist/`.
 

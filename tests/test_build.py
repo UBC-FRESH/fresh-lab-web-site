@@ -32,8 +32,7 @@ def test_build_generates_expected_public_pages() -> None:
         "index.html",
         "people/index.html",
         "projects/index.html",
-        "projects/biosafe/index.html",
-        "projects/partial-cutting/index.html",
+        "projects/can-commercial-thinning-help-mitigate-the-midterm-timber-supply-shortage/index.html",
         "publications/index.html",
         "contact/index.html",
         "join-fresh/index.html",
@@ -55,18 +54,20 @@ def test_build_excludes_internal_page() -> None:
     run_build()
 
     assert not (DIST / "internal" / "index.html").exists()
+    assert not (DIST / "projects" / "biosafe" / "index.html").exists()
+    assert not (DIST / "projects" / "partial-cutting" / "index.html").exists()
     all_html = "\n".join(path.read_text(encoding="utf-8") for path in DIST.rglob("*.html"))
     assert "Letter template WORD file" not in all_html
 
 
-def test_imported_media_urls_remain_absolute() -> None:
+def test_build_uses_maintained_content_source_not_wordpress_export() -> None:
     run_build()
 
-    home = read_dist("index.html")
-    assert 'src="https://fresh.sites.olt.ubc.ca/files/' in home
-    assert 'href="https://fresh.sites.olt.ubc.ca/files/' in home
-    assert 'src="/files/' not in home
-    assert 'href="/files/' not in home
+    all_html = "\n".join(path.read_text(encoding="utf-8") for path in DIST.rglob("*.html"))
+    assert "This site is now built from maintained source content" in all_html
+    assert "The old WordPress content has been carried forward" not in all_html
+    assert "fresh.sites.olt.ubc.ca/files/" not in all_html
+    assert "<!-- wp:" not in all_html
 
 
 def test_fresh_expansion_uses_ecosystem_services() -> None:
@@ -155,7 +156,6 @@ def test_project_site_base_path_is_applied_to_generated_internal_links() -> None
         )
         assert 'href="/fresh-lab-web-site/current-faculty/"' in read_dist("contact/index.html")
         assert 'src="/fresh-lab-web-site/assets/images/hero-forest-operations.jpeg"' in home
-        assert 'src="https://fresh.sites.olt.ubc.ca/files/' in home
     finally:
         run_build()
 

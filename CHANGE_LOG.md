@@ -46,3 +46,7 @@ This is the append-only project narrative for `fresh-lab-web-site`.
 - Replaced the inherited Contact page attribution to the previous PI and
   removed the obsolete Sustainable Forest Management Tutorials link from the
   generated public site.
+- Replaced the WordPress-derived build model with a maintained source-content
+  model in `content/site.json`, moved the sanitized WordPress export to
+  `content/migration/wordpress-pages.json`, and rebuilt the generator so the
+  public site no longer depends on legacy WordPress block markup.

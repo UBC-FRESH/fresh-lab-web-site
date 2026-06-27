@@ -3,8 +3,33 @@ from __future__ import annotations
 
 import json
 import xml.etree.ElementTree as ET
+from pathlib import Path
+from urllib.parse import urlparse
 
-from build import CONTENT, EXPORT, SKIP_SLUGS, path_from_link, text_of
+ROOT = Path(__file__).resolve().parents[1]
+EXPORT = ROOT / "tmp" / "fresh.WordPress.2026-06-27.xml"
+MIGRATION_CONTENT = ROOT / "content" / "migration" / "wordpress-pages.json"
+
+NS = {
+    "content": "http://purl.org/rss/1.0/modules/content/",
+    "wp": "http://wordpress.org/export/1.2/",
+}
+
+SKIP_SLUGS = {"internal"}
+
+
+def text_of(node: ET.Element, path: str) -> str:
+    return node.findtext(path, default="", namespaces=NS) or ""
+
+
+def path_from_link(link: str, slug: str) -> str:
+    parsed = urlparse(link)
+    path = parsed.path.strip("/")
+    if not path:
+        return "index.html"
+    if path.startswith("projects/"):
+        return f"{path}/index.html"
+    return f"{slug}/index.html"
 
 
 def main() -> None:
@@ -20,7 +45,10 @@ def main() -> None:
 
         title = item.findtext("title") or ""
         link = item.findtext("link") or ""
-        content = text_of(item, "content:encoded")
+        content = text_of(item, "content:encoded").replace(
+            "Forest Resources and Environmental Services Hub",
+            "Forest Resources and Ecosystem Services Hub",
+        )
         records.append(
             {
                 "title": title,
@@ -41,8 +69,8 @@ def main() -> None:
         "pages": records,
     }
 
-    CONTENT.parent.mkdir(parents=True, exist_ok=True)
-    CONTENT.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    MIGRATION_CONTENT.parent.mkdir(parents=True, exist_ok=True)
+    MIGRATION_CONTENT.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
 
 if __name__ == "__main__":

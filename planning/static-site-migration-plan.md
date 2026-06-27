@@ -9,21 +9,22 @@ low-friction public launch path.
 
 ## Current Source
 
-The current tracked migration source is:
+The active maintained site source is:
 
 ```text
-content/wordpress-pages.json
+content/site.json
 ```
 
-It was extracted from a WordPress WXR export generated from UBC CMS on
-2026-06-27:
+The WordPress WXR export generated from UBC CMS on 2026-06-27 is retained only
+as migration reference material:
 
 ```text
 tmp/fresh.WordPress.2026-06-27.xml
 ```
 
-The raw export remains local-only by default. The tracked content source imports
-only published public pages and explicitly skips the `Internal` page.
+The raw export remains local-only by default. The tracked sanitized archive is
+kept at `content/migration/wordpress-pages.json`; it is not used by the site
+build.
 
 ## Launch Architecture
 
@@ -36,17 +37,17 @@ Short-term:
 
 Longer-term:
 
-- Replace raw WordPress block markup with clean source files.
 - Copy approved public media into the repo or a controlled asset store.
 - Evaluate a true custom domain for `fresh.forestry.ubc.ca`.
 
 ## Known Risks
 
-- The current build references legacy WordPress media URLs.
-- Some imported WordPress content still contains old wording, stale links, and
-  block comments.
-- Contact ownership in the export may still reflect prior PI/supervision text
-  and needs editorial review.
+- The current maintained content is intentionally sparse while people,
+  publications, and project records are rebuilt from current lab records.
+- The migration archive still contains stale WordPress content and must not be
+  treated as public site source.
+- Some historical media and project details still need editorial review before
+  they are restored to the public site.
 - CMS redirects must not block `/wp-admin/`, `/wp-login.php`, or any path needed
   to manage redirects.
 

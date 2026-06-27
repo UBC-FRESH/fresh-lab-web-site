@@ -22,20 +22,23 @@ This repository is an early static-site migration scaffold. It contains:
 - `CHANGE_LOG.md`: append-only project narrative.
 - `CONTRIBUTING.md`: contributor and maintainer workflow.
 - `planning/`: focused planning notes and migration records.
-- `content/wordpress-pages.json`: sanitized public content extracted from the
-  initial WordPress export.
+- `content/site.json`: maintained source content for the generated public site.
+- `content/migration/wordpress-pages.json`: sanitized public content extracted
+  from the initial WordPress export, retained as migration reference material
+  only.
 - `tmp/fresh.WordPress.2026-06-27.xml`: ignored local WordPress export used to
   regenerate sanitized content when needed.
-- `scripts/build.py`: static site generator that imports public WordPress pages.
+- `scripts/build.py`: static site generator that reads maintained source
+  content from `content/site.json`.
 - `src/styles.css`: site styles.
 - `tests/`: build and link-integrity tests.
 - `.github/workflows/`: GitHub Pages and verification workflows.
 - `dist/`: ignored generated output.
 
-Do not claim that the site content is fully cleaned, redesigned, or independent
-of WordPress media until the roadmap records evidence for those claims. The
-current build carries forward public WordPress content and references legacy
-WordPress media URLs.
+Do not treat the WordPress migration archive as the live content source. The
+current build reads `content/site.json`. The maintained content is intentionally
+sparse while people, publications, projects, and media are rebuilt from current
+lab records.
 
 ## Content And Data Hygiene
 
