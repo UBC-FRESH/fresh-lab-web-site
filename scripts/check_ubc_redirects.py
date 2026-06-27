@@ -11,6 +11,10 @@ from urllib.request import HTTPRedirectHandler, Request, build_opener
 
 SOURCE_BASE = "https://fresh.forestry.ubc.ca/"
 TARGET_BASE = "https://ubc-fresh.github.io/fresh-lab-web-site/"
+USER_AGENT = (
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+    "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+)
 
 
 @dataclass(frozen=True)
@@ -35,7 +39,7 @@ class NoRedirectHandler(HTTPRedirectHandler):
 
 def status_and_location(url: str, timeout: float = 15.0) -> tuple[int, str]:
     opener = build_opener(NoRedirectHandler)
-    request = Request(url, headers={"User-Agent": "Mozilla/5.0 FRESH-redirect-check/1.0"})
+    request = Request(url, headers={"User-Agent": USER_AGENT})
     try:
         opener.open(request, timeout=timeout)
     except HTTPError as exc:

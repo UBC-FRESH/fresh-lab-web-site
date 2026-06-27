@@ -72,3 +72,6 @@ This is the append-only project narrative for `fresh-lab-web-site`.
 - Corrected the P1.4 redirect checklist and verifier to use the same canonical
   five-rule cutover set as the runbook, leaving legacy subpage compatibility
   out of scope for the temporary CMS redirect launch.
+- Updated the UBC redirect checker to use a standard browser user agent after
+  the UBC edge reset connections for the custom checker user agent on
+  `/projects/`.
