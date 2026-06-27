@@ -48,6 +48,14 @@ PEOPLE_LINKS = [
     ("Former FRESHies", "/former-freshies/", "Alumni and past members of the lab."),
 ]
 
+CURRENT_PROJECTS = [
+    (
+        "A value-driven framework to model the impact of commercial thinning on timber supply and climate change mitigation potential in BC's interior forests.",
+        "/projects/can-commercial-thinning-help-mitigate-the-midterm-timber-supply-shortage/",
+        "A confirmed current FRESH project focused on commercial thinning, timber supply, and climate change mitigation potential in BC's interior forests.",
+    ),
+]
+
 
 @dataclass
 class Page:
@@ -297,6 +305,47 @@ def render_people() -> str:
     return page_template("People", body, "/people/", "People at the FRESH lab.")
 
 
+def render_projects_index() -> str:
+    cards = "".join(
+        f'<a class="link-card" href="{site_url(href)}"><h3>{html.escape(title)}</h3><p>{html.escape(text)}</p><span>Open</span></a>'
+        for title, href, text in CURRENT_PROJECTS
+    )
+    body = f"""<main>
+  <section class="page-hero">
+    <div class="page-title">
+      <p class="eyebrow">Projects</p>
+      <h1>Current Projects</h1>
+      <p>This page lists confirmed current FRESH projects. Additional active projects will be added as the source content is rebuilt.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="section-inner">
+      <div class="cards">{cards}</div>
+    </div>
+  </section>
+</main>"""
+    return page_template("Projects", body, "/projects/", "Current projects at the FRESH lab.")
+
+
+def render_join() -> str:
+    body = """<main>
+  <section class="page-hero">
+    <div class="page-title">
+      <p class="eyebrow">Join FRESH</p>
+      <h1>Join FRESH</h1>
+      <p>Current openings and student opportunities will be posted here once they are confirmed.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="section-inner content">
+      <p>There are no current openings listed on this page.</p>
+      <p>This page has been cleared of legacy opportunity postings from the previous FRESH site. New lab opportunities will be added after the maintained content model is in place.</p>
+    </div>
+  </section>
+</main>"""
+    return page_template("Join FRESH", body, "/join-fresh/", "Current openings and opportunities at the FRESH lab.")
+
+
 def related_nav(current_path: str) -> str:
     links = []
     for label, href in NAV:
@@ -345,7 +394,12 @@ def main() -> None:
     for page in pages:
         if page.slug == "home":
             continue
-        write(DIST / page.out_path, render_page(page))
+        if page.slug == "projects":
+            write(DIST / page.out_path, render_projects_index())
+        elif page.slug == "join-fresh":
+            write(DIST / page.out_path, render_join())
+        else:
+            write(DIST / page.out_path, render_page(page))
 
     # GitHub Pages should serve directories without Jekyll processing.
     write(DIST / ".nojekyll", "")

@@ -40,3 +40,6 @@ This is the append-only project narrative for `fresh-lab-web-site`.
 - Replaced the home hero image with a tracked forest operations photo taken by
   the lab PI, avoiding the old group photo where a former student appeared as
   the visual focal point.
+- Cleared legacy Join FRESH opportunity postings from the generated public site
+  and narrowed the current projects index to the confirmed commercial thinning
+  project while the maintained content model is still being rebuilt.

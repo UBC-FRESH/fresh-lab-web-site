@@ -86,6 +86,26 @@ def test_home_hero_uses_local_non_people_asset() -> None:
     assert "IMG_3025-edited-scaled.jpeg" not in hero
 
 
+def test_join_page_excludes_legacy_opportunity_postings() -> None:
+    run_build()
+
+    join = read_dist("join-fresh/index.html")
+    assert "There are no current openings listed on this page." in join
+    assert "verena.griess@ubc.ca" not in join
+    assert "doctoral fellowship" not in join.lower()
+    assert "January 2018" not in join
+
+
+def test_projects_index_lists_only_confirmed_current_project() -> None:
+    run_build()
+
+    projects = read_dist("projects/index.html")
+    assert "A value-driven framework to model the impact of commercial thinning" in projects
+    assert "/projects/can-commercial-thinning-help-mitigate-the-midterm-timber-supply-shortage/" in projects
+    assert "bioSAFE" not in projects
+    assert "Partial cutting" not in projects
+
+
 def test_generated_local_references_resolve() -> None:
     run_build()
 
@@ -117,7 +137,10 @@ def test_project_site_base_path_is_applied_to_generated_internal_links() -> None
 
         assert 'href="/fresh-lab-web-site/"' in home
         assert 'href="/fresh-lab-web-site/projects/"' in home
-        assert 'href="/fresh-lab-web-site/projects/biosafe/"' in projects
+        assert (
+            'href="/fresh-lab-web-site/projects/can-commercial-thinning-help-mitigate-the-midterm-timber-supply-shortage/"'
+            in projects
+        )
         assert 'src="/fresh-lab-web-site/assets/images/hero-forest-operations.jpeg"' in home
         assert 'src="https://fresh.sites.olt.ubc.ca/files/' in home
     finally:
