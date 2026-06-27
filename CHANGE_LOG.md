@@ -23,3 +23,6 @@ This is the append-only project narrative for `fresh-lab-web-site`.
   `CHANGE_LOG.md`, `CONTRIBUTING.md`, planning notes, tests, and CI checks.
 - Kept raw WordPress exports under ignored `tmp/` by default so the public repo
   can avoid publishing internal CMS material.
+- Created the public GitHub repository `UBC-FRESH/fresh-lab-web-site`, pushed
+  the bootstrap commit, created roadmap phase issues #1-#5 and child task issues
+  #6-#30, and synchronized `ROADMAP.md` with issue numbers.
