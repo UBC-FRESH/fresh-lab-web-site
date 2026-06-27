@@ -75,3 +75,9 @@ This is the append-only project narrative for `fresh-lab-web-site`.
 - Updated the UBC redirect checker to use a standard browser user agent after
   the UBC edge reset connections for the custom checker user agent on
   `/projects/`.
+- Started Phase 2 content cleanup by splitting people, projects, and
+  publications into dedicated maintained JSON source files and updating the
+  generator to validate and render from those structured sources.
+- Completed Phase 2 by confirming home, projects, Join, and Contact as
+  maintained source content and adding generator validation for required fields,
+  route links, URLs, email addresses, and duplicate people names.

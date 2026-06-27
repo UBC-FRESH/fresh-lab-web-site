@@ -52,16 +52,16 @@ Goal: move beyond raw WordPress block markup by establishing clean editable
 source files for people, publications, projects, and high-value pages.
 
 - [x] P2.1 Define content source structure. Child issue: #16.
-- [ ] P2.2 Convert people pages into structured data. Child issue: #17.
-- [ ] P2.3 Convert publications into structured publication records. Child issue: #18.
-- [ ] P2.4 Rewrite home, projects, join, and contact pages as maintained source. Child issue: #19.
-- [ ] P2.5 Add content validation for emails, links, duplicate people, and empty fields. Child issue: #20.
+- [x] P2.2 Convert people pages into structured data. Child issue: #17.
+- [x] P2.3 Convert publications into structured publication records. Child issue: #18.
+- [x] P2.4 Rewrite home, projects, join, and contact pages as maintained source. Child issue: #19.
+- [x] P2.5 Add content validation for emails, links, duplicate people, and empty fields. Child issue: #20.
 
-Status: active. P2.1 is complete: the active site now builds from
-`content/site.json`, with the WordPress export retained only as migration
-reference material under `content/migration/`. The repo also includes a VS Code
-dev-container workflow for maintaining the site from a persistent server-hosted
-browser IDE.
+Status: complete. The active site now builds from maintained JSON files under
+`content/`, with the WordPress export retained only as migration reference
+material under `content/migration/`. The generator validates duplicate routes,
+people-section/page alignment, required fields, internal links, external URLs,
+email addresses, and duplicate people names.
 
 ## Phase 3: Asset Independence And Visual Polish
 

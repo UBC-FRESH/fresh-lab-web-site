@@ -9,9 +9,14 @@ import shutil
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-CONTENT = ROOT / "content" / "site.json"
+CONTENT_DIR = ROOT / "content"
+SITE_CONTENT = CONTENT_DIR / "site.json"
+PEOPLE_CONTENT = CONTENT_DIR / "people.json"
+PROJECTS_CONTENT = CONTENT_DIR / "projects.json"
+PUBLICATIONS_CONTENT = CONTENT_DIR / "publications.json"
 SRC = ROOT / "src"
 DIST = ROOT / "dist"
+EMAIL_RE = re.compile(r"^[^@\s]+@[^@\s]+\.[^@\s]+$")
 
 BASE_PATH = "/" + os.environ.get("SITE_BASE_PATH", "").strip("/")
 if BASE_PATH == "/":
@@ -46,10 +51,138 @@ def text_to_id(text: str) -> str:
     return re.sub(r"[^a-z0-9]+", "-", text.lower()).strip("-")
 
 
-def load_site() -> dict:
-    if not CONTENT.exists():
-        raise SystemExit(f"Missing maintained content source: {CONTENT}")
-    return json.loads(CONTENT.read_text(encoding="utf-8"))
+def read_json(path: Path) -> dict:
+    if not path.exists():
+        raise SystemExit(f"Missing maintained content source: {path}")
+    return json.loads(path.read_text(encoding="utf-8"))
+
+
+def load_content() -> dict:
+    data = read_json(SITE_CONTENT)
+    data["people"] = read_json(PEOPLE_CONTENT)
+    data["projects"] = read_json(PROJECTS_CONTENT)["projects"]
+    data["publications"] = read_json(PUBLICATIONS_CONTENT)["publications"]
+    validate_content(data)
+    return data
+
+
+def validate_content(data: dict) -> None:
+    people_paths = [page["path"] for page in data["people"]["pages"]]
+    project_paths = [project["path"] for project in data["projects"]]
+    page_paths = [page["path"] for page in data["pages"]]
+    paths = ["/", "/people/", "/projects/", "/publications/", *people_paths, *project_paths, *page_paths]
+    route_set = set(paths)
+    duplicates = sorted({path for path in paths if paths.count(path) > 1})
+    if duplicates:
+        raise SystemExit(f"Duplicate generated route(s): {', '.join(duplicates)}")
+
+    section_hrefs = {section["href"] for section in data["people"]["sections"]}
+    missing_pages = sorted(section_hrefs - set(people_paths))
+    if missing_pages:
+        raise SystemExit(f"People section(s) without matching page: {', '.join(missing_pages)}")
+
+    require_text(data["site"], ("title", "tagline", "description", "hero_image"), "site")
+    require_text(data["home"], ("eyebrow", "title", "summary"), "home")
+    validate_link(data["site"]["hero_image"], route_set, "site.hero_image", allow_asset=True)
+
+    for index, action in enumerate(data["home"]["actions"]):
+        require_text(action, ("label", "href", "style"), f"home.actions[{index}]")
+        validate_link(action["href"], route_set, f"home.actions[{index}].href")
+    for index, item in enumerate(data["home"]["focus"]):
+        require_non_empty_string(item, f"home.focus[{index}]")
+    for index, item in enumerate(data["home"]["start"]):
+        require_text(item, ("title", "href", "summary"), f"home.start[{index}]")
+        validate_link(item["href"], route_set, f"home.start[{index}].href")
+
+    people_names: dict[str, str] = {}
+    for section_index, section in enumerate(data["people"]["sections"]):
+        require_text(section, ("title", "href", "summary"), f"people.sections[{section_index}]")
+        validate_link(section["href"], route_set, f"people.sections[{section_index}].href")
+    for page_index, page in enumerate(data["people"]["pages"]):
+        require_text(page, ("title", "path", "summary"), f"people.pages[{page_index}]")
+        for entry_index, entry in enumerate(page["entries"]):
+            context = f"people.pages[{page_index}].entries[{entry_index}]"
+            require_text(entry, ("name", "role"), context)
+            normalized_name = entry["name"].casefold()
+            if normalized_name in people_names:
+                raise SystemExit(f"Duplicate people name: {entry['name']} in {context} and {people_names[normalized_name]}")
+            people_names[normalized_name] = context
+            if not entry.get("body"):
+                raise SystemExit(f"Missing required content: {context}.body")
+            for body_index, line in enumerate(entry["body"]):
+                require_non_empty_string(line, f"{context}.body[{body_index}]")
+            if entry.get("email"):
+                validate_email(entry["email"], f"{context}.email")
+            if entry.get("links"):
+                validate_links(entry["links"], route_set, f"{context}.links")
+
+    for project_index, project in enumerate(data["projects"]):
+        context = f"projects[{project_index}]"
+        require_text(project, ("title", "path", "summary"), context)
+        if not project.get("body"):
+            raise SystemExit(f"Missing required content: {context}.body")
+        for body_index, line in enumerate(project["body"]):
+            require_non_empty_string(line, f"{context}.body[{body_index}]")
+        if project.get("links"):
+            validate_links(project["links"], route_set, f"{context}.links")
+
+    for publication_index, publication in enumerate(data["publications"]):
+        context = f"publications[{publication_index}]"
+        require_text(publication, ("year", "title", "authors", "venue"), context)
+        if publication.get("href"):
+            validate_link(publication["href"], route_set, f"{context}.href")
+
+    for page_index, page in enumerate(data["pages"]):
+        context = f"pages[{page_index}]"
+        require_text(page, ("title", "path", "eyebrow", "summary"), context)
+        if not page.get("body"):
+            raise SystemExit(f"Missing required content: {context}.body")
+        for body_index, line in enumerate(page["body"]):
+            require_non_empty_string(line, f"{context}.body[{body_index}]")
+        if page.get("links"):
+            validate_links(page["links"], route_set, f"{context}.links")
+
+
+def require_text(record: dict, fields: tuple[str, ...], context: str) -> None:
+    for field in fields:
+        require_non_empty_string(record.get(field), f"{context}.{field}")
+
+
+def require_non_empty_string(value: object, context: str) -> None:
+    if not isinstance(value, str) or not value.strip():
+        raise SystemExit(f"Missing required content: {context}")
+
+
+def validate_email(value: str, context: str) -> None:
+    if not EMAIL_RE.fullmatch(value):
+        raise SystemExit(f"Invalid email address in {context}: {value}")
+
+
+def validate_link(href: str, route_set: set[str], context: str, *, allow_asset: bool = False) -> None:
+    require_non_empty_string(href, context)
+    if href.startswith("mailto:"):
+        validate_email(href.removeprefix("mailto:"), context)
+        return
+    if href.startswith(("http://", "https://")):
+        from urllib.parse import urlparse
+
+        parsed = urlparse(href)
+        if not parsed.scheme or not parsed.netloc:
+            raise SystemExit(f"Invalid URL in {context}: {href}")
+        return
+    if allow_asset and href.startswith("/assets/"):
+        return
+    if href not in route_set:
+        raise SystemExit(f"Unknown internal link in {context}: {href}")
+
+
+def validate_links(links: list[dict], route_set: set[str], context: str) -> None:
+    if not isinstance(links, list):
+        raise SystemExit(f"Invalid links list: {context}")
+    for index, link in enumerate(links):
+        link_context = f"{context}[{index}]"
+        require_text(link, ("label", "href"), link_context)
+        validate_link(link["href"], route_set, f"{link_context}.href")
 
 
 def nav_html(current_path: str) -> str:
@@ -175,7 +308,7 @@ def render_home(data: dict) -> str:
       </div>
       <div class="cards">{card_html(home['start'])}</div>
       <div class="stats">
-        <div class="stat"><strong>{len(data['people_sections'])}</strong><span>People sections</span></div>
+        <div class="stat"><strong>{len(data['people']['sections'])}</strong><span>People sections</span></div>
         <div class="stat"><strong>{len(data['projects'])}</strong><span>Current project</span></div>
         <div class="stat"><strong>{data['publications'][0]['year']}</strong><span>Recent publication updates</span></div>
       </div>
@@ -191,7 +324,7 @@ def render_people_index(data: dict) -> str:
   {page_hero("People", "People at FRESH", "Current and former lab members, grouped so the public site is easier to scan and maintain.")}
   <section class="section">
     <div class="section-inner">
-      <div class="cards">{card_html(data['people_sections'])}</div>
+      <div class="cards">{card_html(data['people']['sections'])}</div>
     </div>
   </section>
 </main>"""
@@ -299,7 +432,7 @@ def render_standard_page(site: dict, page: dict) -> str:
 
 
 def main() -> None:
-    data = load_site()
+    data = load_content()
     site = data["site"]
 
     if DIST.exists():
@@ -315,7 +448,7 @@ def main() -> None:
     write("/projects/", render_projects_index(data))
     write("/publications/", render_publications(data))
 
-    for page in data["people_pages"]:
+    for page in data["people"]["pages"]:
         write(page["path"], render_people_page(site, page))
     for project in data["projects"]:
         write(project["path"], render_project(site, project))

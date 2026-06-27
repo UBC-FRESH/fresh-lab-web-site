@@ -1,0 +1,23 @@
+{
+  "publications": [
+    {
+      "year": "2026",
+      "title": "Forest harvesting operational planning tools: a systematic review of optimization, simulation, and spatial decision support systems",
+      "authors": "Jaffray, R., Coupland, K., Paradis, G.",
+      "venue": "International Journal of Forest Engineering"
+    },
+    {
+      "year": "2026",
+      "title": "WS3: An open-source Python framework for integrated simulation and optimization of forest landscape and wood supply systems",
+      "authors": "Paradis, G.",
+      "venue": "Ecological Informatics",
+      "href": "https://doi.org/10.1016/j.ecoinf.2026.103688"
+    },
+    {
+      "year": "2025",
+      "title": "Development and assessment of automated forest road projection methods using performance metrics relevant for wildlife",
+      "authors": "Hughes, J., Endicott, S., Lapins, D., Lochhead, K., Paradis, G.",
+      "venue": "Landscape Ecology"
+    }
+  ]
+}

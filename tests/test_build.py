@@ -1,5 +1,8 @@
 from __future__ import annotations
 
+import copy
+import importlib.util
+import json
 import os
 import re
 import shutil
@@ -10,6 +13,11 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 DIST = ROOT / "dist"
+BUILD_MODULE_SPEC = importlib.util.spec_from_file_location("fresh_build", ROOT / "scripts" / "build.py")
+assert BUILD_MODULE_SPEC is not None
+BUILD_MODULE = importlib.util.module_from_spec(BUILD_MODULE_SPEC)
+assert BUILD_MODULE_SPEC.loader is not None
+BUILD_MODULE_SPEC.loader.exec_module(BUILD_MODULE)
 
 
 def run_build(*, base_path: str = "") -> None:
@@ -69,6 +77,71 @@ def test_build_uses_maintained_content_source_not_wordpress_export() -> None:
     assert "The old WordPress content has been carried forward" not in all_html
     assert "fresh.sites.olt.ubc.ca/files/" not in all_html
     assert "<!-- wp:" not in all_html
+
+
+def test_domain_content_is_split_into_structured_sources() -> None:
+    site = json.loads((ROOT / "content" / "site.json").read_text(encoding="utf-8"))
+    people = json.loads((ROOT / "content" / "people.json").read_text(encoding="utf-8"))
+    projects = json.loads((ROOT / "content" / "projects.json").read_text(encoding="utf-8"))
+    publications = json.loads((ROOT / "content" / "publications.json").read_text(encoding="utf-8"))
+
+    assert "people_sections" not in site
+    assert "people_pages" not in site
+    assert "projects" not in site
+    assert "publications" not in site
+    assert people["sections"]
+    assert people["pages"]
+    assert projects["projects"]
+    assert publications["publications"]
+
+
+def test_content_validation_rejects_bad_internal_links() -> None:
+    data = BUILD_MODULE.load_content()
+    data["home"]["actions"][0]["href"] = "/missing/"
+
+    try:
+        BUILD_MODULE.validate_content(data)
+    except SystemExit as error:
+        assert "Unknown internal link" in str(error)
+    else:
+        raise AssertionError("Expected content validation to reject the missing route")
+
+
+def test_content_validation_rejects_duplicate_people() -> None:
+    data = BUILD_MODULE.load_content()
+    duplicate = copy.deepcopy(data["people"]["pages"][0]["entries"][0])
+    data["people"]["pages"][1]["entries"].append(duplicate)
+
+    try:
+        BUILD_MODULE.validate_content(data)
+    except SystemExit as error:
+        assert "Duplicate people name" in str(error)
+    else:
+        raise AssertionError("Expected content validation to reject duplicate people")
+
+
+def test_content_validation_rejects_bad_email_addresses() -> None:
+    data = BUILD_MODULE.load_content()
+    data["people"]["pages"][0]["entries"][0]["email"] = "not-an-email"
+
+    try:
+        BUILD_MODULE.validate_content(data)
+    except SystemExit as error:
+        assert "Invalid email address" in str(error)
+    else:
+        raise AssertionError("Expected content validation to reject invalid email")
+
+
+def test_content_validation_rejects_empty_required_fields() -> None:
+    data = BUILD_MODULE.load_content()
+    data["projects"][0]["title"] = ""
+
+    try:
+        BUILD_MODULE.validate_content(data)
+    except SystemExit as error:
+        assert "Missing required content: projects[0].title" in str(error)
+    else:
+        raise AssertionError("Expected content validation to reject empty required fields")
 
 
 def test_fresh_expansion_uses_ecosystem_services() -> None:

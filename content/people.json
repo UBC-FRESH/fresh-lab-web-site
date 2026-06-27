@@ -1,0 +1,70 @@
+{
+  "sections": [
+    {
+      "title": "Current Faculty",
+      "href": "/current-faculty/",
+      "summary": "Faculty and principal investigators connected to FRESH."
+    },
+    {
+      "title": "Postdocs and Researchers",
+      "href": "/postdocs-and-researchers/",
+      "summary": "Research associates, postdoctoral fellows, and staff researchers."
+    },
+    {
+      "title": "Graduate Students",
+      "href": "/graduate-students/",
+      "summary": "Current MSc, MASc, and PhD students."
+    },
+    {
+      "title": "Visiting Scholars",
+      "href": "/visiting-scholars/",
+      "summary": "Researchers hosted by FRESH for short-term and collaborative stays."
+    },
+    {
+      "title": "Former FRESHies",
+      "href": "/former-freshies/",
+      "summary": "Alumni and past members of the lab."
+    }
+  ],
+  "pages": [
+    {
+      "title": "Current Faculty",
+      "path": "/current-faculty/",
+      "summary": "Faculty leadership for FRESH.",
+      "entries": [
+        {
+          "name": "Gregory Paradis",
+          "role": "Principal Investigator, FRESH Lab",
+          "body": [
+            "Dr. Gregory Paradis leads the FRESH Lab in the UBC Faculty of Forestry.",
+            "His research applies operations research, mathematical optimization, data science, and forest-sector systems modelling to complex forest management problems."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Postdocs and Researchers",
+      "path": "/postdocs-and-researchers/",
+      "summary": "The maintained researcher roster is being rebuilt from current lab records.",
+      "entries": []
+    },
+    {
+      "title": "Graduate Students",
+      "path": "/graduate-students/",
+      "summary": "The maintained student roster is being rebuilt from current lab records.",
+      "entries": []
+    },
+    {
+      "title": "Visiting Scholars",
+      "path": "/visiting-scholars/",
+      "summary": "Visiting-scholar information will be added after current records are confirmed.",
+      "entries": []
+    },
+    {
+      "title": "Former FRESHies",
+      "path": "/former-freshies/",
+      "summary": "Alumni information will be added after legacy records are reviewed and cleaned.",
+      "entries": []
+    }
+  ]
+}

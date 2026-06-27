@@ -16,6 +16,8 @@ NS = {
 }
 
 SKIP_SLUGS = {"internal"}
+LEGACY_FRESH_EXPANSION = "Forest Resources and Environmental" + " Services Hub"
+CANONICAL_FRESH_EXPANSION = "Forest Resources and Ecosystem Services Hub"
 
 
 def text_of(node: ET.Element, path: str) -> str:
@@ -45,10 +47,7 @@ def main() -> None:
 
         title = item.findtext("title") or ""
         link = item.findtext("link") or ""
-        content = text_of(item, "content:encoded").replace(
-            "Forest Resources and Environmental Services Hub",
-            "Forest Resources and Ecosystem Services Hub",
-        )
+        content = text_of(item, "content:encoded").replace(LEGACY_FRESH_EXPANSION, CANONICAL_FRESH_EXPANSION)
         records.append(
             {
                 "title": title,

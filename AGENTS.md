@@ -25,7 +25,10 @@ This repository is an early static-site migration scaffold. It contains:
 - `.devcontainer/`: VS Code dev-container setup for server-hosted maintenance.
 - `.vscode/`: recommended extensions and tasks for build, preview, lint, and
   tests.
-- `content/site.json`: maintained source content for the generated public site.
+- `content/site.json`: maintained site-wide, home, Join, and Contact content.
+- `content/people.json`: maintained people sections and roster-page content.
+- `content/projects.json`: maintained current project records.
+- `content/publications.json`: maintained publication records.
 - `content/migration/wordpress-pages.json`: sanitized public content extracted
   from the initial WordPress export, retained as migration reference material
   only.
@@ -39,9 +42,9 @@ This repository is an early static-site migration scaffold. It contains:
 - `dist/`: ignored generated output.
 
 Do not treat the WordPress migration archive as the live content source. The
-current build reads `content/site.json`. The maintained content is intentionally
-sparse while people, publications, projects, and media are rebuilt from current
-lab records.
+current build reads the maintained JSON files under `content/`. The maintained
+content is intentionally sparse while people, publications, projects, and media
+are rebuilt from current lab records.
 
 ## Content And Data Hygiene
 

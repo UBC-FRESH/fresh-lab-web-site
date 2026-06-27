@@ -6,6 +6,9 @@ The current build uses maintained source content in:
 
 ```text
 content/site.json
+content/people.json
+content/projects.json
+content/publications.json
 ```
 
 The old WordPress export is migration reference material only. The tracked
