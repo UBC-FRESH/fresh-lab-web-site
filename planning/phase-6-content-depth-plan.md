@@ -147,6 +147,23 @@ These updates used non-public draft manuscript files under
 `tmp/non-public-drafts/` as review input. The raw PDFs, DOCX files, and extracted
 text remain ignored and were not committed.
 
+Thesis and recent student-project curation pass:
+
+- `Yunhao (Davis) Xu MASc thesis` now describes post-wildfire salvage planning,
+  FEMIC/TSA29 model-instance work, and decision-support modelling.
+- `Jamie Iversen MSc thesis` now describes risk-aware forest estate modelling
+  for wildfire mitigation.
+- `Rosalia Jaffray MASc thesis` now connects forest harvesting operational
+  planning tools, systematic review work, FHOPS, and reproducible forest
+  operations modelling.
+- `Jinming (Jimmy) Ke MSc thesis` and `Yancun (Walter) Yan MSc thesis` now have
+  cautious thesis-derived manuscript records without exposing unpublished
+  manuscript details.
+
+These updates used Basecamp project inventories and CV/publication harvests as
+review inputs. Private student notes, CVs, schedules, committee material, and
+draft manuscript details remain under ignored `tmp/` and were not committed.
+
 ## Current People Roster
 
 Current maintained roster updates:

@@ -248,6 +248,25 @@ def test_forest_action_lab_collaboration_pages_are_split() -> None:
     assert "/projects/omar-action-lab-paper-projects/" not in projects
 
 
+def test_thesis_project_pages_have_curated_public_themes() -> None:
+    run_build()
+
+    yunhao = read_dist("projects/yunhao-davis-xu-masc-thesis/index.html")
+    jamie = read_dist("projects/jamie-iversen-msc-thesis/index.html")
+    rosalia = read_dist("projects/rosalia-jaffray-masc-thesis/index.html")
+    jimmy = read_dist("projects/jinming-jimmy-ke-msc-thesis/index.html")
+    walter = read_dist("projects/yancun-walter-yan-msc-thesis/index.html")
+
+    assert "post-wildfire salvage planning" in yunhao
+    assert "FEMIC/TSA29 model-instance" in yunhao
+    assert "risk-aware forest estate modelling" in jamie
+    assert "wildfire mitigation" in jamie
+    assert "forest harvesting operational planning tools" in rosalia
+    assert "FHOPS-related software" in rosalia
+    assert "manuscript-development work" in jimmy
+    assert "forest-sector climate mitigation" in walter
+
+
 def test_software_project_pages_have_public_links() -> None:
     run_build()
 

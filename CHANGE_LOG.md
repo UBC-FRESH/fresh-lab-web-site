@@ -114,3 +114,7 @@ This is the append-only project narrative for `fresh-lab-web-site`.
   collaboration project pages: snap-and-fly helicopter logging productivity and
   GNSS-based area-cover validation for whole-tree logging equipment, using
   non-public draft manuscripts under ignored `tmp/` as review inputs.
+- Curated thesis and recent student-project pages for Yunhao (Davis) Xu, Jamie
+  Iversen, Rosalia Jaffray, Jinming (Jimmy) Ke, and Yancun (Walter) Yan, using
+  Basecamp inventories and CV/publication harvests while keeping private student
+  and manuscript material ignored.

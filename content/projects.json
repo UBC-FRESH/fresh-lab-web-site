@@ -20,17 +20,21 @@
       "path": "/projects/yunhao-davis-xu-masc-thesis/",
       "category": "Ongoing Research",
       "status": "Ongoing MASc thesis",
-      "summary": "An active MASc thesis project supervised in FRESH.",
+      "summary": "An active MASc thesis project on post-wildfire salvage planning, forest estate modelling, and decision support in British Columbia.",
       "body": [
-        "This page is the public project record for Yunhao (Davis) Xu's ongoing MASc thesis work in FRESH.",
-        "The detailed public summary, research questions, methods, collaborators, and outputs will be added after the thesis-specific notes and supporting materials are reviewed."
+        "Yunhao (Davis) Xu's MASc thesis work is developing forest estate modelling and decision-support workflows for post-wildfire salvage planning.",
+        "The project connects timber value, fire severity, harvesting cost, vegetation inventory, and model-instance preparation to evaluate management choices after wildfire disturbance.",
+        "FRESH is using this project record to connect thesis outputs, FEMIC/TSA29 model-instance work, software workflows, and publications as the public material is reviewed."
       ],
       "people": [
         "Yunhao (Davis) Xu: MASc student",
         "Gregory Paradis: supervisor"
       ],
       "outputs": [
-        "Working thesis title, milestone dates, publications, code, and related project assets will be added after review."
+        "MASc thesis materials",
+        "FEMIC/TSA29 model-instance documentation",
+        "Post-wildfire salvage planning datasets and modelling workflows",
+        "Public thesis, code, and publication links will be added after review"
       ]
     },
     {
@@ -38,17 +42,21 @@
       "path": "/projects/jamie-iversen-msc-thesis/",
       "category": "Ongoing Research",
       "status": "Ongoing MSc thesis",
-      "summary": "An active MSc thesis project supervised in FRESH.",
+      "summary": "An active MSc thesis project on risk-aware forest estate modelling for wildfire mitigation.",
       "body": [
-        "This page is the public project record for Jamie Iversen's ongoing MSc thesis work in FRESH.",
-        "The detailed public summary, research questions, methods, collaborators, and outputs will be added after the thesis-specific notes and supporting materials are reviewed."
+        "Jamie Iversen's MSc thesis work focuses on risk-aware forest estate modelling for wildfire mitigation.",
+        "The project links wildfire risk reduction, fuel-management treatment information, timber supply analysis, and forest estate modelling to support landscape-level planning under wildfire risk.",
+        "FRESH is using this project record to connect thesis outputs, modelling workflows, relevant public documents, and publications as the public material is reviewed."
       ],
       "people": [
         "Jamie Iversen: MSc student",
         "Gregory Paradis: supervisor"
       ],
       "outputs": [
-        "Working thesis title, milestone dates, publications, code, and related project assets will be added after review."
+        "MSc thesis materials",
+        "Risk-aware forest estate modelling workflows",
+        "Wildfire risk-reduction and treatment-planning review material",
+        "Public thesis, code, and publication links will be added after review"
       ]
     },
     {
@@ -514,17 +522,20 @@
       "path": "/projects/jinming-jimmy-ke-msc-thesis/",
       "category": "Past And Recent Projects",
       "status": "Past MSc thesis",
-      "summary": "A past MSc thesis project supervised through FRESH.",
+      "summary": "A past MSc thesis project with a manuscript-stage public research record in preparation.",
       "body": [
-        "This page is the public record for Jinming (Jimmy) Ke's MSc thesis project.",
-        "The project description, thesis link, publications, collaborator names, and supporting outputs will be added after review."
+        "This page is the public record for Jinming (Jimmy) Ke's MSc thesis project and related manuscript-development work.",
+        "The public-facing project description will be expanded after thesis-derived manuscript details, thesis links, collaborator roles, and supporting outputs are ready to share.",
+        "FRESH is keeping this record separate from rough drafting notes so thesis-derived publications and public outputs can be linked cleanly when available."
       ],
       "people": [
         "Jinming (Jimmy) Ke: MSc student",
         "Gregory Paradis: supervisor"
       ],
       "outputs": [
-        "Thesis link, publications, project assets, and related repositories will be added after review."
+        "MSc thesis link will be added after review",
+        "Thesis-derived manuscript and publication links will be added when public",
+        "Supporting project assets and repositories will be added after review"
       ]
     },
     {
@@ -532,17 +543,20 @@
       "path": "/projects/yancun-walter-yan-msc-thesis/",
       "category": "Past And Recent Projects",
       "status": "Past MSc thesis",
-      "summary": "A past MSc thesis project supervised through FRESH.",
+      "summary": "A past MSc thesis project connected to manuscript work on forest-sector climate mitigation and wood-use modelling.",
       "body": [
-        "This page is the public record for Yancun (Walter) Yan's MSc thesis project.",
-        "The project description, thesis link, publications, collaborator names, and supporting outputs will be added after review."
+        "This page is the public record for Yancun (Walter) Yan's MSc thesis project and related journal-paper development.",
+        "The project record is connected to forest-sector modelling questions around climate mitigation, wood use, product substitution, and carbon outcomes.",
+        "FRESH will expand this page with the final thesis link, publication links, methods summary, and supporting materials after the manuscript record is ready to share."
       ],
       "people": [
         "Yancun (Walter) Yan: MSc student",
         "Gregory Paradis: supervisor"
       ],
       "outputs": [
-        "Thesis link, publications, project assets, and related repositories will be added after review."
+        "MSc thesis link will be added after review",
+        "Journal-paper link will be added when public",
+        "Supporting project assets and repositories will be added after review"
       ]
     },
     {
@@ -550,17 +564,22 @@
       "path": "/projects/rosalia-jaffray-masc-thesis/",
       "category": "Past And Recent Projects",
       "status": "Past MASc thesis",
-      "summary": "A past MASc thesis project supervised through FRESH.",
+      "summary": "A past MASc thesis project on forest harvesting operational planning tools and reproducible forest operations modelling.",
       "body": [
-        "This page is the public record for Rosalia Jaffray's MASc thesis project.",
-        "The project description, thesis link, publications, collaborator names, and supporting outputs will be added after review."
+        "Rosalia Jaffray's MASc work contributed to FRESH research on forest harvesting operational planning tools, optimization, simulation, and spatial decision support systems.",
+        "The project connects a systematic review of forest harvesting operational planning tools with reproducible modelling and benchmarking work in the FRESH open software portfolio.",
+        "FRESH is using this project record to link the MASc thesis, related publication outputs, FHOPS, and supporting project assets as they are cleared for public release."
       ],
       "people": [
         "Rosalia Jaffray: MASc student",
-        "Gregory Paradis: supervisor"
+        "Gregory Paradis: supervisor",
+        "Kathleen Coupland: collaborator"
       ],
       "outputs": [
-        "Thesis link, publications, project assets, and related repositories will be added after review."
+        "MASc thesis link will be added after review",
+        "Systematic review publication link will be added when public",
+        "FHOPS-related software and benchmarking outputs",
+        "Supporting project assets will be added after review"
       ]
     },
     {
