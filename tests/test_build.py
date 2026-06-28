@@ -303,6 +303,23 @@ def test_software_project_pages_have_public_links() -> None:
             assert expected in page
 
 
+def test_targeted_project_pages_are_enriched_from_review_sources() -> None:
+    run_build()
+
+    nserc = read_dist("projects/nserc-discovery-grant/index.html")
+    figrecover = read_dist("projects/figrecover/index.html")
+    hectaresbc = read_dist("projects/fresh-hectaresbc/index.html")
+
+    assert "forest-sector systems modelling" in nserc
+    assert "ecosystem-service decision support" in nserc
+    assert "approximate tabular data from scientific and professional figures" in figrecover
+    assert "https://ubc-fresh.github.io/figrecover/" in figrecover
+    assert "https://pypi.org/project/figrecover/" in figrecover
+    assert "archived HectaresBC geospatial data collection" in hectaresbc
+    assert "DataLad/git-annex data repository" in hectaresbc
+    assert "https://ubc-fresh.github.io/fresh-hectaresbc/" in hectaresbc
+
+
 def test_contact_page_excludes_legacy_pi_and_tutorial_link() -> None:
     run_build()
 

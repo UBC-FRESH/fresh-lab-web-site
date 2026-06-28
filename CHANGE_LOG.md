@@ -129,3 +129,7 @@ This is the append-only project narrative for `fresh-lab-web-site`.
   into tests and CI, checking project-stub alignment, people roster coverage,
   publication link hygiene, forbidden public-content leakage patterns, and
   required public asset references.
+- Enriched the NSERC Discovery Grant, figrecover, and fresh-hectaresbc project
+  pages using PI-supplied private proposal material and public UBC-FRESH
+  repository documentation while keeping private source documents under
+  ignored `tmp/` review paths.

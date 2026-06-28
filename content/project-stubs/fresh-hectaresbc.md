@@ -4,7 +4,8 @@ Status: Open software project
 
 ## Public Summary
 
-TBD.
+Recovering, inventorying, documenting, and modernizing the archived HectaresBC
+geospatial data collection for British Columbia.
 
 ## People And Roles
 
@@ -12,11 +13,15 @@ TBD.
 
 ## Collaborators And Partners
 
-TBD.
+- UBC-FRESH
 
 ## Outputs And Links
 
-- GitHub repository: TBD
+- GitHub repository: `https://github.com/UBC-FRESH/fresh-hectaresbc`
+- Documentation: `https://ubc-fresh.github.io/fresh-hectaresbc/`
+- Data repository: `https://github.com/UBC-FRESH/fresh-hectaresbc-data`
+- Python API, CLI, static browser catalog, and DataLad/git-annex-backed data
+  repository.
 
 ## Publications And References
 
@@ -28,9 +33,12 @@ TBD.
 
 ## Source Notes
 
-TBD.
+- Public repository README and documentation reviewed on 2026-06-28.
+- The repository describes recovered HectaresBC payloads, compact catalog
+  metadata, DataLad/git-annex storage, Python and CLI access, and static
+  browser catalog/map-preview workflows.
 
 ## Open Questions
 
-- What public repository, data source, and web app links should be included?
-
+- Which public data-publication status reports and browser-catalog links should
+  be surfaced directly from the lab website?

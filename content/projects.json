@@ -82,16 +82,22 @@
       "path": "/projects/nserc-discovery-grant/",
       "category": "Ongoing Research",
       "status": "Ongoing research program",
-      "summary": "The FRESH NSERC Discovery Grant research program.",
+      "summary": "The FRESH Discovery Grant research program on integrated sustainable forest management, forest-sector systems modelling, ecosystem-service decision support, and open research software.",
       "body": [
-        "This page will summarize the FRESH NSERC Discovery Grant research program and connect it to the lab's public project, publication, software, and trainee records.",
-        "The record is intentionally concise while reviewed public language, project scope, and output links are assembled."
+        "The FRESH Discovery Grant research program develops open, scalable, and reusable modelling tools for integrated sustainable forest management and forest-sector supply-chain capacity planning.",
+        "The program focuses on systems-analysis methods that link forest ecosystem planning, industrial fibre procurement, processing-capacity decisions, logistics, and ecosystem-service outcomes in a common decision-support framework.",
+        "Core methodological work includes spatially explicit harvest and road-construction optimization, forest-sector supply-chain optimization, soft- and hard-linked model formulations, hybrid simulation-optimization, carbon modelling, and tradeoff analysis using ws3, SpaDES-compatible workflows, and related open-source tools.",
+        "This public page is intentionally written at the research-program level while proposal-specific details, trainee records, case-study outputs, and publications are reviewed for public release."
       ],
       "people": [
         "Gregory Paradis: Principal Investigator"
       ],
       "outputs": [
-        "Research-program summary, related project pages, publications, software, and trainee outputs will be linked after review."
+        "Related project pages",
+        "Open research software",
+        "Integrated modelling datasets and workflows",
+        "Trainee projects",
+        "Publications and reports will be linked as the research record is curated"
       ]
     },
     {
@@ -420,16 +426,35 @@
       "path": "/projects/figrecover/",
       "category": "Open Software",
       "status": "Open software project",
-      "summary": "An open software project in the FRESH research software portfolio.",
+      "summary": "Public-alpha Python software for recovering approximate source tables from published figures when original data were not released.",
       "body": [
-        "figrecover is part of the FRESH open software portfolio.",
-        "This page will collect the public software description, documentation, repository links, citations, examples, and related project pages."
+        "figrecover is public-alpha Python software for recovering approximate tabular data from scientific and professional figures when the original source tables were not released.",
+        "The workflow combines deterministic PDF and manifest preparation, optional local vision-language-model metadata proposals, calibrated pixel-to-data extraction, auditable CSV/JSON outputs, and review artifacts such as overlays, metrics, and accepted-table manifests.",
+        "FRESH uses figrecover for technical-document workflows where figure-derived data need to be traceable before they become modelling inputs, including FEMIC, FHOPS, and other forest-sector modelling pipelines."
       ],
       "people": [
         "Gregory Paradis: maintainer or lead developer"
       ],
       "outputs": [
-        "Repository, documentation, examples, citation metadata, and related publications will be added after review."
+        "GitHub repository",
+        "Public documentation",
+        "PyPI package",
+        "Synthetic examples and QA/review workflows",
+        "Integration adapters for FEMIC, FHOPS, and generic modelling workflows"
+      ],
+      "links": [
+        {
+          "label": "figrecover GitHub repository",
+          "href": "https://github.com/UBC-FRESH/figrecover"
+        },
+        {
+          "label": "figrecover documentation",
+          "href": "https://ubc-fresh.github.io/figrecover/"
+        },
+        {
+          "label": "figrecover on PyPI",
+          "href": "https://pypi.org/project/figrecover/"
+        }
       ]
     },
     {
@@ -437,16 +462,35 @@
       "path": "/projects/fresh-hectaresbc/",
       "category": "Open Software",
       "status": "Open software project",
-      "summary": "An open software project in the FRESH research software portfolio.",
+      "summary": "A FRESH project recovering, inventorying, documenting, and modernizing the archived HectaresBC geospatial data collection.",
       "body": [
-        "fresh-hectaresbc is part of the FRESH open software portfolio.",
-        "This page will collect the public software description, documentation, repository links, citations, examples, and related project pages."
+        "fresh-hectaresbc preserves and modernizes the archived HectaresBC geospatial data collection for British Columbia.",
+        "The project rebuilds access around reproducible catalog metadata, a DataLad/git-annex data repository, a Python API, a command-line interface, and a static browser catalog with map-preview routes.",
+        "The recovered payload set is managed outside the code repository in the UBC-FRESH/fresh-hectaresbc-data data repository, while compact catalog metadata, documentation, API tools, and browser-catalog code live in the main software repository."
       ],
       "people": [
         "Gregory Paradis: maintainer or lead developer"
       ],
       "outputs": [
-        "Repository, documentation, examples, citation metadata, and related publications will be added after review."
+        "GitHub repository",
+        "Public documentation",
+        "DataLad/git-annex data repository",
+        "Python API and CLI",
+        "Static browser catalog and map-preview workflows"
+      ],
+      "links": [
+        {
+          "label": "fresh-hectaresbc GitHub repository",
+          "href": "https://github.com/UBC-FRESH/fresh-hectaresbc"
+        },
+        {
+          "label": "fresh-hectaresbc documentation",
+          "href": "https://ubc-fresh.github.io/fresh-hectaresbc/"
+        },
+        {
+          "label": "fresh-hectaresbc data repository",
+          "href": "https://github.com/UBC-FRESH/fresh-hectaresbc-data"
+        }
       ]
     },
     {
