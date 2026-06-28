@@ -168,6 +168,7 @@ def test_people_pages_render_headshots_bios_and_profile_links() -> None:
     faculty = read_dist("current-faculty/index.html")
     researchers = read_dist("postdocs-and-researchers/index.html")
     graduates = read_dist("graduate-students/index.html")
+    people = read_dist("people/index.html")
     alumni = read_dist("former-freshies/index.html")
 
     assert "/assets/people/gregory-paradis-360.webp" in faculty
@@ -179,6 +180,16 @@ def test_people_pages_render_headshots_bios_and_profile_links() -> None:
     assert "wildland firefighter" in graduates
     assert "/assets/people/yunhao-davis-xu-360.webp" in graduates
     assert "/projects/jamie-iversen-msc-thesis/" in graduates
+    assert "Past FRESHies" in people
+    assert "Past FRESHies" in alumni
+    assert "Elaheh Ghasemi" in alumni
+    assert "Salar Ghotb" in alumni
+    assert "Valentine Lafond" in alumni
+    assert "Tatiane Micheletti" in alumni
+    assert "Dawson Isbister" in alumni
+    assert "/projects/ignitebc-flashforest-drone-seeding-microsite-ml/" in alumni
+    assert "/projects/mitacs-newmont-mining-forestry-decarbonization-modelling/" in alumni
+    assert "/projects/can-commercial-thinning-help-mitigate-the-midterm-timber-supply-shortage/" in alumni
     assert "/assets/people/rosalia-jaffray-360.webp" in alumni
     assert "Forest Harvesting Operations Planning System" in alumni
     assert "/assets/people/jinming-jimmy-ke-360.webp" in alumni
@@ -291,6 +302,8 @@ def test_priority_project_pages_have_curated_public_summaries() -> None:
     assert "background, good, fair, and poor" in flashforest
     assert "spatial data splitting" in flashforest
     assert "per-class intersection-over-union" in flashforest
+    assert "Elaheh Ghasemi: past postdoctoral researcher" in flashforest
+    assert "Salar Ghotb: past postdoctoral researcher" in flashforest
     assert "ML4seeding GitHub repository" in flashforest
     assert "https://github.com/UBC-FRESH/ML4seeding" in flashforest
     assert "Drone_Project_Technical_Report.pdf" not in flashforest

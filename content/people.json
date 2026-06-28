@@ -21,9 +21,9 @@
       "summary": "Researchers hosted by FRESH for short-term and collaborative stays."
     },
     {
-      "title": "Former FRESHies",
+      "title": "Past FRESHies",
       "href": "/former-freshies/",
-      "summary": "Alumni and past members of the lab."
+      "summary": "Alumni, past postdocs, interns, and other former members of the lab."
     }
   ],
   "pages": [
@@ -181,10 +181,69 @@
       "entries": []
     },
     {
-      "title": "Former FRESHies",
+      "title": "Past FRESHies",
       "path": "/former-freshies/",
-      "summary": "Former FRESH members and collaborators are part of the lab's research record; this page focuses on public, current, and approved alumni information.",
+      "summary": "Past FRESH members are part of the lab research record; this page focuses on public, current, and approved alumni information.",
       "entries": [
+        {
+          "name": "Elaheh Ghasemi",
+          "role": "Past postdoctoral researcher",
+          "links": [
+            {
+              "label": "FlashForest drone seeding microsite machine learning",
+              "href": "/projects/ignitebc-flashforest-drone-seeding-microsite-ml/"
+            },
+            {
+              "label": "Mitacs, Newmont, and forestry decarbonization modelling",
+              "href": "/projects/mitacs-newmont-mining-forestry-decarbonization-modelling/"
+            }
+          ],
+          "body": [
+            "Elaheh Ghasemi was a postdoctoral researcher in FRESH with a background in industrial engineering, supply-chain management, and decision-support modelling.",
+            "Her FRESH work contributed to nature-based decarbonization modelling for the mining and forest sectors and to applied machine-learning workflows for drone seeding microsite classification.",
+            "Her research record includes project work on forest-sector supply chains, production planning, inventory, distribution, and transportation decisions."
+          ]
+        },
+        {
+          "name": "Salar Ghotb",
+          "role": "Past postdoctoral researcher",
+          "links": [
+            {
+              "label": "FlashForest drone seeding microsite machine learning",
+              "href": "/projects/ignitebc-flashforest-drone-seeding-microsite-ml/"
+            },
+            {
+              "label": "Mitacs, Newmont, and forestry decarbonization modelling",
+              "href": "/projects/mitacs-newmont-mining-forestry-decarbonization-modelling/"
+            }
+          ],
+          "body": [
+            "Salar Ghotb was a postdoctoral researcher in FRESH whose work contributed to forest-sector systems modelling and applied decision support.",
+            "His FRESH work included modelling the forest-based biomass solution space in British Columbia and project contributions connected to drone seeding microsite classification and forestry decarbonization modelling."
+          ]
+        },
+        {
+          "name": "Valentine Lafond",
+          "role": "Past postdoctoral researcher",
+          "links": [
+            {
+              "label": "Commercial thinning and climate adaptation project",
+              "href": "/projects/can-commercial-thinning-help-mitigate-the-midterm-timber-supply-shortage/"
+            }
+          ],
+          "body": [
+            "Valentine Lafond was a postdoctoral researcher and research associate in FRESH, with expertise in forest ecology, forest modelling, and decision-support systems.",
+            "Her FRESH work included climate-adaptation and pest-mitigation decision support, including the commercial thinning and diverse-planting analysis published in the Canadian Journal of Forest Research."
+          ]
+        },
+        {
+          "name": "Tatiane Micheletti",
+          "role": "Past postdoctoral researcher",
+          "body": [
+            "Tatiane Micheletti was a postdoctoral researcher supervised through FRESH-connected modelling work.",
+            "Her FRESH-related research included modelling Pareto-optimal tradeoffs between timber outcomes, protected-area expansion, and landscape-level conservation planning questions."
+          ]
+        },
         {
           "name": "Rosalia Jaffray",
           "role": "MASc alumna",
@@ -291,6 +350,14 @@
             "Bridget Guo was an undergraduate intern in FRESH working on ecosystem modelling and statistical analysis.",
             "They completed a B.Sc. in Natural Resources Conservation and brought experience in coding, data analysis, and data manipulation from a co-op term with the Ministry of Forests.",
             "Bridget contributed to FRESH modelling work connected to hemlock dwarf mistletoe spread."
+          ]
+        },
+        {
+          "name": "Dawson Isbister",
+          "role": "Past SEED2STEM intern",
+          "body": [
+            "Dawson Isbister joined FRESH as a SEED2STEM intern in Summer 2025.",
+            "His internship contributed to lab and field projects connected to forestry education, applied research, and the development of learning activities for senior undergraduate forestry students."
           ]
         }
       ]

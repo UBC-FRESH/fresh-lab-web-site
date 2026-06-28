@@ -19,7 +19,8 @@ candidate planting points and drone mission planning.
 
 ## People And Roles
 
-- Elaheh Ghasemi: machine-learning pipeline and technical report lead
+- Elaheh Ghasemi: past postdoctoral researcher and machine-learning pipeline lead
+- Salar Ghotb: past postdoctoral researcher and project contributor
 - Kailey: TRANSFOR-M program student contributor
 - Gregory Paradis: FRESH lead and supervisor
 

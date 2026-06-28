@@ -207,3 +207,8 @@ This is the append-only project narrative for `fresh-lab-web-site`.
   spatial data splitting, class-imbalance findings, per-class IoU evaluation,
   predicted-mask and drone-path planning outputs, public repository link, and
   publication guardrails for private imagery and report material.
+- Added Phase 7 for People alumni and `Past FRESHies` cleanup. Renamed the
+  visible former-member surface to `Past FRESHies`, added approved public
+  entries for Elaheh Ghasemi, Salar Ghotb, Valentine Lafond, Tatiane
+  Micheletti, and Dawson Isbister, preserved thesis alumni and Bridget Guo,
+  and linked past members to related public project pages where clear.

@@ -142,3 +142,29 @@ harvest artifacts out of the generated site. The public projects index groups
 curated records into ongoing research, open software, and past/recent projects
 while keeping rough stub Markdown out of the generated site. Content QA is
 available through `scripts/qa_content.py` and runs in CI.
+
+## Phase 7: People Alumni And Past FRESHies
+
+GitHub parent issue: #44.
+
+Goal: make the public People area reflect current and past FRESH membership,
+including alumni, past postdocs, interns, project attributions, and approved
+headshots/bios.
+
+- [x] P7.1 Audit past-member clues from PI notes, the legacy WordPress export,
+  and the PI CV. Child issue: #45.
+- [x] P7.2 Rename the public former-member surface to `Past FRESHies` and add
+  approved public entries for past postdocs, thesis alumni, and interns. Child
+  issue: #46.
+- [x] P7.3 Cross-link past members to maintained project pages where the
+  public project relationship is clear. Child issue: #47.
+- [ ] P7.4 Confirm additional possible past-member entries before publishing:
+  Yike Chen and the Bridget Guo / Xin Jia Guo naming alignment appear in CV or
+  legacy-source clues, but need maintainer confirmation before any public
+  expansion. Child issue: #48.
+- [ ] P7.5 Add approved headshots for past postdocs and Dawson if public
+  images are available and cleared for reuse. Child issue: #49.
+
+Status: active. The public People area now includes a `Past FRESHies` section
+for approved alumni and past members. Remaining work is confirmation/headshot
+cleanup, not a launch blocker.
