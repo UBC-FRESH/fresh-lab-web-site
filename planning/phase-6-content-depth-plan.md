@@ -164,6 +164,55 @@ These updates used Basecamp project inventories and CV/publication harvests as
 review inputs. Private student notes, CVs, schedules, committee material, and
 draft manuscript details remain under ignored `tmp/` and were not committed.
 
+## UBC cIRcle Thesis Links
+
+Completed UBC graduate theses are published in UBC cIRcle and surfaced through
+UBC Open Collections. Use this workflow when adding public thesis links for
+completed FRESH HQP projects:
+
+1. Search Open Collections with the cIRcle repository filter:
+
+```text
+https://open.library.ubc.ca/search?q=SEARCH_TERMS&ubc_repo_label=cIRcle&widgetquery=https:%2F%2Fcircle.ubc.ca%2F
+```
+
+2. Prefer searching by full name, e.g.:
+
+```text
+https://open.library.ubc.ca/search?q=jinming%20ke&ubc_repo_label=cIRcle&widgetquery=https:%2F%2Fcircle.ubc.ca%2F
+https://open.library.ubc.ca/search?q=yancun%20yan&ubc_repo_label=cIRcle&widgetquery=https:%2F%2Fcircle.ubc.ca%2F
+https://open.library.ubc.ca/search?q=rosalia%20jaffray&ubc_repo_label=cIRcle&widgetquery=https:%2F%2Fcircle.ubc.ca%2F
+```
+
+3. Open the cIRcle record and capture the item id from the URL:
+
+```text
+https://open.library.ubc.ca/soa/cIRcle/collections/ubctheses/24/items/ITEM_ID
+```
+
+4. The public thesis PDF link usually follows one of these patterns:
+
+```text
+https://open.library.ubc.ca/media/stream/pdf/24/ITEM_ID/4
+https://open.library.ubc.ca/media/download/pdf/24/ITEM_ID/4
+```
+
+5. Add both the record link and the PDF link to the relevant
+`content/projects.json` thesis project record. The record link is more stable
+for citation/context; the PDF link is useful for direct download.
+
+Known completed thesis records:
+
+- Jinming (Jimmy) Ke MSc thesis: item `1.0441338`.
+  - Record: `https://open.library.ubc.ca/soa/cIRcle/collections/ubctheses/24/items/1.0441338`
+  - PDF: `https://open.library.ubc.ca/media/stream/pdf/24/1.0441338/4`
+- Yancun (Walter) Yan MSc thesis: item `1.0449036`.
+  - Record: `https://open.library.ubc.ca/soa/cIRcle/collections/ubctheses/24/items/1.0449036`
+  - PDF: `https://open.library.ubc.ca/media/stream/pdf/24/1.0449036/4`
+- Rosalia Jaffray MASc thesis: item `1.0452424`.
+  - Record: `https://open.library.ubc.ca/soa/cIRcle/collections/ubctheses/24/items/1.0452424`
+  - PDF: `https://open.library.ubc.ca/media/download/pdf/24/1.0452424/4`
+
 ## Current People Roster
 
 Current maintained roster updates:

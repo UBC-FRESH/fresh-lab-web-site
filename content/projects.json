@@ -536,6 +536,16 @@
         "MSc thesis link will be added after review",
         "Thesis-derived manuscript and publication links will be added when public",
         "Supporting project assets and repositories will be added after review"
+      ],
+      "links": [
+        {
+          "label": "UBC cIRcle thesis record",
+          "href": "https://open.library.ubc.ca/soa/cIRcle/collections/ubctheses/24/items/1.0441338"
+        },
+        {
+          "label": "Download thesis PDF",
+          "href": "https://open.library.ubc.ca/media/stream/pdf/24/1.0441338/4"
+        }
       ]
     },
     {
@@ -557,6 +567,16 @@
         "MSc thesis link will be added after review",
         "Journal-paper link will be added when public",
         "Supporting project assets and repositories will be added after review"
+      ],
+      "links": [
+        {
+          "label": "UBC cIRcle thesis record",
+          "href": "https://open.library.ubc.ca/soa/cIRcle/collections/ubctheses/24/items/1.0449036"
+        },
+        {
+          "label": "Download thesis PDF",
+          "href": "https://open.library.ubc.ca/media/stream/pdf/24/1.0449036/4"
+        }
       ]
     },
     {
@@ -580,6 +600,16 @@
         "Systematic review publication link will be added when public",
         "FHOPS-related software and benchmarking outputs",
         "Supporting project assets will be added after review"
+      ],
+      "links": [
+        {
+          "label": "UBC cIRcle thesis record",
+          "href": "https://open.library.ubc.ca/soa/cIRcle/collections/ubctheses/24/items/1.0452424"
+        },
+        {
+          "label": "Download thesis PDF",
+          "href": "https://open.library.ubc.ca/media/download/pdf/24/1.0452424/4"
+        }
       ]
     },
     {

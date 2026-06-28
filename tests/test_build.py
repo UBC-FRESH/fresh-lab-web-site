@@ -267,6 +267,20 @@ def test_thesis_project_pages_have_curated_public_themes() -> None:
     assert "forest-sector climate mitigation" in walter
 
 
+def test_completed_thesis_project_pages_link_to_ubc_circle() -> None:
+    run_build()
+
+    checks = {
+        "projects/jinming-jimmy-ke-msc-thesis/index.html": ["1.0441338", "Download thesis PDF"],
+        "projects/yancun-walter-yan-msc-thesis/index.html": ["1.0449036", "Download thesis PDF"],
+        "projects/rosalia-jaffray-masc-thesis/index.html": ["1.0452424", "Download thesis PDF"],
+    }
+    for path, expected_values in checks.items():
+        page = read_dist(path)
+        for expected in expected_values:
+            assert expected in page
+
+
 def test_software_project_pages_have_public_links() -> None:
     run_build()
 

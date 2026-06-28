@@ -118,3 +118,6 @@ This is the append-only project narrative for `fresh-lab-web-site`.
   Iversen, Rosalia Jaffray, Jinming (Jimmy) Ke, and Yancun (Walter) Yan, using
   Basecamp inventories and CV/publication harvests while keeping private student
   and manuscript material ignored.
+- Documented the UBC cIRcle/Open Collections thesis-link lookup workflow and
+  added public cIRcle record/PDF links for completed thesis projects by Jinming
+  (Jimmy) Ke, Yancun (Walter) Yan, and Rosalia Jaffray.
