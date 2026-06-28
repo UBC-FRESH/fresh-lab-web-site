@@ -27,11 +27,13 @@ Use `content/people.json` for:
 - people section links;
 - faculty, researcher, student, visiting-scholar, and alumni pages;
 - maintained roster entries.
+- profile links, emails, bios, and headshot metadata.
 
 Use `content/projects.json` for:
 
 - current project index cards;
 - project detail pages.
+- project people, partners, outputs, links, related projects, and references.
 
 Use `content/project-stubs/` for:
 
@@ -48,6 +50,8 @@ After editing:
 ```bash
 .venv/bin/python scripts/build.py
 .venv/bin/python -m pytest
+.venv/bin/python -m ruff check .
+.venv/bin/python scripts/qa_content.py
 ```
 
 The build fails fast when required fields are empty, internal links point to
@@ -60,13 +64,31 @@ Preview with:
 .venv/bin/python -m http.server 8011 --directory dist
 ```
 
-When replacing the hero image, copy the approved source image to
-`src/assets/images/hero-forest-operations-original.jpeg`, then regenerate
-responsive variants:
+When replacing the hero image, copy the approved source image to the source
+path referenced by `scripts/prepare_assets.py`, then regenerate responsive
+variants:
 
 ```bash
 .venv/bin/python scripts/prepare_assets.py
 .venv/bin/python scripts/build.py
+```
+
+When adding or replacing a people headshot:
+
+1. Put the approved source image under `src/assets/people/originals/`.
+2. Add the image slug to `PEOPLE_SOURCES` in `scripts/prepare_assets.py`.
+3. Run `.venv/bin/python scripts/prepare_assets.py`.
+4. Reference the generated JPEG/WebP files from `content/people.json`.
+
+Project references and download links belong in `references` when they are
+citation-like outputs. General project links belong in `links`. Use
+`related_projects` only for real project relationships.
+
+The lab-facing maintainer workflow is documented in the FRESH Lab Knowledge
+Base wiki:
+
+```text
+https://github.com/UBC-FRESH/lab-knowledge/wiki/FRESH-Lab-Website-Maintainer-Workflow
 ```
 
 ## Migration Archive

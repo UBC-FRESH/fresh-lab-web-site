@@ -10,7 +10,7 @@ TBD.
 
 - Gregory Paradis: collaborator
 - Hanno Southam: collaborator
-- Bridget Guo: past FRESH intern
+- Xin Jia (Bridget) Guo: past FRESH intern
 - Richard Hamelin: collaborator
 
 ## Collaborators And Partners
@@ -36,4 +36,3 @@ TBD.
 ## Open Questions
 
 - Which model outputs, code repositories, and collaborator affiliations should be listed?
-

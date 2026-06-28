@@ -107,14 +107,17 @@ instructions for updating, previewing, testing, publishing, and recovering the
 FRESH lab website from the server-hosted VS Code/dev-container workflow.
 
 - [x] P5.1 Create website maintainer workflow wiki entry. Child issue: #32.
-- [ ] P5.2 Document content editing patterns for `content/site.json`. Child issue: #33.
-- [ ] P5.3 Document preview, verification, and GitHub Pages publishing. Child issue: #34.
-- [ ] P5.4 Document recovery, rollback, and privacy rules. Child issue: #35.
-- [ ] P5.5 Cross-link repo docs, roadmap, and lab KB wiki. Child issue: #36.
+- [x] P5.2 Document content editing patterns for maintained content JSON files. Child issue: #33.
+- [x] P5.3 Document preview, verification, and GitHub Pages publishing. Child issue: #34.
+- [x] P5.4 Document recovery, rollback, and privacy rules. Child issue: #35.
+- [x] P5.5 Cross-link repo docs, roadmap, and lab KB wiki. Child issue: #36.
 
-Status: active. P5.1 is complete: the wiki page exists at
+Status: complete. The wiki page exists at
 `https://github.com/UBC-FRESH/lab-knowledge/wiki/FRESH-Lab-Website-Maintainer-Workflow`
-and is linked from the lab KB home page.
+and is linked from the lab KB home page. It now documents the current
+`content/site.json`, `content/people.json`, `content/projects.json`, and
+`content/publications.json` source model, preview/publish workflow,
+rollback/privacy rules, and repo cross-links.
 
 ## Phase 6: Content Depth And Research Record
 
@@ -159,9 +162,9 @@ headshots/bios.
 - [x] P7.3 Cross-link past members to maintained project pages where the
   public project relationship is clear. Child issue: #47.
 - [ ] P7.4 Confirm additional possible past-member entries before publishing:
-  Yike Chen and the Bridget Guo / Xin Jia Guo naming alignment appear in CV or
-  legacy-source clues, but need maintainer confirmation before any public
-  expansion. Child issue: #48.
+  Yike Chen appears in CV clues but needs maintainer confirmation before any
+  public expansion. The Bridget Guo / Xin Jia Guo naming alignment has been
+  resolved as Xin Jia (Bridget) Guo. Child issue: #48.
 - [x] P7.5 Add approved headshots for past postdocs and Dawson if public
   images are available and cleared for reuse. Child issue: #49. Legacy CMS
   mining recovered public images for Elaheh Ghasemi, Valentine Lafond, and

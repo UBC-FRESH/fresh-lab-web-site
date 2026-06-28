@@ -210,7 +210,8 @@ This is the append-only project narrative for `fresh-lab-web-site`.
 - Added Phase 7 for People alumni and `Past FRESHies` cleanup. Renamed the
   visible former-member surface to `Past FRESHies`, added approved public
   entries for Elaheh Ghasemi, Salar Ghotb, Valentine Lafond, Tatiane
-  Micheletti, and Dawson Isbister, preserved thesis alumni and Bridget Guo,
+  Micheletti, and Dawson Isbister, preserved thesis alumni and Xin Jia
+  (Bridget) Guo,
   and linked past members to related public project pages where clear.
 - Removed an incorrect `Modelwright` related-project link from the FlashForest
   drone seeding microsite machine-learning page and added a regression check.
@@ -224,3 +225,11 @@ This is the append-only project narrative for `fresh-lab-web-site`.
   crop, removed Tatiane Micheletti from the public Past FRESHies page because
   her FRESH affiliation was nominal, and marked the past-member headshot task
   complete.
+- Resolved the Bridget/Xin Jia naming ambiguity by updating the public Past
+  FRESHies entry and related hemlock dwarf mistletoe project attribution to
+  `Xin Jia (Bridget) Guo`.
+- Completed Phase 5 maintainer documentation by expanding the FRESH Lab KB
+  website workflow page with the current maintained content model, content edit
+  patterns, local preview and GitHub Pages publishing steps, rollback/privacy
+  rules, and repo cross-links. Updated repo docs to point maintainers back to
+  the lab KB.

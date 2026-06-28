@@ -83,16 +83,18 @@ server or dev-container environment.
 
 1. Pull the latest `main`.
 2. Create or switch to the active phase branch.
-3. Edit `content/site.json` for content changes.
+3. Edit maintained JSON files under `content/` for content changes:
+   `site.json`, `people.json`, `projects.json`, and `publications.json`.
 4. Edit `src/styles.css` for design changes.
 5. Edit `scripts/build.py` only when the content model or rendered structure
    needs to change.
 6. Run:
 
 ```bash
-.venv/bin/python -m ruff check .
 .venv/bin/python -m pytest
+.venv/bin/python -m ruff check .
 .venv/bin/python scripts/build.py
+.venv/bin/python scripts/qa_content.py
 ```
 
 7. Preview the site:
@@ -124,3 +126,11 @@ Coding agents should:
 This repo does not assume that `fresh01` is the public web host. The server is
 the editing and preview environment. Public deployment remains GitHub Pages
 unless Phase 4 selects a different hosting path.
+
+## Lab KB Link
+
+The lab-facing maintainer workflow is mirrored in the FRESH Lab Knowledge Base:
+
+```text
+https://github.com/UBC-FRESH/lab-knowledge/wiki/FRESH-Lab-Website-Maintainer-Workflow
+```

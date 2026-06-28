@@ -98,6 +98,8 @@ Knowledge Base wiki:
 https://github.com/UBC-FRESH/lab-knowledge/wiki/FRESH-Lab-Website-Maintainer-Workflow
 ```
 
+For content-specific editing guidance, see `content/README.md`.
+
 ## Publish
 
 GitHub Pages is configured by `.github/workflows/pages.yml`. Push the repository to GitHub, enable Pages using GitHub Actions, and the site will publish from the generated `dist/` artifact.

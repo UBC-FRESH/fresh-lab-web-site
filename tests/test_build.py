@@ -188,6 +188,8 @@ def test_people_pages_render_headshots_bios_and_profile_links() -> None:
     assert "Valentine Lafond" in alumni
     assert "Tatiane Micheletti" not in alumni
     assert "Dawson Isbister" in alumni
+    assert "Xin Jia (Bridget) Guo" in alumni
+    assert "Bridget Guo was" not in alumni
     assert "/assets/people/elaheh-ghasemi-360.webp" in alumni
     assert "/assets/people/salar-ghotb-360.webp" in alumni
     assert "/assets/people/valentine-lafond-360.webp" in alumni
@@ -401,6 +403,7 @@ def test_hemlock_dwarf_mistletoe_page_tracks_thesis_paper_pipeline() -> None:
     page = read_dist("projects/hemlock-dwarf-mistletoe-spread-modelling/index.html")
 
     assert "Hanno Southam: thesis lead" in page
+    assert "Xin Jia (Bridget) Guo: past FRESH intern" in page
     assert "forest-edge spread" in page
     assert "variable-retention harvesting" in page
     assert "mid-rotation hemlock dwarf mistletoe infection" in page
