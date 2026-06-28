@@ -119,6 +119,17 @@ These public updates used the CV harvest and Basecamp project inventory as
 review inputs. Raw Basecamp message content, file names, admin documents, and
 downloads remain under ignored `tmp/` and were not committed.
 
+Software curation pass:
+
+- `WS3`, `FEMIC`, `FHOPS`, `Nemora`, `Modelwright`, `FABLE-Pyculator`, and
+  `badc` now have project-specific public summaries instead of generic software
+  placeholders.
+- Public GitHub repository, documentation, DOI, or software-paper links were
+  added where they were available and verified.
+- The CV harvest supplied citation context for WS3, FEMIC, FHOPS, Nemora, and
+  badc. GitHub repository metadata and public documentation URLs supplied the
+  current public links.
+
 ## Current People Roster
 
 Current maintained roster updates:

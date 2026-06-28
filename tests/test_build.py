@@ -227,6 +227,27 @@ def test_priority_project_pages_have_curated_public_summaries() -> None:
     assert "Canada&#x27;s net-zero commitments" in clews
 
 
+def test_software_project_pages_have_public_links() -> None:
+    run_build()
+
+    checks = {
+        "projects/ws3/index.html": ["Wood Supply Simulation System", "https://github.com/UBC-FRESH/ws3"],
+        "projects/femic/index.html": ["forest modelling computational experiments", "https://ubc-fresh.github.io/femic/"],
+        "projects/fhops/index.html": ["Forest Harvesting Operations Planning System", "https://github.com/UBC-FRESH/fhops"],
+        "projects/nemora/index.html": ["tree stem tally data", "https://ubc-fresh.github.io/nemora/"],
+        "projects/modelwright/index.html": ["reforging spreadsheet models", "https://ubc-fresh.github.io/modelwright/"],
+        "projects/fable-pyculator/index.html": [
+            "Modelwright-generated Python models",
+            "https://github.com/UBC-FRESH/fable-pyculator",
+        ],
+        "projects/badc/index.html": ["software citation metadata", "https://ubc-fresh.github.io/badc/"],
+    }
+    for path, expected_values in checks.items():
+        page = read_dist(path)
+        for expected in expected_values:
+            assert expected in page
+
+
 def test_contact_page_excludes_legacy_pi_and_tutorial_link() -> None:
     run_build()
 

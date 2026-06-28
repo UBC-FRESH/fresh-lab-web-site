@@ -107,3 +107,6 @@ This is the append-only project narrative for `fresh-lab-web-site`.
   CCCANDiES, IgniteBC/FlashForest drone seeding microsite machine learning, and
   CLEWs-C2070, using CV and Basecamp inventory material as review inputs while
   keeping raw Basecamp material ignored.
+- Curated the first software-project tranche by adding project-specific public
+  summaries and links for WS3, FEMIC, FHOPS, Nemora, Modelwright,
+  FABLE-Pyculator, and badc.

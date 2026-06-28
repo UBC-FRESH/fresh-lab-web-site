@@ -176,16 +176,35 @@
       "path": "/projects/ws3/",
       "category": "Open Software",
       "status": "Open software project",
-      "summary": "An open software project in the FRESH research software portfolio.",
+      "summary": "An open-source Python framework for integrated simulation and optimization of forest landscape and wood supply systems.",
       "body": [
-        "WS3 is part of the FRESH open software portfolio.",
-        "This page will collect the public software description, documentation, repository links, citations, publications, examples, and related project pages."
+        "WS3 is the Wood Supply Simulation System, an open-source Python framework for integrated simulation and optimization of forest landscape and wood supply systems.",
+        "The framework supports transparent, reproducible forest estate modelling and decision-support workflows, including links to landscape simulation, wood supply analysis, optimization, carbon modelling, and related research applications.",
+        "The public project record connects the software repository, technical documentation, citation metadata, examples, and publications as the FRESH software portfolio is curated."
       ],
       "people": [
         "Gregory Paradis: maintainer or lead developer"
       ],
       "outputs": [
-        "Repository, documentation, examples, citation metadata, and related publications will be added after review."
+        "GitHub repository",
+        "Read the Docs documentation",
+        "Zenodo software citation",
+        "Ecological Informatics software paper",
+        "Example model instances and related decision-support applications"
+      ],
+      "links": [
+        {
+          "label": "WS3 GitHub repository",
+          "href": "https://github.com/UBC-FRESH/ws3"
+        },
+        {
+          "label": "WS3 documentation",
+          "href": "https://ws3.readthedocs.io/en/dev/"
+        },
+        {
+          "label": "WS3 software paper",
+          "href": "https://doi.org/10.1016/j.ecoinf.2026.103688"
+        }
       ]
     },
     {
@@ -193,16 +212,34 @@
       "path": "/projects/fhops/",
       "category": "Open Software",
       "status": "Open software project",
-      "summary": "An open software project in the FRESH research software portfolio.",
+      "summary": "Forest Harvesting Operations Planning System software for reproducible forest operations planning experiments.",
       "body": [
-        "FHOPS is part of the FRESH open software portfolio.",
-        "This page will collect the public software description, documentation, repository links, citations, publications, examples, and related project pages."
+        "FHOPS is the Forest Harvesting Operations Planning System, an open software project in the FRESH research software portfolio.",
+        "The project supports reproducible optimization and benchmarking workflows for forest harvesting operations planning.",
+        "The public project record links the software repository, technical documentation, citation metadata, and related publications as those outputs are finalized."
       ],
       "people": [
         "Gregory Paradis: maintainer or lead developer"
       ],
       "outputs": [
-        "Repository, documentation, examples, citation metadata, and related publications will be added after review."
+        "GitHub repository",
+        "Technical documentation",
+        "Zenodo software citation",
+        "Related harvesting operations planning publications"
+      ],
+      "links": [
+        {
+          "label": "FHOPS GitHub repository",
+          "href": "https://github.com/UBC-FRESH/fhops"
+        },
+        {
+          "label": "FHOPS documentation",
+          "href": "https://ubc-fresh.github.io/fhops/"
+        },
+        {
+          "label": "FHOPS software citation",
+          "href": "https://doi.org/10.5281/zenodo.19619189"
+        }
       ]
     },
     {
@@ -210,16 +247,34 @@
       "path": "/projects/femic/",
       "category": "Open Software",
       "status": "Open software project",
-      "summary": "An open software project in the FRESH research software portfolio.",
+      "summary": "A FRESH software stack for compiling forest inventory and yield-curve data for computational experiments.",
       "body": [
-        "FEMIC is part of the FRESH open software portfolio.",
-        "This page will collect the public software description, documentation, repository links, citations, publications, examples, and related project pages."
+        "FEMIC is an open software project for compiling inventory and yield-curve data for forest modelling computational experiments.",
+        "The project sits inside the FRESH open modelling stack and supports reproducible model-instance preparation for forest estate and cumulative-effects analysis.",
+        "The public project record connects the FEMIC repository, technical documentation, software citation, and related public model-instance documentation."
       ],
       "people": [
         "Gregory Paradis: maintainer or lead developer"
       ],
       "outputs": [
-        "Repository, documentation, examples, citation metadata, and related publications will be added after review."
+        "GitHub repository",
+        "Technical documentation",
+        "Zenodo software citation",
+        "Public model-instance documentation"
+      ],
+      "links": [
+        {
+          "label": "FEMIC GitHub repository",
+          "href": "https://github.com/UBC-FRESH/femic"
+        },
+        {
+          "label": "FEMIC documentation",
+          "href": "https://ubc-fresh.github.io/femic/"
+        },
+        {
+          "label": "FEMIC software citation",
+          "href": "https://doi.org/10.5281/zenodo.19619418"
+        }
       ]
     },
     {
@@ -227,16 +282,34 @@
       "path": "/projects/nemora/",
       "category": "Open Software",
       "status": "Open software project",
-      "summary": "An open software project related to the FRESH research software and publication portfolio.",
+      "summary": "A Python package for fitting probability density functions to tree stem tally data from forest inventory plots.",
       "body": [
-        "Nemora is part of the FRESH open software portfolio and is connected to publication work on diameter-distribution fitting.",
-        "This page will collect the public software description, documentation, repository links, citations, examples, and related papers."
+        "Nemora streamlines fitting statistical probability density functions to tree stem tally data from forest inventory plots.",
+        "The package supports FRESH work on modelling tree diameter distributions, including diameter-distribution fitting papers and related forest inventory analysis workflows.",
+        "The public project record links the software repository, technical documentation, citation metadata, and related publications as they are curated."
       ],
       "people": [
         "Gregory Paradis: maintainer or lead developer"
       ],
       "outputs": [
-        "Repository, documentation, examples, citation metadata, dbh-distfit paper links, and related publications will be added after review."
+        "GitHub repository",
+        "Technical documentation",
+        "Zenodo software citation",
+        "Related diameter-distribution fitting publications"
+      ],
+      "links": [
+        {
+          "label": "Nemora GitHub repository",
+          "href": "https://github.com/UBC-FRESH/nemora"
+        },
+        {
+          "label": "Nemora documentation",
+          "href": "https://ubc-fresh.github.io/nemora/"
+        },
+        {
+          "label": "Nemora software citation",
+          "href": "https://doi.org/10.5281/zenodo.19618885"
+        }
       ]
     },
     {
@@ -244,16 +317,29 @@
       "path": "/projects/modelwright/",
       "category": "Open Software",
       "status": "Open software project",
-      "summary": "An open software project in the FRESH research software portfolio.",
+      "summary": "Software for extracting, validating, and reforging spreadsheet models as pure Python code.",
       "body": [
-        "Modelwright is part of the FRESH open software portfolio.",
-        "This page will collect the public software description, documentation, repository links, citations, examples, and related project pages."
+        "Modelwright extracts, validates, and reforges spreadsheet models as pure Python code.",
+        "The project supports FRESH work on transparent, testable modelling workflows when policy, planning, or calculator-style models start as spreadsheets.",
+        "The public project record links the repository and documentation site while examples and related applications are curated."
       ],
       "people": [
         "Gregory Paradis: maintainer or lead developer"
       ],
       "outputs": [
-        "Repository, documentation, examples, citation metadata, and related publications will be added after review."
+        "GitHub repository",
+        "Documentation site",
+        "Examples and related model conversion workflows"
+      ],
+      "links": [
+        {
+          "label": "Modelwright GitHub repository",
+          "href": "https://github.com/UBC-FRESH/modelwright"
+        },
+        {
+          "label": "Modelwright documentation",
+          "href": "https://ubc-fresh.github.io/modelwright/"
+        }
       ]
     },
     {
@@ -261,16 +347,25 @@
       "path": "/projects/fable-pyculator/",
       "category": "Open Software",
       "status": "Open software project",
-      "summary": "An open software project in the FRESH research software portfolio.",
+      "summary": "Notebook controls for working with Modelwright-generated Python versions of FABLE Calculator models.",
       "body": [
-        "FABLE-Pyculator is part of the FRESH open software portfolio.",
-        "This page will collect the public software description, documentation, repository links, citations, examples, and related project pages."
+        "FABLE-Pyculator provides FABLE Calculator-specific notebook controls for Modelwright-generated Python models.",
+        "The project connects FRESH software work on spreadsheet-model transformation with land-system and food-system calculator workflows.",
+        "The public project record will connect the repository, FABLE white paper context, examples, and any related documentation as the software matures."
       ],
       "people": [
         "Gregory Paradis: maintainer or lead developer"
       ],
       "outputs": [
-        "Repository, documentation, examples, citation metadata, and related publications will be added after review."
+        "GitHub repository",
+        "Modelwright-generated calculator workflows",
+        "FABLE white paper and related land-system modelling context"
+      ],
+      "links": [
+        {
+          "label": "FABLE-Pyculator GitHub repository",
+          "href": "https://github.com/UBC-FRESH/fable-pyculator"
+        }
       ]
     },
     {
@@ -312,16 +407,33 @@
       "path": "/projects/badc/",
       "category": "Open Software",
       "status": "Open software project",
-      "summary": "An open software project in the FRESH research software portfolio.",
+      "summary": "A FRESH open software project with public documentation and software citation metadata.",
       "body": [
         "badc is part of the FRESH open software portfolio.",
-        "This page will collect the public software description, documentation, repository links, citations, examples, and related project pages."
+        "The project has public documentation and software citation metadata, and will be described in more detail as the related modelling workflow is curated.",
+        "The public project record links the repository, documentation, and citation record so the software output is discoverable from the lab website."
       ],
       "people": [
         "Gregory Paradis: maintainer or lead developer"
       ],
       "outputs": [
-        "Repository, documentation, examples, citation metadata, and related publications will be added after review."
+        "GitHub repository",
+        "Technical documentation",
+        "Zenodo software citation"
+      ],
+      "links": [
+        {
+          "label": "badc GitHub repository",
+          "href": "https://github.com/UBC-FRESH/badc"
+        },
+        {
+          "label": "badc documentation",
+          "href": "https://ubc-fresh.github.io/badc/"
+        },
+        {
+          "label": "badc software citation",
+          "href": "https://doi.org/10.5281/zenodo.19620220"
+        }
       ]
     },
     {
