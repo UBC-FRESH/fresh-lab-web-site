@@ -156,3 +156,8 @@ This is the append-only project narrative for `fresh-lab-web-site`.
 - Removed an unsupported Chunping Dai co-supervisor attribution from Jinming
   (Jimmy) Ke's MSc thesis project page and added a regression check for that
   specific attribution error.
+- Restored maintained people bios and headshots for current faculty,
+  researchers, graduate students, and selected former FRESH members. Added
+  tracked source headshots, generated optimized public JPEG/WebP variants,
+  rendered optional profile images and links from `content/people.json`, and
+  kept original source images out of the deployed `dist/` tree.

@@ -111,6 +111,8 @@ def validate_content(data: dict) -> None:
                 raise SystemExit(f"Missing required content: {context}.body")
             for body_index, line in enumerate(entry["body"]):
                 require_non_empty_string(line, f"{context}.body[{body_index}]")
+            if entry.get("image"):
+                validate_image(entry["image"], f"{context}.image")
             if entry.get("email"):
                 validate_email(entry["email"], f"{context}.email")
             if entry.get("links"):
@@ -319,6 +321,18 @@ def bullets(items: list[str]) -> str:
     return "<ul>" + "".join(f"<li>{html.escape(item)}</li>" for item in items) + "</ul>"
 
 
+def people_links(entry: dict) -> str:
+    items = []
+    if entry.get("email"):
+        email = entry["email"]
+        items.append(f'<li><a href="mailto:{html.escape(email, quote=True)}">{html.escape(email)}</a></li>')
+    for link in entry.get("links", []):
+        items.append(f'<li><a href="{site_url(link["href"])}">{html.escape(link["label"])}</a></li>')
+    if not items:
+        return ""
+    return '<ul class="person-links">' + "".join(items) + "</ul>"
+
+
 def image_html(image: dict, class_name: str = "") -> str:
     def source_set(value: str) -> str:
         candidates = []
@@ -415,11 +429,18 @@ def render_people_page(site: dict, page: dict) -> str:
     entries = []
     for entry in page["entries"]:
         body = paragraphs(entry["body"])
+        image = ""
+        if entry.get("image"):
+            image = image_html(entry["image"], "person-photo")
         entries.append(
-            f"""<article class="entry">
-        <h2>{html.escape(entry['name'])}</h2>
-        <p><strong>{html.escape(entry['role'])}</strong></p>
-        {body}
+            f"""<article class="person-entry">
+        {image}
+        <div class="person-copy">
+          <h2>{html.escape(entry['name'])}</h2>
+          <p class="person-role">{html.escape(entry['role'])}</p>
+          {body}
+          {people_links(entry)}
+        </div>
       </article>"""
         )
     if not entries:
@@ -573,7 +594,7 @@ def main() -> None:
     shutil.copyfile(SRC / "styles.css", DIST / "styles.css")
     assets = SRC / "assets"
     if assets.exists():
-        shutil.copytree(assets, DIST / "assets")
+        shutil.copytree(assets, DIST / "assets", ignore=shutil.ignore_patterns("originals"))
 
     write("/", render_home(data))
     write("/people/", render_people_index(data))

@@ -68,10 +68,16 @@ def test_build_generates_expected_public_pages() -> None:
         "assets/images/hero-digital-forest-1600.webp",
         "assets/logos/fresh-mark-green-96.png",
         "assets/logos/fresh-mark-green-192.png",
+        "assets/people/gregory-paradis-360.jpeg",
+        "assets/people/kathleen-coupland-360.jpeg",
+        "assets/people/jamie-iversen-360.jpeg",
+        "assets/people/yunhao-davis-xu-360.jpeg",
     ]
 
     for relative_path in expected:
         assert (DIST / relative_path).exists(), relative_path
+
+    assert not (DIST / "assets" / "people" / "originals").exists()
 
 
 def test_build_excludes_internal_page() -> None:
@@ -154,6 +160,31 @@ def test_content_validation_rejects_duplicate_people() -> None:
         assert "Duplicate people name" in str(error)
     else:
         raise AssertionError("Expected content validation to reject duplicate people")
+
+
+def test_people_pages_render_headshots_bios_and_profile_links() -> None:
+    run_build()
+
+    faculty = read_dist("current-faculty/index.html")
+    researchers = read_dist("postdocs-and-researchers/index.html")
+    graduates = read_dist("graduate-students/index.html")
+    alumni = read_dist("former-freshies/index.html")
+
+    assert "/assets/people/gregory-paradis-360.webp" in faculty
+    assert "operations research, mathematical optimization, data science" in faculty
+    assert "mailto:gregory.paradis@ubc.ca" in faculty
+    assert "/assets/people/kathleen-coupland-360.webp" in researchers
+    assert "forest carbon modeller" in researchers
+    assert "/assets/people/jamie-iversen-360.webp" in graduates
+    assert "wildland firefighter" in graduates
+    assert "/assets/people/yunhao-davis-xu-360.webp" in graduates
+    assert "/projects/jamie-iversen-msc-thesis/" in graduates
+    assert "/assets/people/rosalia-jaffray-360.webp" in alumni
+    assert "Forest Harvesting Operations Planning System" in alumni
+    assert "/assets/people/jinming-jimmy-ke-360.webp" in alumni
+    assert "/assets/people/yancun-walter-yan-360.webp" in alumni
+    assert "Previous Faculty" not in alumni
+    assert "Verena" not in alumni
 
 
 def test_content_validation_rejects_bad_email_addresses() -> None:

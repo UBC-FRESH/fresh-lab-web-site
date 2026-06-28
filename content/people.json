@@ -35,9 +35,32 @@
         {
           "name": "Gregory Paradis",
           "role": "Principal Investigator, FRESH Lab",
+          "image": {
+            "alt": "Headshot of Gregory Paradis",
+            "src": "/assets/people/gregory-paradis-360.jpeg",
+            "sources": [
+              {
+                "type": "image/webp",
+                "srcset": "/assets/people/gregory-paradis-360.webp 360w",
+                "sizes": "(max-width: 520px) 156px, (max-width: 880px) 120px, 168px"
+              }
+            ]
+          },
+          "email": "gregory.paradis@ubc.ca",
+          "links": [
+            {
+              "label": "UBC faculty profile",
+              "href": "https://forestry.ubc.ca/faculty-profile/gregory-paradis/"
+            },
+            {
+              "label": "Research projects",
+              "href": "/projects/"
+            }
+          ],
           "body": [
-            "Dr. Gregory Paradis leads the FRESH Lab in the UBC Faculty of Forestry & Environmental Stewardship.",
-            "His research applies operations research, mathematical optimization, data science, and forest-sector systems modelling to complex forest management problems."
+            "Dr. Gregory Paradis leads FRESH in the UBC Faculty of Forestry & Environmental Stewardship.",
+            "His research applies operations research, mathematical optimization, data science, and forest-sector systems modelling to complex forest management problems.",
+            "He uses a systems approach to model interactions among forest ecosystems, industrial supply chains, public policy, ecosystem services, and society."
           ]
         }
       ]
@@ -50,9 +73,22 @@
         {
           "name": "Kathleen Coupland",
           "role": "Research Associate",
+          "image": {
+            "alt": "Headshot of Kathleen Coupland",
+            "src": "/assets/people/kathleen-coupland-360.jpeg",
+            "sources": [
+              {
+                "type": "image/webp",
+                "srcset": "/assets/people/kathleen-coupland-360.webp 360w",
+                "sizes": "(max-width: 520px) 156px, (max-width: 880px) 120px, 168px"
+              }
+            ]
+          },
+          "email": "kathleen.coupland@ubc.ca",
           "body": [
-            "Kathleen Coupland is a Research Associate connected to FRESH.",
-            "Her maintained public profile details are being rebuilt from current lab records."
+            "Dr. Kathleen Coupland is a forest carbon modeller and registered professional forester whose work supports sustainable forest management and environmental conservation.",
+            "Her background combines forestry education, sustainable forest management, and practical knowledge of forest ecosystems and their role in climate-change mitigation.",
+            "In addition to her FRESH research role, Kathleen works part-time as coordinator of the Master of Geomatics for Environmental Management program."
           ]
         }
       ]
@@ -65,17 +101,53 @@
         {
           "name": "Yunhao (Davis) Xu",
           "role": "MASc student",
+          "image": {
+            "alt": "Headshot of Yunhao Davis Xu",
+            "src": "/assets/people/yunhao-davis-xu-360.jpeg",
+            "sources": [
+              {
+                "type": "image/webp",
+                "srcset": "/assets/people/yunhao-davis-xu-360.webp 360w",
+                "sizes": "(max-width: 520px) 156px, (max-width: 880px) 120px, 168px"
+              }
+            ]
+          },
+          "links": [
+            {
+              "label": "MASc thesis project",
+              "href": "/projects/yunhao-davis-xu-masc-thesis/"
+            }
+          ],
           "body": [
-            "Yunhao (Davis) Xu is an active MASc student in FRESH.",
-            "His maintained project and thesis profile is being drafted from current lab records."
+            "Yunhao (Davis) Xu is a MASc student in FRESH with a forest operations background and a research interest in mathematical modelling for forest operations and planning.",
+            "His current thesis work develops forest estate modelling and decision-support workflows for post-wildfire salvage planning.",
+            "Before joining FRESH, Davis completed a B.Sc. in the UBC Faculty of Forestry and worked as a research assistant on field data collection."
           ]
         },
         {
           "name": "Jamie Iversen",
           "role": "MSc student",
+          "image": {
+            "alt": "Headshot of Jamie Iversen",
+            "src": "/assets/people/jamie-iversen-360.jpeg",
+            "sources": [
+              {
+                "type": "image/webp",
+                "srcset": "/assets/people/jamie-iversen-360.webp 360w",
+                "sizes": "(max-width: 520px) 156px, (max-width: 880px) 120px, 168px"
+              }
+            ]
+          },
+          "links": [
+            {
+              "label": "MSc thesis project",
+              "href": "/projects/jamie-iversen-msc-thesis/"
+            }
+          ],
           "body": [
-            "Jamie Iversen is an active MSc student in FRESH.",
-            "His maintained project and thesis profile is being drafted from current lab records."
+            "Jamie Iversen is an MSc student in FRESH and a registered forester-in-training in British Columbia.",
+            "His research focuses on risk-aware forest estate modelling for wildfire mitigation, linking fuel-treatment planning, timber supply analysis, and landscape-level decision support.",
+            "Jamie's past work as a wildland firefighter helped motivate his interest in wildfire fuel treatments and operationally useful planning tools."
           ]
         },
         {
@@ -83,15 +155,21 @@
           "role": "Incoming master's student",
           "body": [
             "Thomas Cooper is an incoming master's student in FRESH.",
-            "His public profile will be expanded after onboarding details are confirmed."
+            "His developing MSc direction connects to FRESH interests in quantitative forest-sector modelling, open research tools, and decision support."
           ]
         },
         {
           "name": "Kailey",
           "role": "TRANSFOR-M program student",
+          "links": [
+            {
+              "label": "Related drone seeding project",
+              "href": "/projects/ignitebc-flashforest-drone-seeding-microsite-ml/"
+            }
+          ],
           "body": [
             "Kailey is a TRANSFOR-M program student supervised by Gregory Paradis.",
-            "Her public profile will be expanded after current project details are confirmed."
+            "Her work connects to FRESH interests in drone seeding, microsite selection, and decision support for reforestation and restoration."
           ]
         }
       ]
@@ -105,8 +183,117 @@
     {
       "title": "Former FRESHies",
       "path": "/former-freshies/",
-      "summary": "Former FRESH members and collaborators are part of the lab's research record; this page will focus on public, current, and approved alumni information.",
-      "entries": []
+      "summary": "Former FRESH members and collaborators are part of the lab's research record; this page focuses on public, current, and approved alumni information.",
+      "entries": [
+        {
+          "name": "Rosalia Jaffray",
+          "role": "MASc alumna",
+          "image": {
+            "alt": "Headshot of Rosalia Jaffray",
+            "src": "/assets/people/rosalia-jaffray-360.jpeg",
+            "sources": [
+              {
+                "type": "image/webp",
+                "srcset": "/assets/people/rosalia-jaffray-360.webp 360w",
+                "sizes": "(max-width: 520px) 156px, (max-width: 880px) 120px, 168px"
+              }
+            ]
+          },
+          "links": [
+            {
+              "label": "MASc thesis project",
+              "href": "/projects/rosalia-jaffray-masc-thesis/"
+            },
+            {
+              "label": "FHOPS project",
+              "href": "/projects/fhops/"
+            }
+          ],
+          "body": [
+            "Rosalia Jaffray completed MASc work in FRESH on forest harvesting operational planning, operations research, and open-source machine scheduling.",
+            "Her thesis developed and evaluated FHOPS, the Forest Harvesting Operations Planning System, as a reproducible framework for forest operations planning experiments.",
+            "Rosalia's background combines forest operations, engineering, harvesting systems, and practical interest in decision-support tools for forest operations."
+          ]
+        },
+        {
+          "name": "Yancun (Walter) Yan",
+          "role": "MSc alumnus",
+          "image": {
+            "alt": "Headshot of Yancun Walter Yan",
+            "src": "/assets/people/yancun-walter-yan-360.jpeg",
+            "sources": [
+              {
+                "type": "image/webp",
+                "srcset": "/assets/people/yancun-walter-yan-360.webp 360w",
+                "sizes": "(max-width: 520px) 156px, (max-width: 880px) 120px, 168px"
+              }
+            ]
+          },
+          "links": [
+            {
+              "label": "MSc thesis project",
+              "href": "/projects/yancun-walter-yan-msc-thesis/"
+            }
+          ],
+          "body": [
+            "Yancun (Walter) Yan completed MSc work on mathematical modelling to simulate and optimize climate-change mitigation potential in British Columbia's forest sector.",
+            "His work linked forest ecosystem carbon, harvested wood products, timber supply, and optimization methods in an integrated modelling framework.",
+            "Walter's background includes forestry, ecology, programming, mathematical modelling, and geospatial analysis."
+          ]
+        },
+        {
+          "name": "Jinming (Jimmy) Ke",
+          "role": "MSc alumnus",
+          "image": {
+            "alt": "Headshot of Jinming Jimmy Ke",
+            "src": "/assets/people/jinming-jimmy-ke-360.jpeg",
+            "sources": [
+              {
+                "type": "image/webp",
+                "srcset": "/assets/people/jinming-jimmy-ke-360.webp 360w",
+                "sizes": "(max-width: 520px) 156px, (max-width: 880px) 120px, 168px"
+              }
+            ]
+          },
+          "links": [
+            {
+              "label": "MSc thesis project",
+              "href": "/projects/jinming-jimmy-ke-msc-thesis/"
+            }
+          ],
+          "body": [
+            "Jinming (Jimmy) Ke completed MSc work on system-level climate impact assessment for forest management, fertilization, harvested wood products, and substitution pathways.",
+            "His thesis addressed the connection between forest carbon management and product carbon management by tracking carbon flows from forest management through harvested wood product use and eventual emissions.",
+            "Jimmy's modelling work used transparent Python workflows to support reproducible assessment of climate-smart forest management scenarios."
+          ]
+        },
+        {
+          "name": "Bridget Guo",
+          "role": "Past FRESH intern",
+          "image": {
+            "alt": "Headshot of Bridget Guo",
+            "src": "/assets/people/bridget-guo-360.jpeg",
+            "sources": [
+              {
+                "type": "image/webp",
+                "srcset": "/assets/people/bridget-guo-360.webp 360w",
+                "sizes": "(max-width: 520px) 156px, (max-width: 880px) 120px, 168px"
+              }
+            ]
+          },
+          "links": [
+            {
+              "label": "Hemlock dwarf mistletoe project",
+              "href": "/projects/hemlock-dwarf-mistletoe-spread-modelling/"
+            }
+          ],
+          "body": [
+            "Bridget Guo was an undergraduate intern in FRESH working on ecosystem modelling and statistical analysis.",
+            "They completed a B.Sc. in Natural Resources Conservation and brought experience in coding, data analysis, and data manipulation from a co-op term with the Ministry of Forests.",
+            "Bridget contributed to FRESH modelling work connected to hemlock dwarf mistletoe spread."
+          ]
+        }
+      ]
     }
   ]
 }
