@@ -854,20 +854,36 @@
       "path": "/projects/mitacs-newmont-mining-forestry-decarbonization-modelling/",
       "category": "Past And Recent Projects",
       "status": "Past applied research project",
-      "summary": "A past applied modelling project connected to Mitacs, Newmont, mining, forestry, and decarbonization.",
+      "summary": "A Mitacs Accelerate industrial postdoc project with Newmont on forest-management scenarios as nature-based decarbonization options for the mining sector.",
       "body": [
-        "This page is the public record for the Mitacs, Newmont, mining, and forestry decarbonization modelling project.",
-        "The project connected forestry and mining decarbonization questions through applied modelling, with public details limited to partner-approved summary information."
+        "This project explored how forest management and forest-sector modelling can inform nature-based decarbonization options for mining-sector decision makers.",
+        "The work connected mining-sector net-zero planning, voluntary carbon-market quality concerns, forest carbon modelling, and ecosystem-service indicators in a prototype decision-support framework.",
+        "The project was structured as a Mitacs Accelerate Industrial Postdoc internship with Newmont as the industry partner. FRESH contributed forest-sector modelling, scenario design, and interpretation of forestry-based climate and ecosystem-service outcomes.",
+        "The research compared forest-management scenarios through indicators including carbon stock, net emissions, old-growth area, species diversity, revenue, and jobs. The intent was decision support: helping decision makers understand tradeoffs among forest management, climate mitigation, biodiversity, and economic outcomes rather than presenting a deployed operational planning system.",
+        "A follow-on manuscript is in preparation from the final project report under the working title Developing a decision support system to assess forest management scenarios as a nature-based decarbonization solution: A case study from a mining company in British Columbia, Canada."
       ],
       "people": [
-        "Gregory Paradis: FRESH lead"
+        "Elaheh Ghasemi: postdoctoral researcher and manuscript lead",
+        "Salar Ghotb: collaborator",
+        "Kathleen Coupland: collaborator",
+        "Gregory Paradis: supervisor and FRESH lead"
       ],
       "partners": [
-        "Mitacs",
-        "Newmont"
+        "Mitacs Accelerate",
+        "Newmont",
+        "UBC mining-sector collaboration context"
       ],
       "outputs": [
-        "Partner-approved summary information, modelling outputs, reports, publications, and related links"
+        "Prototype decision-support framework for comparing forest management scenarios",
+        "Forest carbon and ecosystem-service indicator modelling workflows",
+        "Scenario outputs for carbon stock, net emissions, old-growth area, species diversity, revenue, and jobs",
+        "Final technical report for project partners",
+        "Journal manuscript in preparation based on the project report"
+      ],
+      "references": [
+        {
+          "citation": "Ghasemi, E., Ghotb, S., Coupland, K., and Paradis, G. Developing a decision support system to assess forest management scenarios as a nature-based decarbonization solution: A case study from a mining company in British Columbia, Canada. Manuscript in preparation."
+        }
       ]
     }
   ]

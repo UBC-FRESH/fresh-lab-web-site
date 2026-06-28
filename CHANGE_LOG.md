@@ -170,3 +170,9 @@ This is the append-only project narrative for `fresh-lab-web-site`.
   rewritten for journal submission, Walter Yan's thesis page notes an active
   journal manuscript, and the hemlock dwarf mistletoe project records the two
   Hanno Southam thesis-derived manuscripts in preparation.
+- Enriched the Mitacs/Newmont forestry decarbonization project page from
+  Basecamp-derived project records and publication/CV harvests, turning the
+  placeholder into a public summary of the Mitacs Accelerate industrial postdoc,
+  decision-support framework, forest-management scenario indicators, project
+  team, partner context, and manuscript-in-preparation record while keeping
+  internal files, NDA details, and manuscript review history out of the site.

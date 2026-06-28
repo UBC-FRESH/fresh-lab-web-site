@@ -300,6 +300,30 @@ def test_forest_action_lab_collaboration_pages_are_split() -> None:
     assert "/projects/omar-action-lab-paper-projects/" not in projects
 
 
+def test_mitacs_newmont_page_is_enriched_without_internal_process_leaks() -> None:
+    run_build()
+
+    page = read_dist("projects/mitacs-newmont-mining-forestry-decarbonization-modelling/index.html")
+
+    assert "Mitacs Accelerate Industrial Postdoc internship" in page
+    assert "Newmont" in page
+    assert "nature-based decarbonization" in page
+    assert "prototype decision-support framework" in page
+    assert "carbon stock" in page
+    assert "net emissions" in page
+    assert "old-growth area" in page
+    assert "species diversity" in page
+    assert "Elaheh Ghasemi" in page
+    assert "Journal manuscript in preparation" in page
+    assert "Ghasemi, E., Ghotb, S., Coupland, K., and Paradis, G." in page
+
+    assert "Basecamp" not in page
+    assert "NDA" not in page
+    assert "Draft Carbon report" not in page
+    assert "JCLEPRO" not in page
+    assert "rejected" not in page.lower()
+
+
 def test_thesis_project_pages_have_curated_public_themes() -> None:
     run_build()
 
