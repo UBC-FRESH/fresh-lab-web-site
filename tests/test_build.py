@@ -264,10 +264,15 @@ def test_thesis_project_pages_have_curated_public_themes() -> None:
     assert "FEMIC/TSA29 model-instance" in yunhao
     assert "risk-aware forest estate modelling" in jamie
     assert "wildfire mitigation" in jamie
-    assert "forest harvesting operational planning tools" in rosalia
-    assert "FHOPS-related software" in rosalia
-    assert "manuscript-development work" in jimmy
-    assert "forest-sector climate mitigation" in walter
+    assert "open-source tool for machine scheduling" in rosalia
+    assert "Forest Harvesting Operations Planning System" in rosalia
+    assert "rolling-horizon machine scheduling" in rosalia
+    assert "system-level climate impact assessment" in jimmy
+    assert "cross-laminated timber" in jimmy
+    assert "harvested wood product" in jimmy
+    assert "Strategic Forest Management Model" in walter
+    assert "epsilon-constraint" in walter
+    assert "Prince George Timber Supply Area" in walter
 
 
 def test_completed_thesis_project_pages_link_to_ubc_circle() -> None:
@@ -280,6 +285,7 @@ def test_completed_thesis_project_pages_link_to_ubc_circle() -> None:
     }
     for path, expected_values in checks.items():
         page = read_dist(path)
+        assert "References And Downloads" in page
         for expected in expected_values:
             assert expected in page
 

@@ -142,3 +142,10 @@ This is the append-only project narrative for `fresh-lab-web-site`.
   former dbh-distfit page to `Stem diameter distribution fitting`, and updated
   the CLEWs-C2070 page from PI-supplied diagnostic modelling notes while
   keeping unpublished implementation material out of Git.
+- Rewrote the completed thesis project pages for Jinming (Jimmy) Ke, Yancun
+  (Walter) Yan, and Rosalia Jaffray with stronger public-facing descriptions
+  and thesis-specific outputs. Direct automated thesis PDF downloads from UBC
+  Open Collections returned UBC cybersecurity block pages in this environment,
+  so the maintained text was grounded in public cIRcle/Open Collections thesis
+  records, search snippets, and existing public project links while preserving
+  the cIRcle record and thesis-PDF URLs for human access.
