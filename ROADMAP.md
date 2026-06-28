@@ -163,7 +163,10 @@ headshots/bios.
   legacy-source clues, but need maintainer confirmation before any public
   expansion. Child issue: #48.
 - [ ] P7.5 Add approved headshots for past postdocs and Dawson if public
-  images are available and cleared for reuse. Child issue: #49.
+  images are available and cleared for reuse. Child issue: #49. Legacy CMS
+  mining recovered public images for Elaheh Ghasemi, Valentine Lafond, and
+  Dawson Isbister; Salar Ghotb and Tatiane Micheletti still need approved image
+  sources.
 
 Status: active. The public People area now includes a `Past FRESHies` section
 for approved alumni and past members. Remaining work is confirmation/headshot

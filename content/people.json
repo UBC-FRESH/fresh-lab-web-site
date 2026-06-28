@@ -202,7 +202,18 @@
             "Elaheh Ghasemi was a postdoctoral researcher in FRESH with a background in industrial engineering, supply-chain management, and decision-support modelling.",
             "Her FRESH work contributed to nature-based decarbonization modelling for the mining and forest sectors and to applied machine-learning workflows for drone seeding microsite classification.",
             "Her research record includes project work on forest-sector supply chains, production planning, inventory, distribution, and transportation decisions."
-          ]
+          ],
+          "image": {
+            "alt": "Headshot of Elaheh Ghasemi",
+            "src": "/assets/people/elaheh-ghasemi-360.jpeg",
+            "sources": [
+              {
+                "type": "image/webp",
+                "srcset": "/assets/people/elaheh-ghasemi-360.webp 360w",
+                "sizes": "(max-width: 520px) 156px, (max-width: 880px) 120px, 168px"
+              }
+            ]
+          }
         },
         {
           "name": "Salar Ghotb",
@@ -234,7 +245,18 @@
           "body": [
             "Valentine Lafond was a postdoctoral researcher and research associate in FRESH, with expertise in forest ecology, forest modelling, and decision-support systems.",
             "Her FRESH work included climate-adaptation and pest-mitigation decision support, including the commercial thinning and diverse-planting analysis published in the Canadian Journal of Forest Research."
-          ]
+          ],
+          "image": {
+            "alt": "Headshot of Valentine Lafond",
+            "src": "/assets/people/valentine-lafond-360.jpeg",
+            "sources": [
+              {
+                "type": "image/webp",
+                "srcset": "/assets/people/valentine-lafond-360.webp 360w",
+                "sizes": "(max-width: 520px) 156px, (max-width: 880px) 120px, 168px"
+              }
+            ]
+          }
         },
         {
           "name": "Tatiane Micheletti",
@@ -358,7 +380,18 @@
           "body": [
             "Dawson Isbister joined FRESH as a SEED2STEM intern in Summer 2025.",
             "His internship contributed to lab and field projects connected to forestry education, applied research, and the development of learning activities for senior undergraduate forestry students."
-          ]
+          ],
+          "image": {
+            "alt": "Headshot of Dawson Isbister",
+            "src": "/assets/people/dawson-isbister-360.jpeg",
+            "sources": [
+              {
+                "type": "image/webp",
+                "srcset": "/assets/people/dawson-isbister-360.webp 360w",
+                "sizes": "(max-width: 520px) 156px, (max-width: 880px) 120px, 168px"
+              }
+            ]
+          }
         }
       ]
     }

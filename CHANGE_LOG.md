@@ -214,3 +214,9 @@ This is the append-only project narrative for `fresh-lab-web-site`.
   and linked past members to related public project pages where clear.
 - Removed an incorrect `Modelwright` related-project link from the FlashForest
   drone seeding microsite machine-learning page and added a regression check.
+- Fixed People-page layout for past members without headshots so text no
+  longer sits in a narrow column beside an empty image slot. Mined public
+  legacy WordPress content for past-member headshots, added approved legacy
+  images for Elaheh Ghasemi, Valentine Lafond, and Dawson Isbister, regenerated
+  optimized people assets, and recorded that Salar Ghotb and Tatiane
+  Micheletti still need approved image sources.

@@ -187,6 +187,10 @@ def test_people_pages_render_headshots_bios_and_profile_links() -> None:
     assert "Valentine Lafond" in alumni
     assert "Tatiane Micheletti" in alumni
     assert "Dawson Isbister" in alumni
+    assert 'class="person-entry no-photo"' in alumni
+    assert "/assets/people/elaheh-ghasemi-360.webp" in alumni
+    assert "/assets/people/valentine-lafond-360.webp" in alumni
+    assert "/assets/people/dawson-isbister-360.webp" in alumni
     assert "/projects/ignitebc-flashforest-drone-seeding-microsite-ml/" in alumni
     assert "/projects/mitacs-newmont-mining-forestry-decarbonization-modelling/" in alumni
     assert "/projects/can-commercial-thinning-help-mitigate-the-midterm-timber-supply-shortage/" in alumni

@@ -430,6 +430,14 @@ h1 {
   border-bottom: 1px solid var(--line);
 }
 
+.person-entry.no-photo {
+  display: block;
+}
+
+.person-entry.no-photo .person-copy {
+  max-width: 900px;
+}
+
 .person-entry:first-child {
   padding-top: 0;
 }
@@ -593,6 +601,10 @@ h1 {
   .person-entry {
     grid-template-columns: 120px minmax(0, 1fr);
     gap: 18px;
+  }
+
+  .person-entry.no-photo {
+    display: block;
   }
 
   .person-photo {

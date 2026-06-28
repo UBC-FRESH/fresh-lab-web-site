@@ -20,11 +20,14 @@ HERO_VARIANTS = [
 
 PEOPLE_SOURCES = [
     "bridget-guo",
+    "dawson-isbister",
+    "elaheh-ghasemi",
     "gregory-paradis",
     "jamie-iversen",
     "jinming-jimmy-ke",
     "kathleen-coupland",
     "rosalia-jaffray",
+    "valentine-lafond",
     "yancun-walter-yan",
     "yunhao-davis-xu",
 ]

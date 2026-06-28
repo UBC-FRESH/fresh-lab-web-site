@@ -432,10 +432,12 @@ def render_people_page(site: dict, page: dict) -> str:
     for entry in page["entries"]:
         body = paragraphs(entry["body"])
         image = ""
+        entry_class = "person-entry no-photo"
         if entry.get("image"):
             image = image_html(entry["image"], "person-photo")
+            entry_class = "person-entry"
         entries.append(
-            f"""<article class="person-entry">
+            f"""<article class="{entry_class}">
         {image}
         <div class="person-copy">
           <h2>{html.escape(entry['name'])}</h2>
