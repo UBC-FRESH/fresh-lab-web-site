@@ -338,8 +338,11 @@ def test_thesis_project_pages_have_curated_public_themes() -> None:
     assert "Rolling-horizon wildfire salvage planning" in yunhao
     assert "Williams Lake Timber Supply Area" in yunhao
     assert "Linear Bi-level Principal-agent Approach" in yunhao
-    assert "risk-aware forest estate modelling" in jamie
-    assert "wildfire mitigation" in jamie
+    assert "Fuel Treatment Planning Decision Support Tool" in jamie
+    assert "100 Mile House Timber Supply Area" in jamie
+    assert "Patchworks landscape-level fuel-treatment optimization model" in jamie
+    assert "timing, placement, and intensity" in jamie
+    assert "budget-constrained tradeoffs" in jamie
     assert "open-source tool for machine scheduling" in rosalia
     assert "Forest Harvesting Operations Planning System" in rosalia
     assert "rolling-horizon machine-scheduling" in rosalia.lower()

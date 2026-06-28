@@ -181,3 +181,9 @@ This is the append-only project narrative for `fresh-lab-web-site`.
   framing, principal-agent and bi-level optimization approach, rolling-horizon
   Williams Lake TSA case study, policy instruments, planned open-source Python
   modelling outputs, and a source note to ignore template residue in the draft.
+- Enriched Jamie Iversen's MASc thesis project page from a private proposal
+  draft, adding the working title, BC fuel-treatment decision support guide,
+  100 Mile House TSA case study, Patchworks landscape-level optimization
+  framing, treatment-curve workflow, wildfire-behaviour and
+  human-fire-interaction metrics, and planned thesis/model outputs while
+  keeping the proposal PDF itself unpublished.

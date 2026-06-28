@@ -126,7 +126,7 @@
         },
         {
           "name": "Jamie Iversen",
-          "role": "MSc student",
+          "role": "MASc student",
           "image": {
             "alt": "Headshot of Jamie Iversen",
             "src": "/assets/people/jamie-iversen-360.jpeg",
@@ -140,12 +140,12 @@
           },
           "links": [
             {
-              "label": "MSc thesis project",
+              "label": "MASc thesis project",
               "href": "/projects/jamie-iversen-msc-thesis/"
             }
           ],
           "body": [
-            "Jamie Iversen is an MSc student in FRESH and a registered forester-in-training in British Columbia.",
+            "Jamie Iversen is a MASc student in FRESH and a registered forester-in-training in British Columbia.",
             "His research focuses on risk-aware forest estate modelling for wildfire mitigation, linking fuel-treatment planning, timber supply analysis, and landscape-level decision support.",
             "Jamie's past work as a wildland firefighter helped motivate his interest in wildfire fuel treatments and operationally useful planning tools."
           ]

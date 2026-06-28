@@ -78,25 +78,35 @@
       ]
     },
     {
-      "title": "Jamie Iversen MSc thesis",
+      "title": "Jamie Iversen MASc thesis",
       "path": "/projects/jamie-iversen-msc-thesis/",
       "category": "Ongoing Research",
-      "status": "Ongoing MSc thesis",
-      "summary": "An active MSc thesis project on risk-aware forest estate modelling for wildfire mitigation.",
+      "status": "Ongoing MASc thesis",
+      "summary": "An active MASc thesis project developing a fuel-treatment planning decision-support tool for optimizing wildfire-risk-reduction treatments in British Columbia.",
       "body": [
-        "Jamie Iversen's MSc thesis work focuses on risk-aware forest estate modelling for wildfire mitigation.",
-        "The project links wildfire risk reduction, fuel-management treatment information, timber supply analysis, and forest estate modelling to support landscape-level planning under wildfire risk.",
-        "The public project record connects the active thesis work to modelling workflows, public wildfire-planning documents, and future thesis outputs."
+        "Jamie Iversen's MASc thesis, working-titled A Fuel Treatment Planning Decision Support Tool, develops modelling workflows for landscape-level wildfire fuel-treatment planning in British Columbia.",
+        "The project responds to the difficulty of choosing where, when, and how intensively to apply fuel treatments across large forest landscapes when managers must consider wildfire risk, treatment cost, forest structure, and budget constraints over long time horizons.",
+        "The first thesis component is a BC fuel-treatment decision support guide. The guide is designed as a flowchart that characterizes stands by fire weather zone, biogeoclimatic zone, leading species, stand structure, fuel conditions, and management goals before assigning treatment logic for modelling use.",
+        "The second component applies that treatment logic in a spatially explicit forest estate model using Patchworks. The model is intended to optimize the timing, placement, and intensity of fuel treatments at the landscape level under budgetary constraints.",
+        "The case study focuses on the 100 Mile House Timber Supply Area, a south-central British Columbia landscape with wildfire exposure, multiple communities, important evacuation corridors, and forest conditions where fuel-treatment planning is directly relevant.",
+        "The planned modelling workflow uses VRI-derived forest attributes, analysis-unit treatment curves, and wildfire-behaviour or human-fire-interaction metrics such as suppression effectiveness, suppression cost, expected damages, crown-fire potential, rate of spread, intensity, and severity."
       ],
       "people": [
-        "Jamie Iversen: MSc student",
+        "Jamie Iversen: MASc student",
         "Gregory Paradis: supervisor"
       ],
       "outputs": [
-        "MSc thesis materials",
-        "Risk-aware forest estate modelling workflows",
-        "Wildfire risk-reduction and treatment-planning review material",
+        "MASc thesis proposal and thesis materials",
+        "BC fuel-treatment decision support guide for modelling use",
+        "Fuel-treatment curves for analysis units in the 100 Mile House Timber Supply Area",
+        "Patchworks landscape-level fuel-treatment optimization model",
+        "Scenario outputs for treatment timing, placement, intensity, and budget-constrained tradeoffs",
         "Thesis, code, and publication links when publicly available"
+      ],
+      "references": [
+        {
+          "citation": "Iversen, J. A Fuel Treatment Planning Decision Support Tool. MASc thesis proposal, University of British Columbia."
+        }
       ]
     },
     {
