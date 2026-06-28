@@ -88,3 +88,7 @@ This is the append-only project narrative for `fresh-lab-web-site`.
 - Standardized the local repository workflow on a repo-root `.venv` virtual
   environment, with development dependencies installed from `pyproject.toml`
   and local commands documented through `.venv/bin/python`.
+- Added Phase 6 for content depth and research-record cleanup, including ORCID
+  and best-effort Google Scholar publication harvest scripts, project drafting
+  stubs for recent, ongoing, and open software projects, and an updated current
+  people roster from PI-maintained lab records.

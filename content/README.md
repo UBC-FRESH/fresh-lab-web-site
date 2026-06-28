@@ -33,6 +33,12 @@ Use `content/projects.json` for:
 - current project index cards;
 - project detail pages.
 
+Use `content/project-stubs/` for:
+
+- non-rendered project drafting notes;
+- project intake checklists before a project becomes a public page;
+- source notes about collaborators, HQP, assets, publications, and links.
+
 Use `content/publications.json` for:
 
 - structured publication records.

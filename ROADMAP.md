@@ -115,3 +115,24 @@ FRESH lab website from the server-hosted VS Code/dev-container workflow.
 Status: active. P5.1 is complete: the wiki page exists at
 `https://github.com/UBC-FRESH/lab-knowledge/wiki/FRESH-Lab-Website-Maintainer-Workflow`
 and is linked from the lab KB home page.
+
+## Phase 6: Content Depth And Research Record
+
+GitHub parent issue: #37
+
+Active branch: `feature/p6-content-depth-research-record`
+
+Goal: build out the public research record for FRESH by adding publication
+harvest tooling, project-page drafting stubs, current people roster updates,
+and a workflow for turning reviewed project notes into polished public pages.
+
+- [x] P6.1 Add publication harvest scripts for ORCID and Google Scholar. Child issue: #38.
+- [x] P6.2 Create project-page drafting stubs for recent, ongoing, and software projects. Child issue: #39.
+- [x] P6.3 Update current people roster from PI-maintained lab records. Child issue: #40.
+- [ ] P6.4 Convert priority project stubs into public project pages. Child issue: #41.
+- [ ] P6.5 Curate publication harvests into maintained publication records. Child issue: #42.
+- [ ] P6.6 Add content QA for project stubs, publication links, people pages, and public assets. Child issue: #43.
+
+Status: active. P6.1-P6.3 are complete on the phase branch. Project stubs live
+under `content/project-stubs/`; publication harvest scripts write ignored
+review files under `tmp/publication-harvests/`.

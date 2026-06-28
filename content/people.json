@@ -8,12 +8,12 @@
     {
       "title": "Postdocs and Researchers",
       "href": "/postdocs-and-researchers/",
-      "summary": "Research associates, postdoctoral fellows, and staff researchers."
+      "summary": "Research associates and staff researchers. FRESH currently has no postdoctoral fellows listed."
     },
     {
       "title": "Graduate Students",
       "href": "/graduate-students/",
-      "summary": "Current MSc, MASc, and PhD students."
+      "summary": "Current and incoming MSc, MASc, and supervised program students."
     },
     {
       "title": "Visiting Scholars",
@@ -45,14 +45,56 @@
     {
       "title": "Postdocs and Researchers",
       "path": "/postdocs-and-researchers/",
-      "summary": "The maintained researcher roster is being rebuilt from current lab records.",
-      "entries": []
+      "summary": "Research associates and staff researchers connected to FRESH.",
+      "entries": [
+        {
+          "name": "Kathleen Coupland",
+          "role": "Research Associate",
+          "body": [
+            "Kathleen Coupland is a Research Associate connected to FRESH.",
+            "Her maintained public profile details are being rebuilt from current lab records."
+          ]
+        }
+      ]
     },
     {
       "title": "Graduate Students",
       "path": "/graduate-students/",
-      "summary": "The maintained student roster is being rebuilt from current lab records.",
-      "entries": []
+      "summary": "Current and incoming master's students and supervised program students.",
+      "entries": [
+        {
+          "name": "Yunhao (Davis) Xu",
+          "role": "MASc student",
+          "body": [
+            "Yunhao (Davis) Xu is an active MASc student in FRESH.",
+            "His maintained project and thesis profile is being drafted from current lab records."
+          ]
+        },
+        {
+          "name": "Jamie Iversen",
+          "role": "MSc student",
+          "body": [
+            "Jamie Iversen is an active MSc student in FRESH.",
+            "His maintained project and thesis profile is being drafted from current lab records."
+          ]
+        },
+        {
+          "name": "Thomas Cooper",
+          "role": "Incoming master's student",
+          "body": [
+            "Thomas Cooper is an incoming master's student in FRESH.",
+            "His public profile will be expanded after onboarding details are confirmed."
+          ]
+        },
+        {
+          "name": "Kailey",
+          "role": "TRANSFOR-M program student",
+          "body": [
+            "Kailey is a TRANSFOR-M program student supervised by Gregory Paradis.",
+            "Her public profile will be expanded after current project details are confirmed."
+          ]
+        }
+      ]
     },
     {
       "title": "Visiting Scholars",
