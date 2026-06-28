@@ -306,6 +306,7 @@ def test_priority_project_pages_have_curated_public_summaries() -> None:
     assert "Salar Ghotb: past postdoctoral researcher" in flashforest
     assert "ML4seeding GitHub repository" in flashforest
     assert "https://github.com/UBC-FRESH/ML4seeding" in flashforest
+    assert "/projects/modelwright/" not in flashforest
     assert "Drone_Project_Technical_Report.pdf" not in flashforest
     assert "raw drone imagery" not in flashforest.lower()
     assert "climate, land, and water into energy models" in clews

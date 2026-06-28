@@ -212,3 +212,5 @@ This is the append-only project narrative for `fresh-lab-web-site`.
   entries for Elaheh Ghasemi, Salar Ghotb, Valentine Lafond, Tatiane
   Micheletti, and Dawson Isbister, preserved thesis alumni and Bridget Guo,
   and linked past members to related public project pages where clear.
+- Removed an incorrect `Modelwright` related-project link from the FlashForest
+  drone seeding microsite machine-learning page and added a regression check.
