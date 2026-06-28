@@ -50,21 +50,31 @@
       "path": "/projects/yunhao-davis-xu-masc-thesis/",
       "category": "Ongoing Research",
       "status": "Ongoing MASc thesis",
-      "summary": "An active MASc thesis project on post-wildfire salvage planning, forest estate modelling, and decision support in British Columbia.",
+      "summary": "An active MASc thesis project developing a principal-agent, rolling-horizon optimization model for post-wildfire salvage harvesting and policy design in British Columbia.",
       "body": [
-        "Yunhao (Davis) Xu's MASc thesis work is developing forest estate modelling and decision-support workflows for post-wildfire salvage planning.",
-        "The project connects timber value, fire severity, harvesting cost, vegetation inventory, and model-instance preparation to evaluate management choices after wildfire disturbance.",
-        "The public project record connects the active thesis work to FEMIC/TSA29 model-instance development, software workflows, and future thesis outputs."
+        "Yunhao (Davis) Xu's MASc thesis, working-titled Modeling Salvage Harvesting After Wildfires: A Linear Bi-level Principal-agent Approach, develops decision-support models for post-fire salvage harvesting in British Columbia.",
+        "The project frames salvage harvesting as a principal-agent problem: the forest landowner or policy-maker wants to recover value, maintain timber supply, and support forest recovery, while forest companies decide whether salvage operations are economically feasible.",
+        "The modelling workflow combines rolling-horizon planning with single-level and bi-level optimization so the system can update as wildfire disturbance, burn severity, timber degradation, and salvage availability change through time.",
+        "A Williams Lake Timber Supply Area case study uses controlled semi-synthetic inputs built from public forest inventory, timber-supply-area, fire burn severity, and elevation datasets to test salvage schedules and policy instruments.",
+        "The thesis evaluates instruments such as stumpage credits, salvage windows, volume constraints, and harvest-sequence rules, with outputs focused on discounted net present value, product-grade mix, salvage volume over time, retention, regeneration, subsidy allocation, and stand-selection patterns.",
+        "The planned public research contribution is an open-source Python modelling framework with preprocessing scripts, optimization model files, scenario data, solver configuration, and documentation for reproducible wildfire-salvage planning experiments."
       ],
       "people": [
         "Yunhao (Davis) Xu: MASc student",
         "Gregory Paradis: supervisor"
       ],
       "outputs": [
-        "MASc thesis materials",
-        "FEMIC/TSA29 model-instance documentation",
-        "Post-wildfire salvage planning datasets and modelling workflows",
+        "MASc thesis in progress",
+        "Principal-agent optimization model for post-wildfire salvage harvesting",
+        "Rolling-horizon wildfire salvage planning workflow",
+        "Williams Lake Timber Supply Area case-study model inputs and scenarios",
+        "Planned open-source Python modelling framework, documentation, and reproducible scenario materials",
         "Thesis, code, and publication links when publicly available"
+      ],
+      "references": [
+        {
+          "citation": "Xu, Y. Modeling Salvage Harvesting After Wildfires: A Linear Bi-level Principal-agent Approach. MASc thesis in progress, University of British Columbia."
+        }
       ]
     },
     {

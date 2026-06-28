@@ -176,3 +176,8 @@ This is the append-only project narrative for `fresh-lab-web-site`.
   decision-support framework, forest-management scenario indicators, project
   team, partner context, and manuscript-in-preparation record while keeping
   internal files, NDA details, and manuscript review history out of the site.
+- Enriched Yunhao (Davis) Xu's MASc thesis project page from a private WIP
+  thesis draft, adding the working title, post-wildfire salvage harvesting
+  framing, principal-agent and bi-level optimization approach, rolling-horizon
+  Williams Lake TSA case study, policy instruments, planned open-source Python
+  modelling outputs, and a source note to ignore template residue in the draft.

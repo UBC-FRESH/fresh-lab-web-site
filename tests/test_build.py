@@ -333,8 +333,11 @@ def test_thesis_project_pages_have_curated_public_themes() -> None:
     jimmy = read_dist("projects/jinming-jimmy-ke-msc-thesis/index.html")
     walter = read_dist("projects/yancun-walter-yan-msc-thesis/index.html")
 
-    assert "post-wildfire salvage planning" in yunhao
-    assert "FEMIC/TSA29 model-instance" in yunhao
+    assert "post-wildfire salvage harvesting" in yunhao
+    assert "Principal-agent optimization model" in yunhao
+    assert "Rolling-horizon wildfire salvage planning" in yunhao
+    assert "Williams Lake Timber Supply Area" in yunhao
+    assert "Linear Bi-level Principal-agent Approach" in yunhao
     assert "risk-aware forest estate modelling" in jamie
     assert "wildfire mitigation" in jamie
     assert "open-source tool for machine scheduling" in rosalia
