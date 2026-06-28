@@ -4,9 +4,13 @@
   --soft: #f4f6f2;
   --line: #dce4dc;
   --ubc-blue: #002145;
-  --green: #1f6f4a;
-  --green-dark: #174b37;
-  --gold: #d6a24a;
+  --green: #006632;
+  --green-dark: #004524;
+  --green-bright: #10b261;
+  --purple: #460a66;
+  --brown: #654709;
+  --gold: #b27807;
+  --green-soft: #70ad47;
   --white: #ffffff;
   --max: 1180px;
 }
@@ -73,17 +77,30 @@ img {
 }
 
 .brand {
-  display: inline-flex;
-  align-items: baseline;
-  gap: 10px;
+  display: inline-grid;
+  grid-template-columns: 42px minmax(0, max-content);
+  align-items: center;
+  gap: 11px;
   color: var(--ink);
   font-weight: 800;
   text-decoration: none;
 }
 
 .brand-mark {
+  display: block;
+  width: 40px;
+  height: 40px;
+}
+
+.brand-text {
+  display: grid;
+  gap: 1px;
+}
+
+.brand-name {
   color: var(--green);
   font-size: 1.2rem;
+  line-height: 1;
   letter-spacing: 0;
 }
 
@@ -509,8 +526,13 @@ h1 {
   }
 
   .brand {
-    flex-direction: column;
-    gap: 0;
+    grid-template-columns: 36px minmax(0, 1fr);
+    gap: 9px;
+  }
+
+  .brand-mark {
+    width: 34px;
+    height: 34px;
   }
 
   .nav a {

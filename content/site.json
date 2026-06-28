@@ -81,7 +81,7 @@
       "eyebrow": "Contact",
       "summary": "FRESH is the Forest Resources and Ecosystem Services Hub at the University of British Columbia.",
       "body": [
-        "FRESH is led by Dr. Gregory Paradis in the UBC Faculty of Forestry.",
+        "FRESH is led by Dr. Gregory Paradis in the UBC Faculty of Forestry & Environmental Stewardship.",
         "For current lab information, visit the people page or the FRESH Lab GitHub organization."
       ],
       "links": [
@@ -94,7 +94,7 @@
           "href": "https://github.com/UBC-FRESH"
         },
         {
-          "label": "UBC Faculty of Forestry",
+          "label": "UBC Faculty of Forestry & Environmental Stewardship",
           "href": "https://forestry.ubc.ca/"
         }
       ]

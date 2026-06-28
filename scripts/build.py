@@ -216,8 +216,11 @@ def header(site: dict, current_path: str) -> str:
     return f"""<header class="site-header">
   <div class="header-inner">
     <a class="brand" href="{site_url('/')}">
-      <span class="brand-mark">FRESH</span>
-      <span class="brand-sub">{html.escape(site['tagline'])}</span>
+      <img class="brand-mark" src="{site_url('/assets/logos/fresh-mark-green-96.png')}" alt="" width="40" height="40">
+      <span class="brand-text">
+        <span class="brand-name">FRESH</span>
+        <span class="brand-sub">{html.escape(site['tagline'])}</span>
+      </span>
     </a>
     <nav class="nav" aria-label="Primary navigation">
       {nav_html(current_path)}
@@ -234,7 +237,7 @@ def footer(site: dict) -> str:
       <div>{html.escape(site['tagline'])}</div>
     </div>
     <div>
-      <a href="https://forestry.ubc.ca/">UBC Faculty of Forestry</a><br>
+      <a href="https://forestry.ubc.ca/">UBC Faculty of Forestry &amp; Environmental Stewardship</a><br>
       <a href="https://github.com/UBC-FRESH">UBC-FRESH GitHub</a>
     </div>
   </div>

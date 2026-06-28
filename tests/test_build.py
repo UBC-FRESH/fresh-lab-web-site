@@ -56,6 +56,8 @@ def test_build_generates_expected_public_pages() -> None:
         "assets/images/hero-digital-forest-1600.jpeg",
         "assets/images/hero-digital-forest-960.webp",
         "assets/images/hero-digital-forest-1600.webp",
+        "assets/logos/fresh-mark-green-96.png",
+        "assets/logos/fresh-mark-green-192.png",
     ]
 
     for relative_path in expected:
@@ -195,10 +197,19 @@ def test_contact_page_excludes_legacy_pi_and_tutorial_link() -> None:
     contact = read_dist("contact/index.html")
     assert "FRESH is led by Dr. Gregory Paradis" in contact
     assert "UBC-FRESH GitHub" in contact
+    assert "UBC Faculty of Forestry &amp; Environmental Stewardship" in contact
     assert "Dr Verena C Griess" not in contact
     assert "verena.griess@ubc.ca" not in contact
     assert "Sustainable Forest Management Tutorials" not in contact
     assert "sfmtutorials.forestry.ubc.ca" not in contact
+
+
+def test_header_uses_fresh_mark_asset() -> None:
+    run_build()
+
+    home = read_dist("index.html")
+    assert 'class="brand-mark" src="/assets/logos/fresh-mark-green-96.png"' in home
+    assert 'alt="" width="40" height="40"' in home
 
 
 def test_generated_local_references_resolve() -> None:
