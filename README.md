@@ -52,6 +52,15 @@ Harvest publication and research-record candidates into ignored review files:
 .venv/bin/python scripts/harvest_cv_research_record.py
 ```
 
+Harvest read-only Basecamp project review material after authenticating with
+the Basecamp CLI:
+
+```bash
+.venv/bin/python scripts/harvest_basecamp_projects.py --projects-file tmp/basecamp-harvests/phase6-projects.json --output-dir tmp/basecamp-harvests/phase6-inventory
+```
+
+The Basecamp projects file and harvested outputs stay under ignored `tmp/`.
+
 Generated files are written to `dist/`.
 
 ## Preview Locally

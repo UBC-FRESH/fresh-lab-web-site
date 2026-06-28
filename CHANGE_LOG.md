@@ -100,3 +100,6 @@ This is the append-only project narrative for `fresh-lab-web-site`.
   refereed publications, non-refereed/software records, and project-term
   matches from a local PI CV PDF into ignored review JSON under `tmp/`, and
   documented the Basecamp CLI read-only gathering workflow for project details.
+- Added a generic Basecamp project harvester for read-only project metadata,
+  message-board, to-do, card-table, and Docs & Files inventory exports into
+  ignored `tmp/basecamp-harvests/` review files.

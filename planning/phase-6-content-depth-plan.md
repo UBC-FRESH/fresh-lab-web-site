@@ -52,6 +52,23 @@ basecamp files list --project "PROJECT NAME" --json
 basecamp files download "UPLOAD_ID_OR_URL" --project "PROJECT NAME" --out tmp/basecamp-downloads/PROJECT-SLUG/
 ```
 
+For repeatable multi-project inventory harvests, create an ignored JSON list of
+project IDs under `tmp/basecamp-harvests/` and run:
+
+```bash
+.venv/bin/python scripts/harvest_basecamp_projects.py \
+  --projects-file tmp/basecamp-harvests/phase6-projects.json \
+  --output-dir tmp/basecamp-harvests/phase6-inventory \
+  --message-limit 80 \
+  --file-depth 2 \
+  --command-timeout 20
+```
+
+Use `--show-documents` only for targeted follow-up passes where the relevant
+project has already been selected for curation. Broad harvests should avoid
+attachment downloads and raw document body expansion unless there is a clear
+review need.
+
 Use Basecamp material as review input only. Curated public facts should be
 copied into `content/projects.json`, `content/publications.json`, or a planning
 note after checking for confidentiality, partner approval, and student privacy.
