@@ -14,17 +14,47 @@ Scripts:
 ```bash
 .venv/bin/python scripts/harvest_orcid_publications.py
 .venv/bin/python scripts/harvest_google_scholar_publications.py
+.venv/bin/python scripts/harvest_cv_research_record.py
 ```
 
 Default outputs are ignored review files under:
 
 ```text
 tmp/publication-harvests/
+tmp/cv-harvests/
 ```
 
 ORCID is the preferred durable public data source. Google Scholar is
 best-effort only because automated access can be throttled and markup can
-change without notice.
+change without notice. The CV harvest uses a local PDF under `tmp/` and writes
+review JSON with grants/contracts, refereed publications, non-refereed/software
+records, and project-term matches.
+
+## Basecamp Project Harvesting
+
+The Basecamp CLI is useful for project-specific source gathering after the PI
+authenticates locally. Keep credentials outside the repository and keep raw
+downloads under ignored `tmp/`.
+
+Suggested login command for server-hosted VS Code:
+
+```bash
+basecamp auth login --remote --scope read
+```
+
+Suggested read-only exploration commands after login:
+
+```bash
+basecamp auth status
+basecamp projects list --json
+basecamp search "WS3" --all --json
+basecamp files list --project "PROJECT NAME" --json
+basecamp files download "UPLOAD_ID_OR_URL" --project "PROJECT NAME" --out tmp/basecamp-downloads/PROJECT-SLUG/
+```
+
+Use Basecamp material as review input only. Curated public facts should be
+copied into `content/projects.json`, `content/publications.json`, or a planning
+note after checking for confidentiality, partner approval, and student privacy.
 
 ## Project Drafting
 

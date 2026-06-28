@@ -44,6 +44,14 @@ Regenerate the sanitized content source from a local WordPress export:
 This updates `content/migration/wordpress-pages.json`; it does not update the
 live site content source.
 
+Harvest publication and research-record candidates into ignored review files:
+
+```bash
+.venv/bin/python scripts/harvest_orcid_publications.py
+.venv/bin/python scripts/harvest_google_scholar_publications.py
+.venv/bin/python scripts/harvest_cv_research_record.py
+```
+
 Generated files are written to `dist/`.
 
 ## Preview Locally

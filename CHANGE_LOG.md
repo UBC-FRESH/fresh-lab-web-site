@@ -96,3 +96,7 @@ This is the append-only project narrative for `fresh-lab-web-site`.
   grouped the projects index into ongoing research, open software, and
   past/recent projects, and kept rough `content/project-stubs/` Markdown out of
   the generated site.
+- Added a CV research-record harvest script that extracts grants/contracts,
+  refereed publications, non-refereed/software records, and project-term
+  matches from a local PI CV PDF into ignored review JSON under `tmp/`, and
+  documented the Basecamp CLI read-only gathering workflow for project details.
