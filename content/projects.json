@@ -243,21 +243,22 @@
       "path": "/projects/hemlock-dwarf-mistletoe-spread-modelling/",
       "category": "Ongoing Research",
       "status": "Collaborative modelling project",
-      "summary": "A collaborative modelling project on hemlock dwarf mistletoe spread.",
+      "summary": "A collaborative modelling project developing manuscript outputs on hemlock dwarf mistletoe spread and infection dynamics.",
       "body": [
-        "This project focuses on modelling the spread of hemlock dwarf mistletoe.",
-        "The work connects forest health, spatial spread modelling, and decision-support questions around hemlock dwarf mistletoe in British Columbia forests."
+        "This project focuses on modelling hemlock dwarf mistletoe spread and infection dynamics in British Columbia forests.",
+        "The work connects forest health, spatial spread modelling, variable-retention harvesting, and decision-support questions around hemlock dwarf mistletoe.",
+        "Two thesis-derived manuscripts are in development: one on forest-edge spread and implications for variable-retention harvesting, and one on mid-rotation hemlock dwarf mistletoe infection."
       ],
       "people": [
+        "Hanno Southam: thesis lead",
+        "Bridget Guo: past FRESH intern",
         "Gregory Paradis: FRESH collaborator",
-        "Bridget Guo: past FRESH intern"
-      ],
-      "partners": [
-        "Hanno Southam",
-        "Richard Hamelin"
+        "Richard Hamelin: collaborator"
       ],
       "outputs": [
-        "Mistletoe spread modelling workflows, collaborator notes, and future public outputs"
+        "Forest-edge spread manuscript in preparation",
+        "Mid-rotation infection manuscript in preparation",
+        "Mistletoe spread modelling workflows and collaborator notes"
       ]
     },
     {
@@ -305,7 +306,7 @@
       "body": [
         "FHOPS is the Forest Harvesting Operations Planning System, an open software project in the FRESH research software portfolio.",
         "The project supports reproducible optimization and benchmarking workflows for forest harvesting operations planning.",
-        "The public project record links the software repository, technical documentation, citation metadata, and related publications as those outputs are finalized."
+        "FHOPS is connected to Rosalia Jaffray's MASc thesis: the literature-review chapter is published in the International Journal of Forest Engineering, the FHOPS software paper has been submitted to SoftwareX, and the rolling-horizon machine-scheduling chapter is being rewritten for submission to the Canadian Journal of Forest Research."
       ],
       "people": [
         "Gregory Paradis: maintainer or lead developer"
@@ -314,7 +315,9 @@
         "GitHub repository",
         "Technical documentation",
         "Zenodo software citation",
-        "Related harvesting operations planning publications"
+        "Published systematic review of forest harvesting operational planning tools",
+        "Submitted SoftwareX manuscript on the FHOPS optimization and benchmarking stack",
+        "Rolling-horizon machine-scheduling manuscript being rewritten for CJFR submission"
       ],
       "links": [
         {
@@ -328,6 +331,17 @@
         {
           "label": "FHOPS software citation",
           "href": "https://doi.org/10.5281/zenodo.19619189"
+        }
+      ],
+      "references": [
+        {
+          "citation": "Jaffray, R., Coupland, K., and Paradis, G. 2026. Forest harvesting operational planning tools: a systematic review of optimization, simulation, and spatial decision support systems. International Journal of Forest Engineering.",
+          "links": [
+            {
+              "label": "Publisher DOI",
+              "href": "https://doi.org/10.1080/14942119.2026.2662184"
+            }
+          ]
         }
       ]
     },
@@ -745,7 +759,8 @@
         "Yancun (Walter) Yan's MSc thesis developed an integrated mathematical modelling framework to simulate and optimize climate change mitigation potential in British Columbia's forest sector.",
         "The framework combines a Strategic Forest Management Model, Forest Carbon Budget Model, and Wood Product Carbon Model to track indicators including forest carbon stocks and net carbon emissions from the forest sector.",
         "Using the Prince George Timber Supply Area as a case study, the thesis compared scenarios ranging from no harvest to maximum harvest, tested the linkage between strategic forest management and carbon-budget modelling, and evaluated tradeoffs between timber supply and forest carbon outcomes.",
-        "The optimization work used epsilon-constraint methods to generate Pareto front curves for competing objectives such as maximizing wood supply, maximizing total forest carbon stock, and minimizing net forest carbon emissions, with sensitivity analysis around harvested wood product longevity and substitution effects."
+        "The optimization work used epsilon-constraint methods to generate Pareto front curves for competing objectives such as maximizing wood supply, maximizing total forest carbon stock, and minimizing net forest carbon emissions, with sensitivity analysis around harvested wood product longevity and substitution effects.",
+        "A thesis-derived journal manuscript is in development from this work."
       ],
       "people": [
         "Yancun (Walter) Yan: MSc student",
@@ -757,7 +772,7 @@
         "Integrated SFMM-FCBM-WPCM modelling framework",
         "Prince George TSA case study",
         "Pareto-front tradeoff analysis for timber supply and forest carbon outcomes",
-        "Journal-paper link when publicly available"
+        "Thesis-derived journal manuscript in development"
       ],
       "references": [
         {
@@ -782,10 +797,10 @@
       "status": "Past MASc thesis",
       "summary": "A completed MASc thesis developing and evaluating FHOPS, an open-source machine-scheduling tool for forest operational planning.",
       "body": [
-        "Rosalia Jaffray's MASc thesis developed and evaluated an open-source tool for machine scheduling in forest operational planning.",
-        "The thesis connects a systematic review of forest harvesting operational planning tools with FHOPS, the Forest Harvesting Operations Planning System, as a reproducible open-source framework for machine scheduling and operational planning experiments.",
-        "The work evaluates FHOPS as a candidate framework for rolling-horizon machine scheduling in forest operations, linking operations research methods, simulation/optimization workflows, and practical barriers to adoption in operational decision support.",
-        "This project anchors the FRESH open-software thread around FHOPS and connects thesis outputs, systematic review work, and future forest operations planning publications."
+        "Rosalia Jaffray's MASc thesis developed and evaluated FHOPS, the Forest Harvesting Operations Planning System, as an open-source tool for machine scheduling in forest operational planning.",
+        "The first thesis chapter, a systematic review of forest harvesting operational planning tools, has been published in the International Journal of Forest Engineering.",
+        "The second chapter, the FHOPS software paper, has been submitted to SoftwareX.",
+        "The third chapter evaluates rolling-horizon design for forest operations machine scheduling and is being rewritten for submission to the Canadian Journal of Forest Research."
       ],
       "people": [
         "Rosalia Jaffray: MASc student",
@@ -794,9 +809,10 @@
       ],
       "outputs": [
         "MASc thesis",
+        "Published systematic review of forest harvesting operational planning tools",
         "FHOPS open-source software and benchmarking workflows",
-        "Systematic review of forest harvesting operational planning tools",
-        "Related publication and FHOPS links"
+        "Submitted SoftwareX manuscript on the FHOPS optimization and benchmarking stack",
+        "Rolling-horizon machine-scheduling manuscript being rewritten for CJFR submission"
       ],
       "links": [
         {
@@ -819,6 +835,15 @@
             {
               "label": "Download thesis PDF",
               "href": "https://open.library.ubc.ca/media/download/pdf/24/1.0452424/4"
+            }
+          ]
+        },
+        {
+          "citation": "Jaffray, R., Coupland, K., and Paradis, G. 2026. Forest harvesting operational planning tools: a systematic review of optimization, simulation, and spatial decision support systems. International Journal of Forest Engineering.",
+          "links": [
+            {
+              "label": "Publisher DOI",
+              "href": "https://doi.org/10.1080/14942119.2026.2662184"
             }
           ]
         }

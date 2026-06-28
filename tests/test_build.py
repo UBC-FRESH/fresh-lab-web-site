@@ -315,7 +315,10 @@ def test_thesis_project_pages_have_curated_public_themes() -> None:
     assert "wildfire mitigation" in jamie
     assert "open-source tool for machine scheduling" in rosalia
     assert "Forest Harvesting Operations Planning System" in rosalia
-    assert "rolling-horizon machine scheduling" in rosalia
+    assert "rolling-horizon machine-scheduling" in rosalia.lower()
+    assert "submitted to SoftwareX" in rosalia
+    assert "submission to the Canadian Journal of Forest Research" in rosalia
+    assert "10.1080/14942119.2026.2662184" in rosalia
     assert "system-level climate impact assessment" in jimmy
     assert "cross-laminated timber" in jimmy
     assert "harvested wood product" in jimmy
@@ -323,6 +326,18 @@ def test_thesis_project_pages_have_curated_public_themes() -> None:
     assert "Strategic Forest Management Model" in walter
     assert "epsilon-constraint" in walter
     assert "Prince George Timber Supply Area" in walter
+    assert "thesis-derived journal manuscript is in development" in walter
+
+
+def test_hemlock_dwarf_mistletoe_page_tracks_thesis_paper_pipeline() -> None:
+    run_build()
+
+    page = read_dist("projects/hemlock-dwarf-mistletoe-spread-modelling/index.html")
+
+    assert "Hanno Southam: thesis lead" in page
+    assert "forest-edge spread" in page
+    assert "variable-retention harvesting" in page
+    assert "mid-rotation hemlock dwarf mistletoe infection" in page
 
 
 def test_completed_thesis_project_pages_link_to_ubc_circle() -> None:
@@ -444,6 +459,7 @@ def test_publications_page_uses_curated_harvest_records() -> None:
     assert "WS3: An open-source Python framework" in publications
     assert "https://doi.org/10.1016/j.ecoinf.2026.103688" in publications
     assert "FHOPS" in publications
+    assert "https://doi.org/10.1080/14942119.2026.2662184" in publications
     assert "https://doi.org/10.5281/zenodo.19619189" in publications
     assert "Nemora" in publications
     assert "https://ubc-fresh.github.io/nemora/" in publications

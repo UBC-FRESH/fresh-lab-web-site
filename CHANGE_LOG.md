@@ -164,3 +164,9 @@ This is the append-only project narrative for `fresh-lab-web-site`.
 - Consolidated completed thesis project page links so cIRcle thesis records and
   PDF downloads appear only under `References And Downloads`; the general
   `Links` section is now reserved for non-citation project links.
+- Updated research-output status from the refreshed PI CV and maintainer notes:
+  Rosalia Jaffray's literature-review chapter now has its published DOI,
+  FHOPS/rolling-horizon thesis outputs are labelled as submitted or being
+  rewritten for journal submission, Walter Yan's thesis page notes an active
+  journal manuscript, and the hemlock dwarf mistletoe project records the two
+  Hanno Southam thesis-derived manuscripts in preparation.

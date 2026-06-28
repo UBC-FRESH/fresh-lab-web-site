@@ -494,7 +494,7 @@ def render_project(site: dict, project: dict) -> str:
         ("Status", [project["status"]]),
         ("People And Roles", project.get("people", [])),
         ("Collaborators And Partners", project.get("partners", [])),
-        ("Outputs And Links To Add", project.get("outputs", [])),
+        ("Outputs", project.get("outputs", [])),
     ]
     detail_sections = "".join(
         f"<h2>{html.escape(title)}</h2>{bullets(items)}" for title, items in details if items
