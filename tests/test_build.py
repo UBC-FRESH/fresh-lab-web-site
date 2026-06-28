@@ -41,6 +41,13 @@ def test_build_generates_expected_public_pages() -> None:
         "people/index.html",
         "projects/index.html",
         "projects/can-commercial-thinning-help-mitigate-the-midterm-timber-supply-shortage/index.html",
+        "projects/yunhao-davis-xu-masc-thesis/index.html",
+        "projects/jamie-iversen-msc-thesis/index.html",
+        "projects/cccandies/index.html",
+        "projects/clews-c2070-nrcan/index.html",
+        "projects/modelwright/index.html",
+        "projects/ws3/index.html",
+        "projects/rosalia-jaffray-masc-thesis/index.html",
         "publications/index.html",
         "contact/index.html",
         "join-fresh/index.html",
@@ -181,14 +188,28 @@ def test_join_page_excludes_legacy_opportunity_postings() -> None:
     assert "January 2018" not in join
 
 
-def test_projects_index_lists_only_confirmed_current_project() -> None:
+def test_projects_index_lists_curated_research_records() -> None:
     run_build()
 
     projects = read_dist("projects/index.html")
     assert "A value-driven framework to model the impact of commercial thinning" in projects
     assert "/projects/can-commercial-thinning-help-mitigate-the-midterm-timber-supply-shortage/" in projects
+    assert "Ongoing Research" in projects
+    assert "Open Software" in projects
+    assert "Past And Recent Projects" in projects
+    assert "/projects/yunhao-davis-xu-masc-thesis/" in projects
+    assert "/projects/modelwright/" in projects
+    assert "/projects/mitacs-newmont-mining-forestry-decarbonization-modelling/" in projects
     assert "bioSAFE" not in projects
     assert "Partial cutting" not in projects
+
+
+def test_project_draft_placeholders_are_not_published() -> None:
+    run_build()
+
+    all_html = "\n".join(path.read_text(encoding="utf-8") for path in DIST.rglob("*.html"))
+    assert "TBD." not in all_html
+    assert "content/project-stubs" not in all_html
 
 
 def test_contact_page_excludes_legacy_pi_and_tutorial_link() -> None:

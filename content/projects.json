@@ -1,13 +1,432 @@
 {
   "projects": [
     {
-      "title": "A value-driven framework to model the impact of commercial thinning on timber supply and climate change mitigation potential in BC's interior forests.",
+      "title": "A value-driven framework to model the impact of commercial thinning on timber supply and climate change mitigation potential in BC's interior forests",
       "path": "/projects/can-commercial-thinning-help-mitigate-the-midterm-timber-supply-shortage/",
-      "summary": "A confirmed current FRESH project focused on commercial thinning, timber supply, and climate change mitigation potential in BC's interior forests.",
+      "category": "Ongoing Research",
+      "status": "Current project",
+      "summary": "A current FRESH project focused on commercial thinning, timber supply, and climate change mitigation potential in BC's interior forests.",
       "body": [
         "Commercial thinning can shift the timing of harvested volume and may help mitigate mid-term timber supply shortages in forests with unbalanced age class structures.",
         "This project evaluates economically viable commercial thinning treatments and their potential to enhance timber supply while supporting climate change mitigation in BC's interior forests.",
         "The project uses a value-driven modelling framework to connect treatment schedules, timber supply effects, and climate-related outcomes."
+      ],
+      "outputs": [
+        "Publications, model outputs, and supporting documents will be linked here as the project record is curated."
+      ]
+    },
+    {
+      "title": "Yunhao (Davis) Xu MASc thesis",
+      "path": "/projects/yunhao-davis-xu-masc-thesis/",
+      "category": "Ongoing Research",
+      "status": "Ongoing MASc thesis",
+      "summary": "An active MASc thesis project supervised in FRESH.",
+      "body": [
+        "This page is the public project record for Yunhao (Davis) Xu's ongoing MASc thesis work in FRESH.",
+        "The detailed public summary, research questions, methods, collaborators, and outputs will be added after the thesis-specific notes and supporting materials are reviewed."
+      ],
+      "people": [
+        "Yunhao (Davis) Xu: MASc student",
+        "Gregory Paradis: supervisor"
+      ],
+      "outputs": [
+        "Working thesis title, milestone dates, publications, code, and related project assets will be added after review."
+      ]
+    },
+    {
+      "title": "Jamie Iversen MSc thesis",
+      "path": "/projects/jamie-iversen-msc-thesis/",
+      "category": "Ongoing Research",
+      "status": "Ongoing MSc thesis",
+      "summary": "An active MSc thesis project supervised in FRESH.",
+      "body": [
+        "This page is the public project record for Jamie Iversen's ongoing MSc thesis work in FRESH.",
+        "The detailed public summary, research questions, methods, collaborators, and outputs will be added after the thesis-specific notes and supporting materials are reviewed."
+      ],
+      "people": [
+        "Jamie Iversen: MSc student",
+        "Gregory Paradis: supervisor"
+      ],
+      "outputs": [
+        "Working thesis title, milestone dates, publications, code, and related project assets will be added after review."
+      ]
+    },
+    {
+      "title": "CCCANDiES",
+      "path": "/projects/cccandies/",
+      "category": "Ongoing Research",
+      "status": "Ongoing project",
+      "summary": "An ongoing FRESH research project being expanded into a fuller public project page.",
+      "body": [
+        "CCCANDiES is part of the current FRESH research portfolio.",
+        "This project record is being expanded from PI-maintained notes so the public site can connect the project description, collaborators, HQP, publications, repositories, and related outputs in one place."
+      ],
+      "people": [
+        "Gregory Paradis: FRESH lead"
+      ],
+      "outputs": [
+        "Project description, collaborators, HQP names, publications, and public links will be added after source material review."
+      ]
+    },
+    {
+      "title": "NSERC Discovery Grant research program",
+      "path": "/projects/nserc-discovery-grant/",
+      "category": "Ongoing Research",
+      "status": "Ongoing research program",
+      "summary": "The FRESH NSERC Discovery Grant research program.",
+      "body": [
+        "This page will summarize the FRESH NSERC Discovery Grant research program and connect it to the lab's public project, publication, software, and trainee records.",
+        "The record is intentionally concise while reviewed public language, project scope, and output links are assembled."
+      ],
+      "people": [
+        "Gregory Paradis: Principal Investigator"
+      ],
+      "outputs": [
+        "Research-program summary, related project pages, publications, software, and trainee outputs will be linked after review."
+      ]
+    },
+    {
+      "title": "IgniteBC and FlashForest drone seeding microsite machine learning",
+      "path": "/projects/ignitebc-flashforest-drone-seeding-microsite-ml/",
+      "category": "Ongoing Research",
+      "status": "Ongoing applied research",
+      "summary": "Applied work on drone seeding, microsite characterization, and machine-learning support for reforestation decisions.",
+      "body": [
+        "This project connects drone seeding, microsite modelling, and machine-learning methods for reforestation decision support.",
+        "The page will be expanded with the reviewed IgniteBC and FlashForest project scope, partner roles, data products, modelling outputs, and public-facing links."
+      ],
+      "people": [
+        "Gregory Paradis: FRESH lead"
+      ],
+      "partners": [
+        "FlashForest"
+      ],
+      "outputs": [
+        "Partner-approved project summary, modelling outputs, publications, applications, and image assets will be added after review."
+      ]
+    },
+    {
+      "title": "CLEWs-C2070 NRCan grant",
+      "path": "/projects/clews-c2070-nrcan/",
+      "category": "Ongoing Research",
+      "status": "Ongoing collaborative grant",
+      "summary": "A collaborative NRCan grant connected to CLEWs-C2070 work.",
+      "body": [
+        "This page is the public record for the CLEWs-C2070 NRCan grant and its connections to FRESH research.",
+        "The project description will be expanded with reviewed language about scope, modelling approach, collaborators, outputs, and related publications."
+      ],
+      "people": [
+        "Gregory Paradis: FRESH lead"
+      ],
+      "partners": [
+        "Hisham Zerriffi: UBC Department of Forest Resources Management",
+        "Taco Niet: Simon Fraser University",
+        "Elizabeth Gilmore: Carleton University"
+      ],
+      "outputs": [
+        "Grant summary, public reports, publications, model outputs, repositories, and applications will be linked after review."
+      ]
+    },
+    {
+      "title": "Omar Action Lab paper projects",
+      "path": "/projects/omar-action-lab-paper-projects/",
+      "category": "Ongoing Research",
+      "status": "Ongoing paper projects",
+      "summary": "Two ongoing paper projects led by Omar in Action Lab and connected to the FRESH research record.",
+      "body": [
+        "This record tracks two ongoing paper projects led by Omar in Action Lab.",
+        "The public page will be expanded with paper titles, collaborator roles, abstracts, links, and publication status once the material is ready to share."
+      ],
+      "people": [
+        "Omar: paper-project lead",
+        "Gregory Paradis: FRESH collaborator"
+      ],
+      "outputs": [
+        "Paper titles, preprints, journal links, data, code, and collaborator lists will be added after review."
+      ]
+    },
+    {
+      "title": "Hemlock dwarf mistletoe spread modelling",
+      "path": "/projects/hemlock-dwarf-mistletoe-spread-modelling/",
+      "category": "Ongoing Research",
+      "status": "Collaborative modelling project",
+      "summary": "A collaborative modelling project on hemlock dwarf mistletoe spread.",
+      "body": [
+        "This project focuses on modelling the spread of hemlock dwarf mistletoe.",
+        "The public project record will be expanded with modelling objectives, collaborator roles, publications, software, and supporting materials as those details are reviewed."
+      ],
+      "people": [
+        "Gregory Paradis: FRESH collaborator",
+        "Bridget Guo: past FRESH intern"
+      ],
+      "partners": [
+        "Hanno Southam",
+        "Richard Hamelin"
+      ],
+      "outputs": [
+        "Project description, model outputs, publications, code links, and visuals will be added after review."
+      ]
+    },
+    {
+      "title": "WS3",
+      "path": "/projects/ws3/",
+      "category": "Open Software",
+      "status": "Open software project",
+      "summary": "An open software project in the FRESH research software portfolio.",
+      "body": [
+        "WS3 is part of the FRESH open software portfolio.",
+        "This page will collect the public software description, documentation, repository links, citations, publications, examples, and related project pages."
+      ],
+      "people": [
+        "Gregory Paradis: maintainer or lead developer"
+      ],
+      "outputs": [
+        "Repository, documentation, examples, citation metadata, and related publications will be added after review."
+      ]
+    },
+    {
+      "title": "FHOPS",
+      "path": "/projects/fhops/",
+      "category": "Open Software",
+      "status": "Open software project",
+      "summary": "An open software project in the FRESH research software portfolio.",
+      "body": [
+        "FHOPS is part of the FRESH open software portfolio.",
+        "This page will collect the public software description, documentation, repository links, citations, publications, examples, and related project pages."
+      ],
+      "people": [
+        "Gregory Paradis: maintainer or lead developer"
+      ],
+      "outputs": [
+        "Repository, documentation, examples, citation metadata, and related publications will be added after review."
+      ]
+    },
+    {
+      "title": "FEMIC",
+      "path": "/projects/femic/",
+      "category": "Open Software",
+      "status": "Open software project",
+      "summary": "An open software project in the FRESH research software portfolio.",
+      "body": [
+        "FEMIC is part of the FRESH open software portfolio.",
+        "This page will collect the public software description, documentation, repository links, citations, publications, examples, and related project pages."
+      ],
+      "people": [
+        "Gregory Paradis: maintainer or lead developer"
+      ],
+      "outputs": [
+        "Repository, documentation, examples, citation metadata, and related publications will be added after review."
+      ]
+    },
+    {
+      "title": "Nemora",
+      "path": "/projects/nemora/",
+      "category": "Open Software",
+      "status": "Open software project",
+      "summary": "An open software project related to the FRESH research software and publication portfolio.",
+      "body": [
+        "Nemora is part of the FRESH open software portfolio and is connected to publication work on diameter-distribution fitting.",
+        "This page will collect the public software description, documentation, repository links, citations, examples, and related papers."
+      ],
+      "people": [
+        "Gregory Paradis: maintainer or lead developer"
+      ],
+      "outputs": [
+        "Repository, documentation, examples, citation metadata, dbh-distfit paper links, and related publications will be added after review."
+      ]
+    },
+    {
+      "title": "Modelwright",
+      "path": "/projects/modelwright/",
+      "category": "Open Software",
+      "status": "Open software project",
+      "summary": "An open software project in the FRESH research software portfolio.",
+      "body": [
+        "Modelwright is part of the FRESH open software portfolio.",
+        "This page will collect the public software description, documentation, repository links, citations, examples, and related project pages."
+      ],
+      "people": [
+        "Gregory Paradis: maintainer or lead developer"
+      ],
+      "outputs": [
+        "Repository, documentation, examples, citation metadata, and related publications will be added after review."
+      ]
+    },
+    {
+      "title": "FABLE-Pyculator",
+      "path": "/projects/fable-pyculator/",
+      "category": "Open Software",
+      "status": "Open software project",
+      "summary": "An open software project in the FRESH research software portfolio.",
+      "body": [
+        "FABLE-Pyculator is part of the FRESH open software portfolio.",
+        "This page will collect the public software description, documentation, repository links, citations, examples, and related project pages."
+      ],
+      "people": [
+        "Gregory Paradis: maintainer or lead developer"
+      ],
+      "outputs": [
+        "Repository, documentation, examples, citation metadata, and related publications will be added after review."
+      ]
+    },
+    {
+      "title": "figrecover",
+      "path": "/projects/figrecover/",
+      "category": "Open Software",
+      "status": "Open software project",
+      "summary": "An open software project in the FRESH research software portfolio.",
+      "body": [
+        "figrecover is part of the FRESH open software portfolio.",
+        "This page will collect the public software description, documentation, repository links, citations, examples, and related project pages."
+      ],
+      "people": [
+        "Gregory Paradis: maintainer or lead developer"
+      ],
+      "outputs": [
+        "Repository, documentation, examples, citation metadata, and related publications will be added after review."
+      ]
+    },
+    {
+      "title": "fresh-hectaresbc",
+      "path": "/projects/fresh-hectaresbc/",
+      "category": "Open Software",
+      "status": "Open software project",
+      "summary": "An open software project in the FRESH research software portfolio.",
+      "body": [
+        "fresh-hectaresbc is part of the FRESH open software portfolio.",
+        "This page will collect the public software description, documentation, repository links, citations, examples, and related project pages."
+      ],
+      "people": [
+        "Gregory Paradis: maintainer or lead developer"
+      ],
+      "outputs": [
+        "Repository, documentation, examples, citation metadata, and related publications will be added after review."
+      ]
+    },
+    {
+      "title": "badc",
+      "path": "/projects/badc/",
+      "category": "Open Software",
+      "status": "Open software project",
+      "summary": "An open software project in the FRESH research software portfolio.",
+      "body": [
+        "badc is part of the FRESH open software portfolio.",
+        "This page will collect the public software description, documentation, repository links, citations, examples, and related project pages."
+      ],
+      "people": [
+        "Gregory Paradis: maintainer or lead developer"
+      ],
+      "outputs": [
+        "Repository, documentation, examples, citation metadata, and related publications will be added after review."
+      ]
+    },
+    {
+      "title": "dbh-distfit papers",
+      "path": "/projects/dbh-distfit-papers/",
+      "category": "Open Software",
+      "status": "Publication and software project",
+      "summary": "Two related diameter-distribution fitting papers connected to Nemora and the FRESH publication record.",
+      "body": [
+        "This page tracks two related diameter-distribution fitting papers connected to Nemora.",
+        "One paper has been published in Forest Science; the full publication details, related software links, and companion paper status will be added after the publication records are curated."
+      ],
+      "people": [
+        "Gregory Paradis: FRESH lead"
+      ],
+      "outputs": [
+        "Forest Science paper link, companion paper status, related software, data, and citation details will be added after review."
+      ]
+    },
+    {
+      "title": "roads R package and paper",
+      "path": "/projects/roads-r-package-and-paper/",
+      "category": "Open Software",
+      "status": "Software and paper project",
+      "summary": "A software and publication project centered on the roads R package.",
+      "body": [
+        "This page is the public project record for the roads R package and related paper.",
+        "The software description, repository, documentation, examples, paper citation, and related project context will be added after review."
+      ],
+      "people": [
+        "Gregory Paradis: FRESH lead"
+      ],
+      "outputs": [
+        "Repository, R package documentation, paper link, examples, and citation metadata will be added after review."
+      ]
+    },
+    {
+      "title": "Jinming (Jimmy) Ke MSc thesis",
+      "path": "/projects/jinming-jimmy-ke-msc-thesis/",
+      "category": "Past And Recent Projects",
+      "status": "Past MSc thesis",
+      "summary": "A past MSc thesis project supervised through FRESH.",
+      "body": [
+        "This page is the public record for Jinming (Jimmy) Ke's MSc thesis project.",
+        "The project description, thesis link, publications, collaborator names, and supporting outputs will be added after review."
+      ],
+      "people": [
+        "Jinming (Jimmy) Ke: MSc student",
+        "Gregory Paradis: supervisor"
+      ],
+      "outputs": [
+        "Thesis link, publications, project assets, and related repositories will be added after review."
+      ]
+    },
+    {
+      "title": "Yancun (Walter) Yan MSc thesis",
+      "path": "/projects/yancun-walter-yan-msc-thesis/",
+      "category": "Past And Recent Projects",
+      "status": "Past MSc thesis",
+      "summary": "A past MSc thesis project supervised through FRESH.",
+      "body": [
+        "This page is the public record for Yancun (Walter) Yan's MSc thesis project.",
+        "The project description, thesis link, publications, collaborator names, and supporting outputs will be added after review."
+      ],
+      "people": [
+        "Yancun (Walter) Yan: MSc student",
+        "Gregory Paradis: supervisor"
+      ],
+      "outputs": [
+        "Thesis link, publications, project assets, and related repositories will be added after review."
+      ]
+    },
+    {
+      "title": "Rosalia Jaffray MASc thesis",
+      "path": "/projects/rosalia-jaffray-masc-thesis/",
+      "category": "Past And Recent Projects",
+      "status": "Past MASc thesis",
+      "summary": "A past MASc thesis project supervised through FRESH.",
+      "body": [
+        "This page is the public record for Rosalia Jaffray's MASc thesis project.",
+        "The project description, thesis link, publications, collaborator names, and supporting outputs will be added after review."
+      ],
+      "people": [
+        "Rosalia Jaffray: MASc student",
+        "Gregory Paradis: supervisor"
+      ],
+      "outputs": [
+        "Thesis link, publications, project assets, and related repositories will be added after review."
+      ]
+    },
+    {
+      "title": "Mitacs, Newmont, and forestry decarbonization modelling",
+      "path": "/projects/mitacs-newmont-mining-forestry-decarbonization-modelling/",
+      "category": "Past And Recent Projects",
+      "status": "Past applied research project",
+      "summary": "A past applied modelling project connected to Mitacs, Newmont, mining, forestry, and decarbonization.",
+      "body": [
+        "This page is the public record for the Mitacs, Newmont, mining, and forestry decarbonization modelling project.",
+        "The project description, partner-approved language, outputs, publications, reports, and supporting assets will be added after review."
+      ],
+      "people": [
+        "Gregory Paradis: FRESH lead"
+      ],
+      "partners": [
+        "Mitacs",
+        "Newmont"
+      ],
+      "outputs": [
+        "Partner-approved summary, reports, publications, modelling outputs, and related links will be added after review."
       ]
     }
   ]

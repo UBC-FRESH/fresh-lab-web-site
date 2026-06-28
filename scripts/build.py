@@ -118,11 +118,14 @@ def validate_content(data: dict) -> None:
 
     for project_index, project in enumerate(data["projects"]):
         context = f"projects[{project_index}]"
-        require_text(project, ("title", "path", "summary"), context)
+        require_text(project, ("title", "path", "category", "status", "summary"), context)
         if not project.get("body"):
             raise SystemExit(f"Missing required content: {context}.body")
         for body_index, line in enumerate(project["body"]):
             require_non_empty_string(line, f"{context}.body[{body_index}]")
+        for field in ("people", "partners", "outputs"):
+            if field in project:
+                validate_string_list(project[field], f"{context}.{field}")
         if project.get("links"):
             validate_links(project["links"], route_set, f"{context}.links")
 
@@ -204,6 +207,13 @@ def validate_links(links: list[dict], route_set: set[str], context: str) -> None
         validate_link(link["href"], route_set, f"{link_context}.href")
 
 
+def validate_string_list(values: list[str], context: str) -> None:
+    if not isinstance(values, list):
+        raise SystemExit(f"Invalid string list: {context}")
+    for index, value in enumerate(values):
+        require_non_empty_string(value, f"{context}[{index}]")
+
+
 def nav_html(current_path: str) -> str:
     links = []
     for label, href in NAV:
@@ -272,6 +282,7 @@ def write(route: str, content: str) -> None:
 def card_html(items: list[dict]) -> str:
     return "".join(
         f'<a class="link-card" href="{site_url(item["href"])}">'
+        f'{card_meta_html(item)}'
         f'<h3>{html.escape(item["title"])}</h3>'
         f'<p>{html.escape(item["summary"])}</p>'
         "<span>Open</span></a>"
@@ -279,8 +290,21 @@ def card_html(items: list[dict]) -> str:
     )
 
 
+def card_meta_html(item: dict) -> str:
+    meta = item.get("meta")
+    if not meta:
+        return ""
+    return f'<div class="card-meta">{html.escape(meta)}</div>'
+
+
 def paragraphs(lines: list[str]) -> str:
     return "\n".join(f"<p>{html.escape(line)}</p>" for line in lines)
+
+
+def bullets(items: list[str]) -> str:
+    if not items:
+        return ""
+    return "<ul>" + "".join(f"<li>{html.escape(item)}</li>" for item in items) + "</ul>"
 
 
 def image_html(image: dict, class_name: str = "") -> str:
@@ -353,7 +377,7 @@ def render_home(data: dict) -> str:
       <div class="cards">{card_html(home['start'])}</div>
       <div class="stats">
         <div class="stat"><strong>{len(data['people']['sections'])}</strong><span>People sections</span></div>
-        <div class="stat"><strong>{len(data['projects'])}</strong><span>Current project</span></div>
+        <div class="stat"><strong>{len(data['projects'])}</strong><span>Project records</span></div>
         <div class="stat"><strong>{data['publications'][0]['year']}</strong><span>Recent publication updates</span></div>
       </div>
     </div>
@@ -401,26 +425,60 @@ def render_people_page(site: dict, page: dict) -> str:
 
 def render_projects_index(data: dict) -> str:
     site = data["site"]
-    projects = [
-        {"title": project["title"], "href": project["path"], "summary": project["summary"]} for project in data["projects"]
-    ]
+    grouped: dict[str, list[dict]] = {}
+    for project in data["projects"]:
+        grouped.setdefault(project["category"], []).append(
+            {
+                "title": project["title"],
+                "href": project["path"],
+                "summary": project["summary"],
+                "meta": project["status"],
+            }
+        )
+    sections = []
+    for category, projects in grouped.items():
+        sections.append(
+            f"""<section class="project-group" aria-labelledby="{text_to_id(category)}">
+        <div class="section-head compact">
+          <h2 id="{text_to_id(category)}">{html.escape(category)}</h2>
+        </div>
+        <div class="cards project-cards">{card_html(projects)}</div>
+      </section>"""
+        )
     body = f"""<main>
-  {page_hero("Projects", "Current Projects", "This page lists confirmed current FRESH projects. Additional active projects will be added as source content is rebuilt.")}
+  {page_hero("Projects", "Research Projects", "Current, recent, and open software projects from the Forest Resources and Ecosystem Services Hub.")}
   <section class="section">
     <div class="section-inner">
-      <div class="cards">{card_html(projects)}</div>
+      {''.join(sections)}
     </div>
   </section>
 </main>"""
-    return page_template(site, "Projects", body, "/projects/", "Current projects at the FRESH lab.")
+    return page_template(site, "Projects", body, "/projects/", "Research projects at the FRESH lab.")
 
 
 def render_project(site: dict, project: dict) -> str:
+    details = [
+        ("Status", [project["status"]]),
+        ("People And Roles", project.get("people", [])),
+        ("Collaborators And Partners", project.get("partners", [])),
+        ("Outputs And Links To Add", project.get("outputs", [])),
+    ]
+    detail_sections = "".join(
+        f"<h2>{html.escape(title)}</h2>{bullets(items)}" for title, items in details if items
+    )
+    links = ""
+    if project.get("links"):
+        links = "<h2>Links</h2><ul>" + "".join(
+            f'<li><a href="{site_url(link["href"])}">{html.escape(link["label"])}</a></li>'
+            for link in project["links"]
+        ) + "</ul>"
     body = f"""<main>
   {page_hero("Project", project["title"], project["summary"])}
   <section class="section">
     <div class="section-inner content">
       {paragraphs(project["body"])}
+      {detail_sections}
+      {links}
     </div>
   </section>
 </main>"""

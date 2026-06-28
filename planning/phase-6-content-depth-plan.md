@@ -42,6 +42,20 @@ questions.
 Once a stub has enough reviewed content, convert it into a public
 `content/projects.json` record and any supporting assets.
 
+P6.4 converted the first priority set into public project records. The projects
+index now groups records into:
+
+- Ongoing Research.
+- Open Software.
+- Past And Recent Projects.
+
+The public records are intentionally conservative: they avoid `TBD` placeholders
+and private detail, while creating stable URLs for thesis projects, grants,
+software projects, collaborative modelling work, and past applied projects.
+Detailed descriptions, repositories, images, HQP names, publications, and
+partner-approved language can now be added incrementally to the relevant
+`content/projects.json` record.
+
 ## Current People Roster
 
 Current maintained roster updates:

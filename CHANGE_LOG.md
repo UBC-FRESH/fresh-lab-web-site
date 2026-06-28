@@ -92,3 +92,7 @@ This is the append-only project narrative for `fresh-lab-web-site`.
   and best-effort Google Scholar publication harvest scripts, project drafting
   stubs for recent, ongoing, and open software projects, and an updated current
   people roster from PI-maintained lab records.
+- Converted the first Phase 6 priority project set into public project pages,
+  grouped the projects index into ongoing research, open software, and
+  past/recent projects, and kept rough `content/project-stubs/` Markdown out of
+  the generated site.
