@@ -93,6 +93,12 @@ Rules:
   clean research-lab site, not a UBC CMS theme clone.
 - Avoid broad framework choices until the migration has enough content and
   maintenance evidence to justify them.
+- For Markdown intended to be copied into Basecamp, LinkedIn, email, CMS forms,
+  GitHub issue bodies, or other prose editors, do not hard-wrap paragraphs or
+  list items. Keep each paragraph or list item on one source line so pasted text
+  does not contain unwanted mid-paragraph line breaks. Hard wrapping is still
+  acceptable for code blocks, tables, generated diffs, and repository docs where
+  line-oriented review is more important than paste behavior.
 
 ## Planning Workflow
 
