@@ -286,7 +286,15 @@ def test_priority_project_pages_have_curated_public_summaries() -> None:
     assert "Total project cost" not in cccandies
     assert "invoicing" not in cccandies.lower()
     assert "drone seeding" in flashforest
-    assert "machine-learning methods" in flashforest
+    assert "U-Net semantic segmentation" in flashforest
+    assert "four-class semantic segmentation" in flashforest
+    assert "background, good, fair, and poor" in flashforest
+    assert "spatial data splitting" in flashforest
+    assert "per-class intersection-over-union" in flashforest
+    assert "ML4seeding GitHub repository" in flashforest
+    assert "https://github.com/UBC-FRESH/ML4seeding" in flashforest
+    assert "Drone_Project_Technical_Report.pdf" not in flashforest
+    assert "raw drone imagery" not in flashforest.lower()
     assert "climate, land, and water into energy models" in clews
     assert "Canada&#x27;s net-zero commitments" in clews
 

@@ -261,25 +261,52 @@
       ]
     },
     {
-      "title": "IgniteBC and FlashForest drone seeding microsite machine learning",
+      "title": "FlashForest drone seeding microsite machine learning",
       "path": "/projects/ignitebc-flashforest-drone-seeding-microsite-ml/",
       "category": "Ongoing Research",
-      "status": "Ongoing applied research",
-      "summary": "Applied work on drone seeding, microsite characterization, and machine-learning support for reforestation decisions.",
+      "status": "Ongoing applied research and software project",
+      "summary": "Applied machine-learning work with FlashForest on classifying drone-imagery microsites for aerial seeding and reforestation decision support.",
       "body": [
-        "This project connects drone seeding, microsite characterization, operations research, artificial intelligence, and machine-learning methods for reforestation decision support in British Columbia.",
-        "The work supports next-generation drone seeding workflows by linking field data, remotely sensed imagery, site conditions, deployment planning, and model evaluation.",
-        "The public project page summarizes the applied research direction and will link partner-approved reports, repositories, data products, publications, and visual assets when those outputs are public."
+        "This project develops a reproducible machine-learning pipeline for classifying reforestation microsites from high-resolution drone imagery, supporting drone-based tree planting and seed-deployment decisions after disturbance.",
+        "The current workflow treats microsite selection as a four-class semantic segmentation problem: background, good, fair, and poor. RGB orthomosaic tiles are matched to pixel-wise segmentation masks prepared in Roboflow by forestry experts.",
+        "A key technical challenge is severe class imbalance: most labelled pixels belong to the poor class, while good and fair microsites are much rarer. The project therefore emphasizes spatial data splitting, per-class intersection-over-union metrics, and careful interpretation of aggregate accuracy.",
+        "The baseline model uses a U-Net encoder-decoder architecture on 512 by 512 RGB image tiles. Experiments have tested early stopping, geometric augmentation, photometric augmentation, weighted sparse categorical cross-entropy, Dice loss, filtering low-information tiles, and oversampling informative good and fair tiles.",
+        "The public ML4seeding repository contains notebooks for orthomosaic metadata review, pseudo-orthomosaic construction for A10 and A58 image segments, image tiling, grid overlays for annotation, U-Net training, predicted-mask stitching, drone flight-path preparation, and operations-research post-processing concepts.",
+        "The current finding is that the training pipeline is usable as a baseline, but future performance gains will depend heavily on data quality, annotation consistency, and collecting more examples of the minority good and fair microsite classes.",
+        "The longer-term decision-support goal is to turn georeferenced prediction layers into operational planning inputs, including candidate planting points, spatial thinning, and drone path or mission-planning models."
       ],
       "people": [
-        "Gregory Paradis: FRESH lead"
+        "Elaheh Ghasemi: machine-learning pipeline and technical report lead",
+        "Kailey: TRANSFOR-M program student contributor",
+        "Gregory Paradis: FRESH lead and supervisor"
       ],
       "partners": [
         "FlashForest",
         "Innovate BC / IgniteBC"
       ],
       "outputs": [
-        "Partner-approved technical reports, modelling workflows, repositories, data products, publications, and visual assets"
+        "ML4seeding public GitHub repository",
+        "Reproducible U-Net semantic segmentation notebooks",
+        "Orthomosaic review, pseudo-orthomosaic construction, and image-tiling workflows",
+        "Evaluation workflow using accuracy, mean IoU, foreground mean IoU, and per-class IoU",
+        "Predicted segmentation-mask and georeferenced output workflow prototypes",
+        "Drone flight-path and operations-research post-processing prototypes"
+      ],
+      "links": [
+        {
+          "label": "ML4seeding GitHub repository",
+          "href": "https://github.com/UBC-FRESH/ML4seeding"
+        }
+      ],
+      "related_projects": [
+        {
+          "label": "NSERC Discovery Grant research program",
+          "href": "/projects/nserc-discovery-grant/"
+        },
+        {
+          "label": "Modelwright",
+          "href": "/projects/modelwright/"
+        }
       ]
     },
     {

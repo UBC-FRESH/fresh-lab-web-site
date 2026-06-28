@@ -200,3 +200,10 @@ This is the append-only project narrative for `fresh-lab-web-site`.
   for project records, cross-linked DG-supported modelling/software/thesis
   outputs, and recorded Basecamp-derived candidate follow-up topics that may
   need future public project pages.
+- Enriched the FlashForest drone seeding microsite machine-learning project
+  page from the public `UBC-FRESH/ML4seeding` repository and a private
+  technical-report review copy, adding the four-class U-Net semantic
+  segmentation workflow, orthomosaic tiling, Roboflow mask preparation,
+  spatial data splitting, class-imbalance findings, per-class IoU evaluation,
+  predicted-mask and drone-path planning outputs, public repository link, and
+  publication guardrails for private imagery and report material.
