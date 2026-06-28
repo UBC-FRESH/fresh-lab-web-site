@@ -114,17 +114,60 @@
       "path": "/projects/cccandies/",
       "category": "Ongoing Research",
       "status": "Ongoing modelling project",
-      "summary": "Cumulative effects modelling for climate change, anthropogenic disturbance, natural disturbance, and forest ecosystem services.",
+      "summary": "Open cumulative-effects modelling for climate change, anthropogenic disturbance, natural disturbance, forest ecosystem services, carbon, and forest-sector decision support.",
       "body": [
         "CCCANDiES stands for Cumulative effects of Climate Change, Anthropogenic and Natural Disturbances on forest Ecosystem Services.",
-        "The project develops modelling capacity for understanding how multiple drivers of landscape change interact across forest ecosystems and affect ecosystem-service outcomes.",
-        "FRESH uses this project record to connect cumulative-effects modelling, forest landscape simulation, decision support, trainee work, publications, and related software outputs."
+        "The project develops open modelling infrastructure for forecasting how managed forest landscapes respond to climate change, wildfire and other natural disturbances, timber harvesting, road networks, and forest-sector supply-chain decisions.",
+        "A central technical goal is to connect ecosystem-process simulation tools such as SpaDES, LandR, fire and carbon modules with forest estate and wood-supply optimization tools such as ws3. This makes it possible to represent both stochastic ecosystem processes and explicit management decision processes in the same reproducible workflow.",
+        "The research program includes open software modules for spatially explicit harvest and road scheduling, forest-sector supply-chain modelling, carbon stock and flux accounting, rolling-horizon re-planning, and agent-based or game-theoretic representations of policy and industry interactions.",
+        "The project also develops multi-objective tradeoff methods for generating many forest-management scenarios, estimating high-dimensional Pareto tradeoff surfaces, projecting those surfaces into interpretable decision spaces, and selecting representative scenario sets for participatory planning and multi-criteria decision analysis.",
+        "Applied case-study work includes cumulative-effects scenarios for natural disturbance and forest harvesting impacts on forest carbon, with emphasis on transparent, open, defensible, interoperable, and reusable workflows that can be inspected and extended by researchers, governments, practitioners, and partners.",
+        "The broader lab infrastructure plan behind CCCANDiES combines cloud computing, technical workstations, open datasets, version-controlled code, and knowledge-transfer workflows so that complex forest ecosystem and forest-sector models can move from proof-of-concept research prototypes toward usable open innovation tools."
       ],
       "people": [
-        "Gregory Paradis: FRESH lead"
+        "Gregory Paradis: Principal Investigator and FRESH lead"
       ],
       "outputs": [
-        "Cumulative-effects modelling workflows, trainee outputs, and related publications"
+        "Open cumulative-effects modelling workflows",
+        "SpaDES and ws3 interoperability modules and examples",
+        "Cumulative-effects scenarios for natural disturbance, forest harvesting, and forest carbon",
+        "Open software modules for spatial harvest scheduling, road scheduling, forest-sector supply chains, carbon accounting, and rolling-horizon workflows",
+        "Multi-objective scenario generation and tradeoff-surface methods for participatory forest planning",
+        "Reusable datasets, workflow templates, reports, manuscripts, and trainee outputs as they become public"
+      ],
+      "partners": [
+        "Natural Resources Canada / Canadian Forest Service collaboration context",
+        "Digital Research Alliance of Canada cloud-computing infrastructure context",
+        "FRESH lab open innovation collaborators and partners"
+      ],
+      "references": [
+        {
+          "citation": "Paradis, G. ws3: a Wood Supply Simulation System (Version 1.0.0-alpha) [Computer software]. Zenodo, 2021.",
+          "links": [
+            {
+              "label": "Software DOI",
+              "href": "https://doi.org/10.5281/zenodo.5579778"
+            }
+          ]
+        },
+        {
+          "citation": "Paradis, G. spades_ws3 (Version 1.0.0-alpha) [Computer software]. Zenodo, 2021.",
+          "links": [
+            {
+              "label": "Software DOI",
+              "href": "https://doi.org/10.5281/zenodo.5579756"
+            }
+          ]
+        },
+        {
+          "citation": "Paradis, G. spades_ws3_dataInit (Version 1.0.0-alpha) [Computer software]. Zenodo, 2021.",
+          "links": [
+            {
+              "label": "Software DOI",
+              "href": "https://doi.org/10.5281/zenodo.5579748"
+            }
+          ]
+        }
       ]
     },
     {

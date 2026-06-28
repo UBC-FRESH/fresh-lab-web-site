@@ -276,6 +276,15 @@ def test_priority_project_pages_have_curated_public_summaries() -> None:
 
     assert "Cumulative effects of Climate Change" in cccandies
     assert "forest Ecosystem Services" in cccandies
+    assert "SpaDES and ws3 interoperability" in cccandies
+    assert "forest carbon" in cccandies
+    assert "spatial harvest scheduling" in cccandies
+    assert "road scheduling" in cccandies
+    assert "Multi-objective scenario generation" in cccandies
+    assert "10.5281/zenodo.5579778" in cccandies
+    assert "Contract 3000771054" not in cccandies
+    assert "Total project cost" not in cccandies
+    assert "invoicing" not in cccandies.lower()
     assert "drone seeding" in flashforest
     assert "machine-learning methods" in flashforest
     assert "climate, land, and water into energy models" in clews

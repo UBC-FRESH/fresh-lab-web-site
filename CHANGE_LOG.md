@@ -187,3 +187,11 @@ This is the append-only project narrative for `fresh-lab-web-site`.
   framing, treatment-curve workflow, wildfire-behaviour and
   human-fire-interaction metrics, and planned thesis/model outputs while
   keeping the proposal PDF itself unpublished.
+- Enriched the CCCANDiES project page from private contract, sponsored
+  research agreement, and CFI JELF proposal review material, adding the
+  SpaDES/ws3/LandR/carbon-module interoperability framing, open
+  cumulative-effects workflows, forest carbon scenarios, spatial harvest and
+  road scheduling, forest-sector supply-chain modules, rolling-horizon
+  modelling, multi-objective tradeoff methods, open innovation infrastructure,
+  and public software references while keeping administrative, financial, and
+  signature material unpublished.
