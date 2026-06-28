@@ -288,6 +288,7 @@ def test_thesis_project_pages_have_curated_public_themes() -> None:
     assert "system-level climate impact assessment" in jimmy
     assert "cross-laminated timber" in jimmy
     assert "harvested wood product" in jimmy
+    assert "Chunping Dai" not in jimmy
     assert "Strategic Forest Management Model" in walter
     assert "epsilon-constraint" in walter
     assert "Prince George Timber Supply Area" in walter

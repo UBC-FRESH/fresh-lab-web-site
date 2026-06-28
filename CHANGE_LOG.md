@@ -153,3 +153,6 @@ This is the append-only project narrative for `fresh-lab-web-site`.
   Join, visiting-scholar, and alumni pages, replacing it with stable current
   content and adding a generated-site regression test to catch review-note
   leakage in public HTML.
+- Removed an unsupported Chunping Dai co-supervisor attribution from Jinming
+  (Jimmy) Ke's MSc thesis project page and added a regression check for that
+  specific attribution error.
