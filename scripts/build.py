@@ -128,6 +128,8 @@ def validate_content(data: dict) -> None:
         for field in ("people", "partners", "outputs"):
             if field in project:
                 validate_string_list(project[field], f"{context}.{field}")
+        if project.get("related_projects"):
+            validate_links(project["related_projects"], route_set, f"{context}.related_projects")
         if project.get("links"):
             validate_links(project["links"], route_set, f"{context}.links")
         if project.get("references"):
@@ -499,6 +501,12 @@ def render_project(site: dict, project: dict) -> str:
     detail_sections = "".join(
         f"<h2>{html.escape(title)}</h2>{bullets(items)}" for title, items in details if items
     )
+    related_projects = ""
+    if project.get("related_projects"):
+        related_projects = "<h2>Related Projects</h2><ul>" + "".join(
+            f'<li><a href="{site_url(link["href"])}">{html.escape(link["label"])}</a></li>'
+            for link in project["related_projects"]
+        ) + "</ul>"
     links = ""
     if project.get("links"):
         links = "<h2>Links</h2><ul>" + "".join(
@@ -528,6 +536,7 @@ def render_project(site: dict, project: dict) -> str:
     <div class="section-inner content">
       {paragraphs(project["body"])}
       {detail_sections}
+      {related_projects}
       {references}
       {links}
     </div>

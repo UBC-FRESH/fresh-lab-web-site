@@ -195,3 +195,8 @@ This is the append-only project narrative for `fresh-lab-web-site`.
   modelling, multi-objective tradeoff methods, open innovation infrastructure,
   and public software references while keeping administrative, financial, and
   signature material unpublished.
+- Reframed the NSERC Discovery Grant page as FRESH lab base funding rather than
+  a single stand-alone project, added first-class `Related Projects` rendering
+  for project records, cross-linked DG-supported modelling/software/thesis
+  outputs, and recorded Basecamp-derived candidate follow-up topics that may
+  need future public project pages.

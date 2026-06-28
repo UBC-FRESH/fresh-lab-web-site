@@ -175,22 +175,89 @@
       "path": "/projects/nserc-discovery-grant/",
       "category": "Ongoing Research",
       "status": "Ongoing research program",
-      "summary": "The FRESH Discovery Grant research program on integrated sustainable forest management, forest-sector systems modelling, ecosystem-service decision support, and open research software.",
+      "summary": "The FRESH NSERC Discovery Grant base-funding program for integrated sustainable forest management, forest-sector systems modelling, ecosystem-service decision support, open research software, and trainee projects.",
       "body": [
+        "NSERC Discovery Grants provide base funding for a PI research program. In FRESH, this grant supports the lab platform behind many connected modelling, software, thesis, and partnership projects rather than a single stand-alone study.",
         "The FRESH Discovery Grant research program develops open, scalable, and reusable modelling tools for integrated sustainable forest management and forest-sector supply-chain capacity planning.",
-        "The program focuses on systems-analysis methods that link forest ecosystem planning, industrial fibre procurement, processing-capacity decisions, logistics, and ecosystem-service outcomes in a common decision-support framework.",
-        "Core methodological work includes spatially explicit harvest and road-construction optimization, forest-sector supply-chain optimization, soft- and hard-linked model formulations, hybrid simulation-optimization, carbon modelling, and tradeoff analysis using ws3, SpaDES-compatible workflows, and related open-source tools.",
-        "This public page is written at the research-program level and links the grant to the lab's open software, thesis projects, and forest-sector modelling outputs."
+        "The program focuses on systems-analysis methods that link forest ecosystem planning, industrial fibre procurement, processing-capacity decisions, logistics, carbon, and ecosystem-service outcomes in a common decision-support framework.",
+        "Core methodological work includes spatially explicit harvest and road-construction optimization, forest-sector supply-chain optimization, soft- and hard-linked model formulations, hybrid simulation-optimization, carbon modelling, tradeoff analysis, and open research software built around ws3 and related tools.",
+        "The related-project links below are intentionally broad: each listed project has received some direct or indirect support from the Discovery Grant base-funding platform, such as trainee time, software infrastructure, modelling methods, reusable data workflows, supervision, or research-program continuity. Other partner grants and contracts may also be primary funding sources for those projects."
       ],
       "people": [
         "Gregory Paradis: Principal Investigator"
       ],
       "outputs": [
-        "Related project pages",
-        "Open research software",
+        "Base funding for related FRESH modelling, software, and thesis projects",
+        "Open research software and reusable modelling infrastructure",
         "Integrated modelling datasets and workflows",
-        "Trainee projects",
-        "Program publications, reports, and public research outputs"
+        "Trainee projects and student research outputs",
+        "Program publications, reports, repositories, and public research outputs"
+      ],
+      "related_projects": [
+        {
+          "label": "WS3",
+          "href": "/projects/ws3/"
+        },
+        {
+          "label": "FHOPS",
+          "href": "/projects/fhops/"
+        },
+        {
+          "label": "FEMIC",
+          "href": "/projects/femic/"
+        },
+        {
+          "label": "fresh-hectaresbc",
+          "href": "/projects/fresh-hectaresbc/"
+        },
+        {
+          "label": "CCCANDiES",
+          "href": "/projects/cccandies/"
+        },
+        {
+          "label": "Nemora",
+          "href": "/projects/nemora/"
+        },
+        {
+          "label": "Modelwright",
+          "href": "/projects/modelwright/"
+        },
+        {
+          "label": "FABLE-Pyculator",
+          "href": "/projects/fable-pyculator/"
+        },
+        {
+          "label": "figrecover",
+          "href": "/projects/figrecover/"
+        },
+        {
+          "label": "badc",
+          "href": "/projects/badc/"
+        },
+        {
+          "label": "Rosalia Jaffray MASc thesis",
+          "href": "/projects/rosalia-jaffray-masc-thesis/"
+        },
+        {
+          "label": "Yunhao (Davis) Xu MASc thesis",
+          "href": "/projects/yunhao-davis-xu-masc-thesis/"
+        },
+        {
+          "label": "Jamie Iversen MASc thesis",
+          "href": "/projects/jamie-iversen-msc-thesis/"
+        },
+        {
+          "label": "CLEWs-C2070 NRCan grant",
+          "href": "/projects/clews-c2070-nrcan/"
+        },
+        {
+          "label": "Stem diameter distribution fitting",
+          "href": "/projects/stem-diameter-distribution-fitting/"
+        },
+        {
+          "label": "Mitacs, Newmont, and forestry decarbonization modelling",
+          "href": "/projects/mitacs-newmont-mining-forestry-decarbonization-modelling/"
+        }
       ]
     },
     {

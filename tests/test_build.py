@@ -464,6 +464,25 @@ def test_targeted_project_pages_are_enriched_from_review_sources() -> None:
 
     assert "forest-sector systems modelling" in nserc
     assert "ecosystem-service decision support" in nserc
+    assert "NSERC Discovery Grants provide base funding" in nserc
+    assert "Related Projects" in nserc
+    assert "/projects/ws3/" in nserc
+    assert "/projects/fhops/" in nserc
+    assert "/projects/femic/" in nserc
+    assert "/projects/fresh-hectaresbc/" in nserc
+    assert "/projects/cccandies/" in nserc
+    assert "/projects/nemora/" in nserc
+    assert "/projects/modelwright/" in nserc
+    assert "/projects/fable-pyculator/" in nserc
+    assert "/projects/figrecover/" in nserc
+    assert "/projects/badc/" in nserc
+    assert "/projects/rosalia-jaffray-masc-thesis/" in nserc
+    assert "/projects/yunhao-davis-xu-masc-thesis/" in nserc
+    assert "/projects/jamie-iversen-msc-thesis/" in nserc
+    assert "/projects/clews-c2070-nrcan/" in nserc
+    assert "/projects/stem-diameter-distribution-fitting/" in nserc
+    assert "/projects/mitacs-newmont-mining-forestry-decarbonization-modelling/" in nserc
+    assert "Other partner grants and contracts may also be primary funding sources" in nserc
     assert "fresh_fibre" in clews
     assert "SCANFI diagnostic inventory fixture" in clews
     assert "Gauthier et al. 2015 yield-policy evaluation path" in clews
