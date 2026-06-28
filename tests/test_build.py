@@ -108,6 +108,7 @@ def test_domain_content_is_split_into_structured_sources() -> None:
     assert people["pages"]
     assert projects["projects"]
     assert publications["publications"]
+    assert len(publications["publications"]) >= 25
 
 
 def test_content_validation_rejects_bad_internal_links() -> None:
@@ -313,6 +314,23 @@ def test_contact_page_excludes_legacy_pi_and_tutorial_link() -> None:
     assert "verena.griess@ubc.ca" not in contact
     assert "Sustainable Forest Management Tutorials" not in contact
     assert "sfmtutorials.forestry.ubc.ca" not in contact
+
+
+def test_publications_page_uses_curated_harvest_records() -> None:
+    run_build()
+
+    publications = read_dist("publications/index.html")
+    assert "A two-stage parameter-fitting method" in publications
+    assert "FIRECAT" in publications
+    assert "WS3: An open-source Python framework" in publications
+    assert "https://doi.org/10.1016/j.ecoinf.2026.103688" in publications
+    assert "FHOPS" in publications
+    assert "https://doi.org/10.5281/zenodo.19619189" in publications
+    assert "Nemora" in publications
+    assert "https://ubc-fresh.github.io/nemora/" in publications
+    assert "Biosurveillance of Forest Insects. Part I" in publications
+    assert "FLG: A Forest Landscape Generator" in publications
+    assert "citation_for_view" not in publications
 
 
 def test_header_uses_fresh_mark_asset() -> None:

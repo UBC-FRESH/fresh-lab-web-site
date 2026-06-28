@@ -30,6 +30,30 @@ change without notice. The CV harvest uses a local PDF under `tmp/` and writes
 review JSON with grants/contracts, refereed publications, non-refereed/software
 records, and project-term matches.
 
+## Publication Curation
+
+P6.5 converted the first publication harvest pass into maintained public records
+under:
+
+```text
+content/publications.json
+```
+
+The curated list prioritizes:
+
+- Recent refereed publications from the CV harvest, with DOI links where they
+  were available during review.
+- Selected open software, software documentation, and technical outputs that
+  are part of the FRESH research record.
+- Older anchor publications that explain the lab's forest planning,
+  optimization, bioenergy, invasive-species, and landscape-modelling lineage.
+
+Raw ORCID, Google Scholar, and CV harvest files remain ignored under `tmp/`.
+Do not copy harvest-only fields such as Google Scholar `citation_for_view`
+identifiers into the maintained site content. Add new public records manually
+after review, using stable DOI, publisher, documentation, repository, or
+institutional-record links where possible.
+
 ## Basecamp Project Harvesting
 
 The Basecamp CLI is useful for project-specific source gathering after the PI
@@ -230,7 +254,5 @@ Current maintained roster updates:
 
 - Expand each project stub with public summaries, collaborators, HQP,
   repositories, publications, documents, and images.
-- Curate publication records from ORCID and Google Scholar harvests into
-  `content/publications.json`.
 - Decide which project stubs should become first-class public project pages.
 - Add richer people bios after current lab members approve public details.

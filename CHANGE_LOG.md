@@ -121,3 +121,7 @@ This is the append-only project narrative for `fresh-lab-web-site`.
 - Documented the UBC cIRcle/Open Collections thesis-link lookup workflow and
   added public cIRcle record/PDF links for completed thesis projects by Jinming
   (Jimmy) Ke, Yancun (Walter) Yan, and Rosalia Jaffray.
+- Curated the Phase 6 publication harvests into maintained publication records,
+  expanding `content/publications.json` with recent refereed papers, selected
+  software/documentation outputs, durable DOI/public links, and regression
+  coverage that keeps raw Google Scholar harvest fields out of the public page.

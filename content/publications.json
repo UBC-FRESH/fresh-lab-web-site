@@ -2,22 +2,209 @@
   "publications": [
     {
       "year": "2026",
+      "title": "A two-stage parameter-fitting method for modeling truncated stem diameter distributions",
+      "authors": "Paradis, G.",
+      "venue": "Forest Science (in press)"
+    },
+    {
+      "year": "2026",
+      "title": "FIRECAT: A Public Database for Solid Temperature Modelling of Mass Timber Compartment Fire Tests",
+      "authors": "Abougharib, A., Nazer, M. Z., Paradis, G., Wiesner, F.",
+      "venue": "Fire Safety Journal (in press)"
+    },
+    {
+      "year": "2026",
       "title": "Forest harvesting operational planning tools: a systematic review of optimization, simulation, and spatial decision support systems",
       "authors": "Jaffray, R., Coupland, K., Paradis, G.",
-      "venue": "International Journal of Forest Engineering"
+      "venue": "International Journal of Forest Engineering (in press)"
     },
     {
       "year": "2026",
       "title": "WS3: An open-source Python framework for integrated simulation and optimization of forest landscape and wood supply systems",
       "authors": "Paradis, G.",
-      "venue": "Ecological Informatics",
+      "venue": "Ecological Informatics, 95, 103688",
       "href": "https://doi.org/10.1016/j.ecoinf.2026.103688"
+    },
+    {
+      "year": "2026",
+      "title": "FEMIC",
+      "authors": "Paradis, G.",
+      "venue": "Computer software, v0.0.1-alpha",
+      "href": "https://doi.org/10.5281/zenodo.19619418"
+    },
+    {
+      "year": "2026",
+      "title": "FEMIC technical documentation",
+      "authors": "Paradis, G.",
+      "venue": "Technical documentation, v0.0.1-alpha",
+      "href": "https://ubc-fresh.github.io/femic/"
+    },
+    {
+      "year": "2026",
+      "title": "BADC",
+      "authors": "Paradis, G.",
+      "venue": "Computer software, v0.0.1-alpha1",
+      "href": "https://doi.org/10.5281/zenodo.19620220"
+    },
+    {
+      "year": "2026",
+      "title": "BADC technical documentation",
+      "authors": "Paradis, G.",
+      "venue": "Technical documentation, v0.0.1-alpha1",
+      "href": "https://ubc-fresh.github.io/badc/"
+    },
+    {
+      "year": "2026",
+      "title": "PAWS3",
+      "authors": "Paradis, G.",
+      "venue": "Computer software, v0.0.1-alpha1",
+      "href": "https://doi.org/10.5281/zenodo.19621887"
     },
     {
       "year": "2025",
       "title": "Development and assessment of automated forest road projection methods using performance metrics relevant for wildlife",
       "authors": "Hughes, J., Endicott, S., Lapins, D., Lochhead, K., Paradis, G.",
-      "venue": "Landscape Ecology"
+      "venue": "Landscape Ecology, 40, 208",
+      "href": "https://doi.org/10.1007/s10980-025-02232-8"
+    },
+    {
+      "year": "2025",
+      "title": "Challenges and strategic recommendations for enhancing quantification and projection of forest carbon dynamics",
+      "authors": "Munro, H., Woodall, C., Anderegg, W., Atkins, J., Beier, C., Bullock, B., DeLyser, K., Diaz, D., Eskelson, B., Evans, M., Foppert, J., Foster, B., Fox, T., Frank, J., Froese, R., Gaines III, G., Gould, P., Hailemariam, T., Hall, E. S., Heckman, K., Helmer, E., Hogan, J., Hoover, C., Kinane, S., MacFarlane, D., Murray, L., Paradis, G., Poudel, K., Prisley, S., Rakestraw, J., Restrepo, H., Sharma, A., Shaw, J., Smith-Mateja, E., VanderSchaaf, C., Vatandaslar, C., Weiskittel, A., Yang, S.",
+      "venue": "Journal of Forestry, 123, 703-734",
+      "href": "https://doi.org/10.1007/s44392-025-00048-7"
+    },
+    {
+      "year": "2025",
+      "title": "Consistency and equivalence in tree diameter and height instruments among inexperienced surveyors",
+      "authors": "Guo, B., Paradis, G., Lam, T.-Y.",
+      "venue": "Journal of Forest Research, 36(1)",
+      "href": "https://doi.org/10.1007/s11676-025-01840-z"
+    },
+    {
+      "year": "2025",
+      "title": "FHOPS",
+      "authors": "Paradis, G.",
+      "venue": "Computer software, v1.0.0-alpha3",
+      "href": "https://doi.org/10.5281/zenodo.19619189"
+    },
+    {
+      "year": "2025",
+      "title": "FHOPS technical documentation",
+      "authors": "Paradis, G.",
+      "venue": "Technical documentation, v1.0.0-alpha3",
+      "href": "https://ubc-fresh.github.io/fhops/"
+    },
+    {
+      "year": "2025",
+      "title": "Nemora",
+      "authors": "Paradis, G.",
+      "venue": "Computer software, v0.0.1-alpha.2",
+      "href": "https://doi.org/10.5281/zenodo.19618885"
+    },
+    {
+      "year": "2025",
+      "title": "Nemora technical documentation",
+      "authors": "Paradis, G.",
+      "venue": "Technical documentation, v0.0.1-alpha.2",
+      "href": "https://ubc-fresh.github.io/nemora/"
+    },
+    {
+      "year": "2025",
+      "title": "ws3",
+      "authors": "Paradis, G., Ghotb, S., Ghasemi, E., Coupland, K.",
+      "venue": "Computer software, v1.0.6",
+      "href": "https://doi.org/10.5281/zenodo.18716705"
+    },
+    {
+      "year": "2025",
+      "title": "ws3 technical documentation",
+      "authors": "Paradis, G., Ghotb, S., Ghasemi, E., Coupland, K.",
+      "venue": "Technical documentation, v1.0.6",
+      "href": "https://ws3.readthedocs.io/en/dev/"
+    },
+    {
+      "year": "2024",
+      "title": "Mitigating the mid-term timber supply shortage in British Columbia: Silvicultural options under a changing climate",
+      "authors": "Lafond, V., Polinko, A., Man, C., Dymond, C., Paradis, G., Griess, V.",
+      "venue": "Canadian Journal of Forest Research, 54(11)",
+      "href": "https://doi.org/10.1139/cjfr-2023-0225"
+    },
+    {
+      "year": "2024",
+      "title": "Research supports operational practice in community forests: Reducing climate change-related risks to timber supply",
+      "authors": "Paradis, G., Dymond, C., Griess, V., Coggins, S., Wickland, C., de Long, D.",
+      "venue": "UBC Faculty of Forestry Notes from the Field no. 005"
+    },
+    {
+      "year": "2024",
+      "title": "spades_ws3",
+      "authors": "Paradis, G.",
+      "venue": "Computer software, v1.1.0"
+    },
+    {
+      "year": "2024",
+      "title": "spades_ws3_dataInit",
+      "authors": "Paradis, G.",
+      "venue": "Computer software, v1.1.0"
+    },
+    {
+      "year": "2024",
+      "title": "Transforming food and land systems to achieve the SDGs",
+      "authors": "FABLE",
+      "venue": "In Sachs et al. (Eds.), The Sustainable Development Report 2024. SDSN, New York and Paris"
+    },
+    {
+      "year": "2022",
+      "title": "Managing forest carbon and landscape capacities",
+      "authors": "Boisvenue, C., Paradis, G., Eddy, I., McIntire, E., Chubaty, A.",
+      "venue": "Environmental Research Letters, 17(11), 114013",
+      "href": "https://doi.org/10.1088/1748-9326/ac9919"
+    },
+    {
+      "year": "2020",
+      "title": "Challenges and opportunities in developing DSS for risk assessment and management of forest invasive alien species",
+      "authors": "Lafond, V., Lingua, F., Lumnitz, S., Paradis, G., Srivastava, V., Griess, V.",
+      "venue": "Environmental Reviews, 28(3)",
+      "href": "https://doi.org/10.1139/er-2019-0024"
+    },
+    {
+      "year": "2019",
+      "title": "Bioenergy production to improve value-creation potential of strategic forest management plans in mixed-wood forests of Eastern Canada",
+      "authors": "Cantegril, P., Paradis, G., LeBel, L., Raulier, F.",
+      "venue": "Applied Energy, 247, 171-181"
+    },
+    {
+      "year": "2018",
+      "title": "Biosurveillance of Forest Insects. Part II: Adoption of genomic tools by end user communities and barriers to integration",
+      "authors": "Roe, A., Torson, A., Bilodeau, G., Bilodeau, P., Blackburn, G., Cui, M., Cusson, M., Doucet, D., Griess, V., Lafond, V., Paradis, G., Porth, I., Prunier, J., Srivastava, V., Tremblay, J., Uzunovic, A., Yemshanov, D., Hamelin, R.",
+      "venue": "Journal of Pest Science, 92(1), 71-82"
+    },
+    {
+      "year": "2018",
+      "title": "Biosurveillance of Forest Insects. Part I: Integration and application of genomic tools to the surveillance of non-native forest insects",
+      "authors": "Roe, A., Torson, A., Bilodeau, G., Bilodeau, P., Blackburn, G., Cui, M., Cusson, M., Doucet, D., Griess, V., Lafond, V., Paradis, G., Porth, I., Prunier, J., Srivastava, V., Tremblay, J., Uzunovic, A., Yemshanov, D., Hamelin, R.",
+      "venue": "Journal of Pest Science, 92(1), 52-70"
+    },
+    {
+      "year": "2018",
+      "title": "A bilevel model formulation for the distributed wood supply planning problem",
+      "authors": "Paradis, G., Bouchard, M., LeBel, L., D'Amours, S.",
+      "venue": "Canadian Journal of Forest Research, 48(2), 159-170",
+      "href": "https://doi.org/10.1139/cjfr-2017-0240"
+    },
+    {
+      "year": "2013",
+      "title": "On the risk of systematic drift under incoherent hierarchical forest management planning",
+      "authors": "Paradis, G., LeBel, L., D'Amours, S., Bouchard, M.",
+      "venue": "Canadian Journal of Forest Research, 43(5), 480-492",
+      "href": "https://doi.org/10.1139/cjfr-2012-0334"
+    },
+    {
+      "year": "2001",
+      "title": "FLG: A Forest Landscape Generator",
+      "authors": "Paradis, G., Richards, E. W.",
+      "venue": "CORS Bulletin, 35(3), 28-31"
     }
   ]
 }
