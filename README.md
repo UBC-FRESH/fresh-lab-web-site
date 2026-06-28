@@ -63,6 +63,13 @@ The Basecamp projects file and harvested outputs stay under ignored `tmp/`.
 
 Generated files are written to `dist/`.
 
+Run content QA for project stubs, people records, publication links, and public
+assets:
+
+```bash
+.venv/bin/python scripts/qa_content.py
+```
+
 ## Preview Locally
 
 ```bash

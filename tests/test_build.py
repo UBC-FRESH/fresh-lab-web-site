@@ -333,6 +333,19 @@ def test_publications_page_uses_curated_harvest_records() -> None:
     assert "citation_for_view" not in publications
 
 
+def test_content_qa_command_passes() -> None:
+    result = subprocess.run(
+        [sys.executable, "scripts/qa_content.py"],
+        cwd=ROOT,
+        check=True,
+        capture_output=True,
+        text=True,
+    )
+
+    assert "Content QA passed" in result.stdout
+    assert "ERROR:" not in result.stderr
+
+
 def test_header_uses_fresh_mark_asset() -> None:
     run_build()
 

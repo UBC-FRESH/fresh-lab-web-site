@@ -29,6 +29,7 @@ Run checks from the repo root:
 .venv/bin/python -m pytest
 .venv/bin/python -m ruff check .
 .venv/bin/python scripts/build.py
+.venv/bin/python scripts/qa_content.py
 ```
 
 Preview the generated site:

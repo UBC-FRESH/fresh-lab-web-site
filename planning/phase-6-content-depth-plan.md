@@ -54,6 +54,25 @@ identifiers into the maintained site content. Add new public records manually
 after review, using stable DOI, publisher, documentation, repository, or
 institutional-record links where possible.
 
+## Content QA
+
+P6.6 adds a repo-local content QA command:
+
+```bash
+.venv/bin/python scripts/qa_content.py
+```
+
+The QA script checks project stub alignment, public-content leakage patterns,
+people roster expectations, publication ordering and duplicate links, DOI link
+normalization, and required public asset references. It deliberately treats
+remaining editorial placeholders as warnings rather than failures, because some
+project pages are intentionally conservative public shells while partner,
+student, and publication details are still being reviewed.
+
+The command is part of the normal pytest/CI verification path. Use
+`--strict-warnings` when preparing a tighter editorial release where remaining
+placeholder language should block the change.
+
 ## Basecamp Project Harvesting
 
 The Basecamp CLI is useful for project-specific source gathering after the PI

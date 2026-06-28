@@ -125,3 +125,7 @@ This is the append-only project narrative for `fresh-lab-web-site`.
   expanding `content/publications.json` with recent refereed papers, selected
   software/documentation outputs, durable DOI/public links, and regression
   coverage that keeps raw Google Scholar harvest fields out of the public page.
+- Completed Phase 6 content QA by adding `scripts/qa_content.py`, wiring it
+  into tests and CI, checking project-stub alignment, people roster coverage,
+  publication link hygiene, forbidden public-content leakage patterns, and
+  required public asset references.

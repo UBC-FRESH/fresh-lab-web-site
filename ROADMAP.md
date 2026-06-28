@@ -131,13 +131,14 @@ and a workflow for turning reviewed project notes into polished public pages.
 - [x] P6.3 Update current people roster from PI-maintained lab records. Child issue: #40.
 - [x] P6.4 Convert priority project stubs into public project pages. Child issue: #41.
 - [x] P6.5 Curate publication harvests into maintained publication records. Child issue: #42.
-- [ ] P6.6 Add content QA for project stubs, publication links, people pages, and public assets. Child issue: #43.
+- [x] P6.6 Add content QA for project stubs, publication links, people pages, and public assets. Child issue: #43.
 
-Status: active. P6.1-P6.5 are complete on the phase branch. Project stubs live
+Status: complete. P6.1-P6.6 are complete. Project stubs live
 under `content/project-stubs/`; publication harvest scripts write ignored
 review files under `tmp/publication-harvests/`. Curated publication records now
 live in `content/publications.json`, including recent refereed papers, selected
 software/documentation outputs, and durable public links while keeping raw
 harvest artifacts out of the generated site. The public projects index groups
 curated records into ongoing research, open software, and past/recent projects
-while keeping rough stub Markdown out of the generated site.
+while keeping rough stub Markdown out of the generated site. Content QA is
+available through `scripts/qa_content.py` and runs in CI.
