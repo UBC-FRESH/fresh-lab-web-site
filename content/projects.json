@@ -3,16 +3,31 @@
     {
       "title": "A value-driven framework to model the impact of commercial thinning on timber supply and climate change mitigation potential in BC's interior forests",
       "path": "/projects/can-commercial-thinning-help-mitigate-the-midterm-timber-supply-shortage/",
-      "category": "Ongoing Research",
-      "status": "Current project",
-      "summary": "A current FRESH project focused on commercial thinning, timber supply, and climate change mitigation potential in BC's interior forests.",
+      "category": "Past And Recent Projects",
+      "status": "Completed published project",
+      "summary": "A completed commercial thinning and diverse-planting study on adapting to climate-change-induced timber supply shortage in British Columbia.",
       "body": [
-        "Commercial thinning can shift the timing of harvested volume and may help mitigate mid-term timber supply shortages in forests with unbalanced age class structures.",
-        "This project evaluates economically viable commercial thinning treatments and their potential to enhance timber supply while supporting climate change mitigation in BC's interior forests.",
-        "The project uses a value-driven modelling framework to connect treatment schedules, timber supply effects, and climate-related outcomes."
+        "This project evaluated silvicultural strategies for adapting to climate-change-induced timber supply shortage in British Columbia.",
+        "The published study examined how thinning and diverse planting scenarios can affect future timber supply under climate change, connecting treatment choices, stand development, and landscape-scale supply outcomes.",
+        "The main project is now closed and documented through the Canadian Journal of Forest Research paper, Combining thinning and diverse plantings to adapt to climate-change-induced timber supply shortage in British Columbia. FRESH remains interested in follow-up projects that build on this work, especially where thinning, climate adaptation, carbon outcomes, or operational feasibility can be studied with updated models and data."
+      ],
+      "people": [
+        "Valentine Lafond: lead author",
+        "Adam D. Polinko: collaborator",
+        "Cosmin D. Man: collaborator",
+        "Caren C. Dymond: collaborator",
+        "Gregory Paradis: collaborator",
+        "Verena C. Griess: collaborator"
       ],
       "outputs": [
-        "Publications, model outputs, and supporting documents will be linked here as the project record is curated."
+        "Canadian Journal of Forest Research paper",
+        "Follow-up project ideas and expressions of interest are welcome"
+      ],
+      "links": [
+        {
+          "label": "CJFR paper",
+          "href": "https://doi.org/10.1139/cjfr-2023-0225"
+        }
       ]
     },
     {
@@ -532,16 +547,35 @@
       "path": "/projects/dbh-distfit-papers/",
       "category": "Open Software",
       "status": "Publication and software project",
-      "summary": "Two related diameter-distribution fitting papers connected to Nemora and the FRESH publication record.",
+      "summary": "A pair of reproducible diameter-distribution fitting manuscripts connected to Forest Science, Nemora, and FRESH forest biometrics workflows.",
       "body": [
-        "This page tracks two related diameter-distribution fitting papers connected to Nemora.",
-        "One paper has been published in Forest Science; the full publication details, related software links, and companion paper status will be added after the publication records are curated."
+        "This project tracks two related diameter-distribution fitting manuscripts and their reproducible analysis workflows.",
+        "The published Forest Science paper, A Two-Stage Fitting Method for Truncated Stem Diameter Distributions, introduces a two-stage workflow that allows analysts to recover truncated Weibull and gamma solutions while retaining familiar complete-form density implementations.",
+        "The companion horizontal point sampling manuscript, A Weighted Fitting Approach for Diameter Distributions from Horizontal Point Sampling, develops a weighted fitting approach for diameter distributions from size-biased HPS tallies, with reproducible scripts and manuscript sources available in the public repository.",
+        "The work is connected to Nemora and broader FRESH efforts to make forest inventory, distribution fitting, and model-input preparation more transparent and reproducible."
       ],
       "people": [
-        "Gregory Paradis: FRESH lead"
+        "Gregory Paradis: lead author"
       ],
       "outputs": [
-        "Forest Science paper link, companion paper status, related software, data, and citation details will be added after review."
+        "Forest Science paper",
+        "Companion HPS manuscript",
+        "Reproducible manuscript repository",
+        "Related Nemora software workflows"
+      ],
+      "links": [
+        {
+          "label": "Forest Science paper",
+          "href": "https://doi.org/10.1007/s44391-026-00069-5"
+        },
+        {
+          "label": "dbh-distfit papers repository",
+          "href": "https://github.com/UBC-FRESH/dbhdistfit-papers"
+        },
+        {
+          "label": "Nemora project page",
+          "href": "/projects/nemora/"
+        }
       ]
     },
     {
@@ -549,16 +583,46 @@
       "path": "/projects/roads-r-package-and-paper/",
       "category": "Open Software",
       "status": "Software and paper project",
-      "summary": "A software and publication project centered on the roads R package.",
+      "summary": "An R package and Landscape Ecology paper on automated forest road projection methods for forest-change and wildlife-relevant modelling workflows.",
       "body": [
-        "This page is the public project record for the roads R package and related paper.",
-        "The software description, repository, documentation, examples, paper citation, and related project context will be added after review."
+        "The roads R package provides iterative least-cost-path and minimum-spanning-tree methods for projecting forest road networks.",
+        "The package connects target locations to existing road networks using user-supplied cost rasters and weighting functions, including options that penalize steep grades. The methods are intended for integration into R workflows and forest-change modelling frameworks over multiple time steps.",
+        "The related Landscape Ecology paper develops and assesses automated forest road projection methods using performance metrics relevant for wildlife, with public paper, software, and data links available for reuse."
       ],
       "people": [
-        "Gregory Paradis: FRESH lead"
+        "Josie Hughes: lead author",
+        "Sarah Endicott: collaborator",
+        "David Lapins: collaborator",
+        "Kyle Lochhead: collaborator",
+        "Gregory Paradis: collaborator"
       ],
       "outputs": [
-        "Repository, R package documentation, paper link, examples, and citation metadata will be added after review."
+        "Landscape Ecology paper",
+        "roads R package",
+        "Package documentation",
+        "Paper repository and OSF data"
+      ],
+      "links": [
+        {
+          "label": "Landscape Ecology paper",
+          "href": "https://doi.org/10.1007/s10980-025-02232-8"
+        },
+        {
+          "label": "roads R package repository",
+          "href": "https://github.com/LandSciTech/roads"
+        },
+        {
+          "label": "roads package documentation",
+          "href": "https://landscitech.github.io/roads/"
+        },
+        {
+          "label": "RoadPaper repository",
+          "href": "https://github.com/LandSciTech/RoadPaper"
+        },
+        {
+          "label": "RoadPaper data on OSF",
+          "href": "https://osf.io/8vmqh/"
+        }
       ]
     },
     {

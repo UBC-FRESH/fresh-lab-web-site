@@ -2,9 +2,10 @@
   "publications": [
     {
       "year": "2026",
-      "title": "A two-stage parameter-fitting method for modeling truncated stem diameter distributions",
+      "title": "A Two-Stage Fitting Method for Truncated Stem Diameter Distributions",
       "authors": "Paradis, G.",
-      "venue": "Forest Science (in press)"
+      "venue": "Forest Science",
+      "href": "https://doi.org/10.1007/s44391-026-00069-5"
     },
     {
       "year": "2026",
@@ -125,9 +126,9 @@
     },
     {
       "year": "2024",
-      "title": "Mitigating the mid-term timber supply shortage in British Columbia: Silvicultural options under a changing climate",
+      "title": "Combining thinning and diverse plantings to adapt to climate-change-induced timber supply shortage in British Columbia",
       "authors": "Lafond, V., Polinko, A., Man, C., Dymond, C., Paradis, G., Griess, V.",
-      "venue": "Canadian Journal of Forest Research, 54(11)",
+      "venue": "Canadian Journal of Forest Research, 54(11), 1230-1253",
       "href": "https://doi.org/10.1139/cjfr-2023-0225"
     },
     {

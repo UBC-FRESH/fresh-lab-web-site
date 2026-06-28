@@ -303,6 +303,28 @@ def test_software_project_pages_have_public_links() -> None:
             assert expected in page
 
 
+def test_published_paper_project_pages_are_enriched() -> None:
+    run_build()
+
+    commercial_thinning = read_dist(
+        "projects/can-commercial-thinning-help-mitigate-the-midterm-timber-supply-shortage/index.html"
+    )
+    roads = read_dist("projects/roads-r-package-and-paper/index.html")
+    dbh = read_dist("projects/dbh-distfit-papers/index.html")
+
+    assert "Completed published project" in commercial_thinning
+    assert "Combining thinning and diverse plantings" in commercial_thinning
+    assert "https://doi.org/10.1139/cjfr-2023-0225" in commercial_thinning
+    assert "follow-up projects" in commercial_thinning
+    assert "iterative least-cost-path" in roads
+    assert "https://doi.org/10.1007/s10980-025-02232-8" in roads
+    assert "https://github.com/LandSciTech/roads" in roads
+    assert "A Two-Stage Fitting Method for Truncated Stem Diameter Distributions" in dbh
+    assert "A Weighted Fitting Approach for Diameter Distributions from Horizontal Point Sampling" in dbh
+    assert "https://doi.org/10.1007/s44391-026-00069-5" in dbh
+    assert "https://github.com/UBC-FRESH/dbhdistfit-papers" in dbh
+
+
 def test_targeted_project_pages_are_enriched_from_review_sources() -> None:
     run_build()
 
@@ -337,7 +359,8 @@ def test_publications_page_uses_curated_harvest_records() -> None:
     run_build()
 
     publications = read_dist("publications/index.html")
-    assert "A two-stage parameter-fitting method" in publications
+    assert "A Two-Stage Fitting Method for Truncated Stem Diameter Distributions" in publications
+    assert "https://doi.org/10.1007/s44391-026-00069-5" in publications
     assert "FIRECAT" in publications
     assert "WS3: An open-source Python framework" in publications
     assert "https://doi.org/10.1016/j.ecoinf.2026.103688" in publications
@@ -345,6 +368,7 @@ def test_publications_page_uses_curated_harvest_records() -> None:
     assert "https://doi.org/10.5281/zenodo.19619189" in publications
     assert "Nemora" in publications
     assert "https://ubc-fresh.github.io/nemora/" in publications
+    assert "Combining thinning and diverse plantings" in publications
     assert "Biosurveillance of Forest Insects. Part I" in publications
     assert "FLG: A Forest Landscape Generator" in publications
     assert "citation_for_view" not in publications

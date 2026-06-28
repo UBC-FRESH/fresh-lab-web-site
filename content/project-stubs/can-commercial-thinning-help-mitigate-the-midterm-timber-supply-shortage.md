@@ -1,20 +1,26 @@
 # Commercial Thinning And Mid-Term Timber Supply
 
-Status: Current project
+Status: Completed published project
 
 ## Public Summary
 
-A value-driven framework to model the impact of commercial thinning on timber
-supply and climate change mitigation potential in British Columbia's interior
-forests.
+A completed commercial thinning and diverse-planting study on adapting to
+climate-change-induced timber supply shortage in British Columbia.
 
 ## People And Roles
 
-- Gregory Paradis: FRESH lead
+- Valentine Lafond: lead author
+- Adam D. Polinko: collaborator
+- Cosmin D. Man: collaborator
+- Caren C. Dymond: collaborator
+- Gregory Paradis: collaborator
+- Verena C. Griess: collaborator
 
 ## Collaborators And Partners
 
-TBD.
+- Canadian Journal of Forest Research paper:
+  `https://doi.org/10.1139/cjfr-2023-0225`
+- Follow-up project ideas and expressions of interest are welcome.
 
 ## Outputs And Links
 
@@ -22,7 +28,10 @@ TBD.
 
 ## Publications And References
 
-TBD.
+- Lafond, V., Polinko, A. D., Man, C. D., Dymond, C. C., Paradis, G. E., and
+  Griess, V. C. 2024. Combining thinning and diverse plantings to adapt to
+  climate-change-induced timber supply shortage in British Columbia. Canadian
+  Journal of Forest Research, 54(11), 1230-1253.
 
 ## Images And Assets
 
@@ -30,13 +39,10 @@ TBD.
 
 ## Source Notes
 
-This stub was added after the project was already converted into a public
-`content/projects.json` record so future source gathering has a matching intake
-file.
+- Current public record is based on the published CJFR paper and the migrated
+  legacy WordPress project page.
 
 ## Open Questions
 
-- Which funders, partners, collaborators, and student roles are approved for
-  public listing?
-- Which model outputs, reports, or publications should be linked from the
-  public page?
+- Are there follow-up project topics or partner-interest language that should
+  be added to the page?
