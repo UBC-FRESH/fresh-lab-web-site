@@ -110,3 +110,7 @@ This is the append-only project narrative for `fresh-lab-web-site`.
 - Curated the first software-project tranche by adding project-specific public
   summaries and links for WS3, FEMIC, FHOPS, Nemora, Modelwright,
   FABLE-Pyculator, and badc.
+- Split the temporary Omar/Action Lab placeholder into two Forest Action Lab
+  collaboration project pages: snap-and-fly helicopter logging productivity and
+  GNSS-based area-cover validation for whole-tree logging equipment, using
+  non-public draft manuscripts under ignored `tmp/` as review inputs.

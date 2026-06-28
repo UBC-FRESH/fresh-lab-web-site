@@ -45,6 +45,8 @@ def test_build_generates_expected_public_pages() -> None:
         "projects/jamie-iversen-msc-thesis/index.html",
         "projects/cccandies/index.html",
         "projects/clews-c2070-nrcan/index.html",
+        "projects/snap-and-fly-helicopter-logging-productivity/index.html",
+        "projects/gnss-area-cover-validation-whole-tree-logging/index.html",
         "projects/modelwright/index.html",
         "projects/ws3/index.html",
         "projects/rosalia-jaffray-masc-thesis/index.html",
@@ -210,6 +212,7 @@ def test_project_draft_placeholders_are_not_published() -> None:
     all_html = "\n".join(path.read_text(encoding="utf-8") for path in DIST.rglob("*.html"))
     assert "TBD." not in all_html
     assert "content/project-stubs" not in all_html
+    assert not (DIST / "projects" / "omar-action-lab-paper-projects" / "index.html").exists()
 
 
 def test_priority_project_pages_have_curated_public_summaries() -> None:
@@ -225,6 +228,24 @@ def test_priority_project_pages_have_curated_public_summaries() -> None:
     assert "machine-learning methods" in flashforest
     assert "climate, land, and water into energy models" in clews
     assert "Canada&#x27;s net-zero commitments" in clews
+
+
+def test_forest_action_lab_collaboration_pages_are_split() -> None:
+    run_build()
+
+    snap = read_dist("projects/snap-and-fly-helicopter-logging-productivity/index.html")
+    gnss = read_dist("projects/gnss-area-cover-validation-whole-tree-logging/index.html")
+    projects = read_dist("projects/index.html")
+
+    assert "single-stem snap-and-fly helicopter logging" in snap
+    assert "Kaman K-Max K-1200" in snap
+    assert "UBC Forest Action Lab" in snap
+    assert "GNSS recording frequency" in gnss
+    assert "UAV photogrammetry" in gnss
+    assert "UBC Forest Action Lab" in gnss
+    assert "/projects/snap-and-fly-helicopter-logging-productivity/" in projects
+    assert "/projects/gnss-area-cover-validation-whole-tree-logging/" in projects
+    assert "/projects/omar-action-lab-paper-projects/" not in projects
 
 
 def test_software_project_pages_have_public_links() -> None:

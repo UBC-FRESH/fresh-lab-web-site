@@ -132,21 +132,60 @@
       ]
     },
     {
-      "title": "Omar Action Lab paper projects",
-      "path": "/projects/omar-action-lab-paper-projects/",
+      "title": "Single-stem snap-and-fly helicopter logging productivity",
+      "path": "/projects/snap-and-fly-helicopter-logging-productivity/",
       "category": "Ongoing Research",
-      "status": "Ongoing paper projects",
-      "summary": "Two ongoing paper projects led by Omar in Action Lab and connected to the FRESH research record.",
+      "status": "Draft manuscript collaboration",
+      "summary": "A Forest Action Lab collaboration studying productivity, cycle-time structure, and operational drivers of single-stem snap-and-fly helicopter logging in coastal British Columbia.",
       "body": [
-        "This record tracks two ongoing paper projects led by Omar in Action Lab.",
-        "The public page will be expanded with paper titles, collaborator roles, abstracts, links, and publication status once the material is ready to share."
+        "This project studies standing-stem snap-and-fly helicopter logging as a specialized forest operations system for selectively extracting high-value stems.",
+        "The work quantifies productivity, cycle-time structure, delay occurrence, payload characteristics, and operational drivers using field observations, video analysis, GNSS flight tracking, mapped stem locations, and contractor-provided payload data.",
+        "The case study focuses on coastal British Columbia operations using a Kaman K-Max K-1200 and a Sikorsky S-61N, with FRESH contributing modelling, analysis, and research-record support in collaboration with the UBC Forest Action Lab."
       ],
       "people": [
-        "Omar: paper-project lead",
-        "Gregory Paradis: FRESH collaborator"
+        "Omar Mologni: Forest Action Lab paper lead",
+        "Rosalia Jaffray: collaborator",
+        "Quinn Kenn: collaborator",
+        "Gregory Paradis: FRESH collaborator",
+        "Dominik Roeser: Forest Action Lab collaborator"
+      ],
+      "partners": [
+        "UBC Forest Action Lab",
+        "UBC Department of Forest Resources Management"
       ],
       "outputs": [
-        "Paper titles, preprints, journal links, data, code, and collaborator lists will be added after review."
+        "Draft manuscript under internal review",
+        "Field observation, video-analysis, GNSS flight-tracking, mapped-stem, and payload datasets",
+        "Public paper link will be added after the manuscript is ready to share"
+      ]
+    },
+    {
+      "title": "GNSS-based area-cover validation for whole-tree logging equipment",
+      "path": "/projects/gnss-area-cover-validation-whole-tree-logging/",
+      "category": "Ongoing Research",
+      "status": "Draft manuscript collaboration",
+      "summary": "A Forest Action Lab collaboration evaluating GNSS-based methods for estimating daily area covered by ground-based whole-tree logging equipment.",
+      "body": [
+        "This project evaluates how GNSS recording frequency and post-processing choices affect estimates of daily area covered by ground-based whole-tree logging equipment.",
+        "The analysis compares machine-track-based estimates against field-derived validation data from multiple British Columbia logging operations, with attention to spatial error, operational scale, and the cost of collecting high-frequency GNSS data.",
+        "The work supports better digital monitoring of forest operations by connecting machine positioning data, UAV photogrammetry, stand and site information, and productivity analysis."
+      ],
+      "people": [
+        "Omar Mologni: Forest Action Lab paper lead",
+        "Steffen Lahrsen: collaborator",
+        "Rosalia Jaffray: collaborator",
+        "Adelin Nicorescu: collaborator",
+        "Gregory Paradis: FRESH collaborator",
+        "Dominik Roeser: Forest Action Lab collaborator"
+      ],
+      "partners": [
+        "UBC Forest Action Lab",
+        "UBC Department of Forest Resources Management"
+      ],
+      "outputs": [
+        "Draft manuscript under internal review",
+        "GNSS machine-track and UAV photogrammetry validation workflow",
+        "Public paper link will be added after the manuscript is ready to share"
       ]
     },
     {

@@ -130,6 +130,23 @@ Software curation pass:
   badc. GitHub repository metadata and public documentation URLs supplied the
   current public links.
 
+Forest Action Lab collaboration split:
+
+- The temporary `Omar Action Lab paper projects` placeholder was replaced with
+  two distinct public project records.
+- `Single-stem snap-and-fly helicopter logging productivity` describes a draft
+  manuscript collaboration on productivity, cycle-time structure, and
+  operational drivers of standing-stem helicopter logging in coastal British
+  Columbia.
+- `GNSS-based area-cover validation for whole-tree logging equipment` describes
+  a draft manuscript collaboration on GNSS recording frequency, post-processing
+  choices, UAV photogrammetry validation, and daily area-covered estimates for
+  whole-tree logging machines.
+
+These updates used non-public draft manuscript files under
+`tmp/non-public-drafts/` as review input. The raw PDFs, DOCX files, and extracted
+text remain ignored and were not committed.
+
 ## Current People Roster
 
 Current maintained roster updates:
