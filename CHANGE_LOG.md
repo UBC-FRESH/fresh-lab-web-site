@@ -161,3 +161,6 @@ This is the append-only project narrative for `fresh-lab-web-site`.
   tracked source headshots, generated optimized public JPEG/WebP variants,
   rendered optional profile images and links from `content/people.json`, and
   kept original source images out of the deployed `dist/` tree.
+- Consolidated completed thesis project page links so cIRcle thesis records and
+  PDF downloads appear only under `References And Downloads`; the general
+  `Links` section is now reserved for non-citation project links.

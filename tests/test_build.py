@@ -339,6 +339,16 @@ def test_completed_thesis_project_pages_link_to_ubc_circle() -> None:
         for expected in expected_values:
             assert expected in page
 
+    jimmy = read_dist("projects/jinming-jimmy-ke-msc-thesis/index.html")
+    walter = read_dist("projects/yancun-walter-yan-msc-thesis/index.html")
+    rosalia = read_dist("projects/rosalia-jaffray-masc-thesis/index.html")
+
+    assert "<h2>Links</h2>" not in jimmy
+    assert "<h2>Links</h2>" not in walter
+    assert rosalia.count("UBC cIRcle thesis record") == 1
+    assert rosalia.count("Download thesis PDF") == 1
+    assert "FHOPS project page" in rosalia
+
 
 def test_software_project_pages_have_public_links() -> None:
     run_build()

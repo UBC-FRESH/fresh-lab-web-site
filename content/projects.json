@@ -719,16 +719,6 @@
         "Scenario analysis for harvesting, fertilization, and harvested wood product use",
         "Thesis-derived manuscript and software links can be added when public"
       ],
-      "links": [
-        {
-          "label": "UBC cIRcle thesis record",
-          "href": "https://open.library.ubc.ca/soa/cIRcle/collections/ubctheses/24/items/1.0441338"
-        },
-        {
-          "label": "Download thesis PDF",
-          "href": "https://open.library.ubc.ca/media/stream/pdf/24/1.0441338/4"
-        }
-      ],
       "references": [
         {
           "citation": "Ke, J. 2024. Climate impact assessment under different forest harvesting and fertilization scenarios. MSc thesis, University of British Columbia.",
@@ -768,16 +758,6 @@
         "Prince George TSA case study",
         "Pareto-front tradeoff analysis for timber supply and forest carbon outcomes",
         "Journal-paper link when publicly available"
-      ],
-      "links": [
-        {
-          "label": "UBC cIRcle thesis record",
-          "href": "https://open.library.ubc.ca/soa/cIRcle/collections/ubctheses/24/items/1.0449036"
-        },
-        {
-          "label": "Download thesis PDF",
-          "href": "https://open.library.ubc.ca/media/stream/pdf/24/1.0449036/4"
-        }
       ],
       "references": [
         {
@@ -819,14 +799,6 @@
         "Related publication and FHOPS links"
       ],
       "links": [
-        {
-          "label": "UBC cIRcle thesis record",
-          "href": "https://open.library.ubc.ca/soa/cIRcle/collections/ubctheses/24/items/1.0452424"
-        },
-        {
-          "label": "Download thesis PDF",
-          "href": "https://open.library.ubc.ca/media/download/pdf/24/1.0452424/4"
-        },
         {
           "label": "FHOPS project page",
           "href": "/projects/fhops/"
