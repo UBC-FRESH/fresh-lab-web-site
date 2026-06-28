@@ -212,6 +212,21 @@ def test_project_draft_placeholders_are_not_published() -> None:
     assert "content/project-stubs" not in all_html
 
 
+def test_priority_project_pages_have_curated_public_summaries() -> None:
+    run_build()
+
+    cccandies = read_dist("projects/cccandies/index.html")
+    flashforest = read_dist("projects/ignitebc-flashforest-drone-seeding-microsite-ml/index.html")
+    clews = read_dist("projects/clews-c2070-nrcan/index.html")
+
+    assert "Cumulative effects of Climate Change" in cccandies
+    assert "forest Ecosystem Services" in cccandies
+    assert "drone seeding" in flashforest
+    assert "machine-learning methods" in flashforest
+    assert "climate, land, and water into energy models" in clews
+    assert "Canada&#x27;s net-zero commitments" in clews
+
+
 def test_contact_page_excludes_legacy_pi_and_tutorial_link() -> None:
     run_build()
 

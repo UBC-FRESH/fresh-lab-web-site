@@ -55,17 +55,18 @@
       "title": "CCCANDiES",
       "path": "/projects/cccandies/",
       "category": "Ongoing Research",
-      "status": "Ongoing project",
-      "summary": "An ongoing FRESH research project being expanded into a fuller public project page.",
+      "status": "Ongoing modelling project",
+      "summary": "Cumulative effects modelling for climate change, anthropogenic disturbance, natural disturbance, and forest ecosystem services.",
       "body": [
-        "CCCANDiES is part of the current FRESH research portfolio.",
-        "This project record is being expanded from PI-maintained notes so the public site can connect the project description, collaborators, HQP, publications, repositories, and related outputs in one place."
+        "CCCANDiES stands for Cumulative effects of Climate Change, Anthropogenic and Natural Disturbances on forest Ecosystem Services.",
+        "The project develops modelling capacity for understanding how multiple drivers of landscape change interact across forest ecosystems and affect ecosystem-service outcomes.",
+        "FRESH uses this project record to connect cumulative-effects modelling, forest landscape simulation, decision support, trainee work, publications, and related software outputs as the public material is reviewed."
       ],
       "people": [
         "Gregory Paradis: FRESH lead"
       ],
       "outputs": [
-        "Project description, collaborators, HQP names, publications, and public links will be added after source material review."
+        "Public reports, modelling outputs, repositories, trainee outputs, and related publications will be linked here as they are cleared for public release."
       ]
     },
     {
@@ -92,17 +93,19 @@
       "status": "Ongoing applied research",
       "summary": "Applied work on drone seeding, microsite characterization, and machine-learning support for reforestation decisions.",
       "body": [
-        "This project connects drone seeding, microsite modelling, and machine-learning methods for reforestation decision support.",
-        "The page will be expanded with the reviewed IgniteBC and FlashForest project scope, partner roles, data products, modelling outputs, and public-facing links."
+        "This project connects drone seeding, microsite characterization, operations research, artificial intelligence, and machine-learning methods for reforestation decision support in British Columbia.",
+        "The work supports next-generation drone seeding workflows by linking field data, remotely sensed imagery, site conditions, deployment planning, and model evaluation.",
+        "FRESH is using the project page to track public-facing summaries, modelling outputs, technical reports, software repositories, data products, and image assets as partner-approved material becomes available."
       ],
       "people": [
         "Gregory Paradis: FRESH lead"
       ],
       "partners": [
-        "FlashForest"
+        "FlashForest",
+        "Innovate BC / IgniteBC"
       ],
       "outputs": [
-        "Partner-approved project summary, modelling outputs, publications, applications, and image assets will be added after review."
+        "Partner-approved technical reports, modelling workflows, GitHub repositories, data products, publications, and visual assets will be linked here after review."
       ]
     },
     {
@@ -110,13 +113,14 @@
       "path": "/projects/clews-c2070-nrcan/",
       "category": "Ongoing Research",
       "status": "Ongoing collaborative grant",
-      "summary": "A collaborative NRCan grant connected to CLEWs-C2070 work.",
+      "summary": "A collaborative NRCan project integrating climate, land, and water into energy modelling for Canada's net-zero commitments.",
       "body": [
-        "This page is the public record for the CLEWs-C2070 NRCan grant and its connections to FRESH research.",
-        "The project description will be expanded with reviewed language about scope, modelling approach, collaborators, outputs, and related publications."
+        "CLEWs-C2070 focuses on innovative integration of climate, land, and water into energy models for addressing Canada's net-zero commitments.",
+        "FRESH contributes forest, land-use, modelling, and ecosystem-service expertise to the broader collaborative modelling effort.",
+        "This project page will connect the grant record to public reports, model outputs, publications, repositories, and decision-support applications as the reviewed materials become available."
       ],
       "people": [
-        "Gregory Paradis: FRESH lead"
+        "Gregory Paradis: FRESH co-investigator"
       ],
       "partners": [
         "Hisham Zerriffi: UBC Department of Forest Resources Management",
@@ -124,7 +128,7 @@
         "Elizabeth Gilmore: Carleton University"
       ],
       "outputs": [
-        "Grant summary, public reports, publications, model outputs, repositories, and applications will be linked after review."
+        "Public reports, publications, model outputs, repositories, and applications will be linked after review."
       ]
     },
     {

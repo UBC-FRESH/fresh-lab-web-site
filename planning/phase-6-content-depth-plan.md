@@ -103,6 +103,22 @@ Detailed descriptions, repositories, images, HQP names, publications, and
 partner-approved language can now be added incrementally to the relevant
 `content/projects.json` record.
 
+Initial targeted curation pass:
+
+- `CCCANDiES` now expands the acronym and describes cumulative-effects
+  modelling across climate change, anthropogenic disturbance, natural
+  disturbance, and forest ecosystem services.
+- `IgniteBC and FlashForest drone seeding microsite machine learning` now
+  describes the drone-seeding, microsite, operations-research, AI, and
+  machine-learning decision-support focus.
+- `CLEWs-C2070 NRCan grant` now describes the integration of climate, land, and
+  water into energy models for Canada's net-zero commitments and records the
+  known collaborator set.
+
+These public updates used the CV harvest and Basecamp project inventory as
+review inputs. Raw Basecamp message content, file names, admin documents, and
+downloads remain under ignored `tmp/` and were not committed.
+
 ## Current People Roster
 
 Current maintained roster updates:

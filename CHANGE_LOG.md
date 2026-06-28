@@ -103,3 +103,7 @@ This is the append-only project narrative for `fresh-lab-web-site`.
 - Added a generic Basecamp project harvester for read-only project metadata,
   message-board, to-do, card-table, and Docs & Files inventory exports into
   ignored `tmp/basecamp-harvests/` review files.
+- Curated the first three Phase 6 project pages beyond placeholders:
+  CCCANDiES, IgniteBC/FlashForest drone seeding microsite machine learning, and
+  CLEWs-C2070, using CV and Basecamp inventory material as review inputs while
+  keeping raw Basecamp material ignored.
