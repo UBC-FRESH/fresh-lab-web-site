@@ -231,7 +231,18 @@
           "body": [
             "Salar Ghotb was a postdoctoral researcher in FRESH whose work contributed to forest-sector systems modelling and applied decision support.",
             "His FRESH work included modelling the forest-based biomass solution space in British Columbia and project contributions connected to drone seeding microsite classification and forestry decarbonization modelling."
-          ]
+          ],
+          "image": {
+            "alt": "Headshot of Salar Ghotb",
+            "src": "/assets/people/salar-ghotb-360.jpeg",
+            "sources": [
+              {
+                "type": "image/webp",
+                "srcset": "/assets/people/salar-ghotb-360.webp 360w",
+                "sizes": "(max-width: 520px) 156px, (max-width: 880px) 120px, 168px"
+              }
+            ]
+          }
         },
         {
           "name": "Valentine Lafond",
@@ -257,14 +268,6 @@
               }
             ]
           }
-        },
-        {
-          "name": "Tatiane Micheletti",
-          "role": "Past postdoctoral researcher",
-          "body": [
-            "Tatiane Micheletti was a postdoctoral researcher supervised through FRESH-connected modelling work.",
-            "Her FRESH-related research included modelling Pareto-optimal tradeoffs between timber outcomes, protected-area expansion, and landscape-level conservation planning questions."
-          ]
         },
         {
           "name": "Rosalia Jaffray",

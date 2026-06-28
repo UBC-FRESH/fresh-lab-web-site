@@ -27,10 +27,15 @@ PEOPLE_SOURCES = [
     "jinming-jimmy-ke",
     "kathleen-coupland",
     "rosalia-jaffray",
+    "salar-ghotb",
     "valentine-lafond",
     "yancun-walter-yan",
     "yunhao-davis-xu",
 ]
+
+PEOPLE_CROP_BOXES = {
+    "salar-ghotb": (520, 1420, 2520, 3420),
+}
 
 
 def resize_width(image: Image.Image, width: int) -> Image.Image:
@@ -45,6 +50,12 @@ def square_center_crop(image: Image.Image) -> Image.Image:
     left = (image.width - side) // 2
     top = (image.height - side) // 2
     return image.crop((left, top, left + side, top + side))
+
+
+def people_crop(image: Image.Image, slug: str) -> Image.Image:
+    if slug in PEOPLE_CROP_BOXES:
+        return image.crop(PEOPLE_CROP_BOXES[slug])
+    return square_center_crop(image)
 
 
 def people_source_path(slug: str) -> Path:
@@ -69,7 +80,7 @@ def main() -> None:
     for slug in PEOPLE_SOURCES:
         with Image.open(people_source_path(slug)) as source:
             image = ImageOps.exif_transpose(source).convert("RGB")
-            headshot = square_center_crop(image).resize((360, 360), Image.Resampling.LANCZOS)
+            headshot = people_crop(image, slug).resize((360, 360), Image.Resampling.LANCZOS)
             headshot.save(
                 PEOPLE_DIR / f"{slug}-360.jpeg",
                 "JPEG",

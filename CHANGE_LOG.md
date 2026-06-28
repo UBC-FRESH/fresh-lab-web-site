@@ -220,3 +220,7 @@ This is the append-only project narrative for `fresh-lab-web-site`.
   images for Elaheh Ghasemi, Valentine Lafond, and Dawson Isbister, regenerated
   optimized people assets, and recorded that Salar Ghotb and Tatiane
   Micheletti still need approved image sources.
+- Added a maintainer-supplied Salar Ghotb headshot with a custom reproducible
+  crop, removed Tatiane Micheletti from the public Past FRESHies page because
+  her FRESH affiliation was nominal, and marked the past-member headshot task
+  complete.

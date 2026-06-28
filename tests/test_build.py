@@ -180,15 +180,16 @@ def test_people_pages_render_headshots_bios_and_profile_links() -> None:
     assert "wildland firefighter" in graduates
     assert "/assets/people/yunhao-davis-xu-360.webp" in graduates
     assert "/projects/jamie-iversen-msc-thesis/" in graduates
+    assert 'class="person-entry no-photo"' in graduates
     assert "Past FRESHies" in people
     assert "Past FRESHies" in alumni
     assert "Elaheh Ghasemi" in alumni
     assert "Salar Ghotb" in alumni
     assert "Valentine Lafond" in alumni
-    assert "Tatiane Micheletti" in alumni
+    assert "Tatiane Micheletti" not in alumni
     assert "Dawson Isbister" in alumni
-    assert 'class="person-entry no-photo"' in alumni
     assert "/assets/people/elaheh-ghasemi-360.webp" in alumni
+    assert "/assets/people/salar-ghotb-360.webp" in alumni
     assert "/assets/people/valentine-lafond-360.webp" in alumni
     assert "/assets/people/dawson-isbister-360.webp" in alumni
     assert "/projects/ignitebc-flashforest-drone-seeding-microsite-ml/" in alumni

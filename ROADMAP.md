@@ -162,11 +162,13 @@ headshots/bios.
   Yike Chen and the Bridget Guo / Xin Jia Guo naming alignment appear in CV or
   legacy-source clues, but need maintainer confirmation before any public
   expansion. Child issue: #48.
-- [ ] P7.5 Add approved headshots for past postdocs and Dawson if public
+- [x] P7.5 Add approved headshots for past postdocs and Dawson if public
   images are available and cleared for reuse. Child issue: #49. Legacy CMS
   mining recovered public images for Elaheh Ghasemi, Valentine Lafond, and
-  Dawson Isbister; Salar Ghotb and Tatiane Micheletti still need approved image
-  sources.
+  Dawson Isbister; the maintainer supplied a Salar Ghotb portrait. Tatiane
+  Micheletti was removed from the public Past FRESHies page because her FRESH
+  affiliation was nominal and her work was effectively supervised through a CFS
+  collaborator.
 
 Status: active. The public People area now includes a `Past FRESHies` section
 for approved alumni and past members. Remaining work is confirmation/headshot
