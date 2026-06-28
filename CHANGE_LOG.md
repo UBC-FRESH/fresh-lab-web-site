@@ -133,7 +133,12 @@ This is the append-only project narrative for `fresh-lab-web-site`.
   pages using PI-supplied private proposal material and public UBC-FRESH
   repository documentation while keeping private source documents under
   ignored `tmp/` review paths.
-- Enriched the commercial thinning, roads R package, and dbh-distfit project
-  pages from published papers and public software/manuscript repositories, and
-  corrected maintained publication records for the CJFR commercial thinning
-  paper and Forest Science truncated-diameter paper.
+- Enriched the commercial thinning, roads R package, and stem diameter
+  distribution fitting project pages from published papers and public
+  software/manuscript repositories, and corrected maintained publication
+  records for the CJFR commercial thinning paper and Forest Science
+  truncated-diameter paper.
+- Added explicit project-level references/download rendering, renamed the
+  former dbh-distfit page to `Stem diameter distribution fitting`, and updated
+  the CLEWs-C2070 page from PI-supplied diagnostic modelling notes while
+  keeping unpublished implementation material out of Git.

@@ -1,10 +1,10 @@
-# DBH Distribution Fitting Papers
+# Stem Diameter Distribution Fitting
 
 Status: Open publication and software-linked project
 
 ## Public Summary
 
-A pair of reproducible diameter-distribution fitting manuscripts connected to
+A pair of reproducible stem diameter distribution fitting manuscripts connected to
 Forest Science, Nemora, and FRESH forest biometrics workflows.
 
 ## People And Roles
@@ -18,6 +18,10 @@ TBD.
 ## Outputs And Links
 
 - Forest Science paper: `https://doi.org/10.1007/s44391-026-00069-5`
+- Forest Science paper PDF:
+  `https://link.springer.com/content/pdf/10.1007/s44391-026-00069-5.pdf`
+- HPS manuscript PDF:
+  `https://raw.githubusercontent.com/UBC-FRESH/dbhdistfit-papers/main/dbhdistfit-hps/manuscript/main.pdf`
 - Reproducible manuscript repository:
   `https://github.com/UBC-FRESH/dbhdistfit-papers`
 - Related software: Nemora
@@ -33,11 +37,13 @@ TBD.
 - Public repository README, manuscript title pages, and abstracts reviewed on
   2026-06-28.
 - The truncated-data paper is published in Forest Science; the HPS companion
-  manuscript is available from the public repository.
+  manuscript PDF is available from the public repository.
 
 ## Source Notes
 
-TBD.
+- Public `UBC-FRESH/dbhdistfit-papers` repository reviewed on 2026-06-28.
+- Forest Science DOI and Springer PDF link were checked during project-page
+  curation.
 
 ## Open Questions
 

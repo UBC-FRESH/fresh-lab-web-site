@@ -28,6 +28,21 @@
           "label": "CJFR paper",
           "href": "https://doi.org/10.1139/cjfr-2023-0225"
         }
+      ],
+      "references": [
+        {
+          "citation": "Lafond, V., Polinko, A. D., Man, C. D., Dymond, C. C., Paradis, G. E., and Griess, V. C. 2024. Combining thinning and diverse plantings to adapt to climate-change-induced timber supply shortage in British Columbia. Canadian Journal of Forest Research, 54(11), 1230-1253.",
+          "links": [
+            {
+              "label": "Article DOI",
+              "href": "https://doi.org/10.1139/cjfr-2023-0225"
+            },
+            {
+              "label": "Publisher article page",
+              "href": "https://cdnsciencepub.com/doi/10.1139/cjfr-2023-0225"
+            }
+          ]
+        }
       ]
     },
     {
@@ -142,11 +157,12 @@
       "path": "/projects/clews-c2070-nrcan/",
       "category": "Ongoing Research",
       "status": "Ongoing collaborative grant",
-      "summary": "A collaborative NRCan project integrating climate, land, and water into energy modelling for Canada's net-zero commitments.",
+      "summary": "A collaborative NRCan project rebuilding forest and biomass supply modelling for CLEWs-C2070 using open ws3 and fresh_fibre components.",
       "body": [
         "CLEWs-C2070 focuses on innovative integration of climate, land, and water into energy models for addressing Canada's net-zero commitments.",
-        "FRESH contributes forest, land-use, modelling, and ecosystem-service expertise to the broader collaborative modelling effort.",
-        "This project page will connect the grant record to public reports, model outputs, publications, repositories, and decision-support applications as the reviewed materials become available."
+        "FRESH is rebuilding the forestry and biomass supply component from transferred Forest Fibre Cascade Model archive evidence into an open, maintainable modelling path.",
+        "The current diagnostic architecture links ws3-shaped forest harvest outputs to fresh_fibre, a downstream profit-maximizing network-flow linear programming model for fibre allocation, processing capacity, residues, markets, and exports.",
+        "Recent prototype work has established a BC mini-network, typed CSV contracts, PuLP/CBC solve path, ws3 export bridge, SCANFI diagnostic inventory fixture, and Gauthier et al. 2015 yield-policy evaluation path. This work remains diagnostic rather than production-calibrated."
       ],
       "people": [
         "Gregory Paradis: FRESH co-investigator"
@@ -157,8 +173,13 @@
         "Elizabeth Gilmore: Carleton University"
       ],
       "outputs": [
-        "Public reports, publications, model outputs, repositories, and applications will be linked after review."
-      ]
+        "FFCM archive reverse-engineering notes and implementation-boundary matrices",
+        "ws3 to supply_offer soft-link contract",
+        "fresh_fibre downstream LP prototype",
+        "BC mini-network, ws3-smoke, and SCANFI-diagnostic supply variants",
+        "Gauthier yield-policy diagnostic evaluator"
+      ],
+      "links": []
     },
     {
       "title": "Single-stem snap-and-fly helicopter logging productivity",
@@ -543,13 +564,13 @@
       ]
     },
     {
-      "title": "dbh-distfit papers",
-      "path": "/projects/dbh-distfit-papers/",
+      "title": "Stem diameter distribution fitting",
+      "path": "/projects/stem-diameter-distribution-fitting/",
       "category": "Open Software",
       "status": "Publication and software project",
-      "summary": "A pair of reproducible diameter-distribution fitting manuscripts connected to Forest Science, Nemora, and FRESH forest biometrics workflows.",
+      "summary": "A pair of reproducible stem diameter distribution fitting manuscripts connected to Forest Science, Nemora, and FRESH forest biometrics workflows.",
       "body": [
-        "This project tracks two related diameter-distribution fitting manuscripts and their reproducible analysis workflows.",
+        "This project tracks two related stem diameter distribution fitting manuscripts and their reproducible analysis workflows.",
         "The published Forest Science paper, A Two-Stage Fitting Method for Truncated Stem Diameter Distributions, introduces a two-stage workflow that allows analysts to recover truncated Weibull and gamma solutions while retaining familiar complete-form density implementations.",
         "The companion horizontal point sampling manuscript, A Weighted Fitting Approach for Diameter Distributions from Horizontal Point Sampling, develops a weighted fitting approach for diameter distributions from size-biased HPS tallies, with reproducible scripts and manuscript sources available in the public repository.",
         "The work is connected to Nemora and broader FRESH efforts to make forest inventory, distribution fitting, and model-input preparation more transparent and reproducible."
@@ -565,16 +586,44 @@
       ],
       "links": [
         {
-          "label": "Forest Science paper",
-          "href": "https://doi.org/10.1007/s44391-026-00069-5"
-        },
-        {
-          "label": "dbh-distfit papers repository",
+          "label": "Stem diameter distribution fitting repository",
           "href": "https://github.com/UBC-FRESH/dbhdistfit-papers"
         },
         {
           "label": "Nemora project page",
           "href": "/projects/nemora/"
+        }
+      ],
+      "references": [
+        {
+          "citation": "Paradis, G. E. 2026. A Two-Stage Fitting Method for Truncated Stem Diameter Distributions. Forest Science.",
+          "links": [
+            {
+              "label": "Article DOI",
+              "href": "https://doi.org/10.1007/s44391-026-00069-5"
+            },
+            {
+              "label": "Download article PDF",
+              "href": "https://link.springer.com/content/pdf/10.1007/s44391-026-00069-5.pdf"
+            },
+            {
+              "label": "Repository preprint PDF",
+              "href": "https://raw.githubusercontent.com/UBC-FRESH/dbhdistfit-papers/main/dbhdistfit-truncdata/preprint/preprint.pdf"
+            }
+          ]
+        },
+        {
+          "citation": "Paradis, G. E. A Weighted Fitting Approach for Diameter Distributions from Horizontal Point Sampling. Manuscript and reproducible workflow.",
+          "links": [
+            {
+              "label": "Manuscript PDF",
+              "href": "https://raw.githubusercontent.com/UBC-FRESH/dbhdistfit-papers/main/dbhdistfit-hps/manuscript/main.pdf"
+            },
+            {
+              "label": "Manuscript repository",
+              "href": "https://github.com/UBC-FRESH/dbhdistfit-papers"
+            }
+          ]
         }
       ]
     },
@@ -622,6 +671,29 @@
         {
           "label": "RoadPaper data on OSF",
           "href": "https://osf.io/8vmqh/"
+        }
+      ],
+      "references": [
+        {
+          "citation": "Hughes, J., Endicott, S., Lapins, D., Lochhead, K., and Paradis, G. 2025. Development and assessment of automated forest road projection methods using performance metrics relevant for wildlife. Landscape Ecology, 40, 208.",
+          "links": [
+            {
+              "label": "Article DOI",
+              "href": "https://doi.org/10.1007/s10980-025-02232-8"
+            },
+            {
+              "label": "Download article PDF",
+              "href": "https://link.springer.com/content/pdf/10.1007/s10980-025-02232-8.pdf"
+            },
+            {
+              "label": "RoadPaper repository",
+              "href": "https://github.com/LandSciTech/RoadPaper"
+            },
+            {
+              "label": "RoadPaper data on OSF",
+              "href": "https://osf.io/8vmqh/"
+            }
+          ]
         }
       ]
     },

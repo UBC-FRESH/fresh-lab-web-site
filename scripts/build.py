@@ -128,6 +128,8 @@ def validate_content(data: dict) -> None:
                 validate_string_list(project[field], f"{context}.{field}")
         if project.get("links"):
             validate_links(project["links"], route_set, f"{context}.links")
+        if project.get("references"):
+            validate_references(project["references"], route_set, f"{context}.references")
 
     for publication_index, publication in enumerate(data["publications"]):
         context = f"publications[{publication_index}]"
@@ -205,6 +207,16 @@ def validate_links(links: list[dict], route_set: set[str], context: str) -> None
         link_context = f"{context}[{index}]"
         require_text(link, ("label", "href"), link_context)
         validate_link(link["href"], route_set, f"{link_context}.href")
+
+
+def validate_references(references: list[dict], route_set: set[str], context: str) -> None:
+    if not isinstance(references, list):
+        raise SystemExit(f"Invalid references list: {context}")
+    for index, reference in enumerate(references):
+        reference_context = f"{context}[{index}]"
+        require_text(reference, ("citation",), reference_context)
+        if reference.get("links"):
+            validate_links(reference["links"], route_set, f"{reference_context}.links")
 
 
 def validate_string_list(values: list[str], context: str) -> None:
@@ -472,12 +484,30 @@ def render_project(site: dict, project: dict) -> str:
             f'<li><a href="{site_url(link["href"])}">{html.escape(link["label"])}</a></li>'
             for link in project["links"]
         ) + "</ul>"
+    references = ""
+    if project.get("references"):
+        items = []
+        for reference in project["references"]:
+            reference_links = ""
+            if reference.get("links"):
+                reference_links = "<ul>" + "".join(
+                    f'<li><a href="{site_url(link["href"])}">{html.escape(link["label"])}</a></li>'
+                    for link in reference["links"]
+                ) + "</ul>"
+            items.append(
+                f"""<article class="entry">
+        <p>{html.escape(reference['citation'])}</p>
+        {reference_links}
+      </article>"""
+            )
+        references = f"<h2>References And Downloads</h2>{''.join(items)}"
     body = f"""<main>
   {page_hero("Project", project["title"], project["summary"])}
   <section class="section">
     <div class="section-inner content">
       {paragraphs(project["body"])}
       {detail_sections}
+      {references}
       {links}
     </div>
   </section>

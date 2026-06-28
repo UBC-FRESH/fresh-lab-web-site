@@ -49,6 +49,7 @@ def test_build_generates_expected_public_pages() -> None:
         "projects/gnss-area-cover-validation-whole-tree-logging/index.html",
         "projects/modelwright/index.html",
         "projects/ws3/index.html",
+        "projects/stem-diameter-distribution-fitting/index.html",
         "projects/rosalia-jaffray-masc-thesis/index.html",
         "publications/index.html",
         "contact/index.html",
@@ -80,6 +81,7 @@ def test_build_excludes_internal_page() -> None:
     assert not (DIST / "projects" / "biosafe" / "index.html").exists()
     assert not (DIST / "projects" / "partial-cutting" / "index.html").exists()
     assert not (DIST / "graduate-students-2" / "index.html").exists()
+    assert not (DIST / "projects" / "dbh-distfit-papers" / "index.html").exists()
     all_html = "\n".join(path.read_text(encoding="utf-8") for path in DIST.rglob("*.html"))
     assert "Letter template WORD file" not in all_html
 
@@ -310,18 +312,25 @@ def test_published_paper_project_pages_are_enriched() -> None:
         "projects/can-commercial-thinning-help-mitigate-the-midterm-timber-supply-shortage/index.html"
     )
     roads = read_dist("projects/roads-r-package-and-paper/index.html")
-    dbh = read_dist("projects/dbh-distfit-papers/index.html")
+    dbh = read_dist("projects/stem-diameter-distribution-fitting/index.html")
 
     assert "Completed published project" in commercial_thinning
+    assert "References And Downloads" in commercial_thinning
     assert "Combining thinning and diverse plantings" in commercial_thinning
     assert "https://doi.org/10.1139/cjfr-2023-0225" in commercial_thinning
     assert "follow-up projects" in commercial_thinning
+    assert "References And Downloads" in roads
     assert "iterative least-cost-path" in roads
     assert "https://doi.org/10.1007/s10980-025-02232-8" in roads
+    assert "https://link.springer.com/content/pdf/10.1007/s10980-025-02232-8.pdf" in roads
     assert "https://github.com/LandSciTech/roads" in roads
+    assert "Stem diameter distribution fitting" in dbh
+    assert "References And Downloads" in dbh
     assert "A Two-Stage Fitting Method for Truncated Stem Diameter Distributions" in dbh
     assert "A Weighted Fitting Approach for Diameter Distributions from Horizontal Point Sampling" in dbh
     assert "https://doi.org/10.1007/s44391-026-00069-5" in dbh
+    assert "https://link.springer.com/content/pdf/10.1007/s44391-026-00069-5.pdf" in dbh
+    assert "dbhdistfit-hps/manuscript/main.pdf" in dbh
     assert "https://github.com/UBC-FRESH/dbhdistfit-papers" in dbh
 
 
@@ -329,11 +338,15 @@ def test_targeted_project_pages_are_enriched_from_review_sources() -> None:
     run_build()
 
     nserc = read_dist("projects/nserc-discovery-grant/index.html")
+    clews = read_dist("projects/clews-c2070-nrcan/index.html")
     figrecover = read_dist("projects/figrecover/index.html")
     hectaresbc = read_dist("projects/fresh-hectaresbc/index.html")
 
     assert "forest-sector systems modelling" in nserc
     assert "ecosystem-service decision support" in nserc
+    assert "fresh_fibre" in clews
+    assert "SCANFI diagnostic inventory fixture" in clews
+    assert "Gauthier et al. 2015 yield-policy evaluation path" in clews
     assert "approximate tabular data from scientific and professional figures" in figrecover
     assert "https://ubc-fresh.github.io/figrecover/" in figrecover
     assert "https://pypi.org/project/figrecover/" in figrecover
