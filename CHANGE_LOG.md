@@ -149,3 +149,7 @@ This is the append-only project narrative for `fresh-lab-web-site`.
   so the maintained text was grounded in public cIRcle/Open Collections thesis
   records, search snippets, and existing public project links while preserving
   the cIRcle record and thesis-PDF URLs for human access.
+- Removed public-facing editorial review/process language from live project,
+  Join, visiting-scholar, and alumni pages, replacing it with stable current
+  content and adding a generated-site regression test to catch review-note
+  leakage in public HTML.

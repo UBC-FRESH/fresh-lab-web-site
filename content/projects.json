@@ -54,7 +54,7 @@
       "body": [
         "Yunhao (Davis) Xu's MASc thesis work is developing forest estate modelling and decision-support workflows for post-wildfire salvage planning.",
         "The project connects timber value, fire severity, harvesting cost, vegetation inventory, and model-instance preparation to evaluate management choices after wildfire disturbance.",
-        "FRESH is using this project record to connect thesis outputs, FEMIC/TSA29 model-instance work, software workflows, and publications as the public material is reviewed."
+        "The public project record connects the active thesis work to FEMIC/TSA29 model-instance development, software workflows, and future thesis outputs."
       ],
       "people": [
         "Yunhao (Davis) Xu: MASc student",
@@ -64,7 +64,7 @@
         "MASc thesis materials",
         "FEMIC/TSA29 model-instance documentation",
         "Post-wildfire salvage planning datasets and modelling workflows",
-        "Public thesis, code, and publication links will be added after review"
+        "Thesis, code, and publication links when publicly available"
       ]
     },
     {
@@ -76,7 +76,7 @@
       "body": [
         "Jamie Iversen's MSc thesis work focuses on risk-aware forest estate modelling for wildfire mitigation.",
         "The project links wildfire risk reduction, fuel-management treatment information, timber supply analysis, and forest estate modelling to support landscape-level planning under wildfire risk.",
-        "FRESH is using this project record to connect thesis outputs, modelling workflows, relevant public documents, and publications as the public material is reviewed."
+        "The public project record connects the active thesis work to modelling workflows, public wildfire-planning documents, and future thesis outputs."
       ],
       "people": [
         "Jamie Iversen: MSc student",
@@ -86,7 +86,7 @@
         "MSc thesis materials",
         "Risk-aware forest estate modelling workflows",
         "Wildfire risk-reduction and treatment-planning review material",
-        "Public thesis, code, and publication links will be added after review"
+        "Thesis, code, and publication links when publicly available"
       ]
     },
     {
@@ -98,13 +98,13 @@
       "body": [
         "CCCANDiES stands for Cumulative effects of Climate Change, Anthropogenic and Natural Disturbances on forest Ecosystem Services.",
         "The project develops modelling capacity for understanding how multiple drivers of landscape change interact across forest ecosystems and affect ecosystem-service outcomes.",
-        "FRESH uses this project record to connect cumulative-effects modelling, forest landscape simulation, decision support, trainee work, publications, and related software outputs as the public material is reviewed."
+        "FRESH uses this project record to connect cumulative-effects modelling, forest landscape simulation, decision support, trainee work, publications, and related software outputs."
       ],
       "people": [
         "Gregory Paradis: FRESH lead"
       ],
       "outputs": [
-        "Public reports, modelling outputs, repositories, trainee outputs, and related publications will be linked here as they are cleared for public release."
+        "Cumulative-effects modelling workflows, trainee outputs, and related publications"
       ]
     },
     {
@@ -117,7 +117,7 @@
         "The FRESH Discovery Grant research program develops open, scalable, and reusable modelling tools for integrated sustainable forest management and forest-sector supply-chain capacity planning.",
         "The program focuses on systems-analysis methods that link forest ecosystem planning, industrial fibre procurement, processing-capacity decisions, logistics, and ecosystem-service outcomes in a common decision-support framework.",
         "Core methodological work includes spatially explicit harvest and road-construction optimization, forest-sector supply-chain optimization, soft- and hard-linked model formulations, hybrid simulation-optimization, carbon modelling, and tradeoff analysis using ws3, SpaDES-compatible workflows, and related open-source tools.",
-        "This public page is intentionally written at the research-program level while proposal-specific details, trainee records, case-study outputs, and publications are reviewed for public release."
+        "This public page is written at the research-program level and links the grant to the lab's open software, thesis projects, and forest-sector modelling outputs."
       ],
       "people": [
         "Gregory Paradis: Principal Investigator"
@@ -127,7 +127,7 @@
         "Open research software",
         "Integrated modelling datasets and workflows",
         "Trainee projects",
-        "Publications and reports will be linked as the research record is curated"
+        "Program publications, reports, and public research outputs"
       ]
     },
     {
@@ -139,7 +139,7 @@
       "body": [
         "This project connects drone seeding, microsite characterization, operations research, artificial intelligence, and machine-learning methods for reforestation decision support in British Columbia.",
         "The work supports next-generation drone seeding workflows by linking field data, remotely sensed imagery, site conditions, deployment planning, and model evaluation.",
-        "FRESH is using the project page to track public-facing summaries, modelling outputs, technical reports, software repositories, data products, and image assets as partner-approved material becomes available."
+        "The public project page summarizes the applied research direction and will link partner-approved reports, repositories, data products, publications, and visual assets when those outputs are public."
       ],
       "people": [
         "Gregory Paradis: FRESH lead"
@@ -149,7 +149,7 @@
         "Innovate BC / IgniteBC"
       ],
       "outputs": [
-        "Partner-approved technical reports, modelling workflows, GitHub repositories, data products, publications, and visual assets will be linked here after review."
+        "Partner-approved technical reports, modelling workflows, repositories, data products, publications, and visual assets"
       ]
     },
     {
@@ -204,9 +204,9 @@
         "UBC Department of Forest Resources Management"
       ],
       "outputs": [
-        "Draft manuscript under internal review",
+        "Draft manuscript",
         "Field observation, video-analysis, GNSS flight-tracking, mapped-stem, and payload datasets",
-        "Public paper link will be added after the manuscript is ready to share"
+        "Manuscript and publication link when publicly available"
       ]
     },
     {
@@ -233,9 +233,9 @@
         "UBC Department of Forest Resources Management"
       ],
       "outputs": [
-        "Draft manuscript under internal review",
+        "Draft manuscript",
         "GNSS machine-track and UAV photogrammetry validation workflow",
-        "Public paper link will be added after the manuscript is ready to share"
+        "Manuscript and publication link when publicly available"
       ]
     },
     {
@@ -246,7 +246,7 @@
       "summary": "A collaborative modelling project on hemlock dwarf mistletoe spread.",
       "body": [
         "This project focuses on modelling the spread of hemlock dwarf mistletoe.",
-        "The public project record will be expanded with modelling objectives, collaborator roles, publications, software, and supporting materials as those details are reviewed."
+        "The work connects forest health, spatial spread modelling, and decision-support questions around hemlock dwarf mistletoe in British Columbia forests."
       ],
       "people": [
         "Gregory Paradis: FRESH collaborator",
@@ -257,7 +257,7 @@
         "Richard Hamelin"
       ],
       "outputs": [
-        "Project description, model outputs, publications, code links, and visuals will be added after review."
+        "Mistletoe spread modelling workflows, collaborator notes, and future public outputs"
       ]
     },
     {
@@ -768,7 +768,7 @@
         "Integrated SFMM-FCBM-WPCM modelling framework",
         "Prince George TSA case study",
         "Pareto-front tradeoff analysis for timber supply and forest carbon outcomes",
-        "Journal-paper link will be added when public"
+        "Journal-paper link when publicly available"
       ],
       "links": [
         {
@@ -861,7 +861,7 @@
       "summary": "A past applied modelling project connected to Mitacs, Newmont, mining, forestry, and decarbonization.",
       "body": [
         "This page is the public record for the Mitacs, Newmont, mining, and forestry decarbonization modelling project.",
-        "The project description, partner-approved language, outputs, publications, reports, and supporting assets will be added after review."
+        "The project connected forestry and mining decarbonization questions through applied modelling, with public details limited to partner-approved summary information."
       ],
       "people": [
         "Gregory Paradis: FRESH lead"
@@ -871,7 +871,7 @@
         "Newmont"
       ],
       "outputs": [
-        "Partner-approved summary, reports, publications, modelling outputs, and related links will be added after review."
+        "Partner-approved summary information, modelling outputs, reports, publications, and related links"
       ]
     }
   ]

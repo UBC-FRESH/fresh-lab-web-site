@@ -96,6 +96,24 @@ def test_build_uses_maintained_content_source_not_wordpress_export() -> None:
     assert "<!-- wp:" not in all_html
 
 
+def test_public_pages_do_not_expose_editorial_review_process_language() -> None:
+    run_build()
+
+    forbidden_phrases = [
+        "will be added after review",
+        "after the maintained content model is in place",
+        "as the public material is reviewed",
+        "will be linked here",
+        "cleared for public release",
+        "after the manuscript is ready to share",
+    ]
+
+    for html_path in DIST.rglob("*.html"):
+        page = html_path.read_text(encoding="utf-8")
+        for phrase in forbidden_phrases:
+            assert phrase not in page, f"{phrase!r} leaked into {html_path.relative_to(DIST)}"
+
+
 def test_domain_content_is_split_into_structured_sources() -> None:
     site = json.loads((ROOT / "content" / "site.json").read_text(encoding="utf-8"))
     people = json.loads((ROOT / "content" / "people.json").read_text(encoding="utf-8"))

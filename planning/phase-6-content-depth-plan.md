@@ -199,13 +199,22 @@ Thesis and recent student-project curation pass:
 - `Rosalia Jaffray MASc thesis` now connects forest harvesting operational
   planning tools, systematic review work, FHOPS, and reproducible forest
   operations modelling.
-- `Jinming (Jimmy) Ke MSc thesis` and `Yancun (Walter) Yan MSc thesis` now have
-  cautious thesis-derived manuscript records without exposing unpublished
-  manuscript details.
+- `Jinming (Jimmy) Ke MSc thesis` now describes system-level climate impact
+  assessment across forest management, fertilization, harvested wood products,
+  product substitution, and bioenergy pathways.
+- `Yancun (Walter) Yan MSc thesis` now describes the integrated
+  SFMM-FCBM-WPCM modelling framework, Prince George Timber Supply Area case
+  study, and epsilon-constraint tradeoff analysis for timber supply and forest
+  carbon outcomes.
 
 These updates used Basecamp project inventories and CV/publication harvests as
 review inputs. Private student notes, CVs, schedules, committee material, and
 draft manuscript details remain under ignored `tmp/` and were not committed.
+Direct automated thesis PDF downloads from UBC Open Collections returned UBC
+cybersecurity block pages from the server environment during the thesis cleanup
+pass, so the maintained public text was grounded in cIRcle/Open Collections
+record metadata, search snippets, and existing public project links while the
+human-accessible thesis record and PDF links remain on the public pages.
 
 ## UBC cIRcle Thesis Links
 
