@@ -25,6 +25,7 @@ PEOPLE_SOURCES = [
     "gregory-paradis",
     "jamie-iversen",
     "jinming-jimmy-ke",
+    "kailey",
     "kathleen-coupland",
     "rosalia-jaffray",
     "salar-ghotb",
@@ -34,6 +35,7 @@ PEOPLE_SOURCES = [
 ]
 
 PEOPLE_CROP_BOXES = {
+    "kailey": (0, 0, 3024, 3024),
     "salar-ghotb": (520, 1420, 2520, 3420),
 }
 

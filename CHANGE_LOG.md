@@ -233,3 +233,6 @@ This is the append-only project narrative for `fresh-lab-web-site`.
   patterns, local preview and GitHub Pages publishing steps, rollback/privacy
   rules, and repo cross-links. Updated repo docs to point maintainers back to
   the lab KB.
+- Added a maintainer-supplied Kailey photo to the people asset pipeline,
+  generated responsive JPEG/WebP headshot variants with a custom crop, and
+  wired the image into her People profile.

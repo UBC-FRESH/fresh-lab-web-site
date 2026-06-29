@@ -170,7 +170,18 @@
           "body": [
             "Kailey is a TRANSFOR-M program student supervised by Gregory Paradis.",
             "Her work connects to FRESH interests in drone seeding, microsite selection, and decision support for reforestation and restoration."
-          ]
+          ],
+          "image": {
+            "alt": "Headshot of Kailey",
+            "src": "/assets/people/kailey-360.jpeg",
+            "sources": [
+              {
+                "type": "image/webp",
+                "srcset": "/assets/people/kailey-360.webp 360w",
+                "sizes": "(max-width: 520px) 156px, (max-width: 880px) 120px, 168px"
+              }
+            ]
+          }
         }
       ]
     },

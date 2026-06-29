@@ -71,6 +71,7 @@ def test_build_generates_expected_public_pages() -> None:
         "assets/people/gregory-paradis-360.jpeg",
         "assets/people/kathleen-coupland-360.jpeg",
         "assets/people/jamie-iversen-360.jpeg",
+        "assets/people/kailey-360.jpeg",
         "assets/people/yunhao-davis-xu-360.jpeg",
     ]
 
@@ -177,6 +178,7 @@ def test_people_pages_render_headshots_bios_and_profile_links() -> None:
     assert "/assets/people/kathleen-coupland-360.webp" in researchers
     assert "forest carbon modeller" in researchers
     assert "/assets/people/jamie-iversen-360.webp" in graduates
+    assert "/assets/people/kailey-360.webp" in graduates
     assert "wildland firefighter" in graduates
     assert "/assets/people/yunhao-davis-xu-360.webp" in graduates
     assert "/projects/jamie-iversen-msc-thesis/" in graduates
