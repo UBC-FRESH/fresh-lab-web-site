@@ -213,12 +213,16 @@
             {
               "label": "MGEM rooftop solar LiDAR project",
               "href": "/projects/kamloops-rooftop-solar-lidar/"
+            },
+            {
+              "label": "CLEWs-C2070 NRCan grant",
+              "href": "/projects/clews-c2070-nrcan/"
             }
           ],
           "body": [
             "Tyler Goncalves is an MGEM intern in FRESH working on open geospatial workflows for energy and climate decision support.",
-            "His MGEM final report developed a LiDAR-based workflow for estimating rooftop solar photovoltaic potential in Kamloops, British Columbia.",
-            "The project connects openly available point-cloud data, meteorological records, urban surface modelling, and suitability analysis to support scalable rooftop solar resource assessment."
+            "His rooftop solar work develops a LiDAR-based workflow for estimating rooftop solar photovoltaic potential in Kamloops, British Columbia, under co-supervision by Naoko Ellis and Connor McGookin in UBC Chemical and Biological Engineering, with Gregory Paradis contributing as a collaborator.",
+            "Tyler is also supervised by Gregory Paradis on FRESH work connected to CLEWs-C2070, where the lab is rebuilding open forest and biomass supply modelling components for integrated climate, land, water, and energy systems analysis."
           ]
         }
       ]

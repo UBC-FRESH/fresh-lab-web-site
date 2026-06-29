@@ -241,3 +241,8 @@ This is the append-only project narrative for `fresh-lab-web-site`.
   pipeline, and added a public project page summarizing his Kamloops rooftop
   solar LiDAR workflow from the private MGEM final report review material while
   keeping the raw report and extraction files unpublished.
+- Corrected Tyler Goncalves project roles: the Kamloops rooftop solar LiDAR
+  project is ongoing, Naoko Ellis and Connor McGookin are listed as
+  co-supervisors from UBC Chemical and Biological Engineering, Gregory Paradis
+  is listed as collaborator on that project, and Tyler is cross-linked to
+  CLEWs-C2070 for the FRESH-supervised work under Gregory.

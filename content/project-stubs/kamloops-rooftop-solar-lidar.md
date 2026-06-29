@@ -1,6 +1,6 @@
 # Open LiDAR workflow for rooftop solar potential in Kamloops
 
-Status: public project page drafted from PI-supplied MGEM final report review material.
+Status: ongoing public project page drafted from PI-supplied MGEM final report review material and maintainer role corrections.
 
 ## Public Page
 
@@ -11,6 +11,7 @@ Status: public project page drafted from PI-supplied MGEM final report review ma
 - Primary source for the current public summary is a maintainer-supplied MGEM final report stored under ignored `tmp/non-public-drafts/` review material.
 - Do not publish the raw report document, extracted report text, detailed appendix material, or local temporary extraction files unless the maintainer explicitly approves a public release package.
 - Current public text intentionally summarizes methods, major case-study results, and future workflow directions without exposing unpublished working files.
+- Project roles were corrected by the maintainer: Naoko Ellis and Connor McGookin are co-supervisors in UBC Chemical and Biological Engineering; Gregory Paradis is a collaborator on this rooftop solar project.
 
 ## Follow-Up Questions
 

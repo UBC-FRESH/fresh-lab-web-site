@@ -48,11 +48,11 @@
     {
       "title": "Open LiDAR workflow for rooftop solar potential in Kamloops",
       "path": "/projects/kamloops-rooftop-solar-lidar/",
-      "category": "Past And Recent Projects",
-      "status": "Completed MGEM intern project",
-      "summary": "An MGEM intern project developing open-source geospatial methods for estimating rooftop solar photovoltaic potential from LiDAR and meteorological data, using Kamloops as a case study.",
+      "category": "Ongoing Research",
+      "status": "Ongoing MGEM project",
+      "summary": "An ongoing MGEM project developing open-source geospatial methods for estimating rooftop solar photovoltaic potential from LiDAR and meteorological data, using Kamloops as a case study.",
       "body": [
-        "This project developed a transferable geospatial workflow for estimating rooftop solar photovoltaic potential from openly available LiDAR point clouds and meteorological data.",
+        "This ongoing project develops a transferable geospatial workflow for estimating rooftop solar photovoltaic potential from openly available LiDAR point clouds and meteorological data.",
         "Tyler Goncalves applied the workflow to Kamloops, British Columbia, a sunny Southern Interior municipality where distributed rooftop solar could contribute to electrification and clean-energy planning.",
         "The workflow normalizes classified LiDAR point clouds, identifies likely building footprints, builds city-surface rasters, simulates annual solar irradiation with UMEP's Solar Energy on Building Envelopes model, and filters rooftop surfaces by size, slope, aspect, and annual irradiance.",
         "The Kamloops case study identified 6,277,392 square metres of suitable rooftop area after suitability filtering, receiving an estimated 6,993 GWh of annual solar insolation. Using a 20 percent module-efficiency assumption and the PVWatts standard 14 percent system-loss factor, the report estimated an upper-bound electricity potential of roughly 1,174 GWh per year before accounting for detailed module fitting and configuration constraints.",
@@ -60,7 +60,9 @@
       ],
       "people": [
         "Tyler Goncalves: MGEM intern and project lead",
-        "Gregory Paradis: supervisor"
+        "Naoko Ellis: co-supervisor, UBC Chemical and Biological Engineering",
+        "Connor McGookin: co-supervisor, UBC Chemical and Biological Engineering",
+        "Gregory Paradis: collaborator"
       ],
       "outputs": [
         "MGEM final report",
@@ -69,7 +71,8 @@
         "Future workflow direction for province-wide rooftop solar assessment"
       ],
       "partners": [
-        "UBC Master of Geomatics for Environmental Management program"
+        "UBC Master of Geomatics for Environmental Management program",
+        "UBC Department of Chemical and Biological Engineering"
       ],
       "references": [
         {
@@ -351,7 +354,8 @@
         "Recent prototype work has established a BC mini-network, typed CSV contracts, PuLP/CBC solve path, ws3 export bridge, SCANFI diagnostic inventory fixture, and Gauthier et al. 2015 yield-policy evaluation path. This work remains diagnostic rather than production-calibrated."
       ],
       "people": [
-        "Gregory Paradis: FRESH co-investigator"
+        "Gregory Paradis: FRESH co-investigator",
+        "Tyler Goncalves: MGEM intern supervised by Gregory Paradis for FRESH CLEWs-C2070 modelling work"
       ],
       "partners": [
         "Hisham Zerriffi: UBC Department of Forest Resources Management",

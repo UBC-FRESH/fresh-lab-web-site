@@ -192,6 +192,9 @@ def test_people_pages_render_headshots_bios_and_profile_links() -> None:
     assert "MGEM intern" in interns
     assert "/assets/people/tyler-goncalves-360.webp" in interns
     assert "/projects/kamloops-rooftop-solar-lidar/" in interns
+    assert "/projects/clews-c2070-nrcan/" in interns
+    assert "Naoko Ellis and Connor McGookin" in interns
+    assert "supervised by Gregory Paradis on FRESH work connected to CLEWs-C2070" in interns
     assert "Past FRESHies" in people
     assert "Past FRESHies" in alumni
     assert "Elaheh Ghasemi" in alumni
@@ -338,8 +341,13 @@ def test_mgem_rooftop_solar_project_page_is_public_summary_only() -> None:
     page = read_dist("projects/kamloops-rooftop-solar-lidar/index.html")
 
     assert "Open LiDAR workflow for rooftop solar potential in Kamloops" in page
+    assert "Ongoing MGEM project" in page
     assert "rooftop solar photovoltaic potential" in page
     assert "Tyler Goncalves: MGEM intern and project lead" in page
+    assert "Naoko Ellis: co-supervisor, UBC Chemical and Biological Engineering" in page
+    assert "Connor McGookin: co-supervisor, UBC Chemical and Biological Engineering" in page
+    assert "Gregory Paradis: collaborator" in page
+    assert "Gregory Paradis: supervisor" not in page
     assert "UMEP&#x27;s Solar Energy on Building Envelopes model" in page
     assert "6,277,392 square metres" in page
     assert "6,993 GWh" in page
@@ -547,6 +555,7 @@ def test_targeted_project_pages_are_enriched_from_review_sources() -> None:
     assert "fresh_fibre" in clews
     assert "SCANFI diagnostic inventory fixture" in clews
     assert "Gauthier et al. 2015 yield-policy evaluation path" in clews
+    assert "Tyler Goncalves: MGEM intern supervised by Gregory Paradis" in clews
     assert "approximate tabular data from scientific and professional figures" in figrecover
     assert "https://ubc-fresh.github.io/figrecover/" in figrecover
     assert "https://pypi.org/project/figrecover/" in figrecover
