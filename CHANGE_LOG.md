@@ -236,3 +236,8 @@ This is the append-only project narrative for `fresh-lab-web-site`.
 - Added a maintainer-supplied Kailey photo to the people asset pipeline,
   generated responsive JPEG/WebP headshot variants with a custom crop, and
   wired the image into her People profile.
+- Added Tyler Goncalves as a current MGEM intern under a new Interns people
+  section, prepared his approved headshot through the tracked people asset
+  pipeline, and added a public project page summarizing his Kamloops rooftop
+  solar LiDAR workflow from the private MGEM final report review material while
+  keeping the raw report and extraction files unpublished.

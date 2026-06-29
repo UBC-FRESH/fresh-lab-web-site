@@ -29,6 +29,7 @@ PEOPLE_SOURCES = [
     "kathleen-coupland",
     "rosalia-jaffray",
     "salar-ghotb",
+    "tyler-goncalves",
     "valentine-lafond",
     "yancun-walter-yan",
     "yunhao-davis-xu",

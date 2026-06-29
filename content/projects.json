@@ -46,6 +46,38 @@
       ]
     },
     {
+      "title": "Open LiDAR workflow for rooftop solar potential in Kamloops",
+      "path": "/projects/kamloops-rooftop-solar-lidar/",
+      "category": "Past And Recent Projects",
+      "status": "Completed MGEM intern project",
+      "summary": "An MGEM intern project developing open-source geospatial methods for estimating rooftop solar photovoltaic potential from LiDAR and meteorological data, using Kamloops as a case study.",
+      "body": [
+        "This project developed a transferable geospatial workflow for estimating rooftop solar photovoltaic potential from openly available LiDAR point clouds and meteorological data.",
+        "Tyler Goncalves applied the workflow to Kamloops, British Columbia, a sunny Southern Interior municipality where distributed rooftop solar could contribute to electrification and clean-energy planning.",
+        "The workflow normalizes classified LiDAR point clouds, identifies likely building footprints, builds city-surface rasters, simulates annual solar irradiation with UMEP's Solar Energy on Building Envelopes model, and filters rooftop surfaces by size, slope, aspect, and annual irradiance.",
+        "The Kamloops case study identified 6,277,392 square metres of suitable rooftop area after suitability filtering, receiving an estimated 6,993 GWh of annual solar insolation. Using a 20 percent module-efficiency assumption and the PVWatts standard 14 percent system-loss factor, the report estimated an upper-bound electricity potential of roughly 1,174 GWh per year before accounting for detailed module fitting and configuration constraints.",
+        "The project emphasizes open, transferable methods that can be adapted to other British Columbia municipalities as provincial LiDAR coverage expands."
+      ],
+      "people": [
+        "Tyler Goncalves: MGEM intern and project lead",
+        "Gregory Paradis: supervisor"
+      ],
+      "outputs": [
+        "MGEM final report",
+        "Open-source rooftop solar resource assessment workflow",
+        "Kamloops building-footprint, solar-insolation, and rooftop-suitability case-study outputs",
+        "Future workflow direction for province-wide rooftop solar assessment"
+      ],
+      "partners": [
+        "UBC Master of Geomatics for Environmental Management program"
+      ],
+      "references": [
+        {
+          "citation": "Goncalves, T. Open-source LiDAR workflow for rooftop solar photovoltaic resource assessment in Kamloops, British Columbia. MGEM final report, University of British Columbia."
+        }
+      ]
+    },
+    {
       "title": "Yunhao (Davis) Xu MASc thesis",
       "path": "/projects/yunhao-davis-xu-masc-thesis/",
       "category": "Ongoing Research",

@@ -41,6 +41,7 @@ def test_build_generates_expected_public_pages() -> None:
         "people/index.html",
         "projects/index.html",
         "projects/can-commercial-thinning-help-mitigate-the-midterm-timber-supply-shortage/index.html",
+        "projects/kamloops-rooftop-solar-lidar/index.html",
         "projects/yunhao-davis-xu-masc-thesis/index.html",
         "projects/jamie-iversen-msc-thesis/index.html",
         "projects/cccandies/index.html",
@@ -55,6 +56,7 @@ def test_build_generates_expected_public_pages() -> None:
         "contact/index.html",
         "join-fresh/index.html",
         "current-faculty/index.html",
+        "interns/index.html",
         "graduate-students/index.html",
         "postdocs-and-researchers/index.html",
         "former-freshies/index.html",
@@ -72,6 +74,7 @@ def test_build_generates_expected_public_pages() -> None:
         "assets/people/kathleen-coupland-360.jpeg",
         "assets/people/jamie-iversen-360.jpeg",
         "assets/people/kailey-360.jpeg",
+        "assets/people/tyler-goncalves-360.jpeg",
         "assets/people/yunhao-davis-xu-360.jpeg",
     ]
 
@@ -169,6 +172,7 @@ def test_people_pages_render_headshots_bios_and_profile_links() -> None:
     faculty = read_dist("current-faculty/index.html")
     researchers = read_dist("postdocs-and-researchers/index.html")
     graduates = read_dist("graduate-students/index.html")
+    interns = read_dist("interns/index.html")
     people = read_dist("people/index.html")
     alumni = read_dist("former-freshies/index.html")
 
@@ -183,6 +187,11 @@ def test_people_pages_render_headshots_bios_and_profile_links() -> None:
     assert "/assets/people/yunhao-davis-xu-360.webp" in graduates
     assert "/projects/jamie-iversen-msc-thesis/" in graduates
     assert 'class="person-entry no-photo"' in graduates
+    assert "Interns" in people
+    assert "Tyler Goncalves" in interns
+    assert "MGEM intern" in interns
+    assert "/assets/people/tyler-goncalves-360.webp" in interns
+    assert "/projects/kamloops-rooftop-solar-lidar/" in interns
     assert "Past FRESHies" in people
     assert "Past FRESHies" in alumni
     assert "Elaheh Ghasemi" in alumni
@@ -274,6 +283,7 @@ def test_projects_index_lists_curated_research_records() -> None:
     assert "/projects/yunhao-davis-xu-masc-thesis/" in projects
     assert "/projects/modelwright/" in projects
     assert "/projects/mitacs-newmont-mining-forestry-decarbonization-modelling/" in projects
+    assert "/projects/kamloops-rooftop-solar-lidar/" in projects
     assert "bioSAFE" not in projects
     assert "Partial cutting" not in projects
 
@@ -320,6 +330,25 @@ def test_priority_project_pages_have_curated_public_summaries() -> None:
     assert "raw drone imagery" not in flashforest.lower()
     assert "climate, land, and water into energy models" in clews
     assert "Canada&#x27;s net-zero commitments" in clews
+
+
+def test_mgem_rooftop_solar_project_page_is_public_summary_only() -> None:
+    run_build()
+
+    page = read_dist("projects/kamloops-rooftop-solar-lidar/index.html")
+
+    assert "Open LiDAR workflow for rooftop solar potential in Kamloops" in page
+    assert "rooftop solar photovoltaic potential" in page
+    assert "Tyler Goncalves: MGEM intern and project lead" in page
+    assert "UMEP&#x27;s Solar Energy on Building Envelopes model" in page
+    assert "6,277,392 square metres" in page
+    assert "6,993 GWh" in page
+    assert "1,174 GWh per year" in page
+    assert "UBC Master of Geomatics for Environmental Management program" in page
+
+    assert "MGEM Final Report.docx" not in page
+    assert "tmp/non-public-drafts" not in page
+    assert "tygon804" not in page
 
 
 def test_forest_action_lab_collaboration_pages_are_split() -> None:
