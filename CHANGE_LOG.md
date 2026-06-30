@@ -246,3 +246,7 @@ This is the append-only project narrative for `fresh-lab-web-site`.
   co-supervisors from UBC Chemical and Biological Engineering, Gregory Paradis
   is listed as collaborator on that project, and Tyler is cross-linked to
   CLEWs-C2070 for the FRESH-supervised work under Gregory.
+- Expanded Kailey's people profile from maintainer-supplied bio text, adding
+  her Forest Biology degree, Saanich Forestry Centre nursery-technician
+  background, TRANSFOR-M Forest Science year in Italy, and motivation for
+  aerial seeding and microsite-selection work.

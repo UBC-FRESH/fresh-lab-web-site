@@ -183,6 +183,9 @@ def test_people_pages_render_headshots_bios_and_profile_links() -> None:
     assert "forest carbon modeller" in researchers
     assert "/assets/people/jamie-iversen-360.webp" in graduates
     assert "/assets/people/kailey-360.webp" in graduates
+    assert "aerial seeding and microsite selection" in graduates
+    assert "Saanich Forestry Centre" in graduates
+    assert "Forest Science in Italy" in graduates
     assert "wildland firefighter" in graduates
     assert "/assets/people/yunhao-davis-xu-360.webp" in graduates
     assert "/projects/jamie-iversen-msc-thesis/" in graduates
