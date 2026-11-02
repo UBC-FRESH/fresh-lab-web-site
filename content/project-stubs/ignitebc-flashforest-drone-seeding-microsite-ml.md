@@ -50,7 +50,7 @@ Machine Learning_. Technical report, FRESH Lab review copy.
 
 ## Images And Assets
 
-TBD.
+No project-specific public images identified yet.
 
 ## Source Notes
 

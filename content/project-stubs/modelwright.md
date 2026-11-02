@@ -4,7 +4,9 @@ Status: Open software project
 
 ## Public Summary
 
-TBD.
+Software for extracting, validating, and reforging spreadsheet models as pure Python code.
+
+Modelwright extracts, validates, and reforges spreadsheet models as pure Python code.
 
 ## People And Roles
 
@@ -12,25 +14,28 @@ TBD.
 
 ## Collaborators And Partners
 
-TBD.
+- No external partners identified in the public record.
 
 ## Outputs And Links
 
-- GitHub repository: TBD
+- GitHub repository
+- Documentation site
+- Examples and related model conversion workflows
+- Modelwright GitHub repository: https://github.com/UBC-FRESH/modelwright
+- Modelwright documentation: https://ubc-fresh.github.io/modelwright/
 
 ## Publications And References
 
-TBD.
+No public publication record linked yet.
 
 ## Images And Assets
 
-TBD.
+No project-specific public images identified yet.
 
 ## Source Notes
 
-TBD.
+- Maintained public project record and linked public sources reviewed on 2026-11-02.
 
 ## Open Questions
 
-- Which repository, docs, and example use cases should be linked?
-
+- Confirm which Modelwright example use cases should be featured publicly.

@@ -52,6 +52,17 @@ Harvest publication and research-record candidates into ignored review files:
 .venv/bin/python scripts/harvest_cv_research_record.py
 ```
 
+Audit the public `UBC-FRESH` GitHub organization against the maintained project
+index:
+
+```bash
+.venv/bin/python scripts/audit_github_projects.py --output tmp/github-project-audit.md
+```
+
+The audit reports linked repositories, unlinked project candidates, missing
+references, and excluded forks or archived repositories. Set `GITHUB_TOKEN` or
+`GH_TOKEN` to raise the GitHub API rate limit.
+
 Harvest read-only Basecamp project review material after authenticating with
 the Basecamp CLI:
 

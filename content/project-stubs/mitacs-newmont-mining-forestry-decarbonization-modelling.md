@@ -47,7 +47,7 @@ Columbia, Canada. Manuscript in preparation.
 
 ## Images And Assets
 
-TBD.
+No project-specific public images identified yet.
 
 ## Source Notes
 

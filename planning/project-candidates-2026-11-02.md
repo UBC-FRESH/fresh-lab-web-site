@@ -109,6 +109,16 @@ Status: the Phase D links in this table were added to the existing project recor
 4. Phase D (done in this pass): enriched existing pages with the folded repository families, including FEMIC deployment-instance guides and examples, WS3 SpaDES and interoperability links, WS4 carbon/road/disturbance links, FHOPS thesis and rolling-horizon repositories, FlashForest microsite tooling, CLEWs model and data repositories, CCCANDiES demonstration data, stem-diameter fitting repositories, thesis repositories, EcoTrust and NbDS archives, WBI legacy models, and the pinned PyFVS fork.
 5. Phase E: revisit FRESH-ROAD, FRESH-BEAST, FRESH-Interop, and TASS II wrapper when they have a release or a stable public workflow.
 
+## Maintenance Automation
+
+The manual audit is now backed by `scripts/audit_github_projects.py`. Run it from the repository root to compare the maintained project index against the public `UBC-FRESH` organization:
+
+```bash
+.venv/bin/python scripts/audit_github_projects.py --output tmp/github-project-audit.md
+```
+
+The report lists linked repositories, unlinked candidates, missing references, and excluded forks or archived repositories. Set `GITHUB_TOKEN` or `GH_TOKEN` to raise the GitHub API rate limit. Re-run the audit when the organization changes or before a content-planning cycle.
+
 ## Source Notes
 
 - Repository metadata came from the public GitHub API on 2026-11-02. Counts and status values will drift as repositories are created, renamed, or released.

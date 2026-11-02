@@ -4,7 +4,9 @@ Status: Past project
 
 ## Public Summary
 
-TBD.
+A completed MSc thesis on system-level climate impact assessment for forest harvesting, fertilization, and harvested wood product use scenarios.
+
+Jinming (Jimmy) Ke's MSc thesis developed an open-source forest system climate impact assessment model for evaluating how forest harvesting, fertilization, and harvested wood product use strategies affect climate outcomes.
 
 ## People And Roles
 
@@ -13,25 +15,31 @@ TBD.
 
 ## Collaborators And Partners
 
-TBD.
+- No external partners identified in the public record.
 
 ## Outputs And Links
 
-TBD.
+- MSc thesis
+- Open-source forest system climate impact assessment modelling workflow
+- Scenario analysis for harvesting, fertilization, and harvested wood product use
+- Public thesis modelling repository
 
 ## Publications And References
 
-TBD.
+- Ke, J. 2024. Climate impact assessment under different forest harvesting and fertilization scenarios. MSc thesis, University of British Columbia.
+  - UBC cIRcle thesis record: https://open.library.ubc.ca/soa/cIRcle/collections/ubctheses/24/items/1.0441338
+  - Download thesis PDF: https://open.library.ubc.ca/media/stream/pdf/24/1.0441338/4
+- Ke, J. Thesis modelling repository. UBC-FRESH/msc_jimmy_ke. GitHub.
+  - Thesis modelling repository: https://github.com/UBC-FRESH/msc_jimmy_ke
 
 ## Images And Assets
 
-TBD.
+No project-specific public images identified yet.
 
 ## Source Notes
 
-TBD.
+- Maintained public project record and linked public sources reviewed on 2026-11-02.
 
 ## Open Questions
 
-- What is the thesis title, completion date, and public repository or cIRcle link?
-
+- Confirm whether the thesis modelling repository should be featured more prominently.

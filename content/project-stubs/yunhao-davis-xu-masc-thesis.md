@@ -42,7 +42,7 @@ Columbia.
 
 ## Images And Assets
 
-TBD.
+No project-specific public images identified yet.
 
 ## Source Notes
 

@@ -287,3 +287,14 @@ This is the append-only project narrative for `fresh-lab-web-site`.
 - Updated Thomas Cooper's people profile to active MSc student, started
   September 2026, and removed the remaining "incoming" wording from the
   graduate-student section summaries.
+- Cleared all content-QA stub warnings by filling the remaining intake-form
+  sections from the maintained public project records and normalizing stub
+  formatting. Content QA now passes with zero warnings.
+- Added `scripts/audit_github_projects.py` and tests. The audit compares the
+  maintained project index against the public UBC-FRESH GitHub organization,
+  reports unlinked candidates and missing references, and excludes forks and
+  archived repositories by default.
+- Added `planning/project-visual-assets.md` with the visual-asset plan for the
+  WS4 map workspace, FHOPS 3D studio, Kamloops FBP maps, FEMIC instances,
+  FRESH-CBM benchmarks, FieldAtlas, and FRESHForge, including the project-image
+  schema work needed before screenshots can be published.

@@ -4,7 +4,9 @@ Status: Open software project
 
 ## Public Summary
 
-TBD.
+A Python package for fitting probability density functions to tree stem tally data from forest inventory plots.
+
+Nemora streamlines fitting statistical probability density functions to tree stem tally data from forest inventory plots.
 
 ## People And Roles
 
@@ -12,25 +14,30 @@ TBD.
 
 ## Collaborators And Partners
 
-TBD.
+- No external partners identified in the public record.
 
 ## Outputs And Links
 
-- GitHub repository: TBD
+- GitHub repository
+- Technical documentation
+- Zenodo software citation
+- Related diameter-distribution fitting publications
+- Nemora GitHub repository: https://github.com/UBC-FRESH/nemora
+- Nemora documentation: https://ubc-fresh.github.io/nemora/
+- Nemora software citation: https://doi.org/10.5281/zenodo.19618885
 
 ## Publications And References
 
-- Related DBH distribution fitting papers: TBD
+No public publication record linked yet.
 
 ## Images And Assets
 
-TBD.
+No project-specific public images identified yet.
 
 ## Source Notes
 
-TBD.
+- Maintained public project record and linked public sources reviewed on 2026-11-02.
 
 ## Open Questions
 
-- Which Nemora repository, papers, and example outputs should be linked?
-
+- Confirm which Nemora example outputs should be featured publicly.

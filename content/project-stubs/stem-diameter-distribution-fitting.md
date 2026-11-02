@@ -13,7 +13,7 @@ Forest Science, Nemora, and FRESH forest biometrics workflows.
 
 ## Collaborators And Partners
 
-TBD.
+- No external partners identified in the public record.
 
 ## Outputs And Links
 

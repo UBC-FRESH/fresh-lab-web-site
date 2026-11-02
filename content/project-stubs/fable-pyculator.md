@@ -4,7 +4,9 @@ Status: Open software project
 
 ## Public Summary
 
-TBD.
+Notebook controls for working with Modelwright-generated Python versions of FABLE Calculator models.
+
+FABLE-Pyculator provides FABLE Calculator-specific notebook controls for Modelwright-generated Python models.
 
 ## People And Roles
 
@@ -12,25 +14,27 @@ TBD.
 
 ## Collaborators And Partners
 
-TBD.
+- No external partners identified in the public record.
 
 ## Outputs And Links
 
-- GitHub repository: TBD
+- GitHub repository
+- Modelwright-generated calculator workflows
+- FABLE white paper and related land-system modelling context
+- FABLE-Pyculator GitHub repository: https://github.com/UBC-FRESH/fable-pyculator
 
 ## Publications And References
 
-TBD.
+No public publication record linked yet.
 
 ## Images And Assets
 
-TBD.
+No project-specific public images identified yet.
 
 ## Source Notes
 
-TBD.
+- Maintained public project record and linked public sources reviewed on 2026-11-02.
 
 ## Open Questions
 
-- What public repository and FABLE context should be linked?
-
+- Confirm which FABLE context and example use cases should be featured publicly.

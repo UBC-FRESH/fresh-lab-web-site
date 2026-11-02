@@ -40,7 +40,7 @@ methods for forest-change and wildlife-relevant modelling workflows.
 
 ## Source Notes
 
-TBD.
+- Maintained public project record and linked public sources reviewed on 2026-11-02.
 
 ## Open Questions
 
