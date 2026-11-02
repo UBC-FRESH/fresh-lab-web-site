@@ -10,7 +10,6 @@ import subprocess
 import sys
 from pathlib import Path
 
-
 ROOT = Path(__file__).resolve().parents[1]
 DIST = ROOT / "dist"
 BUILD_MODULE_SPEC = importlib.util.spec_from_file_location("fresh_build", ROOT / "scripts" / "build.py")

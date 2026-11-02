@@ -7,7 +7,6 @@ from html.parser import HTMLParser
 from urllib.parse import urldefrag, urljoin, urlparse
 from urllib.request import Request, urlopen
 
-
 DEFAULT_BASE_URL = "https://ubc-fresh.github.io/fresh-lab-web-site/"
 CORE_PATHS = [
     "",

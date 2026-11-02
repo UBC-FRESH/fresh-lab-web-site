@@ -2,12 +2,11 @@
 from __future__ import annotations
 
 import sys
-from http.client import RemoteDisconnected
 from dataclasses import dataclass
+from http.client import RemoteDisconnected
 from urllib.error import HTTPError, URLError
 from urllib.parse import urljoin
 from urllib.request import HTTPRedirectHandler, Request, build_opener
-
 
 SOURCE_BASE = "https://fresh.forestry.ubc.ca/"
 TARGET_BASE = "https://ubc-fresh.github.io/fresh-lab-web-site/"
@@ -33,7 +32,8 @@ CHECKS = [
 
 
 class NoRedirectHandler(HTTPRedirectHandler):
-    def redirect_request(self, req, fp, code, msg, headers, newurl):  # noqa: ANN001, ANN201, N802
+    # Method name and signature match http.client.HTTPRedirectHandler.redirect_request.
+    def redirect_request(self, req, fp, code, msg, headers, newurl):
         return None
 
 
