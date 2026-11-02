@@ -13,7 +13,7 @@
     {
       "title": "Graduate Students",
       "href": "/graduate-students/",
-      "summary": "Current and incoming MSc, MASc, and supervised program students."
+      "summary": "Current MSc, MASc, and supervised program students."
     },
     {
       "title": "Interns",
@@ -101,7 +101,7 @@
     {
       "title": "Graduate Students",
       "path": "/graduate-students/",
-      "summary": "Current and incoming master's students and supervised program students.",
+      "summary": "Current master's students and supervised program students.",
       "entries": [
         {
           "name": "Yunhao (Davis) Xu",
@@ -157,10 +157,10 @@
         },
         {
           "name": "Thomas Cooper",
-          "role": "Incoming master's student",
+          "role": "MSc student",
           "body": [
-            "Thomas Cooper is an incoming master's student in FRESH.",
-            "His developing MSc direction connects to FRESH interests in quantitative forest-sector modelling, open research tools, and decision support."
+            "Thomas Cooper is an MSc student in FRESH, having started his program in September 2026.",
+            "His MSc direction connects to FRESH interests in quantitative forest-sector modelling, open research tools, and decision support."
           ]
         },
         {

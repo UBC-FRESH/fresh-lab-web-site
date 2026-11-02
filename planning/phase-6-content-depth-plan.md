@@ -274,7 +274,7 @@ Current maintained roster updates:
 - No postdoctoral fellows currently listed.
 - Yunhao (Davis) Xu: active MASc student.
 - Jamie Iversen: active MSc student.
-- Thomas Cooper: incoming master's student.
+- Thomas Cooper: active MSc student, started September 2026.
 - Kailey: TRANSFOR-M program student supervised by Gregory Paradis.
 - No PhD students currently listed, but future recruitment is expected.
 

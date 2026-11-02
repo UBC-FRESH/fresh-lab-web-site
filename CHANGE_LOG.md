@@ -284,3 +284,6 @@ This is the append-only project narrative for `fresh-lab-web-site`.
   uncertainty analysis, FRESH-Salvage TSA29 salvage-subsidy model, and
   FRESH-CBM. The TASS II wrapper remains deferred pending licensing and partner
   review.
+- Updated Thomas Cooper's people profile to active MSc student, started
+  September 2026, and removed the remaining "incoming" wording from the
+  graduate-student section summaries.
