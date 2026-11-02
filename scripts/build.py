@@ -130,6 +130,8 @@ def validate_content(data: dict) -> None:
                 validate_string_list(project[field], f"{context}.{field}")
         if project.get("related_projects"):
             validate_links(project["related_projects"], route_set, f"{context}.related_projects")
+        if project.get("image"):
+            validate_image(project["image"], f"{context}.image")
         if project.get("links"):
             validate_links(project["links"], route_set, f"{context}.links")
         if project.get("references"):
@@ -295,9 +297,22 @@ def write(route: str, content: str) -> None:
     path.write_text(content, encoding="utf-8")
 
 
+def card_media_html(item: dict) -> str:
+    image = item.get("image")
+    if not image:
+        return ""
+    picture = image_html(
+        image,
+        "card-image",
+        sizes_override="(max-width: 700px) 100vw, (max-width: 1100px) 50vw, 33vw",
+    )
+    return f'<div class="card-media">{picture}</div>'
+
+
 def card_html(items: list[dict]) -> str:
     return "".join(
         f'<a class="link-card" href="{site_url(item["href"])}">'
+        f'{card_media_html(item)}'
         f'{card_meta_html(item)}'
         f'<h3>{html.escape(item["title"])}</h3>'
         f'<p>{html.escape(item["summary"])}</p>'
@@ -335,7 +350,7 @@ def people_links(entry: dict) -> str:
     return '<ul class="person-links">' + "".join(items) + "</ul>"
 
 
-def image_html(image: dict, class_name: str = "") -> str:
+def image_html(image: dict, class_name: str = "", sizes_override: str | None = None) -> str:
     def source_set(value: str) -> str:
         candidates = []
         for candidate in value.split(","):
@@ -347,7 +362,8 @@ def image_html(image: dict, class_name: str = "") -> str:
 
     sources = "\n".join(
         f'      <source type="{html.escape(source["type"], quote=True)}" '
-        f'srcset="{html.escape(source_set(source["srcset"]), quote=True)}" sizes="{html.escape(source["sizes"], quote=True)}">'
+        f'srcset="{html.escape(source_set(source["srcset"]), quote=True)}" '
+        f'sizes="{html.escape(sizes_override or source["sizes"], quote=True)}">'
         for source in image["sources"]
     )
     class_attr = f' class="{html.escape(class_name, quote=True)}"' if class_name else ""
@@ -470,6 +486,7 @@ def render_projects_index(data: dict) -> str:
                 "href": project["path"],
                 "summary": project["summary"],
                 "meta": project["status"],
+                "image": project.get("image"),
             }
         )
     sections = []
@@ -532,8 +549,19 @@ def render_project(site: dict, project: dict) -> str:
       </article>"""
             )
         references = f"<h2>References And Downloads</h2>{''.join(items)}"
+    media = ""
+    if project.get("image"):
+        media = f"""<section class="project-visual">
+    <div class="section-inner">
+      <figure class="project-media">
+        {image_html(project["image"], "project-image", sizes_override="(max-width: 900px) 100vw, 1200px")}
+      </figure>
+    </div>
+  </section>"""
+
     body = f"""<main>
   {page_hero("Project", project["title"], project["summary"])}
+  {media}
   <section class="section">
     <div class="section-inner content">
       {paragraphs(project["body"])}

@@ -10,6 +10,8 @@ IMAGE_DIR = ROOT / "src" / "assets" / "images"
 HERO_SOURCE = IMAGE_DIR / "hero-digital-forest-original.png"
 PEOPLE_DIR = ROOT / "src" / "assets" / "people"
 PEOPLE_ORIGINALS = PEOPLE_DIR / "originals"
+PROJECT_DIR = ROOT / "src" / "assets" / "projects"
+PROJECT_ORIGINALS = PROJECT_DIR / "originals"
 
 HERO_VARIANTS = [
     ("hero-digital-forest-960.jpeg", 960, "JPEG", {"quality": 82, "progressive": True, "optimize": True}),
@@ -40,6 +42,18 @@ PEOPLE_CROP_BOXES = {
     "salar-ghotb": (520, 1420, 2520, 3420),
 }
 
+PROJECT_SOURCES = [
+    "fhops-3d-studio",
+    "ws4-public-demo",
+]
+
+PROJECT_VARIANTS = [
+    ("{slug}-960.jpeg", 960, "JPEG", {"quality": 84, "progressive": True, "optimize": True}),
+    ("{slug}-1600.jpeg", 1600, "JPEG", {"quality": 86, "progressive": True, "optimize": True}),
+    ("{slug}-960.webp", 960, "WEBP", {"quality": 80, "method": 6}),
+    ("{slug}-1600.webp", 1600, "WEBP", {"quality": 82, "method": 6}),
+]
+
 
 def resize_width(image: Image.Image, width: int) -> Image.Image:
     if image.width <= width:
@@ -68,6 +82,13 @@ def people_source_path(slug: str) -> Path:
     return matches[0]
 
 
+def project_source_path(slug: str) -> Path:
+    matches = sorted(PROJECT_ORIGINALS.glob(f"{slug}.*"))
+    if not matches:
+        raise SystemExit(f"Missing project source image: {PROJECT_ORIGINALS / slug}")
+    return matches[0]
+
+
 def main() -> None:
     if not HERO_SOURCE.exists():
         raise SystemExit(f"Missing hero source image: {HERO_SOURCE}")
@@ -92,6 +113,15 @@ def main() -> None:
                 optimize=True,
             )
             headshot.save(PEOPLE_DIR / f"{slug}-360.webp", "WEBP", quality=82, method=6)
+
+    PROJECT_DIR.mkdir(parents=True, exist_ok=True)
+    for slug in PROJECT_SOURCES:
+        with Image.open(project_source_path(slug)) as source:
+            image = ImageOps.exif_transpose(source).convert("RGB")
+            for filename_template, width, image_format, options in PROJECT_VARIANTS:
+                target = PROJECT_DIR / filename_template.format(slug=slug)
+                resized = resize_width(image, width)
+                resized.save(target, image_format, **options)
 
 
 if __name__ == "__main__":

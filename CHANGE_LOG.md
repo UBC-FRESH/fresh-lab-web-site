@@ -298,3 +298,8 @@ This is the append-only project narrative for `fresh-lab-web-site`.
   WS4 map workspace, FHOPS 3D studio, Kamloops FBP maps, FEMIC instances,
   FRESH-CBM benchmarks, FieldAtlas, and FRESHForge, including the project-image
   schema work needed before screenshots can be published.
+- Added optional project images to the content schema, project detail pages,
+  and project index cards, with validation, responsive JPEG/WebP generation,
+  and build tests. Added the first captures: the WS4 public demo catalogue and
+  the FHOPS Scenario Studio 3D editor. The WS4 map screenshot remains pending
+  because the public demo instances currently have no runs.

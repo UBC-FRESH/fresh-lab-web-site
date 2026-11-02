@@ -29,12 +29,18 @@ Give the public project pages stronger visual identity, starting with the WS4 ma
 
 ## Implementation Work
 
-1. Extend the project record schema with an optional `image` object using the same `alt`, `src`, and `sources` contract as people images.
-2. Validate project images in `scripts/build.py` with the existing `validate_image` helper.
-3. Render the image in the project hero or immediately below it, and optionally use a smaller crop on project index cards.
-4. Add the project image source slugs to `scripts/prepare_assets.py`.
-5. Add build tests for project-image rendering and missing-asset failures.
-6. Add the approved captures and provenance notes to the relevant `content/projects.json` records.
+1. Extended the project record schema with an optional `image` object using the same `alt`, `src`, and `sources` contract as people images.
+2. Validated project images in `scripts/build.py` with the existing `validate_image` helper.
+3. Rendered the image immediately below the project hero and as a 16:9 thumbnail on project index cards.
+4. Added the project image source slugs to `scripts/prepare_assets.py` and generated responsive JPEG/WebP variants.
+5. Added build tests for project-image rendering and missing-asset failures.
+6. Added the first approved captures to WS4 and FHOPS.
+
+## Captured On 2026-11-02
+
+- **WS4 public demo catalogue** (`src/assets/projects/originals/ws4-public-demo.png`): landing page listing the FEMIC model instances, including the READY public instances. A map screenshot was not available because every public WS4 instance currently reports `no runs found`; the map workspace needs an existing run to render.
+- **FHOPS Scenario Studio 3D** (`src/assets/projects/originals/fhops-3d-studio.png`): 3D editor with the AFRF Gavin Lake project, retained trees, landings, road, terrain, and the access-grade map.
+- **FHOPS Tree Lab 3D replay** was also captured during review but not yet used on a project page. It shows the machine timeline and retained-tree view at `fhops.01101.dev/sandbox-v20261031i/`.
 
 ## Open Questions
 
