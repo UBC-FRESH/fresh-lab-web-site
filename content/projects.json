@@ -92,7 +92,8 @@
         "The modelling workflow combines rolling-horizon planning with single-level and bi-level optimization so the system can update as wildfire disturbance, burn severity, timber degradation, and salvage availability change through time.",
         "A Williams Lake Timber Supply Area case study uses controlled semi-synthetic inputs built from public forest inventory, timber-supply-area, fire burn severity, and elevation datasets to test salvage schedules and policy instruments.",
         "The thesis evaluates instruments such as stumpage credits, salvage windows, volume constraints, and harvest-sequence rules, with outputs focused on discounted net present value, product-grade mix, salvage volume over time, retention, regeneration, subsidy allocation, and stand-selection patterns.",
-        "The planned public research contribution is an open-source Python modelling framework with preprocessing scripts, optimization model files, scenario data, solver configuration, and documentation for reproducible wildfire-salvage planning experiments."
+        "The planned public research contribution is an open-source Python modelling framework with preprocessing scripts, optimization model files, scenario data, solver configuration, and documentation for reproducible wildfire-salvage planning experiments.",
+        "The public thesis repository collects figures and supporting material, and the FRESH-Salvage package documents the successor implementation."
       ],
       "people": [
         "Yunhao (Davis) Xu: MASc student",
@@ -104,11 +105,22 @@
         "Rolling-horizon wildfire salvage planning workflow",
         "Williams Lake Timber Supply Area case-study model inputs and scenarios",
         "Planned open-source Python modelling framework, documentation, and reproducible scenario materials",
-        "Thesis, code, and publication links when publicly available"
+        "Thesis, code, and publication links when publicly available",
+        "Public thesis repository and FRESH-Salvage successor package"
       ],
       "references": [
         {
           "citation": "Xu, Y. Modeling Salvage Harvesting After Wildfires: A Linear Bi-level Principal-agent Approach. MASc thesis in progress, University of British Columbia."
+        }
+      ],
+      "links": [
+        {
+          "label": "Thesis repository",
+          "href": "https://github.com/UBC-FRESH/xu_yunhao_masc_thesis"
+        },
+        {
+          "label": "FRESH-Salvage successor package",
+          "href": "https://github.com/UBC-FRESH/fresh-salvage"
         }
       ]
     },
@@ -157,7 +169,8 @@
         "The research program includes open software modules for spatially explicit harvest and road scheduling, forest-sector supply-chain modelling, carbon stock and flux accounting, rolling-horizon re-planning, and agent-based or game-theoretic representations of policy and industry interactions.",
         "The project also develops multi-objective tradeoff methods for generating many forest-management scenarios, estimating high-dimensional Pareto tradeoff surfaces, projecting those surfaces into interpretable decision spaces, and selecting representative scenario sets for participatory planning and multi-criteria decision analysis.",
         "Applied case-study work includes cumulative-effects scenarios for natural disturbance and forest harvesting impacts on forest carbon, with emphasis on transparent, open, defensible, interoperable, and reusable workflows that can be inspected and extended by researchers, governments, practitioners, and partners.",
-        "The broader lab infrastructure plan behind CCCANDiES combines cloud computing, technical workstations, open datasets, version-controlled code, and knowledge-transfer workflows so that complex forest ecosystem and forest-sector models can move from proof-of-concept research prototypes toward usable open innovation tools."
+        "The broader lab infrastructure plan behind CCCANDiES combines cloud computing, technical workstations, open datasets, version-controlled code, and knowledge-transfer workflows so that complex forest ecosystem and forest-sector models can move from proof-of-concept research prototypes toward usable open innovation tools.",
+        "A public demonstration project and its input data provide a reproducible entry point into the CCCANDiES modelling stack."
       ],
       "people": [
         "Gregory Paradis: Principal Investigator and FRESH lead"
@@ -168,7 +181,8 @@
         "Cumulative-effects scenarios for natural disturbance, forest harvesting, and forest carbon",
         "Open software modules for spatial harvest scheduling, road scheduling, forest-sector supply chains, carbon accounting, and rolling-horizon workflows",
         "Multi-objective scenario generation and tradeoff-surface methods for participatory forest planning",
-        "Reusable datasets, workflow templates, reports, manuscripts, and trainee outputs as they become public"
+        "Reusable datasets, workflow templates, reports, manuscripts, and trainee outputs as they become public",
+        "Public demonstration project and input data"
       ],
       "partners": [
         "Natural Resources Canada / Canadian Forest Service collaboration context",
@@ -202,6 +216,16 @@
               "href": "https://doi.org/10.5281/zenodo.5579748"
             }
           ]
+        }
+      ],
+      "links": [
+        {
+          "label": "CCCANDiES demonstration project",
+          "href": "https://github.com/UBC-FRESH/cccandies_demo"
+        },
+        {
+          "label": "CCCANDiES demonstration input data",
+          "href": "https://github.com/UBC-FRESH/cccandies_demo_input"
         }
       ]
     },
@@ -242,7 +266,7 @@
           "href": "/projects/femic/"
         },
         {
-          "label": "fresh-hectaresbc",
+          "label": "FRESH-hectaresbc",
           "href": "/projects/fresh-hectaresbc/"
         },
         {
@@ -308,7 +332,8 @@
         "The baseline model uses a U-Net encoder-decoder architecture on 512 by 512 RGB image tiles. Experiments have tested early stopping, geometric augmentation, photometric augmentation, weighted sparse categorical cross-entropy, Dice loss, filtering low-information tiles, and oversampling informative good and fair tiles.",
         "The public ML4seeding repository contains notebooks for orthomosaic metadata review, pseudo-orthomosaic construction for A10 and A58 image segments, image tiling, grid overlays for annotation, U-Net training, predicted-mask stitching, drone flight-path preparation, and operations-research post-processing concepts.",
         "The current finding is that the training pipeline is usable as a baseline, but future performance gains will depend heavily on data quality, annotation consistency, and collecting more examples of the minority good and fair microsite classes.",
-        "The longer-term decision-support goal is to turn georeferenced prediction layers into operational planning inputs, including candidate planting points, spatial thinning, and drone path or mission-planning models."
+        "The longer-term decision-support goal is to turn georeferenced prediction layers into operational planning inputs, including candidate planting points, spatial thinning, and drone path or mission-planning models.",
+        "The work now includes the FRESH-ML4seeding package, which re-implements and extends the original prototype pipeline, and the microsite annotation flywheel, which automates Roboflow annotation sync, pre-labelling, training, and convergence tracking."
       ],
       "people": [
         "Elaheh Ghasemi: past postdoctoral researcher and machine-learning pipeline lead",
@@ -326,12 +351,22 @@
         "Orthomosaic review, pseudo-orthomosaic construction, and image-tiling workflows",
         "Evaluation workflow using accuracy, mean IoU, foreground mean IoU, and per-class IoU",
         "Predicted segmentation-mask and georeferenced output workflow prototypes",
-        "Drone flight-path and operations-research post-processing prototypes"
+        "Drone flight-path and operations-research post-processing prototypes",
+        "FRESH-ML4seeding package",
+        "Microsite annotation flywheel"
       ],
       "links": [
         {
           "label": "ML4seeding GitHub repository",
           "href": "https://github.com/UBC-FRESH/ML4seeding"
+        },
+        {
+          "label": "FRESH-ML4seeding package",
+          "href": "https://github.com/UBC-FRESH/fresh-ml4seeding"
+        },
+        {
+          "label": "Microsite annotation flywheel",
+          "href": "https://github.com/UBC-FRESH/microsite-annotation-flywheel"
         }
       ],
       "related_projects": [
@@ -351,7 +386,8 @@
         "CLEWs-C2070 focuses on innovative integration of climate, land, and water into energy models for addressing Canada's net-zero commitments.",
         "FRESH is rebuilding the forestry and biomass supply component from transferred Forest Fibre Cascade Model archive evidence into an open, maintainable modelling path.",
         "The current diagnostic architecture links ws3-shaped forest harvest outputs to fresh_fibre, a downstream profit-maximizing network-flow linear programming model for fibre allocation, processing capacity, residues, markets, and exports.",
-        "Recent prototype work has established a BC mini-network, typed CSV contracts, PuLP/CBC solve path, ws3 export bridge, SCANFI diagnostic inventory fixture, and Gauthier et al. 2015 yield-policy evaluation path. This work remains diagnostic rather than production-calibrated."
+        "Recent prototype work has established a BC mini-network, typed CSV contracts, PuLP/CBC solve path, ws3 export bridge, SCANFI diagnostic inventory fixture, and Gauthier et al. 2015 yield-policy evaluation path. This work remains diagnostic rather than production-calibrated.",
+        "The public CLEWs-C2070 repositories hold the current model code and a DataLad-backed data archive."
       ],
       "people": [
         "Gregory Paradis: FRESH co-investigator",
@@ -367,9 +403,19 @@
         "ws3 to supply_offer soft-link contract",
         "fresh_fibre downstream LP prototype",
         "BC mini-network, ws3-smoke, and SCANFI-diagnostic supply variants",
-        "Gauthier yield-policy diagnostic evaluator"
+        "Gauthier yield-policy diagnostic evaluator",
+        "Public model repository and DataLad-backed data archive"
       ],
-      "links": []
+      "links": [
+        {
+          "label": "CLEWs-C2070 model repository",
+          "href": "https://github.com/UBC-FRESH/clews-c2070-fresh"
+        },
+        {
+          "label": "CLEWs-C2070 data archive",
+          "href": "https://github.com/UBC-FRESH/clews-c2070-fresh-data"
+        }
+      ]
     },
     {
       "title": "Single-stem snap-and-fly helicopter logging productivity",
@@ -452,6 +498,290 @@
       ]
     },
     {
+      "title": "WBI harvesting and birds",
+      "path": "/projects/wbi-birds/",
+      "category": "Ongoing Research",
+      "status": "Ongoing research and software project",
+      "summary": "An open simulation engine for tradeoff analysis between even-flow timber harvesting and multi-species bird abundance in northeastern British Columbia.",
+      "body": [
+        "WBI harvesting and birds is a FRESH research project that connects forest-estate harvesting scenarios with habitat-association models for boreal landbird species and guilds.",
+        "The wbi-birds engine builds WS3 forest-estate models for five timber supply areas in northeastern British Columbia (TSAs 08, 16, 24, 40, and 41), embeds habitat functions, and runs an epsilon-constraint scenario grid between maximum even-flow harvest and maximum bird abundance.",
+        "The analysis produces Pareto tradeoff frontiers, marginal opportunity-cost curves, and campaign diagnostics for a companion manuscript targeted at Environmental Modelling & Software.",
+        "The public engine is at v1.0.0. Manuscript campaign runs depend on a private eBird extract and FEMIC model builds, so raw bird data are not redistributed.",
+        "Legacy R and full-model repositories document earlier phases of the study."
+      ],
+      "people": [
+        "Gregory Paradis: project lead"
+      ],
+      "outputs": [
+        "GitHub repository",
+        "Python simulation engine (v1.0.0)",
+        "Public quick-start example and reproduction lane",
+        "Companion manuscript in preparation",
+        "Legacy WBI model repositories"
+      ],
+      "links": [
+        {
+          "label": "WBI birds GitHub repository",
+          "href": "https://github.com/UBC-FRESH/wbi-birds"
+        },
+        {
+          "label": "Legacy WBI R model",
+          "href": "https://github.com/UBC-FRESH/wbi_harvesting-birds"
+        },
+        {
+          "label": "Legacy full WBI model",
+          "href": "https://github.com/UBC-FRESH/wbi_fullwbmodel"
+        }
+      ],
+      "related_projects": [
+        {
+          "label": "WS3",
+          "href": "/projects/ws3/"
+        }
+      ]
+    },
+    {
+      "title": "Kamloops Fire Centre fuel-treatment priority mapping",
+      "path": "/projects/kamloops-fbp-priority/",
+      "category": "Ongoing Research",
+      "status": "Ongoing MGEM project",
+      "summary": "An MGEM project developing a reproducible Fire Behaviour Prediction screening workflow for fuel-treatment priority mapping in the Kamloops Fire Centre.",
+      "body": [
+        "This MGEM project is developing a reproducible Fire Behaviour Prediction (FBP) screening workflow for fuel-treatment priority mapping across the Kamloops Fire Centre (KFC).",
+        "The feasibility prototype covers a 71,579 square-kilometre study area and a three-zone method test in the ICH, IDF, and PP biogeoclimatic zones, using a 100 m analysis grid, provincial fuel types, WUI classes, terrain, ClimateBC climate normals, and cffdrs FWI and FBP runs.",
+        "Phase 0 produced baseline rate-of-spread, head fire intensity, flame length, fuel consumption, crown fraction burned, and fire-type rasters plus a provisional HFI/WUI priority surface. Phase 1 is defining the method contract; the LiDAR-improved fuel-type experiment that will form the thesis contribution is still ahead.",
+        "The repository is a feasibility prototype, not the final thesis result."
+      ],
+      "people": [
+        "Leah Nash: MGEM project lead"
+      ],
+      "outputs": [
+        "GitHub repository",
+        "Documentation",
+        "100 m FBP screening grid for the Kamloops Fire Centre",
+        "Baseline FBP rasters and provisional HFI/WUI priority surface",
+        "Figures and summary tables"
+      ],
+      "links": [
+        {
+          "label": "Kamloops FBP priority GitHub repository",
+          "href": "https://github.com/UBC-FRESH/kamloops-fbp-priority"
+        },
+        {
+          "label": "Kamloops FBP priority documentation",
+          "href": "https://ubc-fresh.github.io/kamloops-fbp-priority/"
+        }
+      ],
+      "related_projects": [
+        {
+          "label": "FEMIC",
+          "href": "/projects/femic/"
+        }
+      ]
+    },
+    {
+      "title": "FRESH-Fuchs risk-aware forest planning",
+      "path": "/projects/fresh-fuchs/",
+      "category": "Ongoing Research",
+      "status": "Ongoing research and software project",
+      "summary": "A stochastic, risk-aware forest landscape planning model on the TSA29 mini instance, coupling a policy-level Monte Carlo outer problem with an enterprise-level harvest-scheduling LP.",
+      "body": [
+        "FRESH-Fuchs is a stochastic, risk-aware forest landscape planning model built on the TSA29 mini instance, a roughly 100,000-hectare subset of the Williams Lake Timber Supply Area.",
+        "The research design is a nested decision problem. The outer policy level sets species and development-type composition and harvest policy, evaluated risk-sensitively on Monte Carlo distributions of net present value using downside-risk measures such as CVaR. The inner enterprise level solves a Model I linear program for harvest scheduling and replanting under those policy constraints.",
+        "The full Monte Carlo outer problem samples fire disturbance and, later, price realizations, solving the inner LP once per scenario with full foresight within each scenario.",
+        "The implementation reuses the FRESH ecosystem: WS3 for wood supply and LP machinery, FEMIC for the TSA29 mini instance, FHOPS for harvest-cost estimation, Nemora for diameter-distribution fitting and sampling, FRESHForge for workflow and matrix orchestration, and FRESH-Salvage for economic calibration anchors."
+      ],
+      "people": [
+        "FRESH Lab: project team"
+      ],
+      "outputs": [
+        "GitHub repository",
+        "Documentation",
+        "Public-safe synthetic instance",
+        "End-to-end Monte Carlo and inner-LP workflow",
+        "Policy grid search and CVaR-based ranking"
+      ],
+      "links": [
+        {
+          "label": "FRESH-Fuchs GitHub repository",
+          "href": "https://github.com/UBC-FRESH/fresh-fuchs"
+        },
+        {
+          "label": "FRESH-Fuchs documentation",
+          "href": "https://ubc-fresh.github.io/fresh-fuchs/"
+        }
+      ],
+      "related_projects": [
+        {
+          "label": "WS3",
+          "href": "/projects/ws3/"
+        },
+        {
+          "label": "FEMIC",
+          "href": "/projects/femic/"
+        },
+        {
+          "label": "FHOPS",
+          "href": "/projects/fhops/"
+        },
+        {
+          "label": "Nemora",
+          "href": "/projects/nemora/"
+        },
+        {
+          "label": "FRESHForge",
+          "href": "/projects/freshforge/"
+        },
+        {
+          "label": "FRESH-Salvage",
+          "href": "/projects/fresh-salvage/"
+        }
+      ]
+    },
+    {
+      "title": "FRESH-Daugherty dynamic-inconsistency reproduction",
+      "path": "/projects/fresh-daugherty/",
+      "category": "Ongoing Research",
+      "status": "Ongoing methodological reproduction",
+      "summary": "An open, reproducible reproduction of Daugherty's 1991 analysis of dynamic inconsistency in linear-programming forest planning models.",
+      "body": [
+        "FRESH-Daugherty is an open, transparent, and reproducible reproduction of the modelling methods and case study in Daugherty (1991), Credibility of Long Term Forest Planning: Dynamic Inconsistency in Linear Programming Based Forest Planning Models.",
+        "The original thesis shows that open-loop LP forest-planning models can produce dynamically inconsistent plans that fail Bellman's principle of optimality, making them an unreliable basis for policy and trade-off analysis. The thesis was never published peer-reviewed and is effectively inaccessible, so the project reproduces the model stack openly to make the result citable and the modelling trap detectable.",
+        "The reproduction implements the Daugherty open-loop harvest-scheduling LP in WS3 (Model I; Model II is not implemented), a sequential-replanning simulator that measures the occurrence and magnitude of dynamic inconsistency, and case-study experiments across initial forest conditions, harvest policies, and interest rates. It also adds four extension experiments.",
+        "Version v0.2.1 is released and archived on Zenodo, with experiment records and curated summaries backing a short peer-reviewed paper."
+      ],
+      "people": [
+        "FRESH Lab: project team"
+      ],
+      "outputs": [
+        "GitHub repository",
+        "Documentation",
+        "WS3 reproduction of the Daugherty open-loop LP",
+        "Sequential-replanning simulator and experiment records",
+        "Zenodo archive and manuscript support"
+      ],
+      "links": [
+        {
+          "label": "FRESH-Daugherty GitHub repository",
+          "href": "https://github.com/UBC-FRESH/fresh-daugherty"
+        },
+        {
+          "label": "FRESH-Daugherty documentation",
+          "href": "https://ubc-fresh.github.io/fresh-daugherty/"
+        },
+        {
+          "label": "FRESH-Daugherty Zenodo archive",
+          "href": "https://doi.org/10.5281/zenodo.23604804"
+        }
+      ],
+      "related_projects": [
+        {
+          "label": "WS3",
+          "href": "/projects/ws3/"
+        },
+        {
+          "label": "FRESH-Fuchs risk-aware forest planning",
+          "href": "/projects/fresh-fuchs/"
+        }
+      ],
+      "references": [
+        {
+          "citation": "Daugherty, P. J. 1991. Credibility of Long Term Forest Planning: Dynamic Inconsistency in Linear Programming Based Forest Planning Models. PhD thesis, University of California, Berkeley."
+        }
+      ]
+    },
+    {
+      "title": "FRESH-Yan HWP uncertainty analysis",
+      "path": "/projects/fresh-yan/",
+      "category": "Ongoing Research",
+      "status": "Ongoing manuscript and software project",
+      "summary": "An open, reproducible analysis of how harvested wood product half-life and displacement uncertainty affect climate-optimal harvest levels across five BC timber supply areas.",
+      "body": [
+        "This project provides open, reproducible code, data, and results for a Canadian Journal of Forest Research manuscript on whether the climate-optimal harvest level is identifiable from current harvested wood product (HWP) evidence.",
+        "The analysis uses five interior British Columbia timber supply areas (TSAs 08, 16, 24, 40, and 41) and builds on WS3 for forest estate simulation and optimization and libcbm_py for forest carbon budgeting.",
+        "The work tests no-harvest carbon accounting against direct libCBM runs, a base even-flow harvest scenario, emission-minimizing trade-off grids across HWP half-lives and displacement factors, 5,000-cell sensitivity grids per unit, cross-TSA threshold analysis, and structural robustness variants.",
+        "The tracking records allow every figure and table in the manuscript to be regenerated from tracked inputs. The manuscript is in submission preparation, and v0.1.3 is archived on Zenodo."
+      ],
+      "people": [
+        "FRESH Lab: project team"
+      ],
+      "outputs": [
+        "GitHub repository",
+        "Five-TSA reproducible analysis pipeline",
+        "Emission-minimizing and sensitivity scenario grids",
+        "Manuscript figures and tables",
+        "Zenodo archive"
+      ],
+      "links": [
+        {
+          "label": "FRESH-Yan GitHub repository",
+          "href": "https://github.com/UBC-FRESH/fresh-yan"
+        },
+        {
+          "label": "FRESH-Yan Zenodo archive",
+          "href": "https://doi.org/10.5281/zenodo.23518081"
+        }
+      ],
+      "related_projects": [
+        {
+          "label": "WS3",
+          "href": "/projects/ws3/"
+        },
+        {
+          "label": "Yancun (Walter) Yan MSc thesis",
+          "href": "/projects/yancun-walter-yan-msc-thesis/"
+        }
+      ]
+    },
+    {
+      "title": "FRESH-Salvage TSA29 salvage-subsidy model",
+      "path": "/projects/fresh-salvage/",
+      "category": "Ongoing Research",
+      "status": "Ongoing research and software project",
+      "summary": "An open-source linear principal-agent model of salvage subsidies and rolling-horizon planning for the Williams Lake Timber Supply Area.",
+      "body": [
+        "FRESH-Salvage is an open-source Python package implementing a linear principal-agent salvage-subsidy model for the Williams Lake Timber Supply Area (TSA29) in British Columbia.",
+        "The pipeline uses HiGHS throughout: every optimization layer is a continuous linear program solved through highspy, with no commercial solver dependency.",
+        "It re-implements the predecessor Gurobi stand-level models as continuous linear programs over aggregate cohorts, covers the full TSA rather than an 11-landscape-unit subset, adds an annual MFRI-driven fire simulation, and wraps principal and agent LPs in a rolling-horizon coordination loop with a parallel scenario-ensemble driver.",
+        "Every run emits a provenance manifest so results remain auditable."
+      ],
+      "people": [
+        "FRESH Lab: project team"
+      ],
+      "outputs": [
+        "GitHub repository",
+        "Documentation",
+        "Principal and agent LP pipeline",
+        "WS3 wood-supply bridge",
+        "Rolling-horizon engine and scenario-ensemble driver"
+      ],
+      "links": [
+        {
+          "label": "FRESH-Salvage GitHub repository",
+          "href": "https://github.com/UBC-FRESH/fresh-salvage"
+        },
+        {
+          "label": "FRESH-Salvage documentation",
+          "href": "https://ubc-fresh.github.io/fresh-salvage/"
+        }
+      ],
+      "related_projects": [
+        {
+          "label": "Yunhao (Davis) Xu MASc thesis",
+          "href": "/projects/yunhao-davis-xu-masc-thesis/"
+        },
+        {
+          "label": "WS3",
+          "href": "/projects/ws3/"
+        },
+        {
+          "label": "FEMIC",
+          "href": "/projects/femic/"
+        }
+      ]
+    },
+    {
       "title": "WS3",
       "path": "/projects/ws3/",
       "category": "Open Software",
@@ -460,7 +790,8 @@
       "body": [
         "WS3 is the Wood Supply Simulation System, an open-source Python framework for integrated simulation and optimization of forest landscape and wood supply systems.",
         "The framework supports transparent, reproducible forest estate modelling and decision-support workflows, including links to landscape simulation, wood supply analysis, optimization, carbon modelling, and related research applications.",
-        "The public project record connects the software repository, technical documentation, citation metadata, examples, and publications as the FRESH software portfolio is curated."
+        "The public project record connects the software repository, technical documentation, citation metadata, examples, and publications as the FRESH software portfolio is curated.",
+        "The broader WS3 ecosystem includes a SpaDES wrapper and data-initialization module, along with a benchmark-only parity harness for comparing WS3 with the Treemün modelling framework."
       ],
       "people": [
         "Gregory Paradis: maintainer or lead developer"
@@ -470,7 +801,9 @@
         "Read the Docs documentation",
         "Zenodo software citation",
         "Ecological Informatics software paper",
-        "Example model instances and related decision-support applications"
+        "Example model instances and related decision-support applications",
+        "SpaDES wrapper and data-initialization module",
+        "WS3–Treemün parity harness"
       ],
       "links": [
         {
@@ -484,6 +817,345 @@
         {
           "label": "WS3 software paper",
           "href": "https://doi.org/10.1016/j.ecoinf.2026.103688"
+        },
+        {
+          "label": "WS3 SpaDES wrapper",
+          "href": "https://github.com/UBC-FRESH/spades_ws3"
+        },
+        {
+          "label": "WS3 SpaDES data initialization",
+          "href": "https://github.com/UBC-FRESH/spades_ws3_dataInit"
+        },
+        {
+          "label": "WS3–Treemün parity harness",
+          "href": "https://github.com/UBC-FRESH/fresh-interop"
+        }
+      ]
+    },
+    {
+      "title": "WS4",
+      "path": "/projects/ws4/",
+      "category": "Open Software",
+      "status": "Open software project",
+      "summary": "A spatially explicit, HPC-ready forest estate simulation and optimization system for wood supply modelling.",
+      "body": [
+        "WS4 is the Wood Supply Simulation System (Spatially explicit), an open-source, CLI-first forest estate model for multi-core Linux environments.",
+        "The system treats fragments as decision units and blocks as runtime aggregates, enforcing adjacency, patch structure, and road access during simulation and optimization rather than allocating them afterwards.",
+        "WS4 extends the FRESH wood supply modelling stack toward spatially explicit, high-performance forest estate analysis and supports reproducible, auditable scenario experiments.",
+        "A hosted WS4 web application provides browser access to the model; a UBC CWL login is required.",
+        "Related FRESH packages, several still at alpha or pilot stage, extend WS4 with cached libcbm carbon accounts (FRESH-CBM), ALSroads-derived road-status records (FRESH-ROAD), BEAST non-stand-replacing disturbance detection (FRESH-BEAST), and Treemün parity benchmarking (FRESH-Interop)."
+      ],
+      "people": [
+        "Gregory Paradis: maintainer or lead developer"
+      ],
+      "outputs": [
+        "GitHub repository",
+        "Technical documentation",
+        "WS4 web application",
+        "Spatially explicit model instances and related FEMIC deployments",
+        "Related carbon, road-status, disturbance-detection, and interoperability packages"
+      ],
+      "links": [
+        {
+          "label": "WS4 GitHub repository",
+          "href": "https://github.com/UBC-FRESH/ws4"
+        },
+        {
+          "label": "WS4 documentation",
+          "href": "https://ubc-fresh.github.io/ws4/"
+        },
+        {
+          "label": "WS4 web application (UBC CWL login required)",
+          "href": "https://ws4.01101.dev"
+        },
+        {
+          "label": "FRESH-CBM carbon lookup package",
+          "href": "https://github.com/UBC-FRESH/fresh-cbm"
+        },
+        {
+          "label": "FRESH-ROAD road-status bridge",
+          "href": "https://github.com/UBC-FRESH/fresh-road"
+        },
+        {
+          "label": "FRESH-BEAST disturbance detector",
+          "href": "https://github.com/UBC-FRESH/fresh-beast"
+        },
+        {
+          "label": "FRESH-Interop parity harness",
+          "href": "https://github.com/UBC-FRESH/fresh-interop"
+        }
+      ]
+    },
+    {
+      "title": "FRESH-CBM",
+      "path": "/projects/fresh-cbm/",
+      "category": "Open Software",
+      "status": "Open software project",
+      "summary": "Exact cached libcbm stand-state tables and a lookup client for WS4 and FEMIC carbon analyses.",
+      "body": [
+        "FRESH-CBM stores deterministic per-hectare carbon accounts produced by libcbm for a declared package and treatment family, letting WS4 and FEMIC analyses look up a stand state instead of rebuilding a CBM model for every analysis.",
+        "The package includes cache-building, validation, packaging, benchmarking, and verification tools, plus a Python client for manifest schema, family contracts, and effect projection.",
+        "Published caches include TSA41 and TSA08, with exact validation against sampled state and offset rows. The TSA41 cache covers 5,273 track/age states, 50 years, and 26 carbon accounts; the TSA08 cache covers 3,761 track/age states.",
+        "Phase P0 is complete and P1 is planned."
+      ],
+      "people": [
+        "FRESH Lab: project team"
+      ],
+      "outputs": [
+        "GitHub repository",
+        "Documentation",
+        "TSA41 and TSA08 cached carbon tables",
+        "Python lookup client",
+        "Validation and benchmark tooling"
+      ],
+      "links": [
+        {
+          "label": "FRESH-CBM GitHub repository",
+          "href": "https://github.com/UBC-FRESH/fresh-cbm"
+        },
+        {
+          "label": "FRESH-CBM documentation",
+          "href": "https://ubc-fresh.github.io/fresh-cbm/"
+        }
+      ],
+      "related_projects": [
+        {
+          "label": "WS4",
+          "href": "/projects/ws4/"
+        },
+        {
+          "label": "FEMIC",
+          "href": "/projects/femic/"
+        }
+      ]
+    },
+    {
+      "title": "FRESH-FVSbc",
+      "path": "/projects/fresh-fvsbc/",
+      "category": "Open Software",
+      "status": "Open software project",
+      "summary": "A Python wrapper for the BC variant of the Forest Vegetation Simulator (FVS), with BC keywords, species and BEC handling, and tidy simulation input and output.",
+      "body": [
+        "FRESH-FVSbc is a Python wrapper for the BC variant of the Forest Vegetation Simulator (FVS), the individual-tree growth model maintained by the USDA Forest Service.",
+        "It builds the FVSbc variant from a pinned fork of PyFVS and exposes BC keywords, species and biogeoclimatic-ecosystem classification handling, and tidy simulation input and output.",
+        "The package serves as the BC growth-and-yield bridge for FEMIC, WS3, WS4, and FRESHForge, with Nemora synthetic stem populations supplying tree lists to FVS.",
+        "The build pins the UBC-FRESH PyFVS fork for FVS build and foreign-function interface support."
+      ],
+      "people": [
+        "Gregory Paradis: maintainer or lead developer"
+      ],
+      "outputs": [
+        "GitHub repository",
+        "Documentation",
+        "Python package for the FVS BC variant",
+        "Validation against FVS project BC test data"
+      ],
+      "links": [
+        {
+          "label": "FRESH-FVSbc GitHub repository",
+          "href": "https://github.com/UBC-FRESH/fresh-fvsbc"
+        },
+        {
+          "label": "FRESH-FVSbc documentation",
+          "href": "https://ubc-fresh.github.io/fresh-fvsbc/"
+        },
+        {
+          "label": "Pinned PyFVS fork",
+          "href": "https://github.com/UBC-FRESH/PyFVS"
+        }
+      ],
+      "related_projects": [
+        {
+          "label": "FEMIC",
+          "href": "/projects/femic/"
+        },
+        {
+          "label": "WS3",
+          "href": "/projects/ws3/"
+        },
+        {
+          "label": "WS4",
+          "href": "/projects/ws4/"
+        },
+        {
+          "label": "Nemora",
+          "href": "/projects/nemora/"
+        }
+      ]
+    },
+    {
+      "title": "PAWS3",
+      "path": "/projects/paws3/",
+      "category": "Open Software",
+      "status": "Open software project",
+      "summary": "A modular Python framework for rolling-horizon simulated replanning of forest management under principal-agent dynamics.",
+      "body": [
+        "PAWS3 is the Principal-Agent Wood Supply Simulation System, a modular Python framework for rolling-horizon simulated replanning of forest management under principal-agent dynamics.",
+        "The framework supports myopic and anticipative upper-level policies, an explicit industrial agent or lower-level model, bilevel reformulations, and rolling-horizon windowing and re-optimization.",
+        "It uses Pyomo for model construction and HiGHS for linear and mixed-integer solves, and follows FHOPS package and CLI conventions to reduce onboarding cost across FRESH projects."
+      ],
+      "people": [
+        "FRESH Lab: project team"
+      ],
+      "outputs": [
+        "GitHub repository",
+        "Python package and CLI",
+        "Example project data and configurations",
+        "HiGHS solver integration"
+      ],
+      "links": [
+        {
+          "label": "PAWS3 GitHub repository",
+          "href": "https://github.com/UBC-FRESH/paws3"
+        }
+      ],
+      "related_projects": [
+        {
+          "label": "FHOPS",
+          "href": "/projects/fhops/"
+        }
+      ]
+    },
+    {
+      "title": "FRESH Solutions",
+      "path": "/projects/fresh-solutions/",
+      "category": "Open Software",
+      "status": "Open software project",
+      "summary": "A general, reproducible hybrid metaheuristic solver for hard combinatorial optimization problems.",
+      "body": [
+        "FRESH Solutions is a general, reproducible hybrid metaheuristic solver for hard combinatorial optimization.",
+        "It extracts the search architecture developed in WS4: compiled sparse problem state, exact incremental accounting, candidate and effect indexes, exact CPU local moves, batched GPU population search, weighted goal programming, and exact replay of reported incumbents.",
+        "The solver is the public artifact for the second paper in the FRESH Solutions papers project. It is not intended to be a universal mixed-integer programming solver or a proof of optimality."
+      ],
+      "people": [
+        "FRESH Lab: project team"
+      ],
+      "outputs": [
+        "GitHub repository",
+        "Hybrid metaheuristic solver",
+        "Public benchmark evidence",
+        "Paper artifact in preparation"
+      ],
+      "links": [
+        {
+          "label": "FRESH Solutions GitHub repository",
+          "href": "https://github.com/UBC-FRESH/fresh-solutions"
+        }
+      ],
+      "related_projects": [
+        {
+          "label": "WS4",
+          "href": "/projects/ws4/"
+        }
+      ]
+    },
+    {
+      "title": "FRESHForge",
+      "path": "/projects/freshforge/",
+      "category": "Open Software",
+      "status": "Open software project (public alpha)",
+      "summary": "A workflow-as-code layer for composing FRESH forest modelling tools as typed, version-controlled, executable graphs.",
+      "body": [
+        "FRESHForge is an early public-alpha Python package for workflow-as-code in open forest resources and ecosystem services modelling.",
+        "It provides a neutral workflow layer for composing open FRESH ecosystem tools as typed, version-controlled, executable graphs, with the goal of making forest modelling workflows easier to review, test, rerun, publish, and adapt.",
+        "The current alpha implements provisional workflow records, YAML and JSON loading, structural and provider-aware validation, provider registry and entry-point discovery, workflow inspection, non-executing run planning, a serial local runner, and generic run matrices. Stable schemas, caching, checkpointing, parallel or remote execution, and real domain adapters remain future work."
+      ],
+      "people": [
+        "FRESH Lab: project team"
+      ],
+      "outputs": [
+        "GitHub repository",
+        "Documentation site",
+        "PyPI alpha package",
+        "Public-safe example workflows",
+        "CI and release-artifact workflows"
+      ],
+      "links": [
+        {
+          "label": "FRESHForge GitHub repository",
+          "href": "https://github.com/UBC-FRESH/freshforge"
+        },
+        {
+          "label": "FRESHForge documentation",
+          "href": "https://ubc-fresh.github.io/freshforge/"
+        },
+        {
+          "label": "FRESHForge on PyPI",
+          "href": "https://pypi.org/project/freshforge/"
+        }
+      ],
+      "related_projects": [
+        {
+          "label": "FEMIC",
+          "href": "/projects/femic/"
+        },
+        {
+          "label": "FHOPS",
+          "href": "/projects/fhops/"
+        },
+        {
+          "label": "WS3",
+          "href": "/projects/ws3/"
+        }
+      ]
+    },
+    {
+      "title": "FieldAtlas",
+      "path": "/projects/fieldatlas/",
+      "category": "Open Software",
+      "status": "Early-stage open software project",
+      "summary": "An early-stage iPhone field map app for offline, georeferenced map packages with reproducible provenance metadata.",
+      "body": [
+        "FieldAtlas is an early-stage FRESH project for a free iPhone field map app built around offline, georeferenced map packages.",
+        "The project is designed to help field users load trusted public map packages, inspect their location against those maps while offline, and retain reproducible metadata about where each map came from.",
+        "Phase 1 app-shell work is complete: the repository includes Swift Package Manager core and app-shell libraries, a SwiftUI entry point, package-backed tests, a synthetic sample package manifest, and CI for Swift package validation. Real map rendering, location tracking, user-selected package import, and geospatial PDF parsing remain roadmap work."
+      ],
+      "people": [
+        "FRESH Lab: project team"
+      ],
+      "outputs": [
+        "GitHub repository",
+        "Swift Package Manager core and app-shell libraries",
+        "iOS app shell",
+        "Synthetic sample map package",
+        "Swift package validation CI"
+      ],
+      "links": [
+        {
+          "label": "FieldAtlas GitHub repository",
+          "href": "https://github.com/UBC-FRESH/fieldatlas"
+        }
+      ]
+    },
+    {
+      "title": "BC Native Plant & Pollinator Database",
+      "path": "/projects/bc-npp-database/",
+      "category": "Open Software",
+      "status": "Early-stage open data and software project",
+      "summary": "An evidence-based native plant and pollinator decision-support database for coastal British Columbia.",
+      "body": [
+        "The BC Native Plant & Pollinator Database (BC-NPPD) is an evidence-based decision-support database for native plants and pollinators in coastal British Columbia.",
+        "Initial scope focuses on low-growing native species for urban landscapes in Metro Vancouver, the Fraser Valley, and related coastal BC contexts. Intended uses include native plant selection, pollinator garden design, municipal and school-ground plantings, seed-mix design, restoration planting, education, and transparent ecological data review.",
+        "The project is in Phase 0 bootstrap: it provides a Python package and CLI, validation helpers for source policy, species identifiers, and evidence confidence, a Sphinx documentation scaffold, seed schema and lookup data, and CI and release scaffolding. Full workbook normalization, score calculation, species research automation, and dashboard generation remain future work."
+      ],
+      "people": [
+        "FRESH Lab: project team"
+      ],
+      "outputs": [
+        "GitHub repository",
+        "Python package and command-line interface",
+        "Documentation site",
+        "Seed schema and lookup data",
+        "CI and release-artifact scaffolding"
+      ],
+      "links": [
+        {
+          "label": "BC-NPPD GitHub repository",
+          "href": "https://github.com/UBC-FRESH/bc-npp-database"
+        },
+        {
+          "label": "BC-NPPD documentation",
+          "href": "https://ubc-fresh.github.io/bc-npp-database/"
         }
       ]
     },
@@ -496,7 +1168,9 @@
       "body": [
         "FHOPS is the Forest Harvesting Operations Planning System, an open software project in the FRESH research software portfolio.",
         "The project supports reproducible optimization and benchmarking workflows for forest harvesting operations planning.",
-        "FHOPS is connected to Rosalia Jaffray's MASc thesis: the literature-review chapter is published in the International Journal of Forest Engineering, the FHOPS software paper has been submitted to SoftwareX, and the rolling-horizon machine-scheduling chapter is being rewritten for submission to the Canadian Journal of Forest Research."
+        "FHOPS is connected to Rosalia Jaffray's MASc thesis: the literature-review chapter is published in the International Journal of Forest Engineering, the FHOPS software paper has been submitted to SoftwareX, and the rolling-horizon machine-scheduling chapter is being rewritten for submission to the Canadian Journal of Forest Research.",
+        "A hosted FHOPS web application provides browser access to the planning tools; a UBC CWL login is required.",
+        "The public FHOPS ecosystem also includes the rolling-horizon experiment repository used for the CJFR manuscript and the MASc thesis model."
       ],
       "people": [
         "Gregory Paradis: maintainer or lead developer"
@@ -507,7 +1181,8 @@
         "Zenodo software citation",
         "Published systematic review of forest harvesting operational planning tools",
         "Submitted SoftwareX manuscript on the FHOPS optimization and benchmarking stack",
-        "Rolling-horizon machine-scheduling manuscript being rewritten for CJFR submission"
+        "Rolling-horizon machine-scheduling manuscript being rewritten for CJFR submission",
+        "Thesis model and rolling-horizon experiment repositories"
       ],
       "links": [
         {
@@ -521,6 +1196,18 @@
         {
           "label": "FHOPS software citation",
           "href": "https://doi.org/10.5281/zenodo.19619189"
+        },
+        {
+          "label": "FHOPS web application (UBC CWL login required)",
+          "href": "https://fhops.01101.dev"
+        },
+        {
+          "label": "FHOPS rolling-horizon experiments",
+          "href": "https://github.com/UBC-FRESH/fhops-cjfr-rolling-horizon"
+        },
+        {
+          "label": "Jaffray MASc FHOPS model",
+          "href": "https://github.com/UBC-FRESH/jaffray-masc-fhops-model"
         }
       ],
       "references": [
@@ -544,7 +1231,8 @@
       "body": [
         "FEMIC is an open software project for compiling inventory and yield-curve data for forest modelling computational experiments.",
         "The project sits inside the FRESH open modelling stack and supports reproducible model-instance preparation for forest estate and cumulative-effects analysis.",
-        "The public project record connects the FEMIC repository, technical documentation, software citation, and related public model-instance documentation."
+        "The public project record connects the FEMIC repository, technical documentation, software citation, and related public model-instance documentation.",
+        "FEMIC also supports a family of public deployment instances, with guides for TSA, research-forest, TFL, and WBI area-of-interest cases and example repositories such as the TSA 27 and TSA 48 instances."
       ],
       "people": [
         "Gregory Paradis: maintainer or lead developer"
@@ -553,7 +1241,8 @@
         "GitHub repository",
         "Technical documentation",
         "Zenodo software citation",
-        "Public model-instance documentation"
+        "Public model-instance documentation",
+        "Public deployment instances and instance guides for TSA, TFL, research-forest, and WBI cases"
       ],
       "links": [
         {
@@ -567,6 +1256,22 @@
         {
           "label": "FEMIC software citation",
           "href": "https://doi.org/10.5281/zenodo.19619418"
+        },
+        {
+          "label": "FEMIC deployment-instance guide",
+          "href": "https://ubc-fresh.github.io/femic/guides/deployment-instances.html"
+        },
+        {
+          "label": "WBI area-of-interest instance guide",
+          "href": "https://ubc-fresh.github.io/femic/guides/wbi-aoi-instances.html"
+        },
+        {
+          "label": "Example TSA 27 public instance",
+          "href": "https://github.com/UBC-FRESH/femic-tsa27-instance"
+        },
+        {
+          "label": "Example TSA 48 benchmark instance",
+          "href": "https://github.com/UBC-FRESH/femic-tsa48-instance"
         }
       ]
     },
@@ -698,15 +1403,15 @@
       ]
     },
     {
-      "title": "fresh-hectaresbc",
+      "title": "FRESH-hectaresbc",
       "path": "/projects/fresh-hectaresbc/",
       "category": "Open Software",
       "status": "Open software project",
       "summary": "A FRESH project recovering, inventorying, documenting, and modernizing the archived HectaresBC geospatial data collection.",
       "body": [
-        "fresh-hectaresbc preserves and modernizes the archived HectaresBC geospatial data collection for British Columbia.",
+        "FRESH-hectaresbc preserves and modernizes the archived HectaresBC geospatial data collection for British Columbia.",
         "The project rebuilds access around reproducible catalog metadata, a DataLad/git-annex data repository, a Python API, a command-line interface, and a static browser catalog with map-preview routes.",
-        "The recovered payload set is managed outside the code repository in the UBC-FRESH/fresh-hectaresbc-data data repository, while compact catalog metadata, documentation, API tools, and browser-catalog code live in the main software repository."
+        "The recovered payload set is managed outside the code repository in the UBC-FRESH/FRESH-hectaresbc-data data repository, while compact catalog metadata, documentation, API tools, and browser-catalog code live in the main software repository."
       ],
       "people": [
         "Gregory Paradis: maintainer or lead developer"
@@ -720,15 +1425,15 @@
       ],
       "links": [
         {
-          "label": "fresh-hectaresbc GitHub repository",
+          "label": "FRESH-hectaresbc GitHub repository",
           "href": "https://github.com/UBC-FRESH/fresh-hectaresbc"
         },
         {
-          "label": "fresh-hectaresbc documentation",
+          "label": "FRESH-hectaresbc documentation",
           "href": "https://ubc-fresh.github.io/fresh-hectaresbc/"
         },
         {
-          "label": "fresh-hectaresbc data repository",
+          "label": "FRESH-hectaresbc data repository",
           "href": "https://github.com/UBC-FRESH/fresh-hectaresbc-data"
         }
       ]
@@ -777,7 +1482,8 @@
         "This project tracks two related stem diameter distribution fitting manuscripts and their reproducible analysis workflows.",
         "The published Forest Science paper, A Two-Stage Fitting Method for Truncated Stem Diameter Distributions, introduces a two-stage workflow that allows analysts to recover truncated Weibull and gamma solutions while retaining familiar complete-form density implementations.",
         "The companion horizontal point sampling manuscript, A Weighted Fitting Approach for Diameter Distributions from Horizontal Point Sampling, develops a weighted fitting approach for diameter distributions from size-biased HPS tallies, with reproducible scripts and manuscript sources available in the public repository.",
-        "The work is connected to Nemora and broader FRESH efforts to make forest inventory, distribution fitting, and model-input preparation more transparent and reproducible."
+        "The work is connected to Nemora and broader FRESH efforts to make forest inventory, distribution fitting, and model-input preparation more transparent and reproducible.",
+        "The HPS fitting implementation and the project data archive are publicly available alongside the manuscript repository."
       ],
       "people": [
         "Gregory Paradis: lead author"
@@ -786,7 +1492,9 @@
         "Forest Science paper",
         "Companion HPS manuscript",
         "Reproducible manuscript repository",
-        "Related Nemora software workflows"
+        "Related Nemora software workflows",
+        "HPS fitting implementation",
+        "Stem diameter fitting data archive"
       ],
       "links": [
         {
@@ -796,6 +1504,14 @@
         {
           "label": "Nemora project page",
           "href": "/projects/nemora/"
+        },
+        {
+          "label": "HPS fitting implementation",
+          "href": "https://github.com/UBC-FRESH/hpsdistfit"
+        },
+        {
+          "label": "Stem diameter fitting data archive",
+          "href": "https://github.com/UBC-FRESH/dbhdistfit-data"
         }
       ],
       "references": [
@@ -911,7 +1627,8 @@
         "Jinming (Jimmy) Ke's MSc thesis developed an open-source forest system climate impact assessment model for evaluating how forest harvesting, fertilization, and harvested wood product use strategies affect climate outcomes.",
         "The thesis connects forest carbon sequestration, forest ecosystem carbon pool dynamics, harvested wood product life-cycle emissions, and avoided emissions from product substitution into a system-level assessment framework.",
         "Scenario analysis explored different harvesting and fertilization choices and highlighted how end-use assumptions for harvested wood products, including long-lived products such as cross-laminated timber and bioenergy substitution pathways, can change the apparent climate performance of forest management strategies.",
-        "The project is part of the FRESH research thread on transparent forest-sector climate mitigation modelling and provides a public thesis foundation for subsequent manuscript and software work."
+        "The project is part of the FRESH research thread on transparent forest-sector climate mitigation modelling and provides a public thesis foundation for subsequent manuscript and software work.",
+        "The public thesis modelling repository collects the inventory, forest-estate, ecosystem-carbon, emission, and climate-impact notebooks."
       ],
       "people": [
         "Jinming (Jimmy) Ke: MSc student",
@@ -921,7 +1638,7 @@
         "MSc thesis",
         "Open-source forest system climate impact assessment modelling workflow",
         "Scenario analysis for harvesting, fertilization, and harvested wood product use",
-        "Thesis-derived manuscript and software links can be added when public"
+        "Public thesis modelling repository"
       ],
       "references": [
         {
@@ -934,6 +1651,15 @@
             {
               "label": "Download thesis PDF",
               "href": "https://open.library.ubc.ca/media/stream/pdf/24/1.0441338/4"
+            }
+          ]
+        },
+        {
+          "citation": "Ke, J. Thesis modelling repository. UBC-FRESH/msc_jimmy_ke. GitHub.",
+          "links": [
+            {
+              "label": "Thesis modelling repository",
+              "href": "https://github.com/UBC-FRESH/msc_jimmy_ke"
             }
           ]
         }
@@ -950,7 +1676,8 @@
         "The framework combines a Strategic Forest Management Model, Forest Carbon Budget Model, and Wood Product Carbon Model to track indicators including forest carbon stocks and net carbon emissions from the forest sector.",
         "Using the Prince George Timber Supply Area as a case study, the thesis compared scenarios ranging from no harvest to maximum harvest, tested the linkage between strategic forest management and carbon-budget modelling, and evaluated tradeoffs between timber supply and forest carbon outcomes.",
         "The optimization work used epsilon-constraint methods to generate Pareto front curves for competing objectives such as maximizing wood supply, maximizing total forest carbon stock, and minimizing net forest carbon emissions, with sensitivity analysis around harvested wood product longevity and substitution effects.",
-        "A thesis-derived journal manuscript is in development from this work."
+        "A thesis-derived journal manuscript is in development from this work.",
+        "The public thesis modelling repository and manuscript source document the SFMM-FCBM-WPCM workflow."
       ],
       "people": [
         "Yancun (Walter) Yan: MSc student",
@@ -962,7 +1689,8 @@
         "Integrated SFMM-FCBM-WPCM modelling framework",
         "Prince George TSA case study",
         "Pareto-front tradeoff analysis for timber supply and forest carbon outcomes",
-        "Thesis-derived journal manuscript in development"
+        "Thesis-derived journal manuscript in development",
+        "Public thesis modelling repository and manuscript source"
       ],
       "references": [
         {
@@ -975,6 +1703,19 @@
             {
               "label": "Download thesis PDF",
               "href": "https://open.library.ubc.ca/media/stream/pdf/24/1.0449036/4"
+            }
+          ]
+        },
+        {
+          "citation": "Yan, Y. Thesis modelling repository and manuscript source. UBC-FRESH/msc_walter_yan and UBC-FRESH/yan-yancun-masc-thesis-paper. GitHub.",
+          "links": [
+            {
+              "label": "Thesis modelling repository",
+              "href": "https://github.com/UBC-FRESH/msc_walter_yan"
+            },
+            {
+              "label": "Thesis manuscript source",
+              "href": "https://github.com/UBC-FRESH/yan-yancun-masc-thesis-paper"
             }
           ]
         }
@@ -990,7 +1731,8 @@
         "Rosalia Jaffray's MASc thesis developed and evaluated FHOPS, the Forest Harvesting Operations Planning System, as an open-source tool for machine scheduling in forest operational planning.",
         "The first thesis chapter, a systematic review of forest harvesting operational planning tools, has been published in the International Journal of Forest Engineering.",
         "The second chapter, the FHOPS software paper, has been submitted to SoftwareX.",
-        "The third chapter evaluates rolling-horizon design for forest operations machine scheduling and is being rewritten for submission to the Canadian Journal of Forest Research."
+        "The third chapter evaluates rolling-horizon design for forest operations machine scheduling and is being rewritten for submission to the Canadian Journal of Forest Research.",
+        "The review-paper source and the FHOPS thesis model are publicly available in separate repositories."
       ],
       "people": [
         "Rosalia Jaffray: MASc student",
@@ -1002,7 +1744,8 @@
         "Published systematic review of forest harvesting operational planning tools",
         "FHOPS open-source software and benchmarking workflows",
         "Submitted SoftwareX manuscript on the FHOPS optimization and benchmarking stack",
-        "Rolling-horizon machine-scheduling manuscript being rewritten for CJFR submission"
+        "Rolling-horizon machine-scheduling manuscript being rewritten for CJFR submission",
+        "Review-paper source and FHOPS thesis model repositories"
       ],
       "links": [
         {
@@ -1012,6 +1755,14 @@
         {
           "label": "FHOPS GitHub repository",
           "href": "https://github.com/UBC-FRESH/fhops"
+        },
+        {
+          "label": "MASc review-paper source",
+          "href": "https://github.com/UBC-FRESH/jaffray-masc-review-paper"
+        },
+        {
+          "label": "FHOPS thesis model",
+          "href": "https://github.com/UBC-FRESH/jaffray-masc-fhops-model"
         }
       ],
       "references": [
@@ -1073,6 +1824,91 @@
       "references": [
         {
           "citation": "Ghasemi, E., Ghotb, S., Coupland, K., and Paradis, G. Developing a decision support system to assess forest management scenarios as a nature-based decarbonization solution: A case study from a mining company in British Columbia, Canada. Manuscript in preparation."
+        }
+      ]
+    },
+    {
+      "title": "EcoTrust DSS",
+      "path": "/projects/ecotrust-dss/",
+      "category": "Past And Recent Projects",
+      "status": "Past decision-support software project",
+      "summary": "A web-based decision-support system for forest management planning that accounts for greenhouse-gas emissions and biodiversity concerns.",
+      "body": [
+        "EcoTrust DSS is a web-based decision-support system that helps users with limited modelling experience explore forest management activities while accounting for greenhouse-gas emissions and biodiversity concerns.",
+        "The system combines a Python web application, Nginx, and Gunicorn, with a DataLad-managed input dataset and a standalone notebook workflow for running scenarios.",
+        "The public repository documents deployment, data retrieval, and scenario execution and is archived with a Zenodo DOI."
+      ],
+      "people": [
+        "FRESH Lab: project team"
+      ],
+      "outputs": [
+        "GitHub repository",
+        "Web-based decision-support application",
+        "Scenario-running notebook workflow",
+        "DataLad-managed input dataset",
+        "Zenodo DOI"
+      ],
+      "links": [
+        {
+          "label": "EcoTrust DSS GitHub repository",
+          "href": "https://github.com/UBC-FRESH/ecotrust-dss"
+        },
+        {
+          "label": "EcoTrust DSS software citation",
+          "href": "https://doi.org/10.5281/zenodo.17330007"
+        },
+        {
+          "label": "EcoTrust DSS input-data archive",
+          "href": "https://gin.g-node.org/UBC-FRESH/ecotrust-dss-data"
+        }
+      ]
+    },
+    {
+      "title": "NbDS DSS",
+      "path": "/projects/nbds-dss/",
+      "category": "Past And Recent Projects",
+      "status": "Past decision-support modelling project",
+      "summary": "A notebook-based decision-support system for nature-based decarbonization analysis of harvested wood products and displacement effects.",
+      "body": [
+        "The Nature-Based Decarbonization Decision Support System (NbDS DSS) is a notebook-based workflow for carbon management analysis in specific case studies.",
+        "The system organizes inputs, processes data, and produces figures, CSV files, and other outputs for scenarios involving harvested wood products and displacement effects.",
+        "The workflow includes case-study setup, Woodstock model-file generation, carbon-curve construction, and scenario building, with DataLad-managed data and outputs. A related mining-sector variant applies the same decision-support structure to industrial case studies."
+      ],
+      "people": [
+        "FRESH Lab: project team"
+      ],
+      "outputs": [
+        "GitHub repository",
+        "Notebook-based decision-support workflow",
+        "Mining-sector decision-support variant",
+        "DataLad-managed data and output archives",
+        "Zenodo DOI",
+        "Public data, output, and manuscript archives"
+      ],
+      "links": [
+        {
+          "label": "NbDS DSS GitHub repository",
+          "href": "https://github.com/UBC-FRESH/nbds_dss"
+        },
+        {
+          "label": "NbDS mining-sector variant",
+          "href": "https://github.com/UBC-FRESH/nbds_mining"
+        },
+        {
+          "label": "NbDS DSS software citation",
+          "href": "https://doi.org/10.5281/zenodo.17316315"
+        },
+        {
+          "label": "NbDS DSS data archive",
+          "href": "https://github.com/UBC-FRESH/nbds_dss-data"
+        },
+        {
+          "label": "NbDS DSS output archive",
+          "href": "https://github.com/UBC-FRESH/nbds_dss-outputs"
+        },
+        {
+          "label": "NbDS DSS manuscript repository",
+          "href": "https://github.com/UBC-FRESH/nbds_dss_manuscript"
         }
       ]
     }

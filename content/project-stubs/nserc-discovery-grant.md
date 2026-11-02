@@ -37,7 +37,7 @@ Current public cross-links:
 - WS3
 - FHOPS
 - FEMIC
-- fresh-hectaresbc
+- FRESH-hectaresbc
 - CCCANDiES
 - Nemora
 - Modelwright

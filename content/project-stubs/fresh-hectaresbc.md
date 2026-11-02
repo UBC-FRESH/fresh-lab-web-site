@@ -1,4 +1,4 @@
-# fresh-hectaresbc
+# FRESH-hectaresbc
 
 Status: Open software project
 

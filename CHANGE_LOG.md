@@ -250,3 +250,37 @@ This is the append-only project narrative for `fresh-lab-web-site`.
   her Forest Biology degree, Saanich Forestry Centre nursery-technician
   background, TRANSFOR-M Forest Science year in Italy, and motivation for
   aerial seeding and microsite-selection work.
+
+## 2026-11-02
+
+- Added a public WS4 open software project record and matching drafting stub,
+  covering the spatially explicit, HPC-ready wood supply model and linking the
+  repository and documentation site.
+- Added CWL-gated web application links for WS4 (`https://ws4.01101.dev`) and
+  FHOPS (`https://fhops.01101.dev`), with the login requirement stated in the
+  link labels. Both URLs were verified to redirect to the UBC FRESH Cloudflare
+  Access login.
+- Added `planning/project-candidates-2026-11-02.md`, a GitHub organization
+  audit that classifies public repositories into candidate project pages,
+  existing-page enrichments, and repositories that should stay out of the
+  public projects section.
+- Added the Tier 1 public project pages from that audit: FRESH-FVSbc, WBI
+  harvesting and birds, PAWS3, FRESH Solutions, FieldAtlas, BC Native Plant &
+  Pollinator Database, FRESHForge, EcoTrust DSS, and NbDS DSS, each with a
+  matching drafting stub.
+- Normalized public display text to the uppercase FRESH acronym, including the
+  `fresh-hectaresbc` project title and its related-project and link labels.
+  Repository names and routes remain lowercase where required.
+- Folded supporting public repositories into existing project records: FEMIC
+  deployment-instance guides and example instances, WS3 SpaDES and Treemün
+  parity links, WS4 carbon/road/disturbance/interoperability links, FHOPS thesis
+  and rolling-horizon repositories, FlashForest package and annotation-flywheel
+  repositories, CLEWs model and data repositories, CCCANDiES demonstration
+  data, stem-diameter HPS and data repositories, thesis repositories, EcoTrust
+  and NbDS archives, WBI legacy models, and the pinned PyFVS fork.
+- Added Tier 2 public project pages with matching drafting stubs: Kamloops Fire
+  Centre fuel-treatment priority mapping, FRESH-Fuchs risk-aware forest
+  planning, FRESH-Daugherty dynamic-inconsistency reproduction, FRESH-Yan HWP
+  uncertainty analysis, FRESH-Salvage TSA29 salvage-subsidy model, and
+  FRESH-CBM. The TASS II wrapper remains deferred pending licensing and partner
+  review.
