@@ -44,7 +44,7 @@ PEOPLE_CROP_BOXES = {
 
 PROJECT_SOURCES = [
     "fhops-3d-studio",
-    "ws4-public-demo",
+    "ws4-tsa27-map",
 ]
 
 PROJECT_VARIANTS = [

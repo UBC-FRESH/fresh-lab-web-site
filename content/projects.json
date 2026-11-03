@@ -839,12 +839,12 @@
       "status": "Open software project",
       "summary": "A spatially explicit, HPC-ready forest estate simulation and optimization system for wood supply modelling.",
       "image": {
-        "alt": "WS4 public demo instance catalogue showing FEMIC forest models and launch links",
-        "src": "/assets/projects/ws4-public-demo-1600.jpeg",
+        "alt": "WS4 TSA 27 map workspace showing 37,461 untreated forest blocks around Revelstoke with the layer tree and period controls",
+        "src": "/assets/projects/ws4-tsa27-map-1600.jpeg",
         "sources": [
           {
             "type": "image/webp",
-            "srcset": "/assets/projects/ws4-public-demo-960.webp 960w, /assets/projects/ws4-public-demo-1600.webp 1600w",
+            "srcset": "/assets/projects/ws4-tsa27-map-960.webp 960w, /assets/projects/ws4-tsa27-map-1600.webp 1600w",
             "sizes": "(max-width: 900px) 100vw, 1200px"
           }
         ]

@@ -77,8 +77,8 @@ def test_build_generates_expected_public_pages() -> None:
         "assets/people/yunhao-davis-xu-360.jpeg",
         "assets/projects/fhops-3d-studio-960.webp",
         "assets/projects/fhops-3d-studio-1600.jpeg",
-        "assets/projects/ws4-public-demo-960.webp",
-        "assets/projects/ws4-public-demo-1600.jpeg",
+        "assets/projects/ws4-tsa27-map-960.webp",
+        "assets/projects/ws4-tsa27-map-1600.jpeg",
     ]
 
     for relative_path in expected:
@@ -164,8 +164,8 @@ def test_project_pages_render_optional_images() -> None:
     index = read_dist("projects/index.html")
 
     assert '<figure class="project-media">' in ws4
-    assert "assets/projects/ws4-public-demo-960.webp 960w" in ws4
-    assert "assets/projects/ws4-public-demo-1600.jpeg" in ws4
+    assert "assets/projects/ws4-tsa27-map-960.webp 960w" in ws4
+    assert "assets/projects/ws4-tsa27-map-1600.jpeg" in ws4
     assert '<figure class="project-media">' in fhops
     assert "assets/projects/fhops-3d-studio-960.webp 960w" in fhops
     assert "assets/projects/fhops-3d-studio-1600.jpeg" in fhops

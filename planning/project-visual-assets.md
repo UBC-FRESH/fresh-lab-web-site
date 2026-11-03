@@ -38,7 +38,7 @@ Give the public project pages stronger visual identity, starting with the WS4 ma
 
 ## Captured On 2026-11-02
 
-- **WS4 public demo catalogue** (`src/assets/projects/originals/ws4-public-demo.png`): landing page listing the FEMIC model instances, including the READY public instances. A map screenshot was not available because every public WS4 instance currently reports `no runs found`; the map workspace needs an existing run to render.
+- **WS4 TSA 27 map workspace** (`src/assets/projects/originals/ws4-tsa27-map.png`): MapLibre view of the TSA 27 `reference` simulate run, showing 37,461 untreated blocks around Revelstoke, the layer tree, the period control, and the treated/untreated legend. Captured after the public demo added a reference run.
 - **FHOPS Scenario Studio 3D** (`src/assets/projects/originals/fhops-3d-studio.png`): 3D editor with the AFRF Gavin Lake project, retained trees, landings, road, terrain, and the access-grade map.
 - **FHOPS Tree Lab 3D replay** was also captured during review but not yet used on a project page. It shows the machine timeline and retained-tree view at `fhops.01101.dev/sandbox-v20261031i/`.
 

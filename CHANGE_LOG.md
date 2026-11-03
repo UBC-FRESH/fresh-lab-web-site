@@ -300,6 +300,6 @@ This is the append-only project narrative for `fresh-lab-web-site`.
   schema work needed before screenshots can be published.
 - Added optional project images to the content schema, project detail pages,
   and project index cards, with validation, responsive JPEG/WebP generation,
-  and build tests. Added the first captures: the WS4 public demo catalogue and
-  the FHOPS Scenario Studio 3D editor. The WS4 map screenshot remains pending
-  because the public demo instances currently have no runs.
+  and build tests. Added the first captures: the WS4 TSA 27 map workspace and
+  the FHOPS Scenario Studio 3D editor. The WS4 capture uses the TSA 27
+  `reference` simulate run and shows 37,461 untreated blocks around Revelstoke.
